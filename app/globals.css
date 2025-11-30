@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,11 +11,10 @@
     --color-amber-light: 252 211 77;
     --color-cream: 250 250 249;
     --color-white: 255 255 255;
-    
-    /* Typographie */
-    --font-display: 'DM Serif Display', Georgia, serif;
-    --font-body: 'DM Sans', system-ui, sans-serif;
-    
+
+    /* Typographie - Les fonts sont maintenant gérées par next/font dans layout.tsx */
+    /* --font-display et --font-body sont injectées automatiquement via les variables CSS */
+
     /* Espacements */
     --section-padding: clamp(4rem, 10vw, 8rem);
   }

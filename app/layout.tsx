@@ -1,7 +1,23 @@
 import type { Metadata } from 'next'
+import { DM_Sans, DM_Serif_Display } from 'next/font/google'
 import './globals.css'
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-body',
+  display: 'swap',
+})
+
+const dmSerifDisplay = DM_Serif_Display({
+  subsets: ['latin'],
+  weight: ['400'],
+  style: ['normal', 'italic'],
+  variable: '--font-display',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "PickMyNews — L'actualité qui compte, quand vous le décidez",
@@ -31,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" className="scroll-smooth">
+    <html lang="fr" className={`scroll-smooth ${dmSans.variable} ${dmSerifDisplay.variable}`}>
       <body className="antialiased">
         {children}
         <SpeedInsights />
