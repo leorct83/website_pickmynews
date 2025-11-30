@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { DM_Sans, DM_Serif_Display } from 'next/font/google'
 import './globals.css'
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -48,6 +50,7 @@ export default function RootLayout({
     <html lang="fr" className={`scroll-smooth ${dmSans.variable} ${dmSerifDisplay.variable}`}>
       <body className="antialiased">
         {children}
+        <SpeedInsights />
       </body>
     </html>
   )
