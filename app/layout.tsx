@@ -20,7 +20,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <head>
         {/* FAVICONS */}
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -31,7 +30,6 @@ export default function RootLayout({
 
         {/* Manifest (si tu en as un) */}
         {/* <link rel="manifest" href="/site.webmanifest" /> */}
-      </head>
 
       <body className="antialiased">
         {children}
