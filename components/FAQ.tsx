@@ -20,7 +20,7 @@ export default function FAQ() {
     },
     {
       question: 'Puis-je modifier mes préférences après inscription ?',
-      answer: 'Absolument. Vous pouvez changer de thème, ajuster la fréquence d\'envoi, modifier l\'horaire de réception, ou même créer plusieurs newsletters sur des sujets différents.',
+      answer: 'Absolument. Vous pouvez changer de thème, ajuster la fréquence d\'envoi, modifier l\'horaire de réception, ou même créer plusieurs newsletters sur des sujets différents. Pour toute difficulté, notre support est là pour vous aider.',
     },
     {
       question: 'Et si j\'ai besoin d\'aide ?',
