@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 
 export const metadata: Metadata = {
   title: "PickMyNews — L'actualité qui compte, quand vous le décidez",
@@ -32,6 +34,7 @@ export default function RootLayout({
     <html lang="fr" className="scroll-smooth">
       <body className="antialiased">
         {children}
+        <SpeedInsights />
       </body>
     </html>
   )
