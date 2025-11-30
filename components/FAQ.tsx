@@ -8,7 +8,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: 'Puis-je vraiment annuler à tout moment ?',
-      answer: 'Oui, sans conditions. Un simple clic dans votre espace client suffit. Pas de questions, pas de frais cachés, pas de procédure compliquée.',
+      answer: 'Oui, sans conditions. Un simple clic suffit. Pas de questions, pas de frais cachés, pas de procédure compliquée.',
     },
     {
       question: 'Comment choisir mon thème de newsletter ?',
