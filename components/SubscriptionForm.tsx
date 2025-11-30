@@ -1,0 +1,547 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+
+// Types
+type Frequency = 1 | 2 | 5 | 7;
+type BillingCycle = 'weekly' | 'monthly' | 'yearly';
+
+interface FormData {
+  firstName: string;
+  email: string;
+  theme: string;
+  frequency: Frequency;
+  selectedDays: string[];
+  selectedHour: number;
+  billingCycle: BillingCycle;
+  legalConsent: boolean;
+}
+
+interface PricingOption {
+  weekly: number;
+  monthly: number;
+  yearly: number;
+}
+
+const PRICING: Record<Frequency, PricingOption> = {
+  7: { weekly: 5.99, monthly: 12.99, yearly: 129.99 },
+  5: { weekly: 4.99, monthly: 9.99, yearly: 99.99 },
+  2: { weekly: 2.99, monthly: 6.49, yearly: 59.99 },
+  1: { weekly: 1.99, monthly: 4.99, yearly: 49.99 },
+};
+
+const DAYS = [
+  { key: 'Lundi', label: 'Lun' },
+  { key: 'Mardi', label: 'Mar' },
+  { key: 'Mercredi', label: 'Mer' },
+  { key: 'Jeudi', label: 'Jeu' },
+  { key: 'Vendredi', label: 'Ven' },
+  { key: 'Samedi', label: 'Sam' },
+  { key: 'Dimanche', label: 'Dim' },
+];
+
+// Mapping fréquence numérique vers format API
+const FREQUENCY_TO_PLAN: Record<Frequency, string> = {
+  1: '1x',
+  2: '2x',
+  5: '5x',
+  7: '7x',
+};
+
+const HOURS = Array.from({ length: 24 }, (_, i) => i);
+
+const BILLING_LABELS: Record<BillingCycle, string> = {
+  weekly: 'Hebdomadaire',
+  monthly: 'Mensuelle',
+  yearly: 'Annuelle',
+};
+
+export default function SubscriptionForm() {
+  const [formData, setFormData] = useState<FormData>({
+    firstName: '',
+    email: '',
+    theme: '',
+    frequency: 7,
+    selectedDays: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'],
+    selectedHour: 8,
+    billingCycle: 'monthly',
+    legalConsent: false,
+  });
+
+  const [error, setError] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Ajuster les jours sélectionnés quand la fréquence change
+  useEffect(() => {
+    setFormData((prev) => {
+      if (prev.selectedDays.length > prev.frequency) {
+        return { ...prev, selectedDays: prev.selectedDays.slice(0, prev.frequency) };
+      } else if (prev.selectedDays.length < prev.frequency) {
+        const availableDays = DAYS.map((d) => d.key).filter((d) => !prev.selectedDays.includes(d));
+        const daysToAdd = availableDays.slice(0, prev.frequency - prev.selectedDays.length);
+        return { ...prev, selectedDays: [...prev.selectedDays, ...daysToAdd] };
+      }
+      return prev;
+    });
+  }, [formData.frequency]);
+
+  const handleDayToggle = (dayKey: string) => {
+    setFormData((prev) => {
+      if (prev.selectedDays.includes(dayKey)) {
+        if (prev.selectedDays.length > 1) {
+          return { ...prev, selectedDays: prev.selectedDays.filter((d) => d !== dayKey) };
+        }
+        return prev;
+      } else {
+        if (prev.selectedDays.length < prev.frequency) {
+          return { ...prev, selectedDays: [...prev.selectedDays, dayKey] };
+        } else {
+          // Remplacer le premier jour sélectionné par le nouveau
+          return { ...prev, selectedDays: [...prev.selectedDays.slice(1), dayKey] };
+        }
+      }
+    });
+  };
+
+  // Validation côté client avant soumission
+  const validateForm = (): string | null => {
+    // Vérification des champs requis
+    if (!formData.firstName.trim()) return 'Le prénom est requis.';
+    if (!formData.email.trim()) return "L'email est requis.";
+    if (!formData.theme.trim()) return 'Le thème est requis.';
+
+    // Vérification de l'email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      return 'Adresse email invalide.';
+    }
+
+    // Vérification de la cohérence selectedDays / frequency
+    if (formData.selectedDays.length !== formData.frequency) {
+      return `Veuillez sélectionner exactement ${formData.frequency} jour(s).`;
+    }
+
+    // Vérification du consentement légal
+    if (!formData.legalConsent) {
+      return 'Vous devez accepter les conditions pour continuer.';
+    }
+
+    return null;
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError('');
+
+    // Validation côté client
+    const validationError = validateForm();
+    if (validationError) {
+      setError(validationError);
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      // Formatage de l'heure en string HH:00
+      const sendHour = formData.selectedHour.toString().padStart(2, '0') + ':00';
+
+      // Appel à l'API pour créer la session Stripe Checkout
+      const response = await fetch('/api/create-checkout-session', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.firstName,
+          email: formData.email,
+          theme: formData.theme,
+          plan_frequency: FREQUENCY_TO_PLAN[formData.frequency],
+          billing_period: formData.billingCycle,
+          send_days: formData.selectedDays,
+          send_hour: sendHour,
+          legal_consent: formData.legalConsent,
+        }),
+      });
+
+      // Vérifier si la réponse contient du JSON valide
+      const contentType = response.headers.get('content-type');
+      let data;
+
+      if (contentType && contentType.includes('application/json')) {
+        const text = await response.text();
+        if (text) {
+          try {
+            data = JSON.parse(text);
+          } catch {
+            throw new Error('Réponse serveur invalide.');
+          }
+        } else {
+          throw new Error('Réponse serveur vide.');
+        }
+      } else {
+        throw new Error(`Erreur serveur (${response.status}).`);
+      }
+
+      if (!response.ok) {
+        throw new Error(data?.error || `Erreur serveur (${response.status}).`);
+      }
+
+      // Redirection vers Stripe Checkout
+      if (data?.url) {
+        window.location.href = data.url;
+      } else {
+        throw new Error('URL de paiement non reçue.');
+      }
+    } catch (err) {
+      console.error('Erreur checkout:', err);
+      setError(err instanceof Error ? err.message : 'Une erreur est survenue.');
+      setIsSubmitting(false);
+    }
+  };
+
+  const currentPrice = PRICING[formData.frequency][formData.billingCycle];
+
+  return (
+    <section id="inscription" className="py-24 px-4 bg-white scroll-mt-nav relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-gradient-to-b from-stone-50 to-white" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-full">
+        <div className="absolute top-20 left-0 w-72 h-72 bg-amber-100 rounded-full blur-3xl opacity-50" />
+        <div className="absolute bottom-20 right-0 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-50" />
+      </div>
+
+      <div className="section-container relative z-10">
+        <div className="max-w-2xl mx-auto">
+          {/* Section header */}
+          <div className="text-center mb-12">
+            <p className="text-amber-600 font-semibold uppercase tracking-wider text-sm mb-4">
+              Prêt à commencer ?
+            </p>
+            <h2 className="text-4xl md:text-5xl text-slate-900 mb-6 text-balance">
+              Créez votre newsletter en <span className="text-amber-600">30 secondes</span>
+            </h2>
+            <p className="text-xl text-slate-600">Personnalisez votre expérience selon vos besoins.</p>
+          </div>
+
+          {/* Form */}
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="bg-white rounded-3xl shadow-xl shadow-slate-900/5 border border-slate-200 p-8 md:p-10">
+              {/* First name & Email fields */}
+              <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div>
+                  <label htmlFor="firstName" className="block text-sm font-semibold text-slate-700 mb-2">
+                    Prénom
+                  </label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    value={formData.firstName}
+                    onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                    placeholder="Votre prénom"
+                    required
+                    className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-lg"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-semibold text-slate-700 mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    placeholder="vous@exemple.com"
+                    required
+                    className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-lg"
+                  />
+                </div>
+              </div>
+
+              {/* Theme field */}
+              <div className="mb-6">
+                <label htmlFor="theme" className="block text-sm font-semibold text-slate-700 mb-2">
+                  Quel sujet vous intéresse ?
+                </label>
+                <input
+                  type="text"
+                  id="theme"
+                  value={formData.theme}
+                  onChange={(e) => setFormData({ ...formData, theme: e.target.value })}
+                  placeholder="Ex: L'actualité des startups françaises"
+                  required
+                  className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-lg"
+                />
+              </div>
+
+              {/* Frequency selection */}
+              <div className="mb-6">
+                <label className="block text-sm font-semibold text-slate-700 mb-2">
+                  Combien de newsletters par semaine ?
+                </label>
+                <div className="grid grid-cols-4 gap-3">
+                  {([1, 2, 5, 7] as Frequency[]).map((freq) => (
+                    <button
+                      key={freq}
+                      type="button"
+                      onClick={() => setFormData({ ...formData, frequency: freq })}
+                      className={`py-4 px-4 rounded-xl text-center transition-all border-2 ${
+                        formData.frequency === freq
+                          ? 'border-amber-500 bg-amber-50 text-amber-700'
+                          : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300'
+                      }`}
+                    >
+                      <span className="text-2xl font-bold">{freq}</span>
+                      <span className="text-sm block">/ sem</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Day selection */}
+              <div className="mb-6">
+                <label className="block text-sm font-semibold text-slate-700 mb-2">
+                  Quels jours souhaitez-vous recevoir votre newsletter ?
+                  <span className="text-slate-400 font-normal ml-2">
+                    ({formData.selectedDays.length}/{formData.frequency} sélectionnés)
+                  </span>
+                </label>
+                <div className="grid grid-cols-7 gap-2">
+                  {DAYS.map((day) => (
+                    <button
+                      key={day.key}
+                      type="button"
+                      onClick={() => handleDayToggle(day.key)}
+                      className={`py-3 px-2 rounded-xl text-center transition-all border-2 ${
+                        formData.selectedDays.includes(day.key)
+                          ? 'border-amber-500 bg-amber-500 text-white'
+                          : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300'
+                      }`}
+                    >
+                      <span className="text-sm font-medium">{day.label}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Hour selection */}
+              <div className="mb-6">
+                <label htmlFor="hour" className="block text-sm font-semibold text-slate-700 mb-2">
+                  Heure d'envoi
+                </label>
+                <select
+                  id="hour"
+                  value={formData.selectedHour}
+                  onChange={(e) => setFormData({ ...formData, selectedHour: Number(e.target.value) })}
+                  className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-lg bg-white"
+                >
+                  {HOURS.map((hour) => (
+                    <option key={hour} value={hour}>
+                      {hour.toString().padStart(2, '0')}:00
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Billing cycle selection */}
+              <div className="mb-6">
+                <label className="block text-sm font-semibold text-slate-700 mb-2">Mode de paiement</label>
+                <div className="grid grid-cols-3 gap-3">
+                  {(['weekly', 'monthly', 'yearly'] as BillingCycle[]).map((cycle) => (
+                    <button
+                      key={cycle}
+                      type="button"
+                      onClick={() => setFormData({ ...formData, billingCycle: cycle })}
+                      className={`py-3 px-4 rounded-xl text-center transition-all border-2 relative ${
+                        formData.billingCycle === cycle
+                          ? 'border-amber-500 bg-amber-50 text-amber-700'
+                          : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300'
+                      }`}
+                    >
+                      {cycle === 'yearly' && (
+                        <span className="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-2 py-0.5 rounded-full">
+                          -17%
+                        </span>
+                      )}
+                      <span className="text-sm font-medium">{BILLING_LABELS[cycle]}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Pricing summary */}
+              <div className="mb-6 p-6 bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl border border-slate-200">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-slate-600">Newsletter {formData.frequency}x/semaine</span>
+                  <span className="text-slate-400 text-sm">{BILLING_LABELS[formData.billingCycle]}</span>
+                </div>
+                <div className="flex items-end justify-between">
+                  <div>
+                    <span className="text-4xl font-bold text-slate-900">{currentPrice.toFixed(2)} €</span>
+                    <span className="text-slate-500 ml-1">
+                      /{formData.billingCycle === 'weekly' ? 'sem' : formData.billingCycle === 'monthly' ? 'mois' : 'an'}
+                    </span>
+                  </div>
+                  {formData.billingCycle === 'yearly' && (
+                    <span className="text-green-600 text-sm font-medium">
+                      Économisez{' '}
+                      {(PRICING[formData.frequency].monthly * 12 - PRICING[formData.frequency].yearly).toFixed(2)} €/an
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              {/* Legal consent checkbox */}
+              <div className="mb-6">
+                <label className="flex items-start gap-3 cursor-pointer group">
+                  <div className="relative flex items-center justify-center mt-0.5">
+                    <input
+                      type="checkbox"
+                      checked={formData.legalConsent}
+                      onChange={(e) => setFormData({ ...formData, legalConsent: e.target.checked })}
+                      className="peer sr-only"
+                    />
+                    <div className="w-5 h-5 border-2 border-slate-300 rounded transition-all peer-checked:border-amber-500 peer-checked:bg-amber-500 group-hover:border-slate-400 peer-checked:group-hover:border-amber-600" />
+                    <svg
+                      className="absolute w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={3}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-sm text-slate-600 leading-relaxed">
+                    J'accepte les{' '}
+                    <a href="#" className="text-amber-600 hover:underline">
+                      conditions d'utilisation
+                    </a>{' '}
+                    et la{' '}
+                    <a href="#" className="text-amber-600 hover:underline">
+                      politique de confidentialité
+                    </a>
+                    . Je consens à recevoir des emails d'actualité personnalisés.
+                  </span>
+                </label>
+              </div>
+
+              {/* Error message */}
+              {error && (
+                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl flex items-start gap-3">
+                  <svg className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="text-red-700 text-sm">{error}</span>
+                </div>
+              )}
+
+              {/* Submit button */}
+              <div className="space-y-3">
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold py-6 px-8 rounded-2xl text-xl shadow-lg shadow-amber-500/30 hover:shadow-xl hover:shadow-amber-500/40 transform hover:-translate-y-0.5 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-none"
+                >
+                  {isSubmitting ? (
+                    <span className="flex items-center justify-center gap-3">
+                      <svg className="animate-spin w-6 h-6" viewBox="0 0 24 24">
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                          fill="none"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        />
+                      </svg>
+                      <span>Redirection vers le paiement...</span>
+                    </span>
+                  ) : (
+                    <span className="flex items-center justify-center gap-3">
+                      <span>Je veux ma newsletter personnalisée</span>
+                      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </span>
+                  )}
+                </button>
+
+                {/* Trust badges */}
+                <div className="flex items-center justify-center gap-6 text-sm text-slate-500">
+                  <span className="flex items-center gap-1.5">
+                    <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    Annulation facile
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fillRule="evenodd"
+                        d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    Paiement sécurisé
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    Satisfait ou remboursé
+                  </span>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          {/* Social proof */}
+          <div className="mt-8 text-center">
+            <div className="flex items-center justify-center gap-4 mb-3">
+              <div className="flex -space-x-2">
+                {['M', 'T', 'S', 'A', 'J'].map((letter, i) => (
+                  <div
+                    key={i}
+                    className="w-8 h-8 rounded-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center text-white text-xs font-medium border-2 border-white"
+                  >
+                    {letter}
+                  </div>
+                ))}
+              </div>
+              <div className="flex gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+            <p className="text-sm text-slate-500">
+              Rejoint par <strong className="text-slate-900">2 847 professionnels</strong> ce mois-ci
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
