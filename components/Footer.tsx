@@ -13,9 +13,9 @@ export default function Footer() {
       { label: 'Contact', href: 'mailto:contact@pickmynews.com' },
     ],
     legal: [
-      { label: 'Mentions légales', href: '#' },
-      { label: 'CGU', href: '#' },
-      { label: 'Confidentialité', href: '#' },
+      { label: 'Mentions légales', href: '/legal' },
+      { label: 'CGU', href: '/terms' },
+      { label: 'Confidentialité', href: '/privacy' },
     ],
   };
 
