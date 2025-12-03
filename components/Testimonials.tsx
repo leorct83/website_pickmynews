@@ -206,8 +206,6 @@ export default function Testimonials() {
 
   const stats: Stat[] = [
     { value: "2 847", label: "Lecteurs actifs", subtext: "ce mois-ci" },
-    { value: "94%", label: "Renouvellent", subtext: "leur abonnement" },
-    { value: "4.6/5", label: "Note moyenne", subtext: "sur 247 avis" },
     { value: "6 min", label: "Temps de lecture", subtext: "en moyenne" },
   ];
 
