@@ -3,6 +3,7 @@ import HeroSection from '@/components/HeroSection';
 import PainPoints from '@/components/PainPoints';
 import HowItWorks from '@/components/HowItWorks';
 import Benefits from '@/components/Benefits';
+import NewsletterShowcase from '@/components/NewsletterShowcase';
 import Testimonials from '@/components/Testimonials';
 import PricingTable from '@/components/PricingTable';
 import FAQ from '@/components/FAQ';
@@ -29,7 +30,10 @@ export default function HomePage() {
         {/* 4. Avantages - Pourquoi nous */}
         <Benefits />
 
-        {/* 5. Preuve sociale - Témoignages */}
+        {/* 5. Exemples de newsletters */}
+        <NewsletterShowcase />
+
+        {/* 6. Preuve sociale - Témoignages */}
         <Testimonials />
 
         {/* 6. Tarifs - Offres claires */}

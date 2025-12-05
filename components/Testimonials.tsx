@@ -204,13 +204,12 @@ export default function Testimonials() {
     },
   ];
 
-const stats: Stat[] = [
-  { value: "2 847", label: "Lecteurs réguliers", subtext: "ce mois-ci" },
-  { value: "98%", label: "Taux de renouvellement de l'abonnement", subtext: "" },
-  { value: "4.6/5", label: "Note moyenne", subtext: "" },
-  { value: "6 min", label: "Temps de lecture", subtext: "en moyenne" },
-];
-
+  const stats: Stat[] = [
+    { value: "2 847", label: "Lecteurs réguliers", subtext: "ce mois-ci" },
+    { value: "98%", label: "Taux de renouvellement de l'abonnement", subtext: "" },
+    { value: "4.6/5", label: "Note moyenne", subtext: "" },
+    { value: "6 min", label: "Temps de lecture", subtext: "en moyenne" },
+  ];
 
   const ratingBreakdown: RatingBreakdownItem[] = [
     { stars: 5, percentage: 68 },
