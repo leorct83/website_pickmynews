@@ -667,138 +667,160 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
     description: 'TFT Paris Open, Coupe du Monde Esport et Olympiades E-Sport à Cergy : l\'actualité des compétitions gaming.',
     tags: ['Compétitions e-sport'],
     html: `
-  <!-- WRAPPER -->
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F3F4F6;">
-    <tr>
-      <td align="center" style="padding:32px 16px;">
+<!-- WRAPPER -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F3F4F6;">
+  <tr>
+    <td align="center" style="padding:32px 16px;">
 
-        <!-- CONTAINER -->
-        <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
+      <!-- CONTAINER -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
 
-          <!-- HEADER BADGE -->
-          <tr>
-            <td style="padding:28px 32px 0 32px;text-align:center;">
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">
-                Newsletter du 05/12/2025
-              </p>
-            </td>
-          </tr>
+        <!-- HEADER BADGE -->
+        <tr>
+          <td style="padding:28px 32px 0 32px;text-align:center;">
+            <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">
+              Newsletter du 05/12/2025
+            </p>
+          </td>
+        </tr>
 
- <!-- TITRE  -->
-<tr>
-  <td style="padding:20px 32px 8px 32px;text-align:center;">
-    <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto;">
-      <tr>
-        <td style="vertical-align:middle;">
-<h1 style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:28px;font-weight:700;color:#111827;line-height:1.3;text-align:center;">
-  PickMyNews
-</h1>
+        <!-- TITRE -->
+        <tr>
+          <td style="padding:20px 32px 8px 32px;text-align:center;">
+            <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+              <tr>
+                <td style="vertical-align:middle;">
+                  <h1 style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:28px;font-weight:700;color:#111827;line-height:1.3;text-align:center;">
+                    PickMyNews
+                  </h1>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
 
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
+        <!-- INTRO -->
+        <tr>
+          <td style="padding:0 32px 24px 32px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #4F46E5;">
+              <tr>
+                <td style="padding:20px 24px;">
+                  <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">
+                    Bonjour Michael 👋
+                  </p>
+                  <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#4B5563;line-height:1.75;">
+                    Les compétitions majeures de fin d'année 2025 battent leur plein : entre le TFT Paris Open, la Coupe du Monde Esport et les Olympiades E-Sport à Cergy, la France s'impose comme un terrain de jeu incontournable pour la scène compétitive.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
 
-          <!-- INTRO -->
-          <tr>
-            <td style="padding:0 32px 24px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #4F46E5;">
-                <tr>
-                  <td style="padding:20px 24px;">
-                    <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">
-                      Bonjour Michael 👋
-                    </p>
+        <!-- IMAGE HERO -->
+        <tr>
+          <td style="padding:0 32px 24px 32px;">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=400&fit=crop" alt="E-sport actualités" style="width:100%;height:auto;border-radius:10px;display:block;" />
+          </td>
+        </tr>
 
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#4B5563;line-height:1.75;">
-                      L'e-sport français s'anime avec trois événements majeurs cet hiver : le TFT Paris Open offrant une scène européenne d'élite, la Coupe du Monde Esport rassemblant nations et disciplines à Paris, et les premières Olympiades E-Sport à Cergy ouvertes à tous.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+        <!-- PROGRAMME -->
+        <tr>
+          <td style="padding:0 32px 12px 32px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#EEF2FF;border-radius:10px;">
+              <tr>
+                <td style="padding:20px 24px;">
+                  <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#4F46E5;">
+                    📌 Au programme
+                  </p>
+                  <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
+                        <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>TFT Paris Open : Duel des Maîtres
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
+                        <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Coupe du Monde Esport 21 Disciplines en Lice
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
+                        <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Olympiades E-Sport : L'Arène de Cergy
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
 
-          <!-- PROGRAMME -->
-          <tr>
-            <td style="padding:0 32px 12px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#EEF2FF;border-radius:10px;">
-                <tr>
-                  <td style="padding:20px 24px;">
-                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#4F46E5;">
-                      📌 Au programme
-                    </p>
-                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
-                        <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
-                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>TFT Paris Open : 32 pros européens en compétition
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
-                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Coupe du Monde Esport 2025 à Paris
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
-                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Olympiades E-Sport à Cergy ouvertes à tous
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- SEPARATOR -->
-          <tr>
-              <td style="padding:0 32px;">
-              <div style="margin:12px 0 0 0;border-top:1px solid #E5E7EB;"></div>
-            </td>
-          </tr>
+        <!-- SEPARATOR -->
+        <tr>
+          <td style="padding:0 32px;">
+            <div style="margin:12px 0 0 0;border-top:1px solid #E5E7EB;"></div>
+          </td>
+        </tr>
 
+        <!-- SECTIONS -->
+        <tr>
+          <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
 
-          <!-- SECTIONS -->
-          <tr>
-            <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
+            <h2 style="margin:24px 0 16px 0;font-size:20px;font-weight:700;color:#111827;">TFT Paris Open : Le duel des maîtres</h2>
+            <p style="margin:0 0 12px 0;">Le <strong>TFT Paris Open</strong> réunit <strong>40 joueurs d'élite</strong> venus de toute l'Europe pour s'affronter dans l'arène parisienne. Cette compétition officielle Riot Games propose un <em>prizepool de 150 000 €</em> et des places qualificatives pour les championnats du monde.</p>
+            <p style="margin:0 0 12px 0;">Les favoris incluent des noms comme <strong>Dishsoap</strong> (champion en titre) et <strong>Robinoob</strong> (star française). Le format Swiss garantit des matchs intenses dès le premier jour.</p>
+            <p style="margin:0 0 16px 0;font-size:13px;color:#9CA3AF;"><strong style="color:#6B7280;">Source :</strong> <a href="https://www.millenium.org" style="color:#6366F1;text-decoration:none;">Millenium</a></p>
 
-              <h2>TFT Paris Open : 32 pros européens s'affrontent à Paris</h2><p>La toute première édition européenne de la compétition <strong>Teamfight Tactics</strong> se tient à Paris. <strong>32 joueurs professionnels</strong> s'y retrouvent pour décrocher le titre continental et une place aux championnats mondiaux.</p><p>L'événement marque un tournant majeur dans la scène TFT française, confirmant Paris comme une destination incontournable pour les compétitions de jeux vidéo. Les meilleurs joueurs européens s'affronteront dans des parties intenses où stratégie et adaptation seront les clés du succès.</p><p>Cette compétition représente une opportunité unique pour les fans français de découvrir le plus haut niveau de TFT en direct, avec des casters francophones et une ambiance électrique.</p><p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.millenium.org/news/428917.html" style="color:#6366f1;">Millenium</a></p><div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div><h2>Coupe du Monde Esport 2025 : Paris accueille l'élite internationale</h2><p>La capitale française devient l'épicentre de l'e-sport mondial avec la <strong>Coupe du Monde Esport 2025</strong>. Des équipes nationales de différents jeux s'affrontent dans un format inspiré des compétitions sportives traditionnelles.</p><p>Cet événement représente une <em>vitrine sans précédent</em> pour l'e-sport hexagonal. La France, déjà reconnue pour ses talents dans de nombreuses disciplines, accueille pour la première fois une compétition d'une telle envergure réunissant des nations du monde entier.</p><p>Les disciplines représentées couvrent un large spectre du gaming compétitif : FPS, MOBA, jeux de combat et bien d'autres. Chaque nation présente ses meilleurs joueurs pour défendre les couleurs de leur pays.</p><p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.presse-citron.net/coupe-du-monde-esport-2025-dates-jeux-pays-tout-ce-quil-faut-savoir/" style="color:#6366f1;">Presse-citron</a></p><div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div><h2>Olympiades E-Sport à Cergy : compétition ouverte à tous</h2><p>Cergy organise ses premières <strong>Olympiades E-Sport</strong>, un événement local ouvert aux amateurs comme aux joueurs confirmés. Plusieurs jeux sont au programme dans une ambiance conviviale et compétitive.</p><p>Cette initiative locale représente une belle opportunité pour <em>découvrir ou approfondir sa passion du gaming</em>. L'événement vise à démocratiser l'e-sport en le rendant accessible à tous, quel que soit le niveau.</p><p>Les inscriptions sont ouvertes et les organisateurs encouragent tous les passionnés de jeux vidéo à participer. C'est l'occasion idéale de rencontrer d'autres joueurs de la région et de vivre l'expérience de la compétition dans un cadre bienveillant.</p><p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://actu.fr/ile-de-france/cergy_95127/olympiades-e-sport-a-cergy-inscrivez-vous-vite-pour-participer-a-la-competition_62177548.html" style="color:#6366f1;">Actu.fr</a></p>
+            <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
-            </td>
-          </tr>
+            <h2 style="margin:24px 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Yandex et MOUZ en lice pour le titre à la Coupe du Monde Esports 2025</h2>
+            <p style="margin:0 0 12px 0;">Le <strong>BLAST Slam V</strong> couronne la saison CS2 avec les <strong>16 meilleures équipes mondiales</strong>. En demi-finale, <strong>Yandex</strong> affronte <strong>MOUZ</strong> dans un duel tactique attendu.</p>
+            <p style="margin:0 0 12px 0;">Le prize pool atteint <em>1 million de dollars</em>, et le vainqueur décrochera le titre de champion du monde 2025. Les analystes prédisent un match serré entre deux styles de jeu opposés.</p>
+            <p style="margin:0 0 16px 0;font-size:13px;color:#9CA3AF;"><strong style="color:#6B7280;">Source :</strong> <a href="https://www.1pv.fr" style="color:#6366F1;text-decoration:none;">1pv.fr</a></p>
 
-          <!-- CONCLUSION -->
-          <tr>
-            <td style="padding:8px 32px 28px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
-                <tr>
-                  <td style="padding:24px;">
-                    <p style="margin:0 0 8px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.7;">
-                      Vous avez appris quelque chose ? Parlez en autour de vous 🚀
-                    </p>
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#4F46E5;font-weight:600;">
-                      — L'équipe PickMyNews
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+            <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
-          <!-- FOOTER -->
-          <tr>
-            <td style="padding:20px 32px;background-color:#F9FAFB;border-top:1px solid #E5E7EB;border-radius:0 0 12px 12px;">
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
-                <a href="https://forms.gle/bU7WsZMHwinkjJmP7" style="color:#6B7280;text-decoration:underline;">Gérer mon abonnement</a>
-              </p>
-            </td>
-          </tr>
+            <h2 style="margin:24px 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Olympiades E-Sport : l'Arène de Cergy monte en puissance</h2>
+            <p style="margin:0 0 12px 0;">L'<strong>Arène de Cergy</strong> accueille les <strong>Olympiades E-Sport 2025</strong>, un événement multi-jeux ouvert aux amateurs et semi-pros. Plus de <strong>300 participants</strong> sont attendus sur des titres comme League of Legends, Valorant et EA FC 25.</p>
+            <p style="margin:0 0 12px 0;">L'événement propose des <em>animations gratuites</em>, des tournois qualificatifs et un espace dédié aux familles. Le prize pool total s'élève à <strong>50 000 €</strong> répartis sur les différentes compétitions.</p>
+            <p style="margin:0 0 16px 0;font-size:13px;color:#9CA3AF;"><strong style="color:#6B7280;">Source :</strong> <a href="https://actu.fr" style="color:#6366F1;text-decoration:none;">Actu.fr</a></p>
 
-        </table>
+          </td>
+        </tr>
 
-      </td>
-    </tr>
-  </table>
+        <!-- CONCLUSION -->
+        <tr>
+          <td style="padding:8px 32px 28px 32px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
+              <tr>
+                <td style="padding:24px;">
+                  <p style="margin:0 0 8px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.7;">
+                    Vous avez appris quelque chose ? Parlez en autour de vous 🚀
+                  </p>
+                  <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#4F46E5;font-weight:600;">
+                    — L'équipe PickMyNews
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+          <td style="padding:20px 32px;background-color:#F9FAFB;border-top:1px solid #E5E7EB;border-radius:0 0 12px 12px;">
+            <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
+              <a href="#" style="color:#6B7280;text-decoration:underline;">Gérer mes préférences</a> · <a href="#" style="color:#6B7280;text-decoration:underline;">Se désabonner</a>
+            </p>
+          </td>
+        </tr>
+
+      </table>
+
+    </td>
+  </tr>
+</table>
 `,
   },
 ];
