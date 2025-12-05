@@ -857,9 +857,6 @@ export default function NewsletterShowcase() {
 
   return (
     <section id="exemples" className="py-24 px-4 bg-white scroll-mt-nav relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-amber-100/40 to-transparent rounded-tr-full" />
-
       <div className="section-container relative z-10">
         {/* Section header */}
         <div className="text-center mb-16">
