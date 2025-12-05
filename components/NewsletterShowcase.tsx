@@ -659,6 +659,156 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
   </table>
 `,
   },
+  // ===== NEWSLETTER 5 - E-SPORT =====
+  {
+    id: 'newsletter-5',
+    title: 'Championnat 2025 : Paris et Cergy en pleine effervescence e-sport',
+    date: '05 décembre 2025',
+    description: 'TFT Paris Open, Coupe du Monde Esport et Olympiades E-Sport à Cergy : l\'actualité des compétitions gaming.',
+    tags: ['Compétitions e-sport'],
+    html: `
+  <table role="presentation" style="width:100%;max-width:640px;margin:0 auto;border-collapse:collapse;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background-color:#FFFFFF;">
+    <tr>
+      <td style="padding:0;">
+
+        <!-- HEADER -->
+        <table role="presentation" style="width:100%;border-collapse:collapse;">
+          <tr>
+            <td style="padding:28px 32px;background:linear-gradient(135deg,#6366F1 0%,#8B5CF6 100%);border-radius:12px 12px 0 0;">
+              <p style="margin:0 0 4px 0;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,0.85);font-weight:600;">
+                Compétitions e-sport
+              </p>
+              <h1 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF;line-height:1.25;">
+                Championnat 2025 : Paris et Cergy en pleine effervescence e-sport
+              </h1>
+            </td>
+          </tr>
+        </table>
+
+        <!-- INTRO -->
+        <table role="presentation" style="width:100%;border-collapse:collapse;">
+          <tr>
+            <td style="padding:28px 32px 20px 32px;">
+              <p style="margin:0;font-size:16px;line-height:1.7;color:#374151;">
+                Bonjour Michael 👋
+              </p>
+              <p style="margin:14px 0 0 0;font-size:16px;line-height:1.7;color:#374151;">
+                L'e-sport français s'anime avec trois événements majeurs cet hiver : le TFT Paris Open offrant une scène européenne d'élite, la Coupe du Monde Esport rassemblant nations et disciplines à Paris, et les premières Olympiades E-Sport à Cergy ouvertes à tous. Découvrez notre sélection.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- ARTICLE 1 -->
+        <table role="presentation" style="width:100%;border-collapse:collapse;">
+          <tr>
+            <td style="padding:0 32px 28px 32px;">
+              <table role="presentation" style="width:100%;border-collapse:collapse;background:#F9FAFB;border-radius:12px;overflow:hidden;">
+                <tr>
+                  <td style="padding:24px;">
+                    <p style="margin:0 0 8px 0;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#6366F1;font-weight:700;">
+                      Compétition internationale
+                    </p>
+                    <h2 style="margin:0 0 12px 0;font-size:19px;font-weight:700;color:#111827;line-height:1.35;">
+                      TFT Paris Open : 32 pros européens s'affrontent à Paris
+                    </h2>
+                    <p style="margin:0 0 16px 0;font-size:15px;line-height:1.65;color:#4B5563;">
+                      La toute première édition européenne de la compétition Teamfight Tactics se tient à Paris. 32 joueurs professionnels s'y retrouvent pour décrocher le titre continental et une place aux championnats mondiaux. L'événement marque un tournant dans la scène TFT française.
+                    </p>
+                    <table role="presentation" style="border-collapse:collapse;">
+                      <tr>
+                        <td style="background:linear-gradient(135deg,#6366F1 0%,#8B5CF6 100%);border-radius:8px;">
+                          <a href="https://www.millenium.org/news/428917.html" style="display:inline-block;padding:12px 22px;font-size:14px;font-weight:600;color:#FFFFFF;text-decoration:none;">
+                            Lire l'article →
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!-- ARTICLE 2 -->
+        <table role="presentation" style="width:100%;border-collapse:collapse;">
+          <tr>
+            <td style="padding:0 32px 28px 32px;">
+              <table role="presentation" style="width:100%;border-collapse:collapse;background:#F9FAFB;border-radius:12px;overflow:hidden;">
+                <tr>
+                  <td style="padding:24px;">
+                    <p style="margin:0 0 8px 0;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#6366F1;font-weight:700;">
+                      Événement mondial
+                    </p>
+                    <h2 style="margin:0 0 12px 0;font-size:19px;font-weight:700;color:#111827;line-height:1.35;">
+                      Coupe du Monde Esport 2025 : Paris accueille l'élite internationale
+                    </h2>
+                    <p style="margin:0 0 16px 0;font-size:15px;line-height:1.65;color:#4B5563;">
+                      La capitale française devient l'épicentre de l'e-sport mondial avec la Coupe du Monde Esport 2025. Des équipes nationales de différents jeux s'affrontent dans un format inspiré des compétitions sportives traditionnelles. Une vitrine sans précédent pour l'e-sport hexagonal.
+                    </p>
+                    <table role="presentation" style="border-collapse:collapse;">
+                      <tr>
+                        <td style="background:linear-gradient(135deg,#6366F1 0%,#8B5CF6 100%);border-radius:8px;">
+                          <a href="https://www.presse-citron.net/coupe-du-monde-esport-2025-dates-jeux-pays-tout-ce-quil-faut-savoir/" style="display:inline-block;padding:12px 22px;font-size:14px;font-weight:600;color:#FFFFFF;text-decoration:none;">
+                            Lire l'article →
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!-- ARTICLE 3 -->
+        <table role="presentation" style="width:100%;border-collapse:collapse;">
+          <tr>
+            <td style="padding:0 32px 28px 32px;">
+              <table role="presentation" style="width:100%;border-collapse:collapse;background:#F9FAFB;border-radius:12px;overflow:hidden;">
+                <tr>
+                  <td style="padding:24px;">
+                    <p style="margin:0 0 8px 0;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#6366F1;font-weight:700;">
+                      Initiative locale
+                    </p>
+                    <h2 style="margin:0 0 12px 0;font-size:19px;font-weight:700;color:#111827;line-height:1.35;">
+                      Olympiades E-Sport à Cergy : compétition ouverte à tous
+                    </h2>
+                    <p style="margin:0 0 16px 0;font-size:15px;line-height:1.65;color:#4B5563;">
+                      Cergy organise ses premières Olympiades E-Sport, un événement local ouvert aux amateurs comme aux joueurs confirmés. Plusieurs jeux sont au programme dans une ambiance conviviale et compétitive. Une belle opportunité pour découvrir ou approfondir sa passion du gaming.
+                    </p>
+                    <table role="presentation" style="border-collapse:collapse;">
+                      <tr>
+                        <td style="background:linear-gradient(135deg,#6366F1 0%,#8B5CF6 100%);border-radius:8px;">
+                          <a href="https://actu.fr/ile-de-france/cergy_95127/olympiades-e-sport-a-cergy-inscrivez-vous-vite-pour-participer-a-la-competition_62177548.html" style="display:inline-block;padding:12px 22px;font-size:14px;font-weight:600;color:#FFFFFF;text-decoration:none;">
+                            Lire l'article →
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!-- FOOTER -->
+        <tr>
+          <td style="padding:20px 32px;background-color:#F9FAFB;border-top:1px solid #E5E7EB;border-radius:0 0 12px 12px;">
+            <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
+              <a href="https://forms.gle/bU7WsZMHwinkjJmP7" style="color:#6B7280;text-decoration:underline;">Gérer mon abonnement</a>
+            </p>
+          </td>
+        </tr>
+
+      </td>
+    </tr>
+  </table>
+`,
+  },
 ];
 
 // =============================================================================
