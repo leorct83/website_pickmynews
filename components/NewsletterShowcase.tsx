@@ -138,7 +138,7 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
 
               <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Zoo d'Aïn Sebaâ rouvre ses portes le 22 décembre</h2>
 
-<p style="margin:0 0 12px 0;">Le zoo d'Aïn Sebaâ à Casablanca ouvre enfin après plusieurs années de fermetures et de réhabilitation. La date officielle d'ouverture est fixée au <strong>22 décembre 2023</strong>.</p>
+<p style="margin:0 0 12px 0;">Le zoo d'Aïn Sebaâ à Casablanca ouvre enfin après plusieurs années de fermetures et de réhabilitation. L'ouverture officielle a eu lieu le <strong>22 novembre 2025</strong>.</p>
 
 <p style="margin:0 0 12px 0;">Les tarifs d'accès validés par le <em>Conseil de la ville</em> sont de <strong>80 DH</strong> pour les adultes et <strong>50 DH</strong> pour les enfants. Des formules <em>familiales</em> et <em>de groupe</em> seront également proposées pour faciliter la visite en groupe.</p>
 
