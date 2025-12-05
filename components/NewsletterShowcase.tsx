@@ -667,60 +667,81 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
     description: 'TFT Paris Open, Coupe du Monde Esport et Olympiades E-Sport à Cergy : l\'actualité des compétitions gaming.',
     tags: ['Compétitions e-sport'],
     html: `
-  <table role="presentation" style="width:100%;max-width:640px;margin:0 auto;border-collapse:collapse;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background-color:#FFFFFF;">
+  <!-- WRAPPER -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F3F4F6;">
     <tr>
-      <td style="padding:0;">
+      <td align="center" style="padding:32px 16px;">
 
-        <!-- HEADER -->
-        <table role="presentation" style="width:100%;border-collapse:collapse;">
-          <tr>
-            <td style="padding:28px 32px;background:linear-gradient(135deg,#6366F1 0%,#8B5CF6 100%);border-radius:12px 12px 0 0;">
-              <p style="margin:0 0 4px 0;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,0.85);font-weight:600;">
-                Compétitions e-sport
-              </p>
-              <h1 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF;line-height:1.25;">
-                Championnat 2025 : Paris et Cergy en pleine effervescence e-sport
-              </h1>
-            </td>
-          </tr>
-        </table>
+        <!-- CONTAINER -->
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
 
-        <!-- INTRO -->
-        <table role="presentation" style="width:100%;border-collapse:collapse;">
+          <!-- HEADER BADGE -->
           <tr>
-            <td style="padding:28px 32px 20px 32px;">
-              <p style="margin:0;font-size:16px;line-height:1.7;color:#374151;">
-                Bonjour Michael 👋
-              </p>
-              <p style="margin:14px 0 0 0;font-size:16px;line-height:1.7;color:#374151;">
-                L'e-sport français s'anime avec trois événements majeurs cet hiver : le TFT Paris Open offrant une scène européenne d'élite, la Coupe du Monde Esport rassemblant nations et disciplines à Paris, et les premières Olympiades E-Sport à Cergy ouvertes à tous. Découvrez notre sélection.
+            <td style="padding:28px 32px 0 32px;text-align:center;">
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">
+                Newsletter du 05/12/2025
               </p>
             </td>
           </tr>
-        </table>
 
-        <!-- ARTICLE 1 -->
-        <table role="presentation" style="width:100%;border-collapse:collapse;">
+ <!-- TITRE  -->
+<tr>
+  <td style="padding:20px 32px 8px 32px;text-align:center;">
+    <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+      <tr>
+        <td style="vertical-align:middle;">
+<h1 style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:28px;font-weight:700;color:#111827;line-height:1.3;text-align:center;">
+  PickMyNews
+</h1>
+
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+          <!-- INTRO -->
           <tr>
-            <td style="padding:0 32px 28px 32px;">
-              <table role="presentation" style="width:100%;border-collapse:collapse;background:#F9FAFB;border-radius:12px;overflow:hidden;">
+            <td style="padding:0 32px 24px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #4F46E5;">
                 <tr>
-                  <td style="padding:24px;">
-                    <p style="margin:0 0 8px 0;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#6366F1;font-weight:700;">
-                      Compétition internationale
+                  <td style="padding:20px 24px;">
+                    <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">
+                      Bonjour Michael 👋
                     </p>
-                    <h2 style="margin:0 0 12px 0;font-size:19px;font-weight:700;color:#111827;line-height:1.35;">
-                      TFT Paris Open : 32 pros européens s'affrontent à Paris
-                    </h2>
-                    <p style="margin:0 0 16px 0;font-size:15px;line-height:1.65;color:#4B5563;">
-                      La toute première édition européenne de la compétition Teamfight Tactics se tient à Paris. 32 joueurs professionnels s'y retrouvent pour décrocher le titre continental et une place aux championnats mondiaux. L'événement marque un tournant dans la scène TFT française.
+
+                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#4B5563;line-height:1.75;">
+                      L'e-sport français s'anime avec trois événements majeurs cet hiver : le TFT Paris Open offrant une scène européenne d'élite, la Coupe du Monde Esport rassemblant nations et disciplines à Paris, et les premières Olympiades E-Sport à Cergy ouvertes à tous.
                     </p>
-                    <table role="presentation" style="border-collapse:collapse;">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- PROGRAMME -->
+          <tr>
+            <td style="padding:0 32px 12px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#EEF2FF;border-radius:10px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#4F46E5;">
+                      📌 Au programme
+                    </p>
+                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
-                        <td style="background:linear-gradient(135deg,#6366F1 0%,#8B5CF6 100%);border-radius:8px;">
-                          <a href="https://www.millenium.org/news/428917.html" style="display:inline-block;padding:12px 22px;font-size:14px;font-weight:600;color:#FFFFFF;text-decoration:none;">
-                            Lire l'article →
-                          </a>
+                        <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
+                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>TFT Paris Open : 32 pros européens en compétition
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
+                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Coupe du Monde Esport 2025 à Paris
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
+                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Olympiades E-Sport à Cergy ouvertes à tous
                         </td>
                       </tr>
                     </table>
@@ -729,80 +750,51 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
               </table>
             </td>
           </tr>
-        </table>
-
-        <!-- ARTICLE 2 -->
-        <table role="presentation" style="width:100%;border-collapse:collapse;">
+          <!-- SEPARATOR -->
           <tr>
-            <td style="padding:0 32px 28px 32px;">
-              <table role="presentation" style="width:100%;border-collapse:collapse;background:#F9FAFB;border-radius:12px;overflow:hidden;">
+              <td style="padding:0 32px;">
+              <div style="margin:12px 0 0 0;border-top:1px solid #E5E7EB;"></div>
+            </td>
+          </tr>
+
+
+          <!-- SECTIONS -->
+          <tr>
+            <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
+
+              <h2>TFT Paris Open : 32 pros européens s'affrontent à Paris</h2><p>La toute première édition européenne de la compétition <strong>Teamfight Tactics</strong> se tient à Paris. <strong>32 joueurs professionnels</strong> s'y retrouvent pour décrocher le titre continental et une place aux championnats mondiaux.</p><p>L'événement marque un tournant majeur dans la scène TFT française, confirmant Paris comme une destination incontournable pour les compétitions de jeux vidéo. Les meilleurs joueurs européens s'affronteront dans des parties intenses où stratégie et adaptation seront les clés du succès.</p><p>Cette compétition représente une opportunité unique pour les fans français de découvrir le plus haut niveau de TFT en direct, avec des casters francophones et une ambiance électrique.</p><p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.millenium.org/news/428917.html" style="color:#6366f1;">Millenium</a></p><div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div><h2>Coupe du Monde Esport 2025 : Paris accueille l'élite internationale</h2><p>La capitale française devient l'épicentre de l'e-sport mondial avec la <strong>Coupe du Monde Esport 2025</strong>. Des équipes nationales de différents jeux s'affrontent dans un format inspiré des compétitions sportives traditionnelles.</p><p>Cet événement représente une <em>vitrine sans précédent</em> pour l'e-sport hexagonal. La France, déjà reconnue pour ses talents dans de nombreuses disciplines, accueille pour la première fois une compétition d'une telle envergure réunissant des nations du monde entier.</p><p>Les disciplines représentées couvrent un large spectre du gaming compétitif : FPS, MOBA, jeux de combat et bien d'autres. Chaque nation présente ses meilleurs joueurs pour défendre les couleurs de leur pays.</p><p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.presse-citron.net/coupe-du-monde-esport-2025-dates-jeux-pays-tout-ce-quil-faut-savoir/" style="color:#6366f1;">Presse-citron</a></p><div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div><h2>Olympiades E-Sport à Cergy : compétition ouverte à tous</h2><p>Cergy organise ses premières <strong>Olympiades E-Sport</strong>, un événement local ouvert aux amateurs comme aux joueurs confirmés. Plusieurs jeux sont au programme dans une ambiance conviviale et compétitive.</p><p>Cette initiative locale représente une belle opportunité pour <em>découvrir ou approfondir sa passion du gaming</em>. L'événement vise à démocratiser l'e-sport en le rendant accessible à tous, quel que soit le niveau.</p><p>Les inscriptions sont ouvertes et les organisateurs encouragent tous les passionnés de jeux vidéo à participer. C'est l'occasion idéale de rencontrer d'autres joueurs de la région et de vivre l'expérience de la compétition dans un cadre bienveillant.</p><p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://actu.fr/ile-de-france/cergy_95127/olympiades-e-sport-a-cergy-inscrivez-vous-vite-pour-participer-a-la-competition_62177548.html" style="color:#6366f1;">Actu.fr</a></p>
+
+            </td>
+          </tr>
+
+          <!-- CONCLUSION -->
+          <tr>
+            <td style="padding:8px 32px 28px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
                 <tr>
                   <td style="padding:24px;">
-                    <p style="margin:0 0 8px 0;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#6366F1;font-weight:700;">
-                      Événement mondial
+                    <p style="margin:0 0 8px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.7;">
+                      Vous avez appris quelque chose ? Parlez en autour de vous 🚀
                     </p>
-                    <h2 style="margin:0 0 12px 0;font-size:19px;font-weight:700;color:#111827;line-height:1.35;">
-                      Coupe du Monde Esport 2025 : Paris accueille l'élite internationale
-                    </h2>
-                    <p style="margin:0 0 16px 0;font-size:15px;line-height:1.65;color:#4B5563;">
-                      La capitale française devient l'épicentre de l'e-sport mondial avec la Coupe du Monde Esport 2025. Des équipes nationales de différents jeux s'affrontent dans un format inspiré des compétitions sportives traditionnelles. Une vitrine sans précédent pour l'e-sport hexagonal.
+                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#4F46E5;font-weight:600;">
+                      — L'équipe PickMyNews
                     </p>
-                    <table role="presentation" style="border-collapse:collapse;">
-                      <tr>
-                        <td style="background:linear-gradient(135deg,#6366F1 0%,#8B5CF6 100%);border-radius:8px;">
-                          <a href="https://www.presse-citron.net/coupe-du-monde-esport-2025-dates-jeux-pays-tout-ce-quil-faut-savoir/" style="display:inline-block;padding:12px 22px;font-size:14px;font-weight:600;color:#FFFFFF;text-decoration:none;">
-                            Lire l'article →
-                          </a>
-                        </td>
-                      </tr>
-                    </table>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
-        </table>
 
-        <!-- ARTICLE 3 -->
-        <table role="presentation" style="width:100%;border-collapse:collapse;">
+          <!-- FOOTER -->
           <tr>
-            <td style="padding:0 32px 28px 32px;">
-              <table role="presentation" style="width:100%;border-collapse:collapse;background:#F9FAFB;border-radius:12px;overflow:hidden;">
-                <tr>
-                  <td style="padding:24px;">
-                    <p style="margin:0 0 8px 0;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#6366F1;font-weight:700;">
-                      Initiative locale
-                    </p>
-                    <h2 style="margin:0 0 12px 0;font-size:19px;font-weight:700;color:#111827;line-height:1.35;">
-                      Olympiades E-Sport à Cergy : compétition ouverte à tous
-                    </h2>
-                    <p style="margin:0 0 16px 0;font-size:15px;line-height:1.65;color:#4B5563;">
-                      Cergy organise ses premières Olympiades E-Sport, un événement local ouvert aux amateurs comme aux joueurs confirmés. Plusieurs jeux sont au programme dans une ambiance conviviale et compétitive. Une belle opportunité pour découvrir ou approfondir sa passion du gaming.
-                    </p>
-                    <table role="presentation" style="border-collapse:collapse;">
-                      <tr>
-                        <td style="background:linear-gradient(135deg,#6366F1 0%,#8B5CF6 100%);border-radius:8px;">
-                          <a href="https://actu.fr/ile-de-france/cergy_95127/olympiades-e-sport-a-cergy-inscrivez-vous-vite-pour-participer-a-la-competition_62177548.html" style="display:inline-block;padding:12px 22px;font-size:14px;font-weight:600;color:#FFFFFF;text-decoration:none;">
-                            Lire l'article →
-                          </a>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
+            <td style="padding:20px 32px;background-color:#F9FAFB;border-top:1px solid #E5E7EB;border-radius:0 0 12px 12px;">
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
+                <a href="https://forms.gle/bU7WsZMHwinkjJmP7" style="color:#6B7280;text-decoration:underline;">Gérer mon abonnement</a>
+              </p>
             </td>
           </tr>
-        </table>
 
-        <!-- FOOTER -->
-        <tr>
-          <td style="padding:20px 32px;background-color:#F9FAFB;border-top:1px solid #E5E7EB;border-radius:0 0 12px 12px;">
-            <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
-              <a href="https://forms.gle/bU7WsZMHwinkjJmP7" style="color:#6B7280;text-decoration:underline;">Gérer mon abonnement</a>
-            </p>
-          </td>
-        </tr>
+        </table>
 
       </td>
     </tr>
