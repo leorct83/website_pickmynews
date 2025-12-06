@@ -15,6 +15,7 @@ export default function Footer() {
     legal: [
       { label: 'Mentions légales', href: '/legal' },
       { label: 'CGU', href: '/terms' },
+      { label: 'CGV', href: '/cgv' },
       { label: 'Confidentialité', href: '/privacy' },
     ],
   };
