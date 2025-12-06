@@ -8,7 +8,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: 'Puis-je vraiment annuler à tout moment ?',
-      answer: 'Oui, sans conditions. Un simple clic suffit. Pas de questions, pas de frais cachés, pas de procédure compliquée.',
+      answer: 'Oui, sans conditions. Un simple clic suffit. Pas de questions, pas de frais cachés, pas de procédure compliquée.Vous pouvez le faire simplement sur https://forms.gle/W2Kqw2PwfvF6KuFt9',
     },
     {
       question: 'Comment choisir mon thème de newsletter ?',
@@ -20,7 +20,7 @@ export default function FAQ() {
     },
     {
       question: 'Puis-je modifier mes préférences après inscription ?',
-      answer: 'Absolument. Vous pouvez changer de thème, ajuster la fréquence d\'envoi, modifier l\'horaire de réception, ou même créer plusieurs newsletters sur des sujets différents. Pour toute difficulté, notre support est là pour vous aider.',
+      answer: 'Absolument. Vous pouvez changer de thème, ajuster la fréquence d\'envoi, modifier l\'horaire de réception, ou même créer plusieurs newsletters sur des sujets différents.Complétez simplement ce formulaire. Pour toute difficulté, notre support est là pour vous aider.',
     },
     {
       question: 'Et si j\'ai besoin d\'aide ?',
