@@ -1,14 +1,21 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, ReactNode } from 'react';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const faqs = [
+  const faqs: { question: string; answer: ReactNode }[] = [
     {
       question: 'Puis-je vraiment annuler à tout moment ?',
-      answer: 'Oui, sans conditions. Un simple clic suffit. Pas de questions, pas de frais cachés, pas de procédure compliquée.Vous pouvez le faire simplement sur https://forms.gle/W2Kqw2PwfvF6KuFt9',
+      answer: (
+        <>
+          Oui, sans conditions. Un simple clic suffit. Pas de questions, pas de frais cachés, pas de procédure compliquée. Vous pouvez le faire simplement via{' '}
+          <a href="https://forms.gle/W2Kqw2PwfvF6KuFt9" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700 underline">
+            ce formulaire
+          </a>.
+        </>
+      ),
     },
     {
       question: 'Comment choisir mon thème de newsletter ?',
@@ -20,11 +27,25 @@ export default function FAQ() {
     },
     {
       question: 'Puis-je modifier mes préférences après inscription ?',
-      answer: 'Absolument. Vous pouvez changer de thème, ajuster la fréquence d\'envoi, modifier l\'horaire de réception, ou même créer plusieurs newsletters sur des sujets différents.Complétez simplement ce formulaire. Pour toute difficulté, notre support est là pour vous aider.',
+      answer: (
+        <>
+          Absolument. Vous pouvez changer de thème, ajuster la fréquence d&apos;envoi, modifier l&apos;horaire de réception, ou même créer plusieurs newsletters sur des sujets différents. Complétez simplement{' '}
+          <a href="https://forms.gle/W2Kqw2PwfvF6KuFt9" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700 underline">
+            ce formulaire
+          </a>. Pour toute difficulté, notre support est là pour vous aider.
+        </>
+      ),
     },
     {
       question: 'Et si j\'ai besoin d\'aide ?',
-      answer: 'Notre équipe support répond en moins de 48h par email, envoyez un mail à contact@pickmynews.com .',
+      answer: (
+        <>
+          Notre équipe support répond en moins de 48h par email. Envoyez un mail à{' '}
+          <a href="mailto:contact@pickmynews.com" className="text-amber-600 hover:text-amber-700 underline">
+            contact@pickmynews.com
+          </a>.
+        </>
+      ),
     },
   ];
 
@@ -67,7 +88,7 @@ export default function FAQ() {
                     </svg>
                   </span>
                 </button>
-                
+
                 <div className={`overflow-hidden transition-all duration-300 ${
                   openIndex === index ? 'max-h-96' : 'max-h-0'
                 }`}>
