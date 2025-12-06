@@ -4,19 +4,25 @@ import { useState } from 'react';
 
 type BillingCycle = 'weekly' | 'monthly' | 'annual';
 
+// Utilitaire pour formater les prix en euros (ex: 4,99 €)
+const formatPrice = (price: number): string => {
+  return price.toFixed(2).replace('.', ',') + ' €';
+};
+
 export default function PricingTable() {
   const [billingCycle, setBillingCycle] = useState<BillingCycle>('monthly');
 
   const plans = [
     {
       name: '1x/semaine',
+      newslettersPerWeek: 1, // Nombre de newsletters par semaine
       description: 'Pour rester informé',
       price: { weekly: 1.99, monthly: 4.99, annual: 49.99 },
       features: [
         '1 newsletter par semaine',
         'Thème au choix',
         'Articles sélectionnés',
-      
+
       ],
       limitations: [],
       cta: 'Commencer',
@@ -24,6 +30,7 @@ export default function PricingTable() {
     },
     {
       name: '2x/semaine',
+      newslettersPerWeek: 2,
       description: 'L\'essentiel',
       price: { weekly: 2.99, monthly: 6.49, annual: 59.99 },
       features: [
@@ -38,6 +45,7 @@ export default function PricingTable() {
     },
     {
       name: '5x/semaine',
+      newslettersPerWeek: 5,
       description: 'Le plus populaire',
       price: { weekly: 4.99, monthly: 9.99, annual: 99.99 },
       features: [
@@ -53,13 +61,14 @@ export default function PricingTable() {
     },
     {
       name: '7x/semaine',
+      newslettersPerWeek: 7,
       description: 'Pour les passionnés',
       price: { weekly: 5.99, monthly: 12.99, annual: 129.99 },
       features: [
         'Newsletter quotidienne',
         'Thème au choix',
         'Articles sélectionnés',
-        'Choix des jours et heures d\'envoi',,
+        'Choix des jours et heures d\'envoi',
         'Support prioritaire',
         'Accès anticipé aux nouveautés',
       ],
@@ -82,12 +91,32 @@ export default function PricingTable() {
     return savings;
   };
 
+  // Calcul du prix par semaine selon la périodicité de facturation
+  const getPricePerWeek = (plan: typeof plans[0], cycle: BillingCycle): number => {
+    switch (cycle) {
+      case 'weekly':
+        return plan.price.weekly;
+      case 'monthly':
+        // (prix mensuel × 12 mois) / 52 semaines
+        return (plan.price.monthly * 12) / 52;
+      case 'annual':
+        // prix annuel / 52 semaines
+        return plan.price.annual / 52;
+    }
+  };
+
+  // Calcul du prix par newsletter
+  const getPricePerNewsletter = (plan: typeof plans[0], cycle: BillingCycle): number => {
+    const pricePerWeek = getPricePerWeek(plan, cycle);
+    return pricePerWeek / plan.newslettersPerWeek;
+  };
+
   return (
     <section id="tarifs" className="py-24 px-4 bg-slate-900 scroll-mt-nav relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
-      
+
       <div className="section-container relative z-10">
         {/* Section header */}
         <div className="text-center mb-12">
@@ -188,6 +217,17 @@ export default function PricingTable() {
                     Économisez {getAnnualSavings(plan)}%
                   </p>
                 )}
+
+                {/* Prix par semaine et par newsletter */}
+                <p className={`text-xs mt-2 ${plan.popular ? 'text-slate-500' : 'text-slate-400'}`}>
+                  {billingCycle !== 'weekly' && (
+                    <>≈ {formatPrice(getPricePerWeek(plan, billingCycle))}/sem.</>
+                  )}
+                  {' — '}
+                  <span className={plan.popular ? 'text-amber-600' : 'text-amber-400'}>
+                    {formatPrice(getPricePerNewsletter(plan, billingCycle))}/newsletter
+                  </span>
+                </p>
               </div>
 
               {/* CTA */}
