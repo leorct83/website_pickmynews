@@ -41,12 +41,12 @@ export default function PricingTable() {
       ],
       limitations: [],
       cta: 'Commencer',
-      popular: false,
+      popular: true,
     },
     {
       name: '5x/semaine',
       newslettersPerWeek: 5,
-      description: 'Le plus populaire',
+      description: '',
       price: { weekly: 4.99, monthly: 9.99, annual: 99.99 },
       features: [
         '5 newsletters par semaine',
@@ -57,7 +57,7 @@ export default function PricingTable() {
       ],
       limitations: [],
       cta: 'Commencer',
-      popular: true,
+      popular: false,
     },
     {
       name: '7x/semaine',
