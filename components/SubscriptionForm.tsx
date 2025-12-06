@@ -537,7 +537,7 @@ export default function SubscriptionForm() {
               </div>
             </div>
             <p className="text-sm text-slate-500">
-              Rejoint par <strong className="text-slate-900">2 847 professionnels</strong> ce mois-ci
+              Rejoint par <strong className="text-slate-900">+ 100 professionnels</strong> ce mois-ci
             </p>
           </div>
         </div>

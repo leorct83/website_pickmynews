@@ -4,7 +4,6 @@ import PainPoints from '@/components/PainPoints';
 import HowItWorks from '@/components/HowItWorks';
 import Benefits from '@/components/Benefits';
 import NewsletterShowcase from '@/components/NewsletterShowcase';
-import Testimonials from '@/components/Testimonials';
 import PricingTable from '@/components/PricingTable';
 import FAQ from '@/components/FAQ';
 import SubscriptionForm from '@/components/SubscriptionForm';
@@ -32,9 +31,6 @@ export default function HomePage() {
 
         {/* 5. Exemples de newsletters */}
         <NewsletterShowcase />
-
-        {/* 6. Preuve sociale - Témoignages */}
-        <Testimonials />
 
         {/* 6. Tarifs - Offres claires */}
         <PricingTable />

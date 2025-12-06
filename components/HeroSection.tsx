@@ -16,13 +16,6 @@ export default function HeroSection() {
 
       <div className="section-container relative z-10 pt-32 pb-20">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <div className="fade-in-up inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-slate-200 mb-8">
-            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-            <span className="text-sm font-medium text-slate-600">
-              Déjà 2 847 lecteurs satisfaits
-            </span>
-          </div>
 
           {/* Headline */}
           <h1 className="fade-in-up delay-100 text-5xl md:text-6xl lg:text-7xl text-slate-900 mb-6 text-balance">
