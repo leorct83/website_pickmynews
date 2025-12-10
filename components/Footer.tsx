@@ -123,7 +123,7 @@ export default function Footer() {
           </p>
           <p className="text-slate-500 text-sm flex items-center gap-1">
             {t.rich('madeWith', {
-              heart: () => <span className="text-red-500">♥</span>,
+              heart: (chunks) => <span className="text-red-500">{chunks}</span>,
             })}
           </p>
         </div>

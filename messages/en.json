@@ -203,7 +203,7 @@
     "salesTerms": "Sales terms",
     "privacyShort": "Privacy",
     "copyright": "© {year} PickmyNews. All rights reserved.",
-    "madeWith": "Made with {heart} in France"
+    "madeWith": "Made with <heart>❤️</heart> in France"
   },
   "success": {
     "title": "Thank you for your subscription!",

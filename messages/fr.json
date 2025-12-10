@@ -203,7 +203,7 @@
     "salesTerms": "CGV",
     "privacyShort": "Confidentialité",
     "copyright": "© {year} PickmyNews. Tous droits réservés.",
-    "madeWith": "Fait avec {heart} en France"
+    "madeWith": "Fait avec <heart>❤️</heart> en France"
   },
   "success": {
     "title": "Merci pour votre abonnement !",
