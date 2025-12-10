@@ -35,7 +35,7 @@ export default function FinalCTA() {
           {/* Headline */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl text-white mb-6 text-balance">
             {t.rich('title', {
-              highlight: () => <span className="text-amber-400">{t('titleHighlight')}</span>,
+              highlight: (chunks) => <span className="text-amber-400">{chunks}</span>,
             })}
           </h2>
 

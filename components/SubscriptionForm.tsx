@@ -225,7 +225,7 @@ export default function SubscriptionForm() {
             </p>
             <h2 className="text-4xl md:text-5xl text-slate-900 mb-6 text-balance">
               {t.rich('title', {
-                highlight: () => <span className="text-amber-600">{t('titleHighlight')}</span>,
+                highlight: (chunks) => <span className="text-amber-600">{chunks}</span>,
               })}
             </h2>
             <p className="text-xl text-slate-600">{t('subtitle')}</p>
@@ -421,14 +421,14 @@ export default function SubscriptionForm() {
                   </div>
                   <span className="text-sm text-slate-600 leading-relaxed">
                     {t.rich('legalConsent', {
-                      terms: () => (
+                      terms: (chunks) => (
                         <Link href="/terms" className="text-amber-600 hover:underline">
-                          {t('terms')}
+                          {chunks}
                         </Link>
                       ),
-                      privacy: () => (
+                      privacy: (chunks) => (
                         <Link href="/privacy" className="text-amber-600 hover:underline">
-                          {t('privacy')}
+                          {chunks}
                         </Link>
                       ),
                     })}
@@ -547,7 +547,7 @@ export default function SubscriptionForm() {
             </div>
             <p className="text-sm text-slate-500">
               {t.rich('socialProof', {
-                count: () => <strong className="text-slate-900">{t('socialProofCount')}</strong>,
+                count: (chunks) => <strong className="text-slate-900">{chunks}</strong>,
               })}
             </p>
           </div>
