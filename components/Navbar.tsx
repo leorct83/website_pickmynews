@@ -72,7 +72,12 @@ export default function Navbar() {
               }`}
               title="Français"
             >
-              🇫🇷 <span>FR</span>
+              <svg className="w-4 h-4 rounded-sm overflow-hidden" viewBox="0 0 640 480">
+                <rect width="213.3" height="480" fill="#002654"/>
+                <rect x="213.3" width="213.4" height="480" fill="#fff"/>
+                <rect x="426.7" width="213.3" height="480" fill="#ce1126"/>
+              </svg>
+              <span>FR</span>
             </button>
             <button
               onClick={() => switchLocale('en')}
@@ -83,7 +88,17 @@ export default function Navbar() {
               }`}
               title="English"
             >
-              🇺🇸 <span>EN</span>
+              <svg className="w-4 h-4 rounded-sm overflow-hidden" viewBox="0 0 640 480">
+                <rect width="640" height="480" fill="#bf0a30"/>
+                <rect y="37" width="640" height="37" fill="#fff"/>
+                <rect y="111" width="640" height="37" fill="#fff"/>
+                <rect y="185" width="640" height="37" fill="#fff"/>
+                <rect y="259" width="640" height="37" fill="#fff"/>
+                <rect y="333" width="640" height="37" fill="#fff"/>
+                <rect y="407" width="640" height="37" fill="#fff"/>
+                <rect width="260" height="259" fill="#002868"/>
+              </svg>
+              <span>EN</span>
             </button>
           </div>
 
