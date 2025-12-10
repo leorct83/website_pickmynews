@@ -136,29 +136,43 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
           <tr>
             <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
 
-              <h2>Chergui 2025, laboratoire d'interopérabilité franco-marocaine dans l'Atlas</h2>
-          <p>Le 3 octobre 2025, l'exercice militaire Chergui 2025 a regroupé dans le désert d'Errachidia des unités des Forces armées royales marocaines et de l'armée française. Sur un scénario simulant une agression contre l'intégrité territoriale du Maroc, cet entraînement de trois semaines a challengé la coordination et la capacité d'action conjointe des deux armées.</p>
-          <p>Structuré en deux phases, Chergui a mêlé un Command Post Exercise (CPX) pour la planification et la gestion interarmées, à un Live Exercise (LIVEX) intégrant des manœuvres tactiques combinant forces terrestres et aériennes. Les soldats ont ainsi opéré dans un milieu désertique exigeant, entre reliefs de l'Atlas et conditions climatiques difficiles.</p>
-          <p>Côté matériel, la coopération s'est appuyée sur des moyens emblématiques : chars M1A2 Abrams du Maroc, hélicoptères Tigre, Gazelle et NH90 français, démontrant la complémentarité tactique des deux armées. Plus qu'une simple démonstration, Chergui 2025 cible le renforcement des savoir-faire et une meilleure réponse aux défis sécuritaires du Maghreb et du Sahel.</p>
-          <p>Ce rendez-vous annuel illustre la volonté stratégique de Paris et Rabat de préserver la stabilité régionale, en scrutant particulièrement les enjeux liés à la maîtrise des environnements désertiques. L'exercice confirme une coopération militaire solide et pragmatique, clé dans un contexte international instable.</p>
-          <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> defense.gouv.fr · medias24.com · lecollimateur.ma</p>
+              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Chergui 2025, laboratoire d'interopérabilité franco-marocaine dans l'Atlas</h2>
 
-          <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
+<p style="margin:0 0 12px 0;">Le <strong>3 octobre 2025</strong>, l'exercice militaire <em>Chergui 2025</em> a regroupé dans le désert d'Errachidia des unités des <em>Forces armées royales marocaines</em> et de l'armée française. Sur un scénario simulant une agression contre l'intégrité territoriale du Maroc, cet entraînement de trois semaines a challengé la coordination et la capacité d'action conjointe des deux armées.</p>
 
-          <h2>African Lion 2026 : dernière ligne droite avant le plus grand exercice militaire africain</h2>
-          <p>Du 8 au 12 décembre 2025, la réunion principale de planification de l'exercice African Lion 2026 s'est tenue à Agadir, centrée sur la coordination des phases opérationnelles et logistiques. Programmé du 20 avril au 8 mai 2026 dans les régions d'Agadir, Tan Tan, Taroudant, Kénitra et Ben Guérir, cet exercice annuel réunit les forces armées marocaines et américaines.</p>
-          <p>Plus de 40 000 militaires ont participé aux cinq dernières éditions, faisant de African Lion le plus grand événement militaire en Afrique. L'édition 2026 vise à renforcer l'interopérabilité des armées dans les domaines aérien, terrestre, maritime et des opérations spéciales. L'objectif est aussi d'accroître la préparation opérationnelle pour des interventions combinées et interarmées.</p>
-          <p>Ce partenariat stratégique consolidé s'inscrit dans une dynamique d'approfondissement de la coopération bilatérale entre les États-Unis et le Maroc. Il s'accompagne d'initiatives comme Atlas Handshake, focalisée sur la coopération maritime, témoignant de l'ancrage régional et international accru dans la sécurité et la stabilité de la région.</p>
-          <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> lematin.ma · le360.ma · medias24.com</p>
+<p style="margin:0 0 12px 0;">Structuré en deux phases, Chergui a mêlé un <em>Command Post Exercise</em> (CPX) pour la planification et la gestion interarmées, à un <em>Live Exercise</em> (LIVEX) intégrant des manœuvres tactiques combinant forces terrestres et aériennes. Les soldats ont ainsi opéré dans un milieu désertique exigeant, entre reliefs de l'Atlas et conditions climatiques difficiles.</p>
 
-          <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
+<p style="margin:0 0 12px 0;">Côté matériel, la coopération s'est appuyée sur des moyens emblématiques : chars <strong>M1A2 Abrams</strong> du Maroc, hélicoptères <strong>Tigre</strong>, <strong>Gazelle</strong> et <strong>NH90</strong> français, démontrant la complémentarité tactique des deux armées. Plus qu'une simple démonstration, Chergui 2025 cible le renforcement des savoir-faire et une meilleure réponse aux défis sécuritaires du Maghreb et du Sahel.</p>
 
-          <h2>FAR et AFRICOM unissent leurs forces pour renforcer la sécurité sanitaire en Afrique lors d'APORA 2025</h2>
-          <p>Du 8 au 12 décembre 2025, Rabat a accueilli l'atelier APORA 2025, conduit par les Forces Armées Royales (FAR) en collaboration avec le Africa Command (AFRICOM) des États-Unis. Cet événement a rassemblé des représentants de 38 nations africaines, renforçant une alliance continentale contre les épidémies émergentes.</p>
-          <p>Fondé en 2014 par AFRICOM au Ghana au cœur de la crise Ebola, APORA vise à fusionner les initiatives de santé publique avec la préparation militaire. L'atelier s'est concentré sur l'opérationnalisation de la collaboration civilo-militaire pour anticiper, détecter et répondre rapidement aux flambées de maladies infectieuses.</p>
-          <p>Les participants ont approfondi des sujets tels que la surveillance épidémiologique, la communication de crise et le rôle du changement climatique dans les risques sanitaires. Cet effort conjoint a également souligné le renforcement des capacités nationales par le partage d'expertises et des stratégies de réponse coordonnées.</p>
-          <p>Au-delà de la santé, cet événement reflète une vision plus large portée par le roi Mohammed VI du Maroc, visant à tisser ensemble sécurité et bien-être public. En alignant discipline militaire et systèmes de santé civils, le partenariat FAR-AFRICOM établit un modèle de gestion épidémique résiliente et proactive à travers l'Afrique.</p>
-          <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> Le Matin · L'Information · Kaweru</p>
+<p style="margin:0 0 12px 0;">Ce rendez-vous annuel illustre la volonté stratégique de Paris et Rabat de préserver la stabilité régionale, en scrutant particulièrement les enjeux liés à la maîtrise des environnements désertiques. L'exercice confirme une coopération militaire solide et pragmatique, clé dans un contexte international instable.</p>
+
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.defense.gouv.fr" style="color:#6366f1;">defense.gouv.fr</a> · <a href="https://medias24.com" style="color:#6366f1;">medias24.com</a> · <a href="https://lecollimateur.ma" style="color:#6366f1;">lecollimateur.ma</a></p>
+
+<div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
+
+<h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">African Lion 2026 : dernière ligne droite avant le plus grand exercice militaire africain</h2>
+
+<p style="margin:0 0 12px 0;">Du <strong>8 au 12 décembre 2025</strong>, la réunion principale de planification de l'exercice <em>African Lion 2026</em> s'est tenue à Agadir, centrée sur la coordination des phases opérationnelles et logistiques. Programmé du <strong>20 avril au 8 mai 2026</strong> dans les régions d'Agadir, Tan Tan, Taroudant, Kénitra et Ben Guérir, cet exercice annuel réunit les forces armées marocaines et américaines.</p>
+
+<p style="margin:0 0 12px 0;">Plus de <strong>40 000 militaires</strong> ont participé aux cinq dernières éditions, faisant de African Lion le plus grand événement militaire en Afrique. L'édition 2026 vise à renforcer l'interopérabilité des armées dans les domaines aérien, terrestre, maritime et des opérations spéciales. L'objectif est aussi d'accroître la préparation opérationnelle pour des interventions combinées et interarmées.</p>
+
+<p style="margin:0 0 12px 0;">Ce partenariat stratégique consolidé s'inscrit dans une dynamique d'approfondissement de la coopération bilatérale entre les États-Unis et le Maroc. Il s'accompagne d'initiatives comme <em>Atlas Handshake</em>, focalisée sur la coopération maritime, témoignant de l'ancrage régional et international accru dans la sécurité et la stabilité de la région.</p>
+
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://lematin.ma" style="color:#6366f1;">lematin.ma</a> · <a href="https://le360.ma" style="color:#6366f1;">le360.ma</a> · <a href="https://medias24.com" style="color:#6366f1;">medias24.com</a></p>
+
+<div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
+
+<h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">FAR et AFRICOM unissent leurs forces pour renforcer la sécurité sanitaire en Afrique lors d'APORA 2025</h2>
+
+<p style="margin:0 0 12px 0;">Du <strong>8 au 12 décembre 2025</strong>, Rabat a accueilli l'atelier <em>APORA 2025</em>, conduit par les <em>Forces Armées Royales</em> (FAR) en collaboration avec le <em>Africa Command</em> (AFRICOM) des États-Unis. Cet événement a rassemblé des représentants de <strong>38 nations africaines</strong>, renforçant une alliance continentale contre les épidémies émergentes.</p>
+
+<p style="margin:0 0 12px 0;">Fondé en 2014 par AFRICOM au Ghana au cœur de la crise Ebola, APORA vise à fusionner les initiatives de santé publique avec la préparation militaire. L'atelier s'est concentré sur l'opérationnalisation de la collaboration civilo-militaire pour anticiper, détecter et répondre rapidement aux flambées de maladies infectieuses.</p>
+
+<p style="margin:0 0 12px 0;">Les participants ont approfondi des sujets tels que la <em>surveillance épidémiologique</em>, la <em>communication de crise</em> et le rôle du changement climatique dans les risques sanitaires. Cet effort conjoint a également souligné le renforcement des capacités nationales par le partage d'expertises et des stratégies de réponse coordonnées.</p>
+
+<p style="margin:0 0 12px 0;">Au-delà de la santé, cet événement reflète une vision plus large portée par le roi <strong>Mohammed VI</strong> du Maroc, visant à tisser ensemble sécurité et bien-être public. En alignant discipline militaire et systèmes de santé civils, le partenariat FAR-AFRICOM établit un modèle de gestion épidémique résiliente et proactive à travers l'Afrique.</p>
+
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://lematin.ma" style="color:#6366f1;">Le Matin</a> · <a href="https://linformation.ma" style="color:#6366f1;">L'Information</a> · <a href="https://kaweru.com" style="color:#6366f1;">Kaweru</a></p>
 
             </td>
           </tr>
