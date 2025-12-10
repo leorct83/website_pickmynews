@@ -25,10 +25,10 @@ type NewsletterExample = {
 const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
   {
     id: 'newsletter-1',
-    title: 'Maroc 2025 : Zoo, accords bilatéraux et impulsion aéroportuaire',
-    date: '05 décembre 2025',
-    description: 'Le Maroc affiche un dynamisme renouvelé : réouverture du zoo d\'Aïn Sebaâ, 14 accords de coopération signés avec l\'Espagne, et renouveau aux aéroports de Marrakech et Agadir.',
-    tags: ['Le Maroc'],
+    title: 'Forces Armées Royales 2025 : Chergui, African Lion & APORA',
+    date: '10 décembre 2025',
+    description: 'En 2025, les exercices militaires et les coopérations stratégiques franco-marocaines et américano-marocaines illustrent une montée en puissance des Forces Armées Royales.',
+    tags: ['Forces Armées Royales'],
     html: `
   <!-- WRAPPER -->
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F3F4F6;">
@@ -42,7 +42,7 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
           <tr>
             <td style="padding:28px 32px 0 32px;text-align:center;">
               <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">
-                Newsletter du 05/12/2025
+                Newsletter du 10/12/2025
               </p>
             </td>
           </tr>
@@ -70,11 +70,11 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
                 <tr>
                   <td style="padding:20px 24px;">
                     <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">
-                      Bonjour Sophie 👋
+                      Bonjour Véronique 👋
                     </p>
 
                     <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#4B5563;line-height:1.75;">
-                      Le Maroc affiche un dynamisme renouvelé à travers des initiatives majeures dans le tourisme, la coopération internationale et les infrastructures. Ces avancées témoignent d'une stratégie cohérente pour renforcer son rayonnement économique et culturel.
+                      En 2025, les exercices militaires et les coopérations stratégiques franco-marocaines et américano-marocaines illustrent une montée en puissance des Forces Armées Royales. Ce contexte met en lumière le rôle clé du Maroc dans la stabilité régionale et la sécurité sanitaire sur le continent africain.
                     </p>
                   </td>
                 </tr>
@@ -85,8 +85,8 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
           <!-- HERO IMAGE -->
           <tr>
             <td style="padding:20px 32px;">
-              <img src="https://images.unsplash.com/photo-1544517333-3ceafba4d01b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzg2NDh8MHwxfHNlYXJjaHwxfHxNYXJvYyUyMGVuJTIwTW91dmVtZW50JTIwJTNBJTIwRHluYW1pc21lJTIwZXQlMjBEJUMzJUE5Y291dmVydGVzJTIwMjAyNXxlbnwwfDB8fHwxNzY0OTU0NjA2fDA&ixlib=rb-4.1.0&q=80&w=1080"
-                   alt="people standing near buildings"
+              <img src="https://source.unsplash.com/1080x720/?military,desert"
+                   alt="Exercice militaire en milieu désertique avec véhicules et soldats."
                    width="536"
                    height="auto"
                    style="width:100%;max-width:536px;height:auto;display:block;border-radius:8px;border:0;outline:none;text-decoration:none;">
@@ -105,17 +105,17 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
                         <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
-                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Zoo d'Aïn Sebaâ : ouverture et tarifs dévoilés
+                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Exercice Chergui 2025 teste l'interopérabilité franco-marocaine dans le désert d'Errachidia
                         </td>
                       </tr>
                       <tr>
                         <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
-                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Maroc-Espagne : 14 accords de coopération signés
+                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>African Lion 2026 en phase finale de planification renforçant la coopération États-Unis-Maroc
                         </td>
                       </tr>
                       <tr>
                         <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
-                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Renouveau aux aéroports : Marrakech et Agadir
+                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>APORA 2025 : FAR et AFRICOM coopèrent pour renforcer la sécurité sanitaire et la préparation civilo-militaire
                         </td>
                       </tr>
                     </table>
@@ -136,55 +136,29 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
           <tr>
             <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
 
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Zoo d'Aïn Sebaâ rouvre ses portes le 22 décembre</h2>
+              <h2>Chergui 2025, laboratoire d'interopérabilité franco-marocaine dans l'Atlas</h2>
+          <p>Le 3 octobre 2025, l'exercice militaire Chergui 2025 a regroupé dans le désert d'Errachidia des unités des Forces armées royales marocaines et de l'armée française. Sur un scénario simulant une agression contre l'intégrité territoriale du Maroc, cet entraînement de trois semaines a challengé la coordination et la capacité d'action conjointe des deux armées.</p>
+          <p>Structuré en deux phases, Chergui a mêlé un Command Post Exercise (CPX) pour la planification et la gestion interarmées, à un Live Exercise (LIVEX) intégrant des manœuvres tactiques combinant forces terrestres et aériennes. Les soldats ont ainsi opéré dans un milieu désertique exigeant, entre reliefs de l'Atlas et conditions climatiques difficiles.</p>
+          <p>Côté matériel, la coopération s'est appuyée sur des moyens emblématiques : chars M1A2 Abrams du Maroc, hélicoptères Tigre, Gazelle et NH90 français, démontrant la complémentarité tactique des deux armées. Plus qu'une simple démonstration, Chergui 2025 cible le renforcement des savoir-faire et une meilleure réponse aux défis sécuritaires du Maghreb et du Sahel.</p>
+          <p>Ce rendez-vous annuel illustre la volonté stratégique de Paris et Rabat de préserver la stabilité régionale, en scrutant particulièrement les enjeux liés à la maîtrise des environnements désertiques. L'exercice confirme une coopération militaire solide et pragmatique, clé dans un contexte international instable.</p>
+          <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> defense.gouv.fr · medias24.com · lecollimateur.ma</p>
 
-<p style="margin:0 0 12px 0;">Le zoo d'Aïn Sebaâ à Casablanca ouvre enfin après plusieurs années de fermetures et de réhabilitation. L'ouverture officielle a eu lieu le <strong>22 novembre 2025</strong>.</p>
+          <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
-<p style="margin:0 0 12px 0;">Les tarifs d'accès validés par le <em>Conseil de la ville</em> sont de <strong>80 DH</strong> pour les adultes et <strong>50 DH</strong> pour les enfants. Des formules <em>familiales</em> et <em>de groupe</em> seront également proposées pour faciliter la visite en groupe.</p>
+          <h2>African Lion 2026 : dernière ligne droite avant le plus grand exercice militaire africain</h2>
+          <p>Du 8 au 12 décembre 2025, la réunion principale de planification de l'exercice African Lion 2026 s'est tenue à Agadir, centrée sur la coordination des phases opérationnelles et logistiques. Programmé du 20 avril au 8 mai 2026 dans les régions d'Agadir, Tan Tan, Taroudant, Kénitra et Ben Guérir, cet exercice annuel réunit les forces armées marocaines et américaines.</p>
+          <p>Plus de 40 000 militaires ont participé aux cinq dernières éditions, faisant de African Lion le plus grand événement militaire en Afrique. L'édition 2026 vise à renforcer l'interopérabilité des armées dans les domaines aérien, terrestre, maritime et des opérations spéciales. L'objectif est aussi d'accroître la préparation opérationnelle pour des interventions combinées et interarmées.</p>
+          <p>Ce partenariat stratégique consolidé s'inscrit dans une dynamique d'approfondissement de la coopération bilatérale entre les États-Unis et le Maroc. Il s'accompagne d'initiatives comme Atlas Handshake, focalisée sur la coopération maritime, témoignant de l'ancrage régional et international accru dans la sécurité et la stabilité de la région.</p>
+          <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> lematin.ma · le360.ma · medias24.com</p>
 
-<p style="margin:0 0 12px 0;">Cette réouverture marque un événement attendu, coïncidant avec la <em>Coupe d'Afrique des Nations</em> (CAN). Le zoo proposera un cadre rénové et attractif pour les visiteurs locaux et internationaux.</p>
+          <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
-<p style="margin:0 0 12px 0;">Les travaux, qui ont duré plusieurs années, visaient à moderniser les installations et améliorer les conditions d'accueil des animaux et du public. Ce projet fait partie d'une stratégie plus large pour valoriser les espaces verts et loisirs à Casablanca.</p>
-
-<p style="margin:0 0 12px 0;">Le zoo d'Aïn Sebaâ s'annonce ainsi comme une nouvelle destination phare pour la famille et le tourisme urbain.</p>
-
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://lenew.ma/casablanca-le-zoo-de-ain-sebaa-rouvre-enfin-ses-portes-le-22-decembre/" style="color:#6366f1;">LeNew.ma</a> · <a href="https://www.instagram.com/reel/DR2gz1Ojfcc/" style="color:#6366f1;">Instagram</a> · <a href="https://x.com/H24Info" style="color:#6366f1;">H24Info</a> · <a href="https://fr.le360.ma/" style="color:#6366f1;">le360.ma</a></p>
-
-<div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
-
-<h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Maroc-Espagne : 14 accords signés le 4 décembre à Madrid</h2>
-
-<p style="margin:0 0 12px 0;">Le <strong>4 décembre 2025</strong>, lors de la 13e Réunion de haut niveau à Madrid, le Maroc et l'Espagne ont paraphé <strong>14 accords de coopération</strong>.</p>
-
-<p style="margin:0 0 12px 0;">Ces accords couvrent des secteurs stratégiques comme la <em>souveraineté alimentaire</em>, la <em>coopération sécuritaire</em>, la <em>justice numérique</em>, et la <em>culture</em>.</p>
-
-<p style="margin:0 0 12px 0;">En diplomatie, un mémorandum d'entente instaure une <em>politique étrangère féministe</em>, promouvant l'égalité des sexes dans l'action extérieure. Un partenariat entre l'Institut Marocain de Formation Diplomatique et l'École diplomatique espagnole renforcera la formation et la mobilité des jeunes diplomates.</p>
-
-<p style="margin:0 0 12px 0;">Côté justice et économie, un groupe de travail mettra en place la <em>digitalisation des procédures judiciaires</em> pour accélérer l'entraide internationale. Un autre mémorandum vise à échanger des pratiques fiscales innovantes.</p>
-
-<p style="margin:0 0 12px 0;">Dans l'agriculture et pêche, les accords moderniseront les exploitations agricoles en promouvant l'<em>agroécologie</em> et lutteront contre la <em>pêche illicite</em> via la digitalisation des certificats.</p>
-
-<p style="margin:0 0 12px 0;">Enfin, dans l'éducation, un accord permet aux enseignants marocains d'assurer l'enseignement de la langue arabe dans les écoles espagnoles au Maroc.</p>
-
-<p style="margin:0 0 12px 0;">Ces engagements renforcent les liens multidimensionnels bilatéraux et posent des bases solides pour une coopération durable.</p>
-
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://medias24.com/2025/12/04/maroc-espagne-detail-des-14-accords-signes-a-la-13e-reunion-de-haut-niveau-1589332/" style="color:#6366f1;">Médias24</a> · <a href="https://vov.vn/fr-CH/LeMarocetlEspagnesignent14accordsdecoop%C3%A9ration-1268533.vov" style="color:#6366f1;">VOV</a> · <a href="https://www.facebook.com/lopinionquotidiens/posts/quatorze-accords-de-coop%C3%A9ration-ont-%C3%A9t%C3%A9-sign%C3%A9s-%C3%A0-lissue-de-la-r%C3%A9union-de-haut-ni/1450017757124175/" style="color:#6366f1;">Facebook</a></p>
-
-<div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
-
-<h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Quatre nouveaux directeurs impulseront Aéroport 2030 dès décembre 2025</h2>
-
-<p style="margin:0 0 12px 0;">Le <strong>5 décembre 2025</strong>, quatre nouveaux directeurs ont été nommés pour piloter les aéroports clés de <em>Marrakech, Tanger, Fès</em> et <em>Agadir</em>. Ce changement cadre avec la stratégie nationale <em>Aéroport 2030</em>, visant à moderniser les infrastructures et améliorer la compétitivité du secteur.</p>
-
-<p style="margin:0 0 12px 0;">La mission de ces directeurs s'inscrit dans un plan global à horizon 2030. Cette initiative ambitionne d'adapter le réseau aéroportuaire marocain à la croissance attendue du trafic aérien, tout en renforçant la qualité des services.</p>
-
-<p style="margin:0 0 12px 0;">Le gouvernement marocain poursuit l'objectif de couvrir <strong>60%</strong> des besoins en eau, une donnée intégrée dans la planification globale des infrastructures. Le renouveau des directions aéroportuaires intervient dans ce contexte d'engagement renforcé pour la durabilité et l'efficacité.</p>
-
-<p style="margin:0 0 12px 0;">Marrakech et Agadir, deux destinations touristiques majeures, bénéficieront d'un leadership renouvelé pour accompagner le dynamisme économique régional et l'essor du tourisme. L'objectif est de renforcer leur rôle de hubs stratégiques, facilitant les flux de voyageurs internationaux.</p>
-
-<p style="margin:0 0 12px 0;">Cette gouvernance renouvelée ouvre une nouvelle phase de prospérité et de modernité pour les plateformes aéroportuaires du Royaume, en phase avec les ambitions du plan <em>Aéroport 2030</em>.</p>
-
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://fr.le360.ma/economie/" style="color:#6366f1;">le360.ma</a> · <a href="https://ecoactu.ma/" style="color:#6366f1;">EcoActu</a></p>
+          <h2>FAR et AFRICOM unissent leurs forces pour renforcer la sécurité sanitaire en Afrique lors d'APORA 2025</h2>
+          <p>Du 8 au 12 décembre 2025, Rabat a accueilli l'atelier APORA 2025, conduit par les Forces Armées Royales (FAR) en collaboration avec le Africa Command (AFRICOM) des États-Unis. Cet événement a rassemblé des représentants de 38 nations africaines, renforçant une alliance continentale contre les épidémies émergentes.</p>
+          <p>Fondé en 2014 par AFRICOM au Ghana au cœur de la crise Ebola, APORA vise à fusionner les initiatives de santé publique avec la préparation militaire. L'atelier s'est concentré sur l'opérationnalisation de la collaboration civilo-militaire pour anticiper, détecter et répondre rapidement aux flambées de maladies infectieuses.</p>
+          <p>Les participants ont approfondi des sujets tels que la surveillance épidémiologique, la communication de crise et le rôle du changement climatique dans les risques sanitaires. Cet effort conjoint a également souligné le renforcement des capacités nationales par le partage d'expertises et des stratégies de réponse coordonnées.</p>
+          <p>Au-delà de la santé, cet événement reflète une vision plus large portée par le roi Mohammed VI du Maroc, visant à tisser ensemble sécurité et bien-être public. En alignant discipline militaire et systèmes de santé civils, le partenariat FAR-AFRICOM établit un modèle de gestion épidémique résiliente et proactive à travers l'Afrique.</p>
+          <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> Le Matin · L'Information · Kaweru</p>
 
             </td>
           </tr>
@@ -610,10 +584,10 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
   },
   {
     id: 'newsletter-4',
-    title: 'Innovations acier, hydrogène décarboné et stockage énergétique en 2025',
-    date: '05 décembre 2025',
-    description: 'L\'industrie pétrolière innove : Vallourec célèbre 60 ans avec VAM®, Spark Cleantech révolutionne la décarbonation avec la plasmalyse pulsée, et de nouvelles alliances boostent le stockage énergétique.',
-    tags: ['Les avancées et innovations dans l\'industrie pétrolière'],
+    title: 'Croissance française 2025 : dynamique modérée malgré secteurs clés solides',
+    date: '10 décembre 2025',
+    description: 'L\'économie française en 2025 affiche une croissance mesurée marquée par des prévisions divergentes, entre optimisme prudent et réalités économiques contrastées.',
+    tags: ['L\'économie française'],
     html: `
   <!-- WRAPPER -->
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F3F4F6;">
@@ -627,7 +601,7 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
           <tr>
             <td style="padding:28px 32px 0 32px;text-align:center;">
               <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">
-                Newsletter du 05/12/2025
+                Newsletter du 10/12/2025
               </p>
             </td>
           </tr>
@@ -655,11 +629,11 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
                 <tr>
                   <td style="padding:20px 24px;">
                     <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">
-                      Bonjour John 👋
+                      Bonjour Matthieu 👋
                     </p>
 
                     <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#4B5563;line-height:1.75;">
-                      L'actualité récente témoigne d'avancées majeures dans le domaine de l'innovation industrielle et énergétique. Ces développements traduisent des efforts conjoints pour répondre aux enjeux environnementaux tout en assurant performance et durabilité.
+                      L'économie française en 2025 affiche une croissance mesurée marquée par des prévisions divergentes, entre optimisme prudent et réalités économiques contrastées. Les secteurs de la défense et des services contribuent à soutenir l'activité malgré un environnement global fragilisé.
                     </p>
                   </td>
                 </tr>
@@ -670,8 +644,8 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
           <!-- HERO IMAGE -->
           <tr>
             <td style="padding:20px 32px;">
-              <img src="https://images.unsplash.com/photo-1655821145885-9db7f0f178f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzg2NDh8MHwxfHNlYXJjaHwxfHxQJUMzJUE5dHJvbGUlMjAyLjAlMjAlM0ElMjBJbm5vdmF0aW9ucyUyMGV0JTIwRnV0dXIlMjBFbnF1JUMzJUFBdGV8ZW58MHwwfHx8MTc2NDk1NTcyMnww&ixlib=rb-4.1.0&q=80&w=1080"
-                   alt="a sign board with a restaurant sign"
+              <img src="https://images.unsplash.com/photo-1743517126902-d1bdb96e6cb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzg2NDh8MHwxfHNlYXJjaHwxfHxVbnNwbGFzaCUyMEltYWdlJTIwVGl0bGUlM0ElMjBGYWN0b3J5JTIwU2t5bGluZSUyMEluZHVzdHJpYWwlMjBCdWlsZGluZ3N8ZW58MHwwfHx8MTc2NTM5NTkyOHww&ixlib=rb-4.1.0&q=80&w=1080"
+                   alt="Smoke billows from a tall building in the city."
                    width="536"
                    height="auto"
                    style="width:100%;max-width:536px;height:auto;display:block;border-radius:8px;border:0;outline:none;text-decoration:none;">
@@ -690,17 +664,17 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
                         <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
-                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Vallourec dévoile VAM® : 60 ans d'innovations acier
+                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Croissance française limitée entre 0,8 % et 1,1 % avec divergences Insee vs Banque de France
                         </td>
                       </tr>
                       <tr>
                         <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
-                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Spark Cleantech révolutionne avec plasmalyse pulsée
+                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Industrie de la défense stimule l'activité mais n'empêche pas le ralentissement global du PIB fin 2025
                         </td>
                       </tr>
                       <tr>
                         <td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;">
-                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Stockage énergétique : coopérations et nouvelles lois
+                          <span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Progrès modérés de l'emploi salarié et dynamisme des services marchands en début novembre 2025
                         </td>
                       </tr>
                     </table>
@@ -721,49 +695,7 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
           <tr>
             <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
 
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Vallourec célèbre 60 ans d'innovation avec VAM® en 2025</h2>
-
-              <p style="margin:0 0 12px 0;">Le <strong>1er décembre 2025</strong>, Vallourec a dévoilé <strong>VAM®</strong>, une nouvelle gamme de produits acier, marquant <strong>60 ans d'innovation</strong> dans l'industrie de l'acier.</p>
-
-              <p style="margin:0 0 12px 0;">Depuis sa création, Vallourec a façonné le secteur pétrolier grâce à ses tubes en acier <strong>haute performance</strong> destinés à l'exploration et l'exploitation d'hydrocarbures. VAM® incarne la culmination d'innovation, adaptant la résistance, la légèreté et la durabilité des aciers pour répondre aux conditions extrêmes des champs pétroliers.</p>
-
-              <p style="margin:0 0 12px 0;">Avec plus d'un demi-siècle d'expérience, Vallourec s'est imposé comme <strong>leader mondial</strong> dans la fourniture de solutions tubulaires qui allient technologie de pointe et performance environnementale.</p>
-
-              <p style="margin:0 0 12px 0;">Le lancement de VAM® correspond à une montée en puissance de la R&amp;D permettant l'intégration de matériaux ultrarésistants et l'optimisation des procédés de fabrication. Cela permet de réduire le poids des tubes tout en maintenant leur solidité, s'inscrivant ainsi dans les efforts vers une extraction plus responsable des ressources pétrolières.</p>
-
-              <p style="margin:0 0 12px 0;">Cette annonce arrive dans un contexte où la transition énergétique redéfinit les approvisionnements en hydrocarbures, faisant de l'innovation acier un levier stratégique pour faire face aux défis du XXIe siècle.</p>
-
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.lunion.fr" style="color:#6366f1;text-decoration:underline;">L'Union</a> · <a href="https://www.vallourec.com" style="color:#6366f1;text-decoration:underline;">Vallourec Official Site</a></p>
-
-              <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
-
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Spark Cleantech : la plasmalyse pulsée transforme l'industrie lourde</h2>
-
-              <p style="margin:0 0 12px 0;">Le <strong>4 décembre 2025</strong>, Spark Cleantech a levé <strong>30 millions d'euros</strong> en série A pour industrialiser sa technologie exclusive de <em>plasmalyse pulsée</em>. Ce procédé novateur convertit le méthane en <em>hydrogène</em> décarboné et en <em>carbone solide</em> valorisable.</p>
-
-              <p style="margin:0 0 12px 0;">Cette innovation réduit jusqu'à <strong>85 %</strong> les émissions directes dans les secteurs à haute température comme la métallurgie ou la verrerie. L'hydrogène ainsi produit brûle proprement, générant de la chaleur sans CO₂, tandis que le carbone extrait devient un nanomatériau à haute valeur économique, multipliée par <strong>4</strong>.</p>
-
-              <p style="margin:0 0 12px 0;">Le premier module de production commerciale doit voir le jour d'ici fin <strong>2027</strong>. Une cinquantaine d'unités est prévue à l'horizon <strong>2030</strong>, avec des contrats déjà signés avec des industriels. La plasmalyse, inventée à Stanford et développée à CentraleSupélec, s'intègre avec peu d'adaptations aux installations existantes.</p>
-
-              <p style="margin:0 0 12px 0;">Cette technologie offrira une alternative plus économique et moins énergivore que les méthodes classiques comme le reformage vapeur ou l'électrolyse. Elle ouvre une voie pragmatique pour la décarbonation durable des industries lourdes tout en créant un nouveau marché pour le carbone solide.</p>
-
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://storiesout.com/communiques-presse/spark-cleantech-annonce-une-levee-series-a-de-30-me/" style="color:#6366f1;text-decoration:underline;">StoriesOut</a> · <a href="https://climatesolutions.news/fr/la-performance-des-entreprises/Spark-Cleantech-lève-30-millions-d'euros-pour-réduire-les-émissions-de-l'industrie-lourde." style="color:#6366f1;text-decoration:underline;">Climate Solutions News</a> · <a href="https://polesocietes.com/actualites/levee-de-fonds/spark-cleantech-leve-4-millions-d-euros-pour-revolutionner-la-production-d-hydrogene-decarbone" style="color:#6366f1;text-decoration:underline;">Pôle Sociétés</a></p>
-
-              <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
-
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Nouveaux cadres juridiques et alliances boostent le stockage énergétique</h2>
-
-              <p style="margin:0 0 12px 0;">Le <strong>3 décembre 2025</strong>, HIZENERGY et QuSolar Energy B.V. ont signé un partenariat stratégique pour développer le marché européen du <em>stockage d'énergie C&amp;I</em> (Commercial &amp; Industrial). La collaboration combine la technologie innovante de HIZENERGY avec l'expertise de QuSolar en déploiement régional.</p>
-
-              <p style="margin:0 0 12px 0;">Présentée au salon Solar Solutions Düsseldorf, l'innovation phare, <em>EnerBox</em>, offre une densité énergétique exceptionnelle de <strong>185 kWh/m³</strong> et est dotée d'un système proactif de prévention des incendies. Conçue pour la régulation, l'écrêtement des pointes et la gestion intégrée PV+ESS+EV, cette solution répond à la demande croissante en Europe.</p>
-
-              <p style="margin:0 0 12px 0;">Parallèlement, l'Assemblée nationale du Vietnam, le <strong>4 décembre 2025</strong>, a souligné « l'urgence d'un cadre juridique apte à concrétiser la sécurité énergétique nationale » pour <strong>2026-2030</strong>. Le projet de résolution prévoit d'accroître la flexibilité et le stockage par batteries, tout en promouvant une meilleure transparence et responsabilité gouvernementale.</p>
-
-              <p style="margin:0 0 12px 0;">Des voix parlementaires recommandent notamment d'ouvrir les infrastructures énergétiques à l'investissement privé et d'intégrer l'électricité issue des déchets pour réduire la pression sur le stockage.</p>
-
-              <p style="margin:0 0 12px 0;">Ces avancées technologiques et règlementaires illustrent une volonté commune d'impulser la transition énergétique via des mécanismes innovants et coopératifs.</p>
-
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.lelezard.com/communique-22042296.html" style="color:#6366f1;text-decoration:underline;">Le Lézard</a> · <a href="https://lecourrier.vn/deux-dossiers-majeurs-le-centre-financier-international-et-la-securite-energetique/1296816.html" style="color:#6366f1;text-decoration:underline;">Lecourrier.vn</a> · <a href="https://fr.vietnamplus.vn/an-creer-des-mecanismes-dexception-pour-un-centre-financier-international-et-garantir-la-securite-energetique-nationale-post255798.vnp" style="color:#6366f1;text-decoration:underline;">VietnamPlus</a></p>
+              <h2>Croissance française 2025 : entre optimisme prudent et frilosité</h2><p>Début décembre 2025, les dernières projections officielles dessinent une économie française en phase de croissance modérée, oscillant entre <strong>0,8 %</strong> et <strong>1,1 %</strong> pour l'année, mais avec des divergences notables entre l'Insee et la Banque de France.</p><p>L'Insee, en optimiste mesuré, souligne une progression du <em>PIB</em> de <strong>1,1 %</strong> en 2025, portée notamment par un <em>croissance</em> trimestrielle de <strong>+0,5 %</strong> au troisième trimestre, après <strong>+0,3 %</strong> au précédent. Cette dynamique est attribuée à une demande intérieure un peu plus robuste, malgré un recul de la contribution du commerce extérieur.</p><p>En parallèle, la Banque de France reste plus prudente, tablant sur une croissance plus modeste à <strong>0,8 %</strong>, avec un ralentissement marqué à <strong>0,2 %</strong> au quatrième trimestre. Le <em>secteur manufacturier</em> demeure un moteur important, mais la croissance globale souffre d'une conjoncture économique fragile et de tensions politiques persistantes.</p><p>Cette différence de prévisions illustre l'incertitude qui entoure la relance française. Alors que l'Insee anticipe une stabilité à moyen terme, la Banque de France remarque que la reprise pourrait se décaler et s'intensifier davantage à partir de 2026. Le climat économique reste donc suspendu à ces signaux contradictoires, entre résilience industrielle et fragilité politique.</p><p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.rexecode.fr/conjoncture-previsions/veille-documentaire/document-de-la-semaine/moroses-previsions-de-croissance-pour-la-france-en-2025-insee-bdf" style="color:#6366f1;">Rexecode</a> · <a href="https://www.lefigaro.fr/conjoncture/la-croissance-francaise-ralentit-a-0-2-du-pib-au-4e-trimestre-selon-la-banque-de-france-20251209" style="color:#6366f1;">Le Figaro</a> · <a href="https://www.insee.fr/fr/statistiques/8662489" style="color:#6366f1;">Insee</a> · <a href="https://www.banque-france.fr/fr/publications-et-statistiques/publications/projections-macroeconomiques-intermediaires-septembre-2025" style="color:#6366f1;">Banque de France</a></p><div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div><h2>Défense française : moteur solide, frein économique global fin 2025</h2><p>Le <strong>9 décembre 2025</strong>, la Banque de France confirmait un ralentissement marqué de la croissance française, avec un PIB progressant de seulement <strong>0,2 %</strong> au quatrième trimestre. Cette décélération s'inscrit dans un contexte plus large de fragilité économique.</p><p>Pourtant, l'industrie de la <em>défense</em> reste un pilier robuste. Avec un budget colossal de <strong>413 milliards d'euros</strong> prévu sur la période 2024-2030, la <em>LPM</em> (Loi de Programmation Militaire) agit comme un levier stratégique majeur. Chaque euro investi génère entre <strong>1,27 et 1,68 euros</strong> de richesse, dynamisant l'activité industrielle, notamment dans la production d'armes et de munitions, et préservant des milliers d'emplois qualifiés.</p><p>Cette impulsion bénéficie aussi à l'innovation et à la productivité globale. Mais, malgré cet effet multiplicateur puissant, la croissance économique française peine à se maintenir au rythme attendu. Selon l'<em>Insee</em>, ces signes de ralentissement révèlent la faiblesse des autres moteurs économiques, entraînant une croissance insuffisante pour compenser les défis structurels.</p><p>En somme, si l'industrie de la défense revigore certains pans de l'économie, elle n'empêche pas une dynamique de croissance globalement ralentie en fin d'année.</p><p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.latribune.fr/article/economie/37309748954301/lindustrie-de-la-defense-dope-lactivite-mais-la-croissance-ralentit" style="color:#6366f1;">Latribune.fr</a> · <a href="http://www.defense.gouv.fr/actualites/defense-levier-strategique-leconomie-francaise" style="color:#6366f1;">Défense.gouv.fr</a> · <a href="https://www.lefigaro.fr/conjoncture/la-croissance-francaise-ralentit-a-0-2-du-pib-au-4e-trimestre-selon-la-banque-de-france-20251209" style="color:#6366f1;">Le Figaro</a></p><div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div><h2>Emploi salarié stable malgré glissements dans le privé début novembre 2025</h2><p>Au troisième trimestre 2025, l'<em>emploi salarié</em> en France présente une stabilité relative. Selon l'<em>Insee</em> (6 novembre), le secteur public connaît une <em>légère hausse</em> tandis que le privé accuse une <em>baisse modérée</em> de 0,3 %, soit près de <strong>60 600 emplois perdus</strong>. Cette tendance s'inscrit dans un contexte plus large, où l'emploi privé recule depuis quatre trimestres consécutifs, totalisant une baisse annuelle de <strong>112 100 postes</strong>.</p><p>Le repli intervient principalement dans les <em>contrats d'alternance</em>, qui contribuent aux deux tiers de cette diminution. Cela pèse sur des secteurs divers, avec une <em>activité manufacturière en repli</em> contrastant avec un <em>dynamisme croissant des services marchands</em>, un segment où les emplois ont connu un regain, notamment grâce à la prise en compte tardive de déclarations (<em>+30 900 emplois</em> dans le tertiaire marchand hors intérim).</p><p>Cette dualité reflète une économie à la fois confrontée à des fragilités structurelles et capable de s'appuyer sur le secteur des services pour absorber une partie des pertes. Le marché du travail français navigue ainsi entre fragilité du tissu industriel et résilience du tertiaire, enjeu clé pour les politiques d'emploi dans les mois à venir.</p><p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.insee.fr/fr/statistiques/8664273" style="color:#6366f1;">Insee</a> · <a href="https://www.rexecode.fr/conjoncture-previsions/synthese-conjoncturelle-hebdo/l-emploi-salarie-recule-en-france-au-3eme-trimestre" style="color:#6366f1;">Rexecode</a> · <a href="https://dares.travail-emploi.gouv.fr/donnees/lemploi-salarie" style="color:#6366f1;">DARES</a></p>
 
             </td>
           </tr>
