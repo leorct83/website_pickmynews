@@ -145,6 +145,7 @@
     "emailPlaceholder": "vous@exemple.com",
     "theme": "Quel sujet vous intéresse ?",
     "themePlaceholder": "Ex: L'actualité des startups françaises",
+    "language": "Langue de la newsletter",
     "frequency": "Combien de newsletters par semaine ?",
     "perWeek": "/ sem",
     "days": "Quels jours souhaitez-vous recevoir votre newsletter ?",

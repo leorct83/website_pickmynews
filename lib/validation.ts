@@ -8,6 +8,9 @@ export const subscriptionFormSchema = z.object({
   name: z.string().min(1, 'Le nom est requis').max(100, 'Le nom est trop long'),
   email: z.string().email('Email invalide'),
   theme: z.string().min(1, 'Le thème est requis').max(200, 'Le thème est trop long'),
+  language: z.enum(['Français', 'English'], {
+    errorMap: () => ({ message: 'Langue invalide' })
+  }),
   plan_frequency: z.enum(['1x', '2x', '5x', '7x'], {
     errorMap: () => ({ message: 'Fréquence invalide' })
   }),

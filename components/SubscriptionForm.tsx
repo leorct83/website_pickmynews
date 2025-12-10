@@ -7,11 +7,13 @@ import { Link } from '@/i18n/navigation';
 // Types
 type Frequency = 1 | 2 | 5 | 7;
 type BillingCycle = 'weekly' | 'monthly' | 'yearly';
+type Language = 'Français' | 'English';
 
 interface FormData {
   firstName: string;
   email: string;
   theme: string;
+  language: Language;
   frequency: Frequency;
   selectedDays: string[];
   selectedHour: number;
@@ -66,6 +68,7 @@ export default function SubscriptionForm() {
     firstName: '',
     email: '',
     theme: '',
+    language: 'Français',
     frequency: 7,
     selectedDays: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'],
     selectedHour: 8,
@@ -155,6 +158,7 @@ export default function SubscriptionForm() {
           name: formData.firstName,
           email: formData.email,
           theme: formData.theme,
+          language: formData.language,
           plan_frequency: FREQUENCY_TO_PLAN[formData.frequency],
           billing_period: formData.billingCycle,
           send_days: formData.selectedDays,
@@ -280,6 +284,34 @@ export default function SubscriptionForm() {
                   required
                   className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-lg"
                 />
+              </div>
+
+              {/* Language selection */}
+              <div className="mb-6">
+                <label className="block text-sm font-semibold text-slate-700 mb-2">
+                  {t('language')}
+                </label>
+                <div className="grid grid-cols-2 gap-3">
+                  {(['Français', 'English'] as Language[]).map((lang) => (
+                    <button
+                      key={lang}
+                      type="button"
+                      onClick={() => setFormData({ ...formData, language: lang })}
+                      className={`py-4 px-4 rounded-xl text-center transition-all border-2 flex items-center justify-center gap-3 ${
+                        formData.language === lang
+                          ? 'border-amber-500 bg-amber-50 text-amber-700'
+                          : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300'
+                      }`}
+                    >
+                      <img
+                        src={lang === 'Français' ? 'https://flagcdn.com/w20/fr.png' : 'https://flagcdn.com/w20/us.png'}
+                        alt={lang === 'Français' ? 'FR' : 'US'}
+                        className="w-5 h-4 object-cover rounded-sm"
+                      />
+                      <span className="font-medium">{lang}</span>
+                    </button>
+                  ))}
+                </div>
               </div>
 
               {/* Frequency selection */}

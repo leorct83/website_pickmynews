@@ -33,6 +33,7 @@ const SHEET_COLUMNS = [
   'name',
   'email',
   'theme',
+  'language',
   'plan_frequency',
   'billing_period',
   'send_days',
@@ -52,6 +53,7 @@ function rowToValues(row: SheetSubscriberRow): string[] {
     row.name,
     row.email,
     row.theme,
+    row.language,
     row.plan_frequency,
     row.billing_period,
     row.send_days,
@@ -72,14 +74,15 @@ function valuesToRow(values: string[]): SheetSubscriberRow {
     name: values[1] || '',
     email: values[2] || '',
     theme: values[3] || '',
-    plan_frequency: (values[4] || '1x') as SheetSubscriberRow['plan_frequency'],
-    billing_period: (values[5] || 'monthly') as SheetSubscriberRow['billing_period'],
-    send_days: values[6] || '',
-    send_hour: values[7] || '',
-    stripe_customer_id: values[8] || '',
-    stripe_subscription_id: values[9] || '',
-    status: (values[10] || 'pending') as SubscriptionStatus,
-    last_event_at: values[11] || '',
+    language: (values[4] || 'Français') as SheetSubscriberRow['language'],
+    plan_frequency: (values[5] || '1x') as SheetSubscriberRow['plan_frequency'],
+    billing_period: (values[6] || 'monthly') as SheetSubscriberRow['billing_period'],
+    send_days: values[7] || '',
+    send_hour: values[8] || '',
+    stripe_customer_id: values[9] || '',
+    stripe_subscription_id: values[10] || '',
+    status: (values[11] || 'pending') as SubscriptionStatus,
+    last_event_at: values[12] || '',
   };
 }
 
@@ -92,7 +95,7 @@ async function getAllRows(): Promise<SheetSubscriberRow[]> {
 
   const response = await sheets.spreadsheets.values.get({
     spreadsheetId,
-    range: 'Sheet1!A2:L', // A partir de la ligne 2 (après le header)
+    range: 'Sheet1!A2:M', // A partir de la ligne 2 (après le header), 13 colonnes A-M
   });
 
   const rows = response.data.values || [];
@@ -152,6 +155,7 @@ export async function appendOrUpdateSubscriberRow(
       name: data.name || '',
       email: data.email,
       theme: data.theme || '',
+      language: data.language || 'Français',
       plan_frequency: data.plan_frequency || '1x',
       billing_period: data.billing_period || 'monthly',
       send_days: data.send_days || '',
@@ -164,7 +168,7 @@ export async function appendOrUpdateSubscriberRow(
 
     await sheets.spreadsheets.values.append({
       spreadsheetId,
-      range: 'Sheet1!A:L',
+      range: 'Sheet1!A:M',
       valueInputOption: 'RAW',
       requestBody: {
         values: [rowToValues(newRow)],
@@ -186,7 +190,7 @@ export async function appendOrUpdateSubscriberRow(
 
     await sheets.spreadsheets.values.update({
       spreadsheetId,
-      range: `Sheet1!A${existingRowIndex}:L${existingRowIndex}`,
+      range: `Sheet1!A${existingRowIndex}:M${existingRowIndex}`,
       valueInputOption: 'RAW',
       requestBody: {
         values: [rowToValues(updatedRow)],
@@ -226,7 +230,7 @@ export async function updateSubscriberByEmail(
   // Met à jour la ligne
   await sheets.spreadsheets.values.update({
     spreadsheetId,
-    range: `Sheet1!A${rowIndex}:L${rowIndex}`,
+    range: `Sheet1!A${rowIndex}:M${rowIndex}`,
     valueInputOption: 'RAW',
     requestBody: {
       values: [rowToValues(updatedRow)],
@@ -270,7 +274,7 @@ export async function updateSubscriberByStripeCustomerId(
 
   await sheets.spreadsheets.values.update({
     spreadsheetId,
-    range: `Sheet1!A${rowIndex}:L${rowIndex}`,
+    range: `Sheet1!A${rowIndex}:M${rowIndex}`,
     valueInputOption: 'RAW',
     requestBody: {
       values: [rowToValues(updatedRow)],
@@ -289,7 +293,7 @@ export async function initializeSheetHeaders(): Promise<void> {
   // Vérifie si le header existe déjà
   const response = await sheets.spreadsheets.values.get({
     spreadsheetId,
-    range: 'Sheet1!A1:L1',
+    range: 'Sheet1!A1:M1',
   });
 
   if (response.data.values && response.data.values.length > 0) {
@@ -300,7 +304,7 @@ export async function initializeSheetHeaders(): Promise<void> {
   // Crée les en-têtes
   await sheets.spreadsheets.values.update({
     spreadsheetId,
-    range: 'Sheet1!A1:L1',
+    range: 'Sheet1!A1:M1',
     valueInputOption: 'RAW',
     requestBody: {
       values: [SHEET_COLUMNS as unknown as string[]],

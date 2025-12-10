@@ -5,6 +5,7 @@
 export type PlanFrequency = '1x' | '2x' | '5x' | '7x';
 export type BillingPeriod = 'weekly' | 'monthly' | 'yearly';
 export type SubscriptionStatus = 'pending' | 'active' | 'canceled' | 'past_due';
+export type NewsletterLanguage = 'Français' | 'English';
 
 // Jours de la semaine en français (comme stockés dans Google Sheets)
 export type WeekDay = 'Lundi' | 'Mardi' | 'Mercredi' | 'Jeudi' | 'Vendredi' | 'Samedi' | 'Dimanche';
@@ -32,6 +33,7 @@ export interface SheetSubscriberRow {
   name: string;
   email: string;
   theme: string;
+  language: NewsletterLanguage; // "Français" | "English"
   plan_frequency: PlanFrequency;
   billing_period: BillingPeriod;
   send_days: string;            // "Lundi,Mercredi,Vendredi"

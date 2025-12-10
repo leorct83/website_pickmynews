@@ -43,6 +43,7 @@ export async function POST(request: NextRequest) {
       name: validatedData.name,
       email: validatedData.email,
       theme: validatedData.theme,
+      language: validatedData.language,
       plan_frequency: validatedData.plan_frequency,
       billing_period: validatedData.billing_period,
       send_days: formatSendDaysForSheet(validatedData.send_days),

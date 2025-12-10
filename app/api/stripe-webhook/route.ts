@@ -102,6 +102,7 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
       email,
       name: metadata.name || '',
       theme: metadata.theme || '',
+      language: (metadata.language || 'Français') as 'Français' | 'English',
       plan_frequency: (metadata.plan_frequency || '1x') as any,
       billing_period: (metadata.billing_period || 'monthly') as any,
       send_days: metadata.send_days || '',
@@ -115,6 +116,7 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
     console.log(`   - Customer ID: ${customerId}`);
     console.log(`   - Subscription ID: ${subscriptionId}`);
     console.log(`   - Plan: ${metadata.plan_frequency} - ${metadata.billing_period}`);
+    console.log(`   - Language: ${metadata.language}`);
   } catch (error) {
     console.error('❌ Erreur lors de la mise à jour du Google Sheet:', error);
     throw error;
