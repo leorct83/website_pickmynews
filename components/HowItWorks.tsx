@@ -1,20 +1,24 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 export default function HowItWorks() {
+  const t = useTranslations('howItWorks');
+
   const steps = [
     {
       number: '01',
-      title: 'Choisissez votre thème',
-      description: 'La pêche en Argentine, l\'essor des robots en Asie ou les dernières tendances diplomatiques. Vous choisissez ce qui vous intéresse.',
+      title: t('step1Title'),
+      description: t('step1Desc'),
       visual: (
         <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-6 h-48 flex flex-col items-center justify-center">
           <label htmlFor="user-theme" className="text-slate-700 font-medium mb-2">
-            Écrivez votre thème ici :
+            {t('step1Label')}
           </label>
           <input
             type="text"
             id="user-theme"
-            placeholder="Ex : Exploration spatiale, Cuisine moléculaire..."
+            placeholder={t('step1Placeholder')}
             className="w-full max-w-md px-4 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400 text-slate-800"
           />
         </div>
@@ -22,15 +26,15 @@ export default function HowItWorks() {
     },
     {
       number: '02',
-      title: 'Choisissez votre rythme',
-      description: '1 fois par semaine ou tous les jours ? Le lundi à 8h ou le dimanche soir ? C\'est vous qui décidez.',
+      title: t('step2Title'),
+      description: t('step2Desc'),
       visual: (
         <div className="bg-gradient-to-br from-emerald-50 to-teal-100 rounded-2xl p-6 h-48 flex items-center justify-center">
           <div className="bg-white rounded-xl shadow-lg p-4 w-full max-w-[220px]">
             <div className="flex items-center justify-between mb-3">
-              <span className="text-sm font-semibold text-slate-900">Mon planning</span>
+              <span className="text-sm font-semibold text-slate-900">{t('step2Planning')}</span>
             </div>
-            
+
             {/* Sélecteur de fréquence style pills */}
             <div className="flex gap-1 mb-3">
               {['1', '2', '5', '7'].map((num, i) => (
@@ -46,20 +50,20 @@ export default function HowItWorks() {
                 </button>
               ))}
             </div>
-            
+
             {/* Jour et heure */}
             <div className="flex gap-2">
               <div className="flex-1 bg-slate-50 rounded-lg px-2 py-1.5 flex items-center gap-1.5">
                 <svg className="w-3.5 h-3.5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                <span className="text-xs font-medium text-slate-700">Lun</span>
+                <span className="text-xs font-medium text-slate-700">{t('step2Day')}</span>
               </div>
               <div className="flex-1 bg-slate-50 rounded-lg px-2 py-1.5 flex items-center gap-1.5">
                 <svg className="w-3.5 h-3.5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span className="text-xs font-medium text-slate-700">8h00</span>
+                <span className="text-xs font-medium text-slate-700">{t('step2Hour')}</span>
               </div>
             </div>
           </div>
@@ -68,8 +72,8 @@ export default function HowItWorks() {
     },
     {
       number: '03',
-      title: 'Recevez. Lisez. C\'est tout.',
-      description: 'Votre newsletter arrive, claire et concise. 5 minutes de lecture, zéro effort de recherche.',
+      title: t('step3Title'),
+      description: t('step3Desc'),
       visual: (
         <div className="bg-gradient-to-br from-amber-50 to-orange-100 rounded-2xl p-6 h-48 flex items-center justify-center">
           <div className="bg-white rounded-xl shadow-lg p-4 w-full max-w-[200px]">
@@ -93,7 +97,7 @@ export default function HowItWorks() {
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="text-xs font-medium">Livré à 7h00</span>
+              <span className="text-xs font-medium">{t('step3Delivered')}</span>
             </div>
           </div>
         </div>
@@ -107,14 +111,13 @@ export default function HowItWorks() {
         {/* Section header */}
         <div className="text-center mb-20">
           <p className="text-amber-600 font-semibold uppercase tracking-wider text-sm mb-4">
-            Simple comme bonjour
+            {t('badge')}
           </p>
           <h2 className="text-4xl md:text-5xl text-slate-900 mb-6 text-balance">
-            3 étapes pour reprendre le contrôle
+            {t('title')}
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Configurez votre newsletter en moins de 2 minutes. 
-            Ensuite, on s'occupe de tout.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -151,7 +154,7 @@ export default function HowItWorks() {
         {/* CTA after steps */}
         <div className="text-center mt-20">
           <a href="#inscription" className="btn-primary">
-            <span>Créer ma newsletter maintenant</span>
+            <span>{t('cta')}</span>
             <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

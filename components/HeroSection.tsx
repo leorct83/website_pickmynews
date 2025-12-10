@@ -1,6 +1,10 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 export default function HeroSection() {
+  const t = useTranslations('hero');
+
   return (
     <section className="relative min-h-screen flex items-center grain-overlay overflow-hidden">
       {/* Background gradient */}
@@ -19,25 +23,29 @@ export default function HeroSection() {
 
           {/* Headline */}
           <h1 className="fade-in-up delay-100 text-5xl md:text-6xl lg:text-7xl text-slate-900 mb-6 text-balance">
-            <span className="text-amber-600">L'info qui compte</span> vient à vous.
+            <span className="text-amber-600">{t('headline')}</span> {t('headlineSuffix')}
           </h1>
 
           {/* Subheadline */}
           <h2 className="fade-in-up delay-200 text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Recevez une newsletter qui <span className="highlight">vous</span> parle, sur le sujet de <span className="highlight">votre</span> choix, quand <span className="highlight">vous</span> voulez !
+            {t.rich('subheadline', {
+              you: () => <span className="highlight">{t('you')}</span>,
+              your: () => <span className="highlight">{t('your')}</span>,
+              youWant: () => <span className="highlight">{t('youWant')}</span>,
+            })}
           </h2>
-      
+
 
           {/* CTA */}
           <div className="fade-in-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <a href="#inscription" className="btn-primary group">
-              <span>Créer ma newsletter</span>
+              <span>{t('ctaPrimary')}</span>
               <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
             <a href="#comment-ca-marche" className="btn-ghost">
-              <span>Voir comment ça marche</span>
+              <span>{t('ctaSecondary')}</span>
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
@@ -50,13 +58,13 @@ export default function HeroSection() {
               <svg className="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>Satisfait ou remboursé pendant 14 jours</span>
+              <span>{t('trustSatisfied')}</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>Annulation en 1 clic</span>
+              <span>{t('trustCancel')}</span>
             </div>
           </div>
         </div>
@@ -72,5 +80,3 @@ export default function HeroSection() {
     </section>
   );
 }
-
-            

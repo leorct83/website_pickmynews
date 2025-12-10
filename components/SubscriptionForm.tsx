@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 
 // Types
 type Frequency = 1 | 2 | 5 | 7;
@@ -30,16 +32,6 @@ const PRICING: Record<Frequency, PricingOption> = {
   1: { weekly: 1.99, monthly: 4.99, yearly: 49.99 },
 };
 
-const DAYS = [
-  { key: 'Lundi', label: 'Lun' },
-  { key: 'Mardi', label: 'Mar' },
-  { key: 'Mercredi', label: 'Mer' },
-  { key: 'Jeudi', label: 'Jeu' },
-  { key: 'Vendredi', label: 'Ven' },
-  { key: 'Samedi', label: 'Sam' },
-  { key: 'Dimanche', label: 'Dim' },
-];
-
 // Mapping fréquence numérique vers format API
 const FREQUENCY_TO_PLAN: Record<Frequency, string> = {
   1: '1x',
@@ -50,13 +42,26 @@ const FREQUENCY_TO_PLAN: Record<Frequency, string> = {
 
 const HOURS = Array.from({ length: 24 }, (_, i) => i);
 
-const BILLING_LABELS: Record<BillingCycle, string> = {
-  weekly: 'Hebdomadaire',
-  monthly: 'Mensuelle',
-  yearly: 'Annuelle',
-};
-
 export default function SubscriptionForm() {
+  const t = useTranslations('subscriptionForm');
+
+  // Days avec clés API et labels traduits
+  const DAYS = [
+    { key: 'Lundi', label: t('dayMon') },
+    { key: 'Mardi', label: t('dayTue') },
+    { key: 'Mercredi', label: t('dayWed') },
+    { key: 'Jeudi', label: t('dayThu') },
+    { key: 'Vendredi', label: t('dayFri') },
+    { key: 'Samedi', label: t('daySat') },
+    { key: 'Dimanche', label: t('daySun') },
+  ];
+
+  const BILLING_LABELS: Record<BillingCycle, string> = {
+    weekly: t('billingWeekly'),
+    monthly: t('billingMonthly'),
+    yearly: t('billingYearly'),
+  };
+
   const [formData, setFormData] = useState<FormData>({
     firstName: '',
     email: '',
@@ -83,6 +88,7 @@ export default function SubscriptionForm() {
       }
       return prev;
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formData.frequency]);
 
   const handleDayToggle = (dayKey: string) => {
@@ -105,25 +111,21 @@ export default function SubscriptionForm() {
 
   // Validation côté client avant soumission
   const validateForm = (): string | null => {
-    // Vérification des champs requis
-    if (!formData.firstName.trim()) return 'Le prénom est requis.';
-    if (!formData.email.trim()) return "L'email est requis.";
-    if (!formData.theme.trim()) return 'Le thème est requis.';
+    if (!formData.firstName.trim()) return t('errorFirstName');
+    if (!formData.email.trim()) return t('errorEmail');
+    if (!formData.theme.trim()) return t('errorTheme');
 
-    // Vérification de l'email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
-      return 'Adresse email invalide.';
+      return t('errorEmailInvalid');
     }
 
-    // Vérification de la cohérence selectedDays / frequency
     if (formData.selectedDays.length !== formData.frequency) {
-      return `Veuillez sélectionner exactement ${formData.frequency} jour(s).`;
+      return t('errorDays', { count: formData.frequency });
     }
 
-    // Vérification du consentement légal
     if (!formData.legalConsent) {
-      return 'Vous devez accepter les conditions pour continuer.';
+      return t('errorConsent');
     }
 
     return null;
@@ -133,7 +135,6 @@ export default function SubscriptionForm() {
     e.preventDefault();
     setError('');
 
-    // Validation côté client
     const validationError = validateForm();
     if (validationError) {
       setError(validationError);
@@ -143,10 +144,8 @@ export default function SubscriptionForm() {
     setIsSubmitting(true);
 
     try {
-      // Formatage de l'heure en string HH:00
       const sendHour = formData.selectedHour.toString().padStart(2, '0') + ':00';
 
-      // Appel à l'API pour créer la session Stripe Checkout
       const response = await fetch('/api/create-checkout-session', {
         method: 'POST',
         headers: {
@@ -164,7 +163,6 @@ export default function SubscriptionForm() {
         }),
       });
 
-      // Vérifier si la réponse contient du JSON valide
       const contentType = response.headers.get('content-type');
       let data;
 
@@ -174,33 +172,40 @@ export default function SubscriptionForm() {
           try {
             data = JSON.parse(text);
           } catch {
-            throw new Error('Réponse serveur invalide.');
+            throw new Error(t('errorServerInvalid'));
           }
         } else {
-          throw new Error('Réponse serveur vide.');
+          throw new Error(t('errorServerEmpty'));
         }
       } else {
-        throw new Error(`Erreur serveur (${response.status}).`);
+        throw new Error(`${t('errorServer')} (${response.status}).`);
       }
 
       if (!response.ok) {
-        throw new Error(data?.error || `Erreur serveur (${response.status}).`);
+        throw new Error(data?.error || `${t('errorServer')} (${response.status}).`);
       }
 
-      // Redirection vers Stripe Checkout
       if (data?.url) {
         window.location.href = data.url;
       } else {
-        throw new Error('URL de paiement non reçue.');
+        throw new Error(t('errorPaymentUrl'));
       }
     } catch (err) {
       console.error('Erreur checkout:', err);
-      setError(err instanceof Error ? err.message : 'Une erreur est survenue.');
+      setError(err instanceof Error ? err.message : t('errorServer'));
       setIsSubmitting(false);
     }
   };
 
   const currentPrice = PRICING[formData.frequency][formData.billingCycle];
+
+  const getBillingPeriodLabel = (cycle: BillingCycle) => {
+    switch (cycle) {
+      case 'weekly': return t('perWeekShort');
+      case 'monthly': return t('perMonthShort');
+      case 'yearly': return t('perYearShort');
+    }
+  };
 
   return (
     <section id="inscription" className="py-24 px-4 bg-white scroll-mt-nav relative overflow-hidden">
@@ -216,12 +221,14 @@ export default function SubscriptionForm() {
           {/* Section header */}
           <div className="text-center mb-12">
             <p className="text-amber-600 font-semibold uppercase tracking-wider text-sm mb-4">
-              Prêt à commencer ?
+              {t('badge')}
             </p>
             <h2 className="text-4xl md:text-5xl text-slate-900 mb-6 text-balance">
-              Créez votre newsletter en <span className="text-amber-600">30 secondes</span>
+              {t.rich('title', {
+                highlight: () => <span className="text-amber-600">{t('titleHighlight')}</span>,
+              })}
             </h2>
-            <p className="text-xl text-slate-600">Personnalisez votre expérience selon vos besoins.</p>
+            <p className="text-xl text-slate-600">{t('subtitle')}</p>
           </div>
 
           {/* Form */}
@@ -231,28 +238,28 @@ export default function SubscriptionForm() {
               <div className="grid md:grid-cols-2 gap-4 mb-6">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-semibold text-slate-700 mb-2">
-                    Prénom
+                    {t('firstName')}
                   </label>
                   <input
                     type="text"
                     id="firstName"
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                    placeholder="Votre prénom"
+                    placeholder={t('firstNamePlaceholder')}
                     required
                     className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-lg"
                   />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-semibold text-slate-700 mb-2">
-                    Email
+                    {t('email')}
                   </label>
                   <input
                     type="email"
                     id="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="vous@exemple.com"
+                    placeholder={t('emailPlaceholder')}
                     required
                     className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-lg"
                   />
@@ -262,14 +269,14 @@ export default function SubscriptionForm() {
               {/* Theme field */}
               <div className="mb-6">
                 <label htmlFor="theme" className="block text-sm font-semibold text-slate-700 mb-2">
-                  Quel sujet vous intéresse ?
+                  {t('theme')}
                 </label>
                 <input
                   type="text"
                   id="theme"
                   value={formData.theme}
                   onChange={(e) => setFormData({ ...formData, theme: e.target.value })}
-                  placeholder="Ex: L'actualité des startups françaises"
+                  placeholder={t('themePlaceholder')}
                   required
                   className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-lg"
                 />
@@ -278,7 +285,7 @@ export default function SubscriptionForm() {
               {/* Frequency selection */}
               <div className="mb-6">
                 <label className="block text-sm font-semibold text-slate-700 mb-2">
-                  Combien de newsletters par semaine ?
+                  {t('frequency')}
                 </label>
                 <div className="grid grid-cols-4 gap-3">
                   {([1, 2, 5, 7] as Frequency[]).map((freq) => (
@@ -293,7 +300,7 @@ export default function SubscriptionForm() {
                       }`}
                     >
                       <span className="text-2xl font-bold">{freq}</span>
-                      <span className="text-sm block">/ sem</span>
+                      <span className="text-sm block">{t('perWeek')}</span>
                     </button>
                   ))}
                 </div>
@@ -302,9 +309,9 @@ export default function SubscriptionForm() {
               {/* Day selection */}
               <div className="mb-6">
                 <label className="block text-sm font-semibold text-slate-700 mb-2">
-                  Quels jours souhaitez-vous recevoir votre newsletter ?
+                  {t('days')}
                   <span className="text-slate-400 font-normal ml-2">
-                    ({formData.selectedDays.length}/{formData.frequency} sélectionnés)
+                    {t('daysSelected', { selected: formData.selectedDays.length, total: formData.frequency })}
                   </span>
                 </label>
                 <div className="grid grid-cols-7 gap-2">
@@ -328,7 +335,7 @@ export default function SubscriptionForm() {
               {/* Hour selection */}
               <div className="mb-6">
                 <label htmlFor="hour" className="block text-sm font-semibold text-slate-700 mb-2">
-                  Heure d'envoi
+                  {t('sendHour')}
                 </label>
                 <select
                   id="hour"
@@ -346,7 +353,7 @@ export default function SubscriptionForm() {
 
               {/* Billing cycle selection */}
               <div className="mb-6">
-                <label className="block text-sm font-semibold text-slate-700 mb-2">Mode de paiement</label>
+                <label className="block text-sm font-semibold text-slate-700 mb-2">{t('paymentMode')}</label>
                 <div className="grid grid-cols-3 gap-3">
                   {(['weekly', 'monthly', 'yearly'] as BillingCycle[]).map((cycle) => (
                     <button
@@ -373,20 +380,19 @@ export default function SubscriptionForm() {
               {/* Pricing summary */}
               <div className="mb-6 p-6 bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl border border-slate-200">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-slate-600">Newsletter {formData.frequency}x/semaine</span>
+                  <span className="text-slate-600">{t('summary', { freq: formData.frequency })}</span>
                   <span className="text-slate-400 text-sm">{BILLING_LABELS[formData.billingCycle]}</span>
                 </div>
                 <div className="flex items-end justify-between">
                   <div>
                     <span className="text-4xl font-bold text-slate-900">{currentPrice.toFixed(2)} €</span>
                     <span className="text-slate-500 ml-1">
-                      /{formData.billingCycle === 'weekly' ? 'sem' : formData.billingCycle === 'monthly' ? 'mois' : 'an'}
+                      /{getBillingPeriodLabel(formData.billingCycle)}
                     </span>
                   </div>
                   {formData.billingCycle === 'yearly' && (
                     <span className="text-green-600 text-sm font-medium">
-                      Économisez{' '}
-                      {(PRICING[formData.frequency].monthly * 12 - PRICING[formData.frequency].yearly).toFixed(2)} €/an
+                      {t('saveAmount', { amount: (PRICING[formData.frequency].monthly * 12 - PRICING[formData.frequency].yearly).toFixed(2) })}
                     </span>
                   )}
                 </div>
@@ -414,15 +420,18 @@ export default function SubscriptionForm() {
                     </svg>
                   </div>
                   <span className="text-sm text-slate-600 leading-relaxed">
-                    J'accepte les{' '}
-                    <a href="#" className="text-amber-600 hover:underline">
-                      conditions d'utilisation
-                    </a>{' '}
-                    et la{' '}
-                    <a href="#" className="text-amber-600 hover:underline">
-                      politique de confidentialité
-                    </a>
-                    . Je consens à recevoir des emails d'actualité personnalisés.
+                    {t.rich('legalConsent', {
+                      terms: () => (
+                        <Link href="/terms" className="text-amber-600 hover:underline">
+                          {t('terms')}
+                        </Link>
+                      ),
+                      privacy: () => (
+                        <Link href="/privacy" className="text-amber-600 hover:underline">
+                          {t('privacy')}
+                        </Link>
+                      ),
+                    })}
                   </span>
                 </label>
               </div>
@@ -466,11 +475,11 @@ export default function SubscriptionForm() {
                           d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                         />
                       </svg>
-                      <span>Redirection vers le paiement...</span>
+                      <span>{t('submitting')}</span>
                     </span>
                   ) : (
                     <span className="flex items-center justify-center gap-3">
-                      <span>Je veux ma newsletter personnalisée</span>
+                      <span>{t('submit')}</span>
                       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
@@ -488,7 +497,7 @@ export default function SubscriptionForm() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    Annulation facile
+                    {t('trustCancel')}
                   </span>
                   <span className="flex items-center gap-1.5">
                     <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
@@ -498,7 +507,7 @@ export default function SubscriptionForm() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    Paiement sécurisé
+                    {t('trustSecure')}
                   </span>
                   <span className="flex items-center gap-1.5">
                     <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
@@ -508,7 +517,7 @@ export default function SubscriptionForm() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    Satisfait ou remboursé
+                    {t('trustGuarantee')}
                   </span>
                 </div>
               </div>
@@ -537,7 +546,9 @@ export default function SubscriptionForm() {
               </div>
             </div>
             <p className="text-sm text-slate-500">
-              Rejoint par <strong className="text-slate-900">+ 100 professionnels</strong> ce mois-ci
+              {t.rich('socialProof', {
+                count: () => <strong className="text-slate-900">{t('socialProofCount')}</strong>,
+              })}
             </p>
           </div>
         </div>

@@ -1,49 +1,60 @@
 'use client';
 
 import { useState, ReactNode } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const t = useTranslations('faq');
 
   const faqs: { question: string; answer: ReactNode }[] = [
     {
-      question: 'Puis-je vraiment annuler à tout moment ?',
+      question: t('q1'),
       answer: (
         <>
-          Oui, sans conditions. Un simple clic suffit. Pas de questions, pas de frais cachés, pas de procédure compliquée. Vous pouvez le faire simplement via{' '}
-          <a href="https://forms.gle/W2Kqw2PwfvF6KuFt9" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700 underline">
-            ce formulaire
-          </a>.
+          {t.rich('a1', {
+            link: () => (
+              <a href="https://forms.gle/W2Kqw2PwfvF6KuFt9" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700 underline">
+                {t('a1Link')}
+              </a>
+            ),
+          })}
         </>
       ),
     },
     {
-      question: 'Comment choisir mon thème de newsletter ?',
-      answer: 'Lors de votre inscription, vous décrivez en quelques mots ce qui vous intéresse : "L\'actualité des startups françaises", "Les dernières avancées en IA", "Le marché immobilier parisien"... Notre système comprend votre demande et vous propose des sources pertinentes.',
+      question: t('q2'),
+      answer: t('a2'),
     },
     {
-      question: 'D\'où viennent les articles ?',
-      answer: 'Nous agrégeons des centaines de sources de qualité : médias traditionnels, blogs spécialisés, publications académiques, newsletters d\'experts... Notre algorithme sélectionne les articles les plus pertinents en fonction de votre thème.',
+      question: t('q3'),
+      answer: t('a3'),
     },
     {
-      question: 'Puis-je modifier mes préférences après inscription ?',
+      question: t('q4'),
       answer: (
         <>
-          Absolument. Vous pouvez changer de thème, ajuster la fréquence d&apos;envoi, modifier l&apos;horaire de réception, ou même créer plusieurs newsletters sur des sujets différents. Complétez simplement{' '}
-          <a href="https://forms.gle/W2Kqw2PwfvF6KuFt9" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700 underline">
-            ce formulaire
-          </a>. Pour toute difficulté, notre support est là pour vous aider.
+          {t.rich('a4', {
+            link: () => (
+              <a href="https://forms.gle/W2Kqw2PwfvF6KuFt9" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700 underline">
+                {t('a4Link')}
+              </a>
+            ),
+          })}
         </>
       ),
     },
     {
-      question: 'Et si j\'ai besoin d\'aide ?',
+      question: t('q5'),
       answer: (
         <>
-          Notre équipe support répond en moins de 48h par email. Envoyez un mail à{' '}
-          <a href="mailto:contact@pickmynews.com" className="text-amber-600 hover:text-amber-700 underline">
-            contact@pickmynews.com
-          </a>.
+          {t.rich('a5', {
+            email: () => (
+              <a href="mailto:contact@pickmynews.com" className="text-amber-600 hover:text-amber-700 underline">
+                contact@pickmynews.com
+              </a>
+            ),
+          })}
         </>
       ),
     },
@@ -56,13 +67,13 @@ export default function FAQ() {
           {/* Section header */}
           <div className="text-center mb-16">
             <p className="text-amber-600 font-semibold uppercase tracking-wider text-sm mb-4">
-              Questions fréquentes
+              {t('badge')}
             </p>
             <h2 className="text-4xl md:text-5xl text-slate-900 mb-6 text-balance">
-              Vous avez des questions ?
+              {t('title')}
             </h2>
             <p className="text-xl text-slate-600">
-              Voici les réponses aux interrogations les plus courantes.
+              {t('subtitle')}
             </p>
           </div>
 

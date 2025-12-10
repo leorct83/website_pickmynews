@@ -1,9 +1,16 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
+import { Link, usePathname, useRouter } from '@/i18n/navigation';
+import { useLocale } from 'next-intl';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const t = useTranslations('navbar');
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,6 +19,10 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const switchLocale = (newLocale: 'fr' | 'en') => {
+    router.replace(pathname, { locale: newLocale });
+  };
 
   return (
     <nav
@@ -23,38 +34,63 @@ export default function Navbar() {
     >
       <div className="section-container flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
+        <Link href="/" className="flex items-center gap-2 group">
           <div className="w-10 h-10 rounded-xl flex items-center justify-center transform transition-transform group-hover:rotate-6">
             <img src="/logo.svg" alt="PickMyNews Logo" className="w-10 h-10 object-contain" />
           </div>
           <span className="text-xl font-semibold text-slate-900">
             Pick<span className="text-amber-500">My</span>News
           </span>
-        </a>
+        </Link>
 
         {/* Navigation Links */}
         <div className="hidden md:flex items-center gap-8">
           <a href="#comment-ca-marche" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
-            Comment ça marche
+            {t('howItWorks')}
           </a>
           <a href="#avantages" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
-            Avantages
+            {t('benefits')}
           </a>
           <a href="#tarifs" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
-            Tarifs
+            {t('pricing')}
           </a>
           <a href="#faq" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
-            FAQ
+            {t('faq')}
           </a>
         </div>
 
-        {/* CTA */}
+        {/* Language Switcher + CTA */}
         <div className="flex items-center gap-4">
+          {/* Language Switcher */}
+          <div className="flex items-center gap-1 bg-slate-100 rounded-full p-1">
+            <button
+              onClick={() => switchLocale('fr')}
+              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                locale === 'fr'
+                  ? 'bg-white text-slate-900 shadow-sm'
+                  : 'text-slate-500 hover:text-slate-700'
+              }`}
+            >
+              FR
+            </button>
+            <button
+              onClick={() => switchLocale('en')}
+              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                locale === 'en'
+                  ? 'bg-white text-slate-900 shadow-sm'
+                  : 'text-slate-500 hover:text-slate-700'
+              }`}
+            >
+              EN
+            </button>
+          </div>
+
+          {/* CTA */}
           <a
             href="#inscription"
-            className="btn-primary !py-3 !px-6 !text-base"
+            className="btn-primary !py-3 !px-6 !text-base hidden sm:inline-flex"
           >
-            Obtenir ma newsletter personnalisée
+            {t('cta')}
           </a>
         </div>
       </div>

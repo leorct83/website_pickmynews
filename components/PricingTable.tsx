@@ -1,87 +1,92 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations, useLocale } from 'next-intl';
 
 type BillingCycle = 'weekly' | 'monthly' | 'annual';
 
 // Utilitaire pour formater les prix en euros (ex: 4,99 €)
-const formatPrice = (price: number): string => {
-  return price.toFixed(2).replace('.', ',') + ' €';
+const formatPrice = (price: number, locale: string): string => {
+  if (locale === 'fr') {
+    return price.toFixed(2).replace('.', ',') + ' €';
+  }
+  return '€' + price.toFixed(2);
 };
 
 export default function PricingTable() {
   const [billingCycle, setBillingCycle] = useState<BillingCycle>('monthly');
+  const t = useTranslations('pricing');
+  const locale = useLocale();
 
   const plans = [
     {
-      name: '1x/semaine',
-      newslettersPerWeek: 1, // Nombre de newsletters par semaine
-      description: 'Pour rester informé',
+      name: t('plan1Name'),
+      newslettersPerWeek: 1,
+      description: t('plan1Desc'),
       price: { weekly: 1.99, monthly: 4.99, annual: 49.99 },
       features: [
-        '1 newsletter par semaine',
-        'Thème au choix',
-        'Articles sélectionnés',
-
+        t('plan1Feature1'),
+        t('plan1Feature2'),
+        t('plan1Feature3'),
       ],
       limitations: [],
-      cta: 'Commencer',
+      cta: t('cta'),
       popular: false,
     },
     {
-      name: '2x/semaine',
+      name: t('plan2Name'),
       newslettersPerWeek: 2,
-      description: 'L\'essentiel',
+      description: t('plan2Desc'),
       price: { weekly: 2.99, monthly: 6.49, annual: 59.99 },
       features: [
-        '2 newsletters par semaine',
-        'Thème au choix',
-        'Articles sélectionnés',
-        'Choix des jours et heures d\'envoi',
+        t('plan2Feature1'),
+        t('plan2Feature2'),
+        t('plan2Feature3'),
+        t('plan2Feature4'),
       ],
       limitations: [],
-      cta: 'Commencer',
+      cta: t('cta'),
       popular: true,
     },
     {
-      name: '5x/semaine',
+      name: t('plan3Name'),
       newslettersPerWeek: 5,
-      description: 'Pour les pros',
+      description: t('plan3Desc'),
       price: { weekly: 4.99, monthly: 9.99, annual: 99.99 },
       features: [
-        '5 newsletters par semaine',
-        'Thème au choix',
-        'Articles sélectionnés',
-        'Choix des jours et heures d\'envoi',
-        'Support prioritaire',
+        t('plan3Feature1'),
+        t('plan3Feature2'),
+        t('plan3Feature3'),
+        t('plan3Feature4'),
+        t('plan3Feature5'),
       ],
       limitations: [],
-      cta: 'Commencer',
+      cta: t('cta'),
       popular: false,
     },
     {
-      name: '7x/semaine',
+      name: t('plan4Name'),
       newslettersPerWeek: 7,
-      description: 'Pour les passionnés',
+      description: t('plan4Desc'),
       price: { weekly: 5.99, monthly: 12.99, annual: 129.99 },
       features: [
-        'Newsletter quotidienne',
-        'Thème au choix',
-        'Articles sélectionnés',
-        'Choix des jours et heures d\'envoi',
-        'Support prioritaire',
-        'Accès anticipé aux nouveautés',
+        t('plan4Feature1'),
+        t('plan4Feature2'),
+        t('plan4Feature3'),
+        t('plan4Feature4'),
+        t('plan4Feature5'),
+        t('plan4Feature6'),
       ],
       limitations: [],
-      cta: 'Commencer',
+      cta: t('cta'),
       popular: false,
     },
   ];
 
   const billingLabels: Record<BillingCycle, string> = {
-    weekly: '/semaine',
-    monthly: '/mois',
-    annual: '/an',
+    weekly: t('perWeek'),
+    monthly: t('perMonth'),
+    annual: t('perYear'),
   };
 
   const getAnnualSavings = (plan: typeof plans[0]) => {
@@ -97,10 +102,8 @@ export default function PricingTable() {
       case 'weekly':
         return plan.price.weekly;
       case 'monthly':
-        // (prix mensuel × 12 mois) / 52 semaines
         return (plan.price.monthly * 12) / 52;
       case 'annual':
-        // prix annuel / 52 semaines
         return plan.price.annual / 52;
     }
   };
@@ -121,13 +124,13 @@ export default function PricingTable() {
         {/* Section header */}
         <div className="text-center mb-12">
           <p className="text-amber-400 font-semibold uppercase tracking-wider text-sm mb-4">
-            Tarifs simples
+            {t('badge')}
           </p>
           <h2 className="text-4xl md:text-5xl text-white mb-6 text-balance">
-            Un prix clair, sans surprise
+            {t('title')}
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-8">
-            Choisissez la fréquence qui vous correspond et le mode de facturation.
+            {t('subtitle')}
           </p>
 
           {/* Toggle */}
@@ -140,7 +143,7 @@ export default function PricingTable() {
                   : 'text-slate-400 hover:text-white'
               }`}
             >
-              Hebdo
+              {t('weekly')}
             </button>
             <button
               onClick={() => setBillingCycle('monthly')}
@@ -150,7 +153,7 @@ export default function PricingTable() {
                   : 'text-slate-400 hover:text-white'
               }`}
             >
-              Mensuel
+              {t('monthly')}
             </button>
             <button
               onClick={() => setBillingCycle('annual')}
@@ -160,7 +163,7 @@ export default function PricingTable() {
                   : 'text-slate-400 hover:text-white'
               }`}
             >
-              Annuel
+              {t('annual')}
               <span className="bg-emerald-500 text-white text-xs px-2 py-0.5 rounded-full">
                 -17%
               </span>
@@ -183,7 +186,7 @@ export default function PricingTable() {
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                   <span className="bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-semibold px-4 py-1 rounded-full whitespace-nowrap">
-                    Le plus populaire
+                    {t('mostPopular')}
                   </span>
                 </div>
               )}
@@ -214,18 +217,18 @@ export default function PricingTable() {
                 </div>
                 {billingCycle === 'annual' && (
                   <p className={`text-sm mt-1 ${plan.popular ? 'text-emerald-600' : 'text-emerald-400'}`}>
-                    Économisez {getAnnualSavings(plan)}%
+                    {t('save', { percent: getAnnualSavings(plan) })}
                   </p>
                 )}
 
                 {/* Prix par semaine et par newsletter */}
                 <p className={`text-xs mt-2 ${plan.popular ? 'text-slate-500' : 'text-slate-400'}`}>
                   {billingCycle !== 'weekly' && (
-                    <>≈ {formatPrice(getPricePerWeek(plan, billingCycle))}/sem.</>
+                    <>{t('approxPerWeek', { price: formatPrice(getPricePerWeek(plan, billingCycle), locale) })}</>
                   )}
                   {' — '}
                   <span className={plan.popular ? 'text-amber-600' : 'text-amber-400'}>
-                    {formatPrice(getPricePerNewsletter(plan, billingCycle))}/newsletter
+                    {t('perNewsletter', { price: formatPrice(getPricePerNewsletter(plan, billingCycle), locale) })}
                   </span>
                 </p>
               </div>
@@ -267,7 +270,7 @@ export default function PricingTable() {
             <svg className="w-5 h-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
-            <span>Satisfait ou remboursé pendant 14 jours.</span>
+            <span>{t('guarantee')}</span>
           </div>
         </div>
       </div>

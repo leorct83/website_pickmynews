@@ -1,6 +1,10 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 export default function PainPoints() {
+  const t = useTranslations('painPoints');
+
   const painPoints = [
     {
       icon: (
@@ -8,9 +12,9 @@ export default function PainPoints() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      stat: '2h47',
-      label: 'par jour',
-      description: 'C\'est le temps moyen passé à consommer des news, souvent sans réel bénéfice.',
+      stat: t('stat1'),
+      label: t('stat1Label'),
+      description: t('stat1Desc'),
     },
     {
       icon: (
@@ -18,9 +22,9 @@ export default function PainPoints() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      stat: '73%',
-      label: 'des gens',
-      description: 'se sentent submergés par la quantité d\'informations à traiter chaque jour.',
+      stat: t('stat2'),
+      label: t('stat2Label'),
+      description: t('stat2Desc'),
     },
     {
       icon: (
@@ -28,9 +32,9 @@ export default function PainPoints() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      stat: '91%',
-      label: 'des articles',
-      description: 'que vous voyez ne sont pas pertinents pour vos intérêts réels.',
+      stat: t('stat3'),
+      label: t('stat3Label'),
+      description: t('stat3Desc'),
     },
   ];
 
@@ -47,14 +51,13 @@ export default function PainPoints() {
         {/* Section header */}
         <div className="text-center mb-16">
           <p className="text-amber-400 font-semibold uppercase tracking-wider text-sm mb-4">
-            Le constat
+            {t('badge')}
           </p>
           <h2 className="text-4xl md:text-5xl text-white mb-6 text-balance">
-            L'infobésité vous coûte cher.
+            {t('title')}
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Entre les flux RSS, les notifications, les newsletters génériques et les timelines infinies... 
-            vous perdez plus que du temps.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -82,10 +85,10 @@ export default function PainPoints() {
         {/* Transition vers la solution */}
         <div className="text-center mt-16">
           <p className="text-xl text-slate-300 mb-6">
-            Et si vous repreniez le contrôle ?
+            {t('transition')}
           </p>
           <a href="#comment-ca-marche" className="btn-ghost !text-amber-400 hover:!text-amber-300">
-            <span>Découvrir la solution</span>
+            <span>{t('discoverSolution')}</span>
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>

@@ -1,22 +1,27 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations('footer');
+  const tNav = useTranslations('navbar');
 
   const links = {
     product: [
-      { label: 'Comment ça marche', href: '#comment-ca-marche' },
-      { label: 'Tarifs', href: '#tarifs' },
-      { label: 'FAQ', href: '#faq' },
+      { label: tNav('howItWorks'), href: '#comment-ca-marche' },
+      { label: tNav('pricing'), href: '#tarifs' },
+      { label: tNav('faq'), href: '#faq' },
     ],
     company: [
-      { label: 'Contact', href: 'mailto:contact@pickmynews.com' },
+      { label: t('contact'), href: 'mailto:contact@pickmynews.com' },
     ],
     legal: [
-      { label: 'Mentions légales', href: '/legal' },
-      { label: 'CGU', href: '/terms' },
-      { label: 'CGV', href: '/cgv' },
-      { label: 'Confidentialité', href: '/privacy' },
+      { label: t('legalNotices'), href: '/legal' },
+      { label: t('termsShort'), href: '/terms' },
+      { label: t('salesTerms'), href: '/cgv' },
+      { label: t('privacyShort'), href: '/privacy' },
     ],
   };
 
@@ -26,14 +31,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand column */}
           <div className="md:col-span-1">
-            <a href="#" className="flex items-center gap-3 mb-4 group">
-              
+            <Link href="/" className="flex items-center gap-3 mb-4 group">
+
               {/* Logo */}
               <div
                 className="
                   w-20 h-20
                   flex items-center justify-center
-                  transform transition-transform 
+                  transform transition-transform
                   group-hover:rotate-6
                 "
               >
@@ -48,12 +53,11 @@ export default function Footer() {
               <span className="text-2xl font-semibold">
                 Pick<span className="text-amber-500">My</span>News
               </span>
-            </a>
+            </Link>
 
             {/* Text */}
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              L'actualité qui compte, quand vous le décidez.
-              Votre newsletter personnalisée, sans bruit ni distraction.
+              {t('tagline')}
             </p>
 
             {/* Social links */}
@@ -73,7 +77,7 @@ export default function Footer() {
 
           {/* Links columns */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Produit</h4>
+            <h4 className="font-semibold text-white mb-4">{t('product')}</h4>
             <ul className="space-y-3">
               {links.product.map((link) => (
                 <li key={link.label}>
@@ -86,7 +90,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Entreprise</h4>
+            <h4 className="font-semibold text-white mb-4">{t('company')}</h4>
             <ul className="space-y-3">
               {links.company.map((link) => (
                 <li key={link.label}>
@@ -99,13 +103,13 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Légal</h4>
+            <h4 className="font-semibold text-white mb-4">{t('legal')}</h4>
             <ul className="space-y-3">
               {links.legal.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-slate-400 hover:text-white transition-colors text-sm">
+                  <Link href={link.href} className="text-slate-400 hover:text-white transition-colors text-sm">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -115,10 +119,12 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-sm">
-            © {currentYear} PickmyNews. Tous droits réservés.
+            {t('copyright', { year: currentYear })}
           </p>
           <p className="text-slate-500 text-sm flex items-center gap-1">
-            Fait avec <span className="text-red-500">♥</span> en France
+            {t.rich('madeWith', {
+              heart: () => <span className="text-red-500">♥</span>,
+            })}
           </p>
         </div>
       </div>
