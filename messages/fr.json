@@ -14,10 +14,7 @@
   "hero": {
     "headline": "L'info qui compte",
     "headlineSuffix": "vient à vous.",
-    "subheadline": "Recevez une newsletter qui {you} parle, sur le sujet de {your} choix, quand {youWant} voulez !",
-    "you": "vous",
-    "your": "votre",
-    "youWant": "vous",
+    "subheadline": "Recevez une newsletter qui <you>vous</you> parle, sur le sujet de <your>votre</your> choix, quand <youWant>vous</youWant> voulez !",
     "ctaPrimary": "Créer ma newsletter",
     "ctaSecondary": "Voir comment ça marche",
     "trustSatisfied": "Satisfait ou remboursé pendant 14 jours",

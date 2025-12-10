@@ -29,9 +29,9 @@ export default function HeroSection() {
           {/* Subheadline */}
           <h2 className="fade-in-up delay-200 text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
             {t.rich('subheadline', {
-              you: () => <span className="highlight">{t('you')}</span>,
-              your: () => <span className="highlight">{t('your')}</span>,
-              youWant: () => <span className="highlight">{t('youWant')}</span>,
+              you: (chunks) => <span className="highlight">{chunks}</span>,
+              your: (chunks) => <span className="highlight">{chunks}</span>,
+              youWant: (chunks) => <span className="highlight">{chunks}</span>,
             })}
           </h2>
 

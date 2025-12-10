@@ -14,10 +14,7 @@
   "hero": {
     "headline": "The news that matters",
     "headlineSuffix": "comes to you.",
-    "subheadline": "Receive a newsletter that speaks to {you}, on the topic of {your} choice, when {youWant} want!",
-    "you": "you",
-    "your": "your",
-    "youWant": "you",
+    "subheadline": "Receive a newsletter that speaks to <you>you</you>, on the topic of <your>your</your> choice, when <youWant>you</youWant> want!",
     "ctaPrimary": "Create my newsletter",
     "ctaSecondary": "See how it works",
     "trustSatisfied": "14-day money-back guarantee",
