@@ -85,7 +85,7 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
           <!-- HERO IMAGE -->
           <tr>
             <td style="padding:20px 32px;">
-              <img src="https://source.unsplash.com/1080x720/?military,desert"
+              <img src="https://www.istockphoto.com/photo/moroccan-coat-of-police-arms-emblem-gm2211897516-628860833?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fmaroc-militaire&utm_term=maroc+militaire%3A%3A%3A%3Aba4dab9d-fcab-4396-9808-7572e9400ced"
                    alt="Exercice militaire en milieu désertique avec véhicules et soldats."
                    width="536"
                    height="auto"
@@ -146,7 +146,7 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">Ce rendez-vous annuel illustre la volonté stratégique de Paris et Rabat de préserver la stabilité régionale, en scrutant particulièrement les enjeux liés à la maîtrise des environnements désertiques. L'exercice confirme une coopération militaire solide et pragmatique, clé dans un contexte international instable.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.defense.gouv.fr" style="color:#6366f1;">defense.gouv.fr</a> · <a href="https://medias24.com" style="color:#6366f1;">medias24.com</a> · <a href="https://lecollimateur.ma" style="color:#6366f1;">lecollimateur.ma</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.defense.gouv.fr/terre/actualites/exercice-chergui-2025-linteroperabilite-franco-marocaine-testee-desert" style="color:#6366f1;">defense.gouv.fr</a> · <a href="https://medias24.com/2025/10/06/exercice-chergui-2025-les-armees-marocaine-et-francaise-a-lepreuve-du-desert/" style="color:#6366f1;">medias24.com</a> · <a href="https://lecollimateur.ma/195919" style="color:#6366f1;">lecollimateur.ma</a></p>
 
 <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -158,7 +158,7 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">Ce partenariat stratégique consolidé s'inscrit dans une dynamique d'approfondissement de la coopération bilatérale entre les États-Unis et le Maroc. Il s'accompagne d'initiatives comme <em>Atlas Handshake</em>, focalisée sur la coopération maritime, témoignant de l'ancrage régional et international accru dans la sécurité et la stabilité de la région.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://lematin.ma" style="color:#6366f1;">lematin.ma</a> · <a href="https://le360.ma" style="color:#6366f1;">le360.ma</a> · <a href="https://medias24.com" style="color:#6366f1;">medias24.com</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://lematin.ma/nation/reunion-de-planification-principale-de-lexercice-african-lion-2026/318105" style="color:#6366f1;">lematin.ma</a> · <a href="https://fr.le360.ma/politique/african-lion-2026-le-compte-a-rebours-est-lance_OKXI6FFXWRGG3HHR5YWUOT7FGM/" style="color:#6366f1;">le360.ma</a> · <a href="https://medias24.com/2025/12/09/atlas-handshake-le-maroc-et-les-etats-unis-renforcent-leur-cooperation-maritime-1591726/" style="color:#6366f1;">medias24.com</a></p>
 
 <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -172,7 +172,7 @@ const NEWSLETTER_EXAMPLES: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">Au-delà de la santé, cet événement reflète une vision plus large portée par le roi <strong>Mohammed VI</strong> du Maroc, visant à tisser ensemble sécurité et bien-être public. En alignant discipline militaire et systèmes de santé civils, le partenariat FAR-AFRICOM établit un modèle de gestion épidémique résiliente et proactive à travers l'Afrique.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://lematin.ma" style="color:#6366f1;">Le Matin</a> · <a href="https://linformation.ma" style="color:#6366f1;">L'Information</a> · <a href="https://kaweru.com" style="color:#6366f1;">Kaweru</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://lematin.ma/nation/les-far-accueillent-latelier-apora-2025-en-partenariat-avec-lafricom/318038" style="color:#6366f1;">Le Matin</a> · <a href="https://linformation.ma/news/politique/securite-sanitaire-les-far-accueillent-l-atelier-apora-2025-en-partenariat-avec-l-africom/61849" style="color:#6366f1;">L'Information</a> · <a href="https://www.kaweru.com/politique-societe/2025/12/09/rabat-accueille-latelier-apora-2025-pour-renforcer-la-securite-sanitaire-en-afrique/" style="color:#6366f1;">Kaweru</a></p>
 
             </td>
           </tr>
