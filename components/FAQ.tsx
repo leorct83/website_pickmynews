@@ -58,6 +58,10 @@ export default function FAQ() {
         </>
       ),
     },
+    {
+      question: t('q6'),
+      answer: t('a6'),
+    },
   ];
 
   return (

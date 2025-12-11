@@ -18,7 +18,8 @@
     "ctaPrimary": "Créer ma newsletter",
     "ctaSecondary": "Voir comment ça marche",
     "trustSatisfied": "Satisfait ou remboursé pendant 14 jours",
-    "trustCancel": "Annulation en 1 clic"
+    "trustCancel": "Annulation en 1 clic",
+    "trustFactCheck": "Un faux chiffre = newsletter gratuite"
   },
   "painPoints": {
     "badge": "Le constat",
@@ -62,8 +63,8 @@
     "benefit1Desc": "Pas d'app à installer. Directement dans votre boîte mail préférée.",
     "benefit2Title": "100% pour vous",
     "benefit2Desc": "Votre thème. Votre fréquence. Votre horaire. Vous contrôlez absolument tout.",
-    "benefit3Title": "Toujours à jour",
-    "benefit3Desc": "Sources fiables, contenu vérifié, actualité fraîche. Chaque envoi est pertinent."
+    "benefit3Title": "Vérifié et sourcé",
+    "benefit3Desc": "Chaque fait et chiffre est vérifié. Sources listées en fin d'article pour une transparence totale."
   },
   "newsletterShowcase": {
     "badge": "Exemples",
@@ -91,6 +92,7 @@
     "mostPopular": "Le plus populaire",
     "cta": "Commencer",
     "guarantee": "Satisfait ou remboursé pendant 14 jours.",
+    "guaranteeFactCheck": "Un faux chiffre ou donnée erronée ? Votre newsletter du jour est gratuite.",
     "plan1Name": "1x/semaine",
     "plan1Desc": "Pour rester informé",
     "plan1Feature1": "1 newsletter par semaine",
@@ -127,13 +129,15 @@
     "a1Link": "ce formulaire",
     "q2": "Comment choisir mon thème de newsletter ?",
     "a2": "Lors de votre inscription, vous décrivez en quelques mots ce qui vous intéresse : \"L'actualité des startups françaises\", \"Les dernières avancées en IA\", \"Le marché immobilier parisien\"... Notre système comprend votre demande et vous propose des sources pertinentes.",
-    "q3": "D'où viennent les articles ?",
-    "a3": "Nous agrégeons des centaines de sources de qualité : médias traditionnels, blogs spécialisés, publications académiques, newsletters d'experts... Notre algorithme sélectionne les articles les plus pertinents en fonction de votre thème.",
+    "q3": "D'où viennent les articles ? Sont-ils fiables ?",
+    "a3": "Nous agrégeons des centaines de sources de qualité : médias traditionnels, blogs spécialisés, publications académiques, newsletters d'experts... Chaque fait et chiffre est systématiquement vérifié. Les sources sont listées en fin de chaque article pour une transparence totale.",
     "q4": "Puis-je modifier mes préférences après inscription ?",
     "a4": "Absolument. Vous pouvez changer de thème, ajuster la fréquence d'envoi, modifier l'horaire de réception, ou même créer plusieurs newsletters sur des sujets différents. Complétez simplement {link}. Pour toute difficulté, notre support est là pour vous aider.",
     "a4Link": "ce formulaire",
     "q5": "Et si j'ai besoin d'aide ?",
-    "a5": "Notre équipe support répond en moins de 48h par email. Envoyez un mail à {email}."
+    "a5": "Notre équipe support répond en moins de 48h par email. Envoyez un mail à {email}.",
+    "q6": "Que se passe-t-il si une information est fausse ?",
+    "a6": "Nous nous engageons sur la qualité : si vous trouvez un chiffre ou une donnée factuellement incorrecte dans votre newsletter, elle est gratuite. C'est notre garantie vérification."
   },
   "subscriptionForm": {
     "badge": "Prêt à commencer ?",
