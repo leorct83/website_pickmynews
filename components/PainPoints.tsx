@@ -13,7 +13,6 @@ export default function PainPoints() {
         </svg>
       ),
       stat: t('stat1'),
-      label: t('stat1Label'),
       description: t('stat1Desc'),
       sourceName: t('stat1Source'),
       sourceLink: 'https://pressgazette.co.uk/media-audience-and-business-data/news-avoidance-at-record-levels-as-four-in-ten-worn-out-by-news/',
@@ -25,7 +24,6 @@ export default function PainPoints() {
         </svg>
       ),
       stat: t('stat2'),
-      label: t('stat2Label'),
       description: t('stat2Desc'),
       sourceName: t('stat2Source'),
       sourceLink: 'https://studyfinds.org/information-overload-workplace/',
@@ -37,7 +35,6 @@ export default function PainPoints() {
         </svg>
       ),
       stat: t('stat3'),
-      label: t('stat3Label'),
       description: t('stat3Desc'),
       sourceName: t('stat3Source'),
       sourceLink: 'https://electroiq.com/stats/social-media-mental-health-statistics/',
@@ -79,7 +76,6 @@ export default function PainPoints() {
               </div>
               <div className="mb-4">
                 <span className="text-5xl font-bold text-white">{point.stat}</span>
-                <span className="text-lg text-slate-400 ml-2">{point.label}</span>
               </div>
               <p className="text-slate-400 leading-relaxed mb-3">
                 {point.description}
