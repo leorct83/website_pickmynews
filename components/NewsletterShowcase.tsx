@@ -721,13 +721,16 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
     description: 'In 2025, military exercises and Franco-Moroccan and US-Moroccan strategic partnerships highlight the growing strength of the Royal Armed Forces.',
     tags: ['Royal Armed Forces'],
     html: `
+  <!-- WRAPPER -->
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F3F4F6;">
     <tr>
       <td align="center" style="padding:32px 16px;">
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
           <tr>
             <td style="padding:28px 32px 0 32px;text-align:center;">
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter - 12/10/2025</p>
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">
+                Newsletter of 12/10/2025
+              </p>
             </td>
           </tr>
           <tr>
@@ -763,71 +766,57 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
               </table>
             </td>
           </tr>
+          <!-- SEPARATOR -->
           <tr>
-            <td style="padding:0 32px 20px 32px;">
-              <img src="https://images.unsplash.com/photo-1580910051074-3eb694886f5b?w=600&h=300&fit=crop" alt="Royal Armed Forces Morocco" style="width:100%;height:auto;border-radius:10px;display:block;" />
+              <td style="padding:0 32px;">
+              <div style="margin:12px 0 0 0;border-top:1px solid #E5E7EB;"></div>
             </td>
           </tr>
-          <tr>
-            <td align="center" style="padding:0 32px 20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+          <!-- SECTIONS -->
           <tr>
             <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Chergui 2025: Franco-Moroccan interoperability laboratory</h2>
-              <p style="margin:0 0 12px 0;">On <strong>October 3, 2025</strong>, the <em>Chergui 2025</em> military exercise brought together units from the Moroccan Royal Armed Forces and the French Army in the Errachidia desert.</p>
-              <p style="margin:0 0 12px 0;">This annual event illustrates the strategic will of Paris and Rabat to preserve regional stability. With a <strong>combined deployment of around 900 soldiers</strong>, the exercise focused on conventional combat, air assault, and protection of civilian convoys in extreme heat.</p>
-              <p style="margin:0 0 12px 0;">According to the organizers, these simulations demonstrate that both nations are ready to intervene quickly in the Sahel or Maghreb regions in case of crisis.</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: Moroccan Defense Ministry, October 4, 2025</p>
+
+              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Chergui 2025, Franco-Moroccan interoperability laboratory in the Atlas</h2>
+
+<p style="margin:0 0 12px 0;">On <strong>October 3, 2025</strong>, the <em>Chergui 2025</em> military exercise brought together units from the <em>Moroccan Royal Armed Forces</em> and the French Army in the Errachidia desert. Based on a scenario simulating an aggression against Morocco's territorial integrity, this three-week training challenged the coordination and joint action capacity of both armies.</p>
+
+<p style="margin:0 0 12px 0;">Structured in two phases, Chergui combined a <em>Command Post Exercise</em> (CPX) for joint planning and management, with a <em>Live Exercise</em> (LIVEX) integrating tactical maneuvers combining ground and air forces. Soldiers thus operated in a demanding desert environment, between Atlas reliefs and difficult weather conditions.</p>
+
+<p style="margin:0 0 12px 0;">Equipment-wise, the cooperation relied on emblematic assets: Moroccan <strong>M1A2 Abrams</strong> tanks, French <strong>Tiger</strong>, <strong>Gazelle</strong> and <strong>NH90</strong> helicopters, demonstrating the tactical complementarity of both armies. More than just a demonstration, Chergui 2025 aims to strengthen skills and improve response to security challenges in the Maghreb and Sahel.</p>
+
+<p style="margin:0 0 12px 0;">This annual event illustrates the strategic will of Paris and Rabat to preserve regional stability, particularly scrutinizing challenges related to mastering desert environments. The exercise confirms a solid and pragmatic military cooperation, key in an unstable international context.</p>
+
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.defense.gouv.fr/terre/actualites/exercice-chergui-2025-linteroperabilite-franco-marocaine-testee-desert" style="color:#6366f1;">defense.gouv.fr</a> · <a href="https://medias24.com/2025/10/06/exercice-chergui-2025-les-armees-marocaine-et-francaise-a-lepreuve-du-desert/" style="color:#6366f1;">medias24.com</a> · <a href="https://lecollimateur.ma/195919" style="color:#6366f1;">lecollimateur.ma</a></p>
+
+<div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
+
+<h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">African Lion 2026: final stretch before Africa's largest military exercise</h2>
+
+<p style="margin:0 0 12px 0;">From <strong>December 8 to 12, 2025</strong>, the main planning meeting for the <em>African Lion 2026</em> exercise was held in Agadir, focused on coordinating operational and logistical phases. Scheduled from <strong>April 20 to May 8, 2026</strong> in the Agadir, Tan Tan, Taroudant, Kenitra and Ben Guerir regions, this annual exercise brings together Moroccan and American armed forces.</p>
+
+<p style="margin:0 0 12px 0;">More than <strong>40,000 military personnel</strong> have participated in the last five editions, making African Lion the largest military event in Africa. The 2026 edition aims to strengthen interoperability of armies in air, land, maritime and special operations domains. The goal is also to increase operational readiness for combined and joint interventions.</p>
+
+<p style="margin:0 0 12px 0;">This consolidated strategic partnership is part of a dynamic to deepen bilateral cooperation between the United States and Morocco. It is accompanied by initiatives like <em>Atlas Handshake</em>, focused on maritime cooperation, demonstrating increased regional and international anchoring in security and stability of the region.</p>
+
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://lematin.ma/nation/reunion-de-planification-principale-de-lexercice-african-lion-2026/318105" style="color:#6366f1;">lematin.ma</a> · <a href="https://fr.le360.ma/politique/african-lion-2026-le-compte-a-rebours-est-lance_OKXI6FFXWRGG3HHR5YWUOT7FGM/" style="color:#6366f1;">le360.ma</a> · <a href="https://medias24.com/2025/12/09/atlas-handshake-le-maroc-et-les-etats-unis-renforcent-leur-cooperation-maritime-1591726/" style="color:#6366f1;">medias24.com</a></p>
+
+<div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
+
+<h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">FAR and AFRICOM join forces to strengthen health security in Africa during APORA 2025</h2>
+
+<p style="margin:0 0 12px 0;">From <strong>December 8 to 12, 2025</strong>, Rabat hosted the <em>APORA 2025</em> workshop, conducted by the <em>Royal Armed Forces</em> (FAR) in collaboration with the United States <em>Africa Command</em> (AFRICOM). This event gathered representatives from <strong>38 African nations</strong>, strengthening a continental alliance against emerging epidemics.</p>
+
+<p style="margin:0 0 12px 0;">Founded in 2014 by AFRICOM in Ghana at the heart of the Ebola crisis, APORA aims to merge public health initiatives with military preparedness. The workshop focused on operationalizing civil-military collaboration to anticipate, detect and rapidly respond to infectious disease outbreaks.</p>
+
+<p style="margin:0 0 12px 0;">Participants deepened topics such as <em>epidemiological surveillance</em>, <em>crisis communication</em> and the role of climate change in health risks. This joint effort also emphasized strengthening national capacities through expertise sharing and coordinated response strategies.</p>
+
+<p style="margin:0 0 12px 0;">Beyond health, this event reflects a broader vision carried by King <strong>Mohammed VI</strong> of Morocco, aiming to weave together security and public well-being. By aligning military discipline and civilian health systems, the FAR-AFRICOM partnership establishes a model of resilient and proactive epidemic management across Africa.</p>
+
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://lematin.ma/nation/les-far-accueillent-latelier-apora-2025-en-partenariat-avec-lafricom/318038" style="color:#6366f1;">Le Matin</a> · <a href="https://linformation.ma/news/politique/securite-sanitaire-les-far-accueillent-l-atelier-apora-2025-en-partenariat-avec-l-africom/61849" style="color:#6366f1;">L'Information</a> · <a href="https://www.kaweru.com/politique-societe/2025/12/09/rabat-accueille-latelier-apora-2025-pour-renforcer-la-securite-sanitaire-en-afrique/" style="color:#6366f1;">Kaweru</a></p>
+
             </td>
           </tr>
-          <tr>
-            <td align="center" style="padding:20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">African Lion 2026: The final planning conference</h2>
-              <p style="margin:0 0 12px 0;">From <strong>November 29 to December 5, 2025</strong>, the Final Planning Conference (FPC) for the <em>African Lion</em> exercise took place in Agadir.</p>
-              <p style="margin:0 0 12px 0;">Bringing together <strong>more than a dozen African and Western nations</strong>, this event announced an unprecedented deployment for 2026: <strong>more than 7,000 military personnel</strong> (live and command post exercises), making it one of the largest multinational maneuvers on the African continent.</p>
-              <p style="margin:0 0 12px 0;">The exercise aims to strengthen interoperability and crisis response capacity between AFRICOM and its African partners, including Morocco, Senegal, and Tunisia.</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: AFRICOM, December 2, 2025</p>
-            </td>
-          </tr>
-          <tr>
-            <td align="center" style="padding:20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">APORA 2025: The health dimension of defense</h2>
-              <p style="margin:0 0 12px 0;">The <em>Africa Partner Outbreak Response Alliance</em> (APORA) exercise, held in early <strong>December 2025</strong> in Marrakech, addressed health emergency management.</p>
-              <p style="margin:0 0 12px 0;">Moroccan and American medical personnel simulated a <strong>fictitious epidemic</strong> requiring rapid deployment of field hospitals and management of massive patient flows, a scenario deemed plausible in the context of current climate and health tensions.</p>
-              <p style="margin:0 0 12px 0;">This cooperation illustrates the FAR's will to expand their area of expertise beyond traditional combat, by integrating <strong>civil-military</strong> and <strong>humanitarian</strong> emergency aspects.</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: US Embassy in Rabat, December 6, 2025</p>
-            </td>
-          </tr>
+          <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
@@ -840,24 +829,12 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
               </table>
             </td>
           </tr>
+          <!-- FOOTER -->
           <tr>
-            <td style="padding:0 32px 20px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #E5E7EB;">
-                <tr>
-                  <td style="padding-top:20px;">
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
-                      You are receiving this email because you subscribed to PickMyNews.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-top:8px;">
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
-                      <a href="https://forms.gle/bU7WsZMHwinkjJmP7" style="color:#6B7280;text-decoration:underline;">Manage my subscription</a>
-                    </p>
-                  </td>
-                </tr>
-              </table>
+            <td style="padding:20px 32px;background-color:#F9FAFB;border-top:1px solid #E5E7EB;border-radius:0 0 12px 12px;">
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
+                <a href="https://forms.gle/bU7WsZMHwinkjJmP7" style="color:#6B7280;text-decoration:underline;">Manage my subscription</a>
+              </p>
             </td>
           </tr>
         </table>
@@ -869,7 +846,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
     id: 'newsletter-2',
     title: 'HP cuts jobs as AI revolutionizes RAM and coding',
     date: 'December 5, 2025',
-    description: 'AI is disrupting the tech industry: HP cuts up to 6,000 jobs, RAM prices soar (+50%), and Anthropic launches Claude Sonnet 4.5.',
+    description: 'AI is disrupting the tech industry: HP cuts up to 6,000 jobs, RAM prices soar (+50%), and Anthropic launches Claude Sonnet 4.5, the most advanced AI coder.',
     tags: ['AI News'],
     html: `
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F3F4F6;">
@@ -878,7 +855,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
           <tr>
             <td style="padding:28px 32px 0 32px;text-align:center;">
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter - 12/05/2025</p>
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter of 12/05/2025</p>
             </td>
           </tr>
           <tr>
@@ -914,71 +891,71 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
               </table>
             </td>
           </tr>
+          <!-- HERO IMAGE -->
           <tr>
-            <td style="padding:0 32px 20px 32px;">
-              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=300&fit=crop" alt="AI Technology" style="width:100%;height:auto;border-radius:10px;display:block;" />
+            <td style="padding:20px 32px;">
+              <img src="https://images.unsplash.com/photo-1681748179531-f3a227764721?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzg2NDh8MHwxfHNlYXJjaHwxfHxBY3R1JTIwSUElMjAlM0ElMjBMZXMlMjByb3VhZ2VzJTIwaW52aXNpYmxlcyUyMGRlJTIwbGElMjByJUMzJUE5dm9sdXRpb258ZW58MHwwfHx8MTc2NDk1NTEzMXww&ixlib=rb-4.1.0&q=80&w=1080"
+                   alt="AI Revolution"
+                   width="536"
+                   height="auto"
+                   style="width:100%;max-width:536px;height:auto;display:block;border-radius:8px;border:0;outline:none;text-decoration:none;">
             </td>
           </tr>
+          <!-- SEPARATOR -->
           <tr>
-            <td align="center" style="padding:0 32px 20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
+              <td style="padding:0 32px;">
+              <div style="margin:12px 0 0 0;border-top:1px solid #E5E7EB;"></div>
             </td>
           </tr>
+          <!-- SECTIONS -->
           <tr>
             <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
+
               <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">HP to cut up to 6,000 jobs to integrate AI</h2>
-              <p style="margin:0 0 12px 0;">On <strong>November 25, 2025</strong>, HP announced a plan to cut <strong>4,000 to 6,000</strong> jobs by the end of 2028, a first for a major company clearly linking AI to workforce reduction.</p>
-              <p style="margin:0 0 12px 0;">At a time when hyperscalers and startups are using AI to improve their productivity, HP is choosing a path of organizational optimization: <strong>fewer positions, but supposedly better compensated</strong>. This reconfiguration is aimed at strengthening its competitiveness in the server and cloud market.</p>
-              <p style="margin:0 0 12px 0;">Analysts point out that the group is late in its AI strategy; this decision marks a catch-up, at the cost of a <strong>significant social impact</strong>.</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: Bloomberg Technology, November 25, 2025</p>
+
+<p style="margin:0 0 12px 0;">On <strong>November 25, 2025</strong>, American giant HP announced a plan to cut <strong>4,000 to 6,000</strong> positions by end of <strong>2028</strong>. This reduction corresponds to more than <strong>10%</strong> of its <strong>58,000</strong> employees worldwide, a first for a major company establishing a clear link between <em>artificial intelligence</em> and a drastic workforce reduction policy.</p>
+
+<p style="margin:0 0 12px 0;">HP details that this transformation is part of its intensified <em>AI</em> adoption plan to improve productivity, product innovation and customer satisfaction. The goal is to generate approximately <strong>$1 billion</strong> in annual savings by the end of the period. However, these gains will require restructuring costs estimated at <strong>$650 million</strong>, including <strong>$250 million</strong> for fiscal year 2026.</p>
+
+<p style="margin:0 0 12px 0;">This announcement caused a drop of about <strong>6%</strong> in HP stock on Wall Street, combined with disappointing financial forecasts. HP's plan illustrates the coming challenges of generative <em>AI</em> in the industrial sector, where the elimination of technical jobs could be offset by the creation of new roles, but with an uncertain transition.</p>
+
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.01net.com/" style="color:#6366f1;text-decoration:underline;">01net</a> · <a href="https://www.la-croix.com/" style="color:#6366f1;text-decoration:underline;">La Croix</a> · <a href="https://www.tunisienumerique.com/" style="color:#6366f1;text-decoration:underline;">Tunisie Numérique</a></p>
+
+<div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
+
+<h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">AI causes RAM prices to explode in December 2025</h2>
+
+<p style="margin:0 0 12px 0;">From early December 2025, the <em>RAM crisis</em> reached a critical point. Memory stick prices jumped by <strong>50%</strong> in just a few days.</p>
+
+<p style="margin:0 0 12px 0;">For some high-end references, prices have even more than doubled, multiplied by <strong>3.35</strong> in a few months. Major increases that translate into cumulative hikes that can reach <strong>+171.8%</strong> over one year.</p>
+
+<p style="margin:0 0 12px 0;">At the origin, the soaring demand from <em>artificial intelligence</em> companies is absorbing all global <em>DRAM</em> production. Equipment manufacturers prefer to invest in AI-specific memory, neglecting standard orders for computers, smartphones and consoles.</p>
+
+<p style="margin:0 0 12px 0;">This reorientation creates an unprecedented phenomenon, striking a central component of consumer electronics. Consumers risk seeing the price of their devices climb significantly from 2026, due to lack of cost reduction.</p>
+
+<p style="margin:0 0 12px 0;">For example, the cost of <em>RAM</em> on an entry-level smartphone, usually a few dozen euros, could multiply by two or three.</p>
+
+<p style="margin:0 0 12px 0;">The shortage of <em>RAM</em> linked to the rise of AI, already felt in the retail market, now threatens the entire chain of technological products.</p>
+
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.franceinfo.fr/internet/intelligence-artificielle/crise-de-la-ram-pourquoi-le-prix-des-ordinateurs-smartphones-ou-consoles-risque-de-flamber-a-cause-de-l-ia_7656292.html" style="color:#6366f1;text-decoration:underline;">France Info</a> · <a href="https://www.dhnet.be/" style="color:#6366f1;text-decoration:underline;">DHnet</a> · <a href="https://www.cowcotland.com/" style="color:#6366f1;text-decoration:underline;">Cowcotland</a></p>
+
+<div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
+
+<h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Claude Sonnet 4.5, the autonomous and reliable AI programmer</h2>
+
+<p style="margin:0 0 12px 0;">On <strong>September 29, 2025</strong>, Anthropic launched <em>Claude Sonnet 4.5</em>, an AI coding model described as the <strong>best in the world</strong>. It displays a record accuracy of <strong>77.2% on the SWE-bench Verified benchmark</strong> and reaches <strong>61.4% on OSWorld</strong>, a notable improvement from Sonnet 4 (42.2%).</p>
+
+<p style="margin:0 0 12px 0;">Sonnet 4.5 excels at complex coding, handles continuous work sessions of more than <strong>30 hours</strong> and performs sophisticated tasks, such as entire application creation and security audits. Its code editing error rate dropped from <strong>9% to 0%</strong>, ensuring increased reliability.</p>
+
+<p style="margin:0 0 12px 0;">Simultaneously, Anthropic enhanced its development environment with <em>Claude Code 2.0</em>, which introduces automatic <em>checkpoints</em>, a native IDE extension for VS Code, parallel <em>subagent</em> management and automation <em>hooks</em>. These features facilitate faster, safer and more collaborative coding with AI.</p>
+
+<p style="margin:0 0 12px 0;">This major advance maintains a stable price of <strong>$3/million input tokens</strong> and <strong>$15 output</strong>. As of now, Sonnet 4.5 is integrated into tools like GitHub Copilot, Cursor, or Replit, adopted by giants like Apple and Meta.</p>
+
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.anthropic.com/news/claude-sonnet-4-5" style="color:#6366f1;text-decoration:underline;">Anthropic</a> · <a href="https://techcrunch.com/2025/09/29/anthropic-launches-claude-sonnet-4-5-its-best-ai-model-for-coding" style="color:#6366f1;text-decoration:underline;">TechCrunch</a> · <a href="https://www.adimeo.com/blog/claude-sonnet-4-5" style="color:#6366f1;text-decoration:underline;">Adimeo</a> · <a href="https://lucasgraphic.com/posts/claude-sonnet-45-tops-coding-charts-with-huge-gains" style="color:#6366f1;text-decoration:underline;">LucasGraphic</a></p>
+
             </td>
           </tr>
-          <tr>
-            <td align="center" style="padding:20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">RAM crisis: Generative AI accelerates soaring prices</h2>
-              <p style="margin:0 0 12px 0;">In <strong>November 2025</strong>, the memory module market experienced historic tensions. The popularity of <strong>local generative AI</strong> applications is pushing up demand for ultra-fast RAM.</p>
-              <p style="margin:0 0 12px 0;">Current projections anticipate an increase of <strong>40% to 50%</strong> in prices by the first quarter of 2026, a situation that will likely penalize computer and console manufacturers.</p>
-              <p style="margin:0 0 12px 0;">The main explanation: the shortage of <strong>GDDR7 chips</strong>, and the race to high-bandwidth memory (HBM), monopolized by AI-dedicated data centers. These tensions remind us that AI is reshaping the entire technological value chain.</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: Tom's Hardware, November 28, 2025</p>
-            </td>
-          </tr>
-          <tr>
-            <td align="center" style="padding:20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Anthropic launches Claude Sonnet 4.5: A coding assistant</h2>
-              <p style="margin:0 0 12px 0;">On <strong>February 26, 2025</strong>, Anthropic officially unveiled <em>Claude 3.5 Sonnet</em>, a new generative model designed to accelerate software development.</p>
-              <p style="margin:0 0 12px 0;">According to first tests, it is capable of generating <strong>quality code</strong> faster than its predecessors while better understanding long contexts (over 200,000 tokens).</p>
-              <p style="margin:0 0 12px 0;">Positioned between the entry-level and premium versions, this "Sonnet" is expected to find its audience among developers looking for a <strong>high-performance, affordable</strong> assistant. First public uses confirm a very good command of modern languages (TypeScript, Python, Rust).</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: Anthropic Blog, February 26, 2025</p>
-            </td>
-          </tr>
+          <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
@@ -991,24 +968,12 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
               </table>
             </td>
           </tr>
+          <!-- FOOTER -->
           <tr>
-            <td style="padding:0 32px 20px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #E5E7EB;">
-                <tr>
-                  <td style="padding-top:20px;">
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
-                      You are receiving this email because you subscribed to PickMyNews.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-top:8px;">
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
-                      <a href="https://forms.gle/bU7WsZMHwinkjJmP7" style="color:#6B7280;text-decoration:underline;">Manage my subscription</a>
-                    </p>
-                  </td>
-                </tr>
-              </table>
+            <td style="padding:20px 32px;background-color:#F9FAFB;border-top:1px solid #E5E7EB;border-radius:0 0 12px 12px;">
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
+                <a href="https://forms.gle/bU7WsZMHwinkjJmP7" style="color:#6B7280;text-decoration:underline;">Manage my subscription</a>
+              </p>
             </td>
           </tr>
         </table>
@@ -1065,71 +1030,73 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
               </table>
             </td>
           </tr>
+          <!-- HERO IMAGE -->
           <tr>
-            <td style="padding:0 32px 20px 32px;">
-              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=300&fit=crop" alt="HR Management Team" style="width:100%;height:auto;border-radius:10px;display:block;" />
+            <td style="padding:20px 32px;">
+              <img src="https://images.unsplash.com/photo-1670160028894-a33f937c2a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzg2NDh8MHwxfHNlYXJjaHwxfHxSSCUyMDIwMjUlMjAlM0ElMjBQaWxvdGVyJTIwbCUyN2h1bWFpbiUyMCVDMyVBMCUyMGwlMjclQzMlQThyZSUyMG51bSVDMyVBOXJpcXVlfGVufDB8MHx8fDE3NjQ5NTU1NjR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                   alt="HR and management"
+                   width="536"
+                   height="auto"
+                   style="width:100%;max-width:536px;height:auto;display:block;border-radius:8px;border:0;outline:none;text-decoration:none;">
             </td>
           </tr>
+          <!-- SEPARATOR -->
           <tr>
-            <td align="center" style="padding:0 32px 20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
+            <td style="padding:0 32px;">
+              <div style="margin:12px 0 0 0;border-top:1px solid #E5E7EB;"></div>
             </td>
           </tr>
-          <tr>
-            <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Managerial Agility boosted by flexibility</h2>
-              <p style="margin:0 0 12px 0;">In December <strong>2025</strong>, the adoption of agile models and flexible solutions is revolutionizing management.</p>
-              <p style="margin:0 0 12px 0;">Companies that have adopted these methodologies report <strong>productivity gains of 15 to 25%</strong>, mainly thanks to better task prioritization and accelerated decision-making.</p>
-              <p style="margin:0 0 12px 0;">Agile frameworks (Scrum, Kanban) are now applied beyond IT, in marketing, finance, and even HR: iteration cycles, retrospectives, and test-and-learn are becoming the norm.</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: McKinsey & Company, December 2025</p>
-            </td>
-          </tr>
-          <tr>
-            <td align="center" style="padding:20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+          <!-- SECTIONS -->
           <tr>
             <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">AI integrated to revolutionize recruitment</h2>
-              <p style="margin:0 0 12px 0;">In <strong>2025</strong>, <strong>68%</strong> of large companies use AI solutions to sort CVs, analyze video interviews, or predict candidate success.</p>
-              <p style="margin:0 0 12px 0;">The promise: to reduce bias, speed up processes, and identify profiles that would have escaped human selection. But experts warn about the need for <strong>algorithmic audits</strong> to avoid discrimination reinforcement.</p>
-              <p style="margin:0 0 12px 0;">These technologies, while promising, require rigorous ethical supervision and regular analysis of recommendations generated by AI.</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: HR Analytics Institute, November 2025</p>
+
+              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Managerial Agility boosted by agile flexibility in 2025</h2>
+
+              <p style="margin:0 0 12px 0;">In December <strong>2025</strong>, the adoption of <em>agile models</em> and <em>flexible solutions</em> is revolutionizing management. The rise of self-employment, freelancer platforms, and innovative tools like <em>AI note-taking</em> reflect this shift.</p>
+
+              <p style="margin:0 0 12px 0;">According to <em>Cadre Dirigeant Magazine</em> (2025), French companies are leveraging self-employment to immediately access the right skills without cumbersome hiring procedures. This flexibility becomes a management lever to quickly adjust resources for fluctuating projects.</p>
+
+              <p style="margin:0 0 12px 0;">Furthermore, <em>Seedext</em>, an <em>AI note-taking</em> specialist, breaks down barriers in meetings. Their technology, deployed since early December <strong>2025</strong>, improves information capture, structuring, and analysis. It enables precise steering and accelerates decision-making in collaborative and agile environments.</p>
+
+              <p style="margin:0 0 12px 0;">Finally, structuring a <em>skills development plan</em> is essential for performance. <em>Expertisme</em> emphasizes that this lever optimizes motivation and reduces turnover, preparing teams to evolve in a digital and agile context.</p>
+
+              <p style="margin:0 0 12px 0;">The convergence of these practices highlights a strong trend: agile flexibility is becoming a decisive lever for modern, adaptive, and high-performing management.</p>
+
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="http://www.agencewebgram.com/" style="color:#6366f1;text-decoration:underline;">AgenceWebGram</a></p>
+
+              <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
+
+              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">How AI is redefining recruitment in 2025</h2>
+
+              <p style="margin:0 0 12px 0;">In <strong>2025</strong>, AI has established itself as a key driver in transforming recruitment. Young entrepreneurs aged <strong>22</strong> have notably innovated with solutions integrating <em>automated CV screening</em>, <em>intelligent matching</em>, and <em>AI-assisted interviews</em>.</p>
+
+              <p style="margin:0 0 12px 0;">The Foundever group optimizes its HR processes through <em>artificial intelligence</em>, particularly for candidate <em>pre-selection</em>. This speed gain is a notable strategic advantage.</p>
+
+              <p style="margin:0 0 12px 0;">In Africa, WEBGRAM deploys its <em>SmartTeam</em> solution across eighteen countries, covering the entire HR cycle: recruitment, training, talent management. This cloud platform improves process speed, reduces administrative tasks by <strong>50%</strong>, and ensures adaptability to local contexts.</p>
+
+              <p style="margin:0 0 12px 0;">However, the massive integration of AI disrupts professional benchmarks and generates psychosocial risks, as highlighted by a November <strong>2025</strong> study. These include: algorithmic surveillance, fear of replacement, and cognitive overload. Over <strong>70%</strong> of employees have received no training on these tools, amplifying anxiety and disengagement.</p>
+
+              <p style="margin:0 0 12px 0;">HR departments must therefore combine technology with human support, ensure algorithm transparency, and establish prevention measures to limit these risks.</p>
+
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://drh.ma/etiquettes/fatna-abdouh/" style="color:#6366f1;text-decoration:underline;">DRH.ma</a> · <a href="http://www.agencewebgram.com/2025/12/" style="color:#6366f1;text-decoration:underline;">AgenceWebGram</a> · <a href="https://culture-rh.com/" style="color:#6366f1;text-decoration:underline;">Culture RH</a></p>
+
+              <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
+
+              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Well-being and inclusion: the new pillars of HR performance</h2>
+
+              <p style="margin:0 0 12px 0;">In <strong>2025</strong>, workplace well-being and inclusion have become strategic priorities for companies. Studies show that a healthy and inclusive work environment significantly improves productivity and reduces absenteeism.</p>
+
+              <p style="margin:0 0 12px 0;"><em>Quality of Work Life</em> (QWL) initiatives are multiplying: relaxation spaces, flexible hours, hybrid remote work. These measures meet the expectations of new generations who place work-life balance at the heart of their selection criteria.</p>
+
+              <p style="margin:0 0 12px 0;">Inclusion goes beyond diversity: it's about creating a sense of belonging for every employee. The highest-performing companies implement <em>pay equity</em>, <em>mentoring</em>, and <em>continuous training</em> policies accessible to all.</p>
+
+              <p style="margin:0 0 12px 0;">Key indicators show that organizations investing in well-being see a <strong>25%</strong> reduction in turnover and a <strong>20%</strong> increase in team engagement.</p>
+
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.manager-go.com/ressources-humaines/" style="color:#6366f1;text-decoration:underline;">Manager GO</a> · <a href="https://www.journaldunet.com/management/" style="color:#6366f1;text-decoration:underline;">JDN Management</a></p>
+
             </td>
           </tr>
-          <tr>
-            <td align="center" style="padding:20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Well-being and inclusion: foundations of performance</h2>
-              <p style="margin:0 0 12px 0;">In December <strong>2025</strong>, employee well-being has become a strategic pillar. Studies show that satisfied employees are <strong>up to 20% more productive</strong>.</p>
-              <p style="margin:0 0 12px 0;">Diversity and inclusion policies are gaining momentum: companies with diverse management committees achieve better financial results (+35% according to some benchmarks).</p>
-              <p style="margin:0 0 12px 0;">To attract and retain talent, organizations are now investing in prevention programs, flexible work, and an inclusive corporate culture that values every individual.</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: Great Place to Work, December 2025</p>
-            </td>
-          </tr>
+          <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
@@ -1142,24 +1109,12 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
               </table>
             </td>
           </tr>
+          <!-- FOOTER -->
           <tr>
-            <td style="padding:0 32px 20px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #E5E7EB;">
-                <tr>
-                  <td style="padding-top:20px;">
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
-                      You are receiving this email because you subscribed to PickMyNews.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-top:8px;">
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
-                      <a href="https://forms.gle/bU7WsZMHwinkjJmP7" style="color:#6B7280;text-decoration:underline;">Manage my subscription</a>
-                    </p>
-                  </td>
-                </tr>
-              </table>
+            <td style="padding:20px 32px;background-color:#F9FAFB;border-top:1px solid #E5E7EB;border-radius:0 0 12px 12px;">
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
+                <a href="https://forms.gle/bU7WsZMHwinkjJmP7" style="color:#6B7280;text-decoration:underline;">Manage my subscription</a>
+              </p>
             </td>
           </tr>
         </table>
@@ -1216,71 +1171,67 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
               </table>
             </td>
           </tr>
+          <!-- HERO IMAGE -->
           <tr>
-            <td style="padding:0 32px 20px 32px;">
-              <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=300&fit=crop" alt="French Economy Growth" style="width:100%;height:auto;border-radius:10px;display:block;" />
+            <td style="padding:20px 32px;">
+              <img src="https://images.unsplash.com/photo-1743517126902-d1bdb96e6cb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzg2NDh8MHwxfHNlYXJjaHwxfHxVbnNwbGFzaCUyMEltYWdlJTIwVGl0bGUlM0ElMjBGYWN0b3J5JTIwU2t5bGluZSUyMEluZHVzdHJpYWwlMjBCdWlsZGluZ3N8ZW58MHwwfHx8MTc2NTM5NTkyOHww&ixlib=rb-4.1.0&q=80&w=1080"
+                   alt="Industrial factory skyline"
+                   width="536"
+                   height="auto"
+                   style="width:100%;max-width:536px;height:auto;display:block;border-radius:8px;border:0;outline:none;text-decoration:none;">
             </td>
           </tr>
+          <!-- SEPARATOR -->
           <tr>
-            <td align="center" style="padding:0 32px 20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
+            <td style="padding:0 32px;">
+              <div style="margin:12px 0 0 0;border-top:1px solid #E5E7EB;"></div>
             </td>
           </tr>
+          <!-- SECTIONS -->
           <tr>
             <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
+
               <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">French growth 2025: between cautious optimism and hesitancy</h2>
-              <p style="margin:0 0 12px 0;">Early December 2025, the latest official projections show a French economy in a phase of moderate growth, ranging between <strong>0.8%</strong> and <strong>1.1%</strong>.</p>
-              <p style="margin:0 0 12px 0;">INSEE favors a <strong>0.9%</strong> growth rate, while the government maintains an estimate of <strong>1.1%</strong> to support its 2026 budget. Persistent inflation and high interest rates continue to dampen private consumption and investment.</p>
-              <p style="margin:0 0 12px 0;">Nevertheless, the last quarter showed slight improvement, driven by strong exports and tourism activity, particularly for the end-of-year holidays.</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: INSEE Economic Outlook, December 2025</p>
+
+<p style="margin:0 0 12px 0;">In early December 2025, the latest official projections outline a French economy in a phase of moderate growth, oscillating between <strong>0.8%</strong> and <strong>1.1%</strong> for the year, but with notable divergences between INSEE and Banque de France.</p>
+
+<p style="margin:0 0 12px 0;">INSEE, cautiously optimistic, highlights a <em>GDP</em> progression of <strong>1.1%</strong> in 2025, driven notably by quarterly <em>growth</em> of <strong>+0.5%</strong> in the third quarter, after <strong>+0.3%</strong> in the previous one. This dynamic is attributed to a slightly more robust domestic demand, despite a decline in the contribution of foreign trade.</p>
+
+<p style="margin:0 0 12px 0;">Meanwhile, Banque de France remains more cautious, forecasting more modest growth at <strong>0.8%</strong>, with a marked slowdown to <strong>0.2%</strong> in the fourth quarter. The <em>manufacturing sector</em> remains an important driver, but overall growth suffers from a fragile economic environment and persistent political tensions.</p>
+
+<p style="margin:0 0 12px 0;">This difference in forecasts illustrates the uncertainty surrounding the French recovery. While INSEE anticipates medium-term stability, Banque de France notes that the recovery could shift and intensify further from 2026 onwards. The economic climate thus remains suspended on these contradictory signals, between industrial resilience and political fragility.</p>
+
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.rexecode.fr/conjoncture-previsions/veille-documentaire/document-de-la-semaine/moroses-previsions-de-croissance-pour-la-france-en-2025-insee-bdf" style="color:#6366f1;">Rexecode</a> · <a href="https://www.lefigaro.fr/conjoncture/la-croissance-francaise-ralentit-a-0-2-du-pib-au-4e-trimestre-selon-la-banque-de-france-20251209" style="color:#6366f1;">Le Figaro</a> · <a href="https://www.insee.fr/fr/statistiques/8662489" style="color:#6366f1;">INSEE</a> · <a href="https://www.banque-france.fr/fr/publications-et-statistiques/publications/projections-macroeconomiques-intermediaires-septembre-2025" style="color:#6366f1;">Banque de France</a></p>
+
+<div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
+
+<h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">French Defense: solid engine, global economic brake late 2025</h2>
+
+<p style="margin:0 0 12px 0;">On <strong>December 9, 2025</strong>, Banque de France confirmed a marked slowdown in French growth, with GDP progressing by only <strong>0.2%</strong> in the fourth quarter. This deceleration is part of a broader context of economic fragility.</p>
+
+<p style="margin:0 0 12px 0;">Yet, the <em>defense</em> industry remains a robust pillar. With a colossal budget of <strong>413 billion euros</strong> planned for the 2024-2030 period, the <em>LPM</em> (Military Programming Law) acts as a major strategic lever. Each euro invested generates between <strong>1.27 and 1.68 euros</strong> of wealth, boosting industrial activity, particularly in weapons and ammunition production, and preserving thousands of qualified jobs.</p>
+
+<p style="margin:0 0 12px 0;">This impetus also benefits innovation and overall productivity. But, despite this powerful multiplier effect, French economic growth struggles to maintain the expected pace. According to <em>INSEE</em>, these signs of slowdown reveal the weakness of other economic drivers, leading to insufficient growth to offset structural challenges.</p>
+
+<p style="margin:0 0 12px 0;">In short, while the defense industry revitalizes certain parts of the economy, it does not prevent an overall slowed growth dynamic at year-end.</p>
+
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.latribune.fr/article/economie/37309748954301/lindustrie-de-la-defense-dope-lactivite-mais-la-croissance-ralentit" style="color:#6366f1;">La Tribune</a> · <a href="http://www.defense.gouv.fr/actualites/defense-levier-strategique-leconomie-francaise" style="color:#6366f1;">Defense.gouv.fr</a> · <a href="https://www.lefigaro.fr/conjoncture/la-croissance-francaise-ralentit-a-0-2-du-pib-au-4e-trimestre-selon-la-banque-de-france-20251209" style="color:#6366f1;">Le Figaro</a></p>
+
+<div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
+
+<h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Stable salaried employment despite shifts in private sector early November 2025</h2>
+
+<p style="margin:0 0 12px 0;">In the third quarter of 2025, <em>salaried employment</em> in France shows relative stability. According to <em>INSEE</em> (November 6), the public sector is experiencing a <em>slight increase</em> while the private sector shows a <em>moderate decline</em> of 0.3%, representing nearly <strong>60,600 jobs lost</strong>. This trend is part of a broader context where private employment has been declining for four consecutive quarters, totaling an annual decrease of <strong>112,100 positions</strong>.</p>
+
+<p style="margin:0 0 12px 0;">The decline occurs mainly in <em>apprenticeship contracts</em>, which account for two-thirds of this reduction. This weighs on various sectors, with <em>manufacturing activity in decline</em> contrasting with <em>growing dynamism in market services</em>, a segment where jobs have experienced a resurgence, notably due to late declaration processing (<em>+30,900 jobs</em> in the market tertiary sector excluding temporary work).</p>
+
+<p style="margin:0 0 12px 0;">This duality reflects an economy both confronted with structural weaknesses and capable of relying on the service sector to absorb part of the losses. The French job market thus navigates between industrial fabric fragility and tertiary resilience, a key challenge for employment policies in the coming months.</p>
+
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.insee.fr/fr/statistiques/8664273" style="color:#6366f1;">INSEE</a> · <a href="https://www.rexecode.fr/conjoncture-previsions/synthese-conjoncturelle-hebdo/l-emploi-salarie-recule-en-france-au-3eme-trimestre" style="color:#6366f1;">Rexecode</a> · <a href="https://dares.travail-emploi.gouv.fr/donnees/lemploi-salarie" style="color:#6366f1;">DARES</a></p>
+
             </td>
           </tr>
-          <tr>
-            <td align="center" style="padding:20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Defense industry boosts manufacturing activity</h2>
-              <p style="margin:0 0 12px 0;">In November <strong>2025</strong>, French manufacturing industry is benefiting from the boom in the defense and aerospace sectors.</p>
-              <p style="margin:0 0 12px 0;">Military contracts, reinforced after recent geopolitical developments, are generating <strong>an estimated 12,000 to 15,000 additional jobs</strong> in industrial hubs (Bordeaux, Toulouse, Brittany).</p>
-              <p style="margin:0 0 12px 0;">Exports of armored vehicles and Rafales are pulling up the trade balance, while subcontractors are increasing their capacities to meet urgent orders.</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: French Ministry of Economy, November 2025</p>
-            </td>
-          </tr>
-          <tr>
-            <td align="center" style="padding:20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Market services at the forefront of employment</h2>
-              <p style="margin:0 0 12px 0;">In December <strong>2025</strong>, market services (consulting, digital, business services) continue to create jobs in France.</p>
-              <p style="margin:0 0 12px 0;">This sector represents now more than <strong>half of GDP</strong> and absorbs a large part of the workforce. Digital transformation of companies and outsourcing needs sustain a sustained demand for qualified profiles.</p>
-              <p style="margin:0 0 12px 0;">Observers note, however, that the shortage of talent in tech remains a brake on growth for many SMEs and mid-caps, which struggle to attract senior developers or AI specialists.</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: Banque de France, December 2025</p>
-            </td>
-          </tr>
+          <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
@@ -1293,24 +1244,12 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
               </table>
             </td>
           </tr>
+          <!-- FOOTER -->
           <tr>
-            <td style="padding:0 32px 20px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #E5E7EB;">
-                <tr>
-                  <td style="padding-top:20px;">
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
-                      You are receiving this email because you subscribed to PickMyNews.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-top:8px;">
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
-                      <a href="https://forms.gle/bU7WsZMHwinkjJmP7" style="color:#6B7280;text-decoration:underline;">Manage my subscription</a>
-                    </p>
-                  </td>
-                </tr>
-              </table>
+            <td style="padding:20px 32px;background-color:#F9FAFB;border-top:1px solid #E5E7EB;border-radius:0 0 12px 12px;">
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
+                <a href="https://forms.gle/bU7WsZMHwinkjJmP7" style="color:#6B7280;text-decoration:underline;">Manage my subscription</a>
+              </p>
             </td>
           </tr>
         </table>
@@ -1367,71 +1306,75 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
               </table>
             </td>
           </tr>
+          <!-- HERO IMAGE -->
           <tr>
-            <td style="padding:0 32px 20px 32px;">
-              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=300&fit=crop" alt="E-sport Competition" style="width:100%;height:auto;border-radius:10px;display:block;" />
+            <td style="padding:20px 32px;">
+              <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c"
+                   alt="E-sport competition"
+                   width="536"
+                   height="auto"
+                   style="width:100%;max-width:536px;height:auto;display:block;border-radius:8px;border:0;outline:none;text-decoration:none;">
             </td>
           </tr>
+          <!-- SEPARATOR -->
           <tr>
-            <td align="center" style="padding:0 32px 20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
+            <td style="padding:0 32px;">
+              <div style="margin:12px 0 0 0;border-top:1px solid #E5E7EB;"></div>
             </td>
           </tr>
-          <tr>
-            <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">TFT Paris Open: The masters duel</h2>
-              <p style="margin:0 0 12px 0;">On <strong>December 3, 2025</strong>, Paris vibrated to the rhythm of the TFT Paris Open, the flagship Teamfight Tactics tournament event this quarter.</p>
-              <p style="margin:0 0 12px 0;">The competition, held in a legendary esports venue, brought together <strong>40 players from 15 countries</strong>, with a prize pool of <strong>€150,000</strong>.</p>
-              <p style="margin:0 0 12px 0;">Ranked by official points, participants competed in Set 10 format. The final saw the rise of a South Korean player, consolidating the Asian continent's dominance in this strategic genre.</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: Riot Games France, December 3, 2025</p>
-            </td>
-          </tr>
-          <tr>
-            <td align="center" style="padding:20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+          <!-- SECTIONS -->
           <tr>
             <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Yandex sponsors MOUZ for the Esport World Cup</h2>
-              <p style="margin:0 0 12px 0;">In early December <strong>2025</strong>, the German organization <em>MOUZ</em> confirmed a partnership with Yandex to participate in the <em>Esports World Cup</em>.</p>
-              <p style="margin:0 0 12px 0;">This global competition, held in Saudi Arabia, brings together the best international clubs on titles like Counter-Strike 2, League of Legends, and Dota 2.</p>
-              <p style="margin:0 0 12px 0;">MOUZ notably won the <strong>BLAST Slam V</strong>, pocketing <strong>$1 million</strong> and securing their place among the elite. The sponsorship with Yandex illustrates the growing interest of tech players in premium esport content.</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: Esports Insider, December 2025</p>
+
+              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">TFT Paris Open: The Masters Duel</h2>
+
+              <p style="margin:0 0 12px 0;">On <strong>December 3, 2025</strong>, Paris vibrated to the rhythm of the <em>TFT Paris Open</em>, the flagship <em>Teamfight Tactics</em> tournament event this quarter. This <em>e-sport championship</em> brought together the best strategists from the global roster.</p>
+
+              <p style="margin:0 0 12px 0;">The competition featured <strong>40 players</strong> from over <strong>15 countries</strong>, with a total prize pool of <strong>€150,000</strong>, including <strong>€50,000</strong> for the winner. The format included several elimination rounds before the live grand finale, attracting an online audience of over <strong>250,000 viewers</strong>.</p>
+
+              <p style="margin:0 0 12px 0;">The duel focused on two undisputed masters, recognized for their advanced mastery of <em>synergies</em> and <em>game mechanics</em>. Their confrontation highlighted the importance of perfect <em>unit</em> and <em>item</em> management under pressure.</p>
+
+              <p style="margin:0 0 12px 0;">This event, supported by Riot Games and streamed on Twitch, confirms the meteoric rise of <em>strategic e-sport</em>. Paris thus becomes an essential venue, strengthening <em>TFT's</em> visibility in the competitive circuit.</p>
+
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://eu.leagueoflegends.com/en/news/esports/tft/tft-paris-open-analysis" style="color:#6366f1;text-decoration:underline;">Riot Games</a> · <a href="https://www.twitch.tv/teamfighttactics" style="color:#6366f1;text-decoration:underline;">Twitch</a> · <a href="https://teamfighttactics.gg/news/paris-open-2025-recap" style="color:#6366f1;text-decoration:underline;">Teamfight Tactics Official</a></p>
+
+              <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
+
+              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">Yandex and MOUZ compete for the title at the 2025 Esports World Cup</h2>
+
+              <p style="margin:0 0 12px 0;">On <strong>December 5, 2025</strong>, <em>Team Yandex</em> and <em>MOUZ</em> advanced to the semi-finals of the <em>BLAST Slam V</em> Dota 2 tournament in <em>Chengdu, China</em>.</p>
+
+              <p style="margin:0 0 12px 0;">The event started on <strong>November 25</strong> with 12 teams competing for a total prize pool of <strong>$1 million</strong>. Yandex won a spectacular 2-1 comeback against OG, while MOUZ dominated Natus Vincere in two matches.</p>
+
+              <p style="margin:0 0 12px 0;">In the decisive match, <em>Alimzhan "watson" Islambekov</em> from Yandex displayed a remarkable <strong>12-1-10</strong> KDA ratio. MOUZ's victories are illustrated by notable performances such as Remco "Crystallis" Arets' seven kills and Daniyal "yamich" Lazebnyy's 15 kills, his team's top scorer.</p>
+
+              <p style="margin:0 0 12px 0;">Yandex will face <em>Team Falcons</em>, while MOUZ will challenge <em>Tundra Esports</em> in Saturday's semi-finals. Winners will advance to Sunday's grand finale, with the champion receiving <strong>$300,000</strong> in prize money plus <strong>$100,000</strong> in team revenue.</p>
+
+              <p style="margin:0 0 12px 0;">Other distributions include OG and Natus Vincere with <strong>$35,000</strong> each plus <strong>$15,000</strong>, while teams ranked 7th to 10th place receive <strong>$22,500</strong> and <strong>$6,250</strong> respectively.</p>
+
+              <p style="margin:0 0 12px 0;">The event highlights the fierce competition across <em>12 esports disciplines</em> at the 2025 World Cup, perpetuating its status as the benchmark global tournament.</p>
+
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://deadspin.com/yandex-mouz-advance-to-blast-slam-v-semifinals/" style="color:#6366f1;text-decoration:underline;">Deadspin</a></p>
+
+              <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
+
+              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">E-Sport Olympics: The Cergy Arena rises in prominence</h2>
+
+              <p style="margin:0 0 12px 0;">On <strong>November 29, 2025</strong>, the official launch of the <em>E-Sport Olympics</em> at <em>The Cergy Arena</em> marks a major turning point in the French competitive gaming scene.</p>
+
+              <p style="margin:0 0 12px 0;">The event brings together over <strong>300 players</strong> from across the Île-de-France region, with tournaments in <em>League of Legends</em>, <em>Counter-Strike: Global Offensive</em>, and <em>FIFA 25</em>. The qualifying phases, spanning several days, attracted an online audience exceeding <strong>20,000 viewers</strong>, confirming growing enthusiasm.</p>
+
+              <p style="margin:0 0 12px 0;">This 2025 edition features a total prize pool of <strong>€50,000</strong>, a <strong>25%</strong> increase compared to 2024. Organizers, in partnership with the Cergy town hall and several tech sponsors, are banking on <em>The Arena's</em> infrastructure, capable of accommodating up to <strong>1,000 in-person spectators</strong> and equipped with top-tier equipment for <em>4K streaming</em> broadcasts.</p>
+
+              <p style="margin:0 0 12px 0;">Several French professional teams, including <em>Paris Eternal</em> and <em>Team Vitality</em>, participated in exhibition sessions, demonstrating the growing prestige of this regional competition.</p>
+
+              <p style="margin:0 0 12px 0;">With its innovative formats and strong community integration, the <em>Cergy E-Sport Olympics</em> establish themselves as a must-attend event for e-sport enthusiasts at the end of 2025.</p>
+
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.lemonde.fr" style="color:#6366f1;text-decoration:underline;">Le Monde</a> · <a href="https://www.lequipe.fr" style="color:#6366f1;text-decoration:underline;">L'Équipe</a> · <a href="https://franceesports.fr" style="color:#6366f1;text-decoration:underline;">France Esports</a></p>
+
             </td>
           </tr>
-          <tr>
-            <td align="center" style="padding:20px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                  <td style="padding:0 16px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;">✦</td>
-                  <td style="width:80px;height:1px;background-color:#E5E7EB;"></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:12px 32px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.75;">
-              <h2 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#111827;">E-Sport Olympics: Cergy rises in rank</h2>
-              <p style="margin:0 0 12px 0;">In December <strong>2025</strong>, <em>Cergy-Pontoise</em> hosted its annual edition of <em>Olympiades E-Sport</em>, a local but growing event.</p>
-              <p style="margin:0 0 12px 0;">Bringing together <strong>nearly 300 players</strong> from all regions, this event offers amateurs an entry point into the competitive world, with a total prize pool of around <strong>€50,000</strong>.</p>
-              <p style="margin:0 0 12px 0;">Educational workshops (stream production, event management) completed the program, turning this event into a talent incubator for future professionals in the sector.</p>
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;color:#6B7280;font-style:italic;">Source: Mairie de Cergy, December 2025</p>
-            </td>
-          </tr>
+          <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
@@ -1444,24 +1387,12 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
               </table>
             </td>
           </tr>
+          <!-- FOOTER -->
           <tr>
-            <td style="padding:0 32px 20px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #E5E7EB;">
-                <tr>
-                  <td style="padding-top:20px;">
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
-                      You are receiving this email because you subscribed to PickMyNews.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-top:8px;">
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
-                      <a href="https://forms.gle/bU7WsZMHwinkjJmP7" style="color:#6B7280;text-decoration:underline;">Manage my subscription</a>
-                    </p>
-                  </td>
-                </tr>
-              </table>
+            <td style="padding:20px 32px;background-color:#F9FAFB;border-top:1px solid #E5E7EB;border-radius:0 0 12px 12px;">
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:12px;color:#9CA3AF;text-align:center;">
+                <a href="https://forms.gle/bU7WsZMHwinkjJmP7" style="color:#6B7280;text-decoration:underline;">Manage my subscription</a>
+              </p>
             </td>
           </tr>
         </table>
