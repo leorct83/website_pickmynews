@@ -19,7 +19,7 @@
     "ctaSecondary": "Voir comment ça marche",
     "trustSatisfied": "Satisfait ou remboursé pendant 14 jours",
     "trustCancel": "Annulation en 1 clic",
-    "trustFactCheck": "Un faux chiffre = newsletter gratuite"
+    "trustFactCheck": "Sources vérifiées"
   },
   "painPoints": {
     "badge": "Le constat",
@@ -92,7 +92,6 @@
     "mostPopular": "Le plus populaire",
     "cta": "Commencer",
     "guarantee": "Satisfait ou remboursé pendant 14 jours.",
-    "guaranteeFactCheck": "Un faux chiffre ou donnée erronée ? Votre newsletter du jour est gratuite.",
     "plan1Name": "1x/semaine",
     "plan1Desc": "Pour rester informé",
     "plan1Feature1": "1 newsletter par semaine",

@@ -19,7 +19,7 @@
     "ctaSecondary": "See how it works",
     "trustSatisfied": "14-day money-back guarantee",
     "trustCancel": "Cancel in 1 click",
-    "trustFactCheck": "Wrong fact = free newsletter"
+    "trustFactCheck": "Verified sources"
   },
   "painPoints": {
     "badge": "The problem",
@@ -92,7 +92,6 @@
     "mostPopular": "Most popular",
     "cta": "Get started",
     "guarantee": "14-day money-back guarantee.",
-    "guaranteeFactCheck": "Incorrect fact or figure? Your newsletter of the day is free.",
     "plan1Name": "1x/week",
     "plan1Desc": "Stay informed",
     "plan1Feature1": "1 newsletter per week",
