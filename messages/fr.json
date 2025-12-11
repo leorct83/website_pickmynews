@@ -17,7 +17,7 @@
     "subheadline": "Recevez une newsletter qui <you>vous</you> parle, sur le sujet de <your>votre</your> choix, quand <youWant>vous</youWant> voulez !",
     "ctaPrimary": "Créer ma newsletter",
     "ctaSecondary": "Voir comment ça marche",
-    "trustSatisfied": "Satisfait ou remboursé pendant 14 jours",
+    "trustSatisfied": "Satisfait ou remboursé pendant 7 jours",
     "trustCancel": "Annulation en 1 clic",
     "trustFactCheck": "Sources vérifiées"
   },
@@ -91,7 +91,7 @@
     "perNewsletter": "{price}/newsletter",
     "mostPopular": "Le plus populaire",
     "cta": "Commencer",
-    "guarantee": "Satisfait ou remboursé pendant 14 jours.",
+    "guarantee": "Satisfait ou remboursé pendant 7 jours.",
     "plan1Name": "1x/semaine",
     "plan1Desc": "Pour rester informé",
     "plan1Feature1": "1 newsletter par semaine",
@@ -134,7 +134,7 @@
     "a4": "Absolument. Vous pouvez changer de thème, ajuster la fréquence d'envoi, modifier l'horaire de réception, ou même créer plusieurs newsletters sur des sujets différents. Complétez simplement {link}. Pour toute difficulté, notre support est là pour vous aider.",
     "a4Link": "ce formulaire",
     "q5": "Et si j'ai besoin d'aide ?",
-    "a5": "Notre équipe support répond en moins de 48h par email. Envoyez un mail à {email}.",
+    "a5": "Notre équipe support répond en moins de 48h par email. Envoyez un mail à <email>contact@pickmynews.com</email>.",
     "q6": "Que se passe-t-il si une information est fausse ?",
     "a6": "Nous nous engageons sur la qualité : si vous trouvez un chiffre ou une donnée factuellement incorrecte dans votre newsletter, elle est gratuite. C'est notre garantie vérification."
   },
@@ -194,7 +194,7 @@
     "subtitle": "Rejoignez les milliers de personnes qui ont choisi de consommer l'information intelligemment.",
     "seePricing": "Voir les tarifs →",
     "trustSecure": "Données sécurisées",
-    "trustGuarantee": "Satisfait ou remboursé pendant 14 jours"
+    "trustGuarantee": "Satisfait ou remboursé pendant 7 jours"
   },
   "footer": {
     "tagline": "L'actualité qui compte, quand vous le décidez. Votre newsletter personnalisée, sans bruit ni distraction.",

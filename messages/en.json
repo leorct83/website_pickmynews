@@ -17,7 +17,7 @@
     "subheadline": "Receive a newsletter that speaks to <you>you</you>, on the topic of <your>your</your> choice, when <youWant>you</youWant> want!",
     "ctaPrimary": "Create my newsletter",
     "ctaSecondary": "See how it works",
-    "trustSatisfied": "14-day money-back guarantee",
+    "trustSatisfied": "7-day money-back guarantee",
     "trustCancel": "Cancel in 1 click",
     "trustFactCheck": "Verified sources"
   },
@@ -91,7 +91,7 @@
     "perNewsletter": "{price}/newsletter",
     "mostPopular": "Most popular",
     "cta": "Get started",
-    "guarantee": "14-day money-back guarantee.",
+    "guarantee": "7-day money-back guarantee.",
     "plan1Name": "1x/week",
     "plan1Desc": "Stay informed",
     "plan1Feature1": "1 newsletter per week",
@@ -134,7 +134,7 @@
     "a4": "Absolutely. You can change your topic, adjust the delivery frequency, modify the delivery time, or even create multiple newsletters on different subjects. Simply complete {link}. If you have any trouble, our support team is here to help.",
     "a4Link": "this form",
     "q5": "What if I need help?",
-    "a5": "Our support team responds within 48 hours by email. Send an email to {email}.",
+    "a5": "Our support team responds within 48 hours by email. Send an email to <email>contact@pickmynews.com</email>.",
     "q6": "What happens if information is incorrect?",
     "a6": "We stand by our quality: if you find a factually incorrect figure or data in your newsletter, it's free. That's our fact-checking guarantee."
   },
@@ -194,7 +194,7 @@
     "subtitle": "Join thousands of people who have chosen to consume information intelligently.",
     "seePricing": "See pricing →",
     "trustSecure": "Secure data",
-    "trustGuarantee": "14-day money-back guarantee"
+    "trustGuarantee": "7-day money-back guarantee"
   },
   "footer": {
     "tagline": "The news that matters, when you decide. Your personalized newsletter, without noise or distraction.",
