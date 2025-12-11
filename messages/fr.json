@@ -56,21 +56,15 @@
     "cta": "Créer ma newsletter maintenant"
   },
   "benefits": {
-    "badge": "La solution",
-    "title": "Sortez de la surcharge informationnelle",
-    "subtitle": "Près de 4 personnes sur 10 se disent épuisées par l'actualité. PickMyNews filtre le bruit pour ne garder que l'essentiel.",
-    "benefit1Stat": "79%",
-    "benefit1Title": "des gens ont coupé leurs alertes actu",
-    "benefit1Desc": "Trop de notifications, trop de bruit. Votre newsletter arrive quand vous l'avez décidé — sans interrompre votre journée.",
-    "benefit1Source": "Reuters Institute",
-    "benefit2Stat": "83%",
-    "benefit2Title": "des travailleurs sont submergés d'infos",
-    "benefit2Desc": "Une seule lecture par jour suffit pour reprendre le contrôle. On sélectionne uniquement ce qui compte sur votre sujet.",
-    "benefit2Source": "StudyFinds",
-    "benefit3Stat": "65%",
-    "benefit3Title": "se sentent noyés sur les réseaux sociaux",
-    "benefit3Desc": "Quittez le scroll infini. 5 minutes de lecture ciblée remplacent des heures perdues à scroller.",
-    "benefit3Source": "ElectroIQ"
+    "badge": "Avantages",
+    "title": "Pourquoi vous allez adorer",
+    "subtitle": "Une expérience pensée pour les gens qui veulent rester informés sans y passer leur vie.",
+    "benefit1Title": "Format email",
+    "benefit1Desc": "Pas d'app à installer. Directement dans votre boîte mail préférée.",
+    "benefit2Title": "100% pour vous",
+    "benefit2Desc": "Votre thème. Votre fréquence. Votre horaire. Vous contrôlez absolument tout.",
+    "benefit3Title": "Vérifié et sourcé",
+    "benefit3Desc": "Chaque fait et chiffre est vérifié. Sources listées en fin d'article pour une transparence totale."
   },
   "newsletterShowcase": {
     "badge": "Exemples",

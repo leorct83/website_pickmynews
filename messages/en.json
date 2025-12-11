@@ -56,21 +56,15 @@
     "cta": "Create my newsletter now"
   },
   "benefits": {
-    "badge": "The solution",
-    "title": "Escape information overload",
-    "subtitle": "Nearly 4 in 10 people say they're exhausted by the news. PickMyNews filters the noise to keep only what matters.",
-    "benefit1Stat": "79%",
-    "benefit1Title": "of people have turned off news alerts",
-    "benefit1Desc": "Too many notifications, too much noise. Your newsletter arrives when you decide — without interrupting your day.",
-    "benefit1Source": "Reuters Institute",
-    "benefit2Stat": "83%",
-    "benefit2Title": "of workers are overwhelmed by information",
-    "benefit2Desc": "One read per day is enough to take back control. We curate only what matters on your topic.",
-    "benefit2Source": "StudyFinds",
-    "benefit3Stat": "65%",
-    "benefit3Title": "feel drowned on social media",
-    "benefit3Desc": "Quit the infinite scroll. 5 minutes of focused reading replaces hours lost scrolling.",
-    "benefit3Source": "ElectroIQ"
+    "badge": "Benefits",
+    "title": "Why you'll love it",
+    "subtitle": "An experience designed for people who want to stay informed without spending their lives on it.",
+    "benefit1Title": "Email format",
+    "benefit1Desc": "No app to install. Delivered straight to your favorite inbox.",
+    "benefit2Title": "100% for you",
+    "benefit2Desc": "Your topic. Your frequency. Your schedule. You control absolutely everything.",
+    "benefit3Title": "Fact-checked & sourced",
+    "benefit3Desc": "Every fact and figure is verified. Sources listed at the end of each article for full transparency."
   },
   "newsletterShowcase": {
     "badge": "Examples",
