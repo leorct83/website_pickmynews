@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { validateSubscriptionData, formatSendDaysForSheet } from '@/lib/validation';
+import { validateSubscriptionData, formatSendDaysForSheet, formatLanguageForSheet } from '@/lib/validation';
 import { getPriceId, createCheckoutSession } from '@/lib/stripe';
 import { emailExists } from '@/lib/sheets';
 import { ZodError } from 'zod';
@@ -39,11 +39,12 @@ export async function POST(request: NextRequest) {
     const cancelUrl = `${baseUrl}/cancel`;
 
     // Métadonnées pour Stripe (seront récupérées par le webhook)
+    // Note: language et send_days sont convertis en anglais pour Google Sheets
     const metadata = {
       name: validatedData.name,
       email: validatedData.email,
       theme: validatedData.theme,
-      language: validatedData.language,
+      language: formatLanguageForSheet(validatedData.language),
       plan_frequency: validatedData.plan_frequency,
       billing_period: validatedData.billing_period,
       send_days: formatSendDaysForSheet(validatedData.send_days),

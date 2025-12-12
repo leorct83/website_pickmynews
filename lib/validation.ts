@@ -44,10 +44,38 @@ export function validateSendDaysCount(
 }
 
 /**
- * Convertit un tableau de jours en chaîne pour Google Sheets
+ * Mapping des jours FR → EN pour Google Sheets
+ */
+const daysFrToEn: Record<string, string> = {
+  'Lundi': 'Monday',
+  'Mardi': 'Tuesday',
+  'Mercredi': 'Wednesday',
+  'Jeudi': 'Thursday',
+  'Vendredi': 'Friday',
+  'Samedi': 'Saturday',
+  'Dimanche': 'Sunday',
+};
+
+/**
+ * Convertit un tableau de jours en chaîne EN pour Google Sheets
  */
 export function formatSendDaysForSheet(days: WeekDay[]): string {
-  return days.join(',');
+  return days.map(day => daysFrToEn[day] || day).join(',');
+}
+
+/**
+ * Mapping des langues UI → EN pour Google Sheets
+ */
+const languageToEn: Record<string, string> = {
+  'Français': 'French',
+  'English': 'English',
+};
+
+/**
+ * Convertit la langue en anglais pour Google Sheets
+ */
+export function formatLanguageForSheet(language: string): string {
+  return languageToEn[language] || language;
 }
 
 /**
