@@ -12,9 +12,9 @@
     "cta": "Obtenir ma newsletter personnalisée"
   },
   "hero": {
-    "headline": "L'info qui compte",
-    "headlineSuffix": "vient à vous.",
-    "subheadline": "Recevez une newsletter qui <you>vous</you> parle, sur le sujet de <your>votre</your> choix, quand <youWant>vous</youWant> voulez !",
+    "headline": "Vos news.",
+    "headlineSuffix": "Rien que vos news.",
+    "subheadline": "Une newsletter sur-mesure, livrée quand vous voulez.",
     "ctaPrimary": "Créer ma newsletter",
     "ctaSecondary": "Voir comment ça marche",
     "trustSatisfied": "Satisfait ou remboursé pendant 7 jours",

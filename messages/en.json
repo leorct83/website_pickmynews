@@ -12,9 +12,9 @@
     "cta": "Get my personalized newsletter"
   },
   "hero": {
-    "headline": "The news that matters",
-    "headlineSuffix": "comes to you.",
-    "subheadline": "Receive a newsletter that speaks to <you>you</you>, on the topic of <your>your</your> choice, when <youWant>you</youWant> want!",
+    "headline": "Your news.",
+    "headlineSuffix": "Only your news.",
+    "subheadline": "A custom newsletter, delivered when you want.",
     "ctaPrimary": "Create my newsletter",
     "ctaSecondary": "See how it works",
     "trustSatisfied": "7-day money-back guarantee",
