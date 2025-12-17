@@ -2,7 +2,7 @@
  * Types pour PickmyNews
  */
 
-export type PlanFrequency = '1x' | '2x' | '5x' | '7x';
+export type PlanFrequency = '1x';
 export type BillingPeriod = 'weekly' | 'monthly' | 'yearly';
 export type SubscriptionStatus = 'pending' | 'active' | 'canceled' | 'past_due';
 export type NewsletterLanguage = 'Français' | 'English';

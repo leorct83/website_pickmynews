@@ -35,20 +35,11 @@ export default function HowItWorks() {
               <span className="text-sm font-semibold text-slate-900">{t('step2Planning')}</span>
             </div>
 
-            {/* Sélecteur de fréquence style pills */}
+            {/* Fréquence fixe 1x/semaine */}
             <div className="flex gap-1 mb-3">
-              {['1', '2', '5', '7'].map((num, i) => (
-                <button
-                  key={num}
-                  className={`flex-1 py-1 text-xs font-medium rounded-md transition-all ${
-                    i === 2
-                      ? 'bg-amber-500 text-white shadow-sm'
-                      : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
-                  }`}
-                >
-                  {num}x
-                </button>
-              ))}
+              <div className="flex-1 py-1.5 text-xs font-medium rounded-md bg-amber-500 text-white shadow-sm text-center">
+                1x / {t('step2Week')}
+              </div>
             </div>
 
             {/* Jour et heure */}

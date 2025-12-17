@@ -11,7 +11,7 @@ export const subscriptionFormSchema = z.object({
   language: z.enum(['Français', 'English'], {
     errorMap: () => ({ message: 'Langue invalide' })
   }),
-  plan_frequency: z.enum(['1x', '2x', '5x', '7x'], {
+  plan_frequency: z.enum(['1x'], {
     errorMap: () => ({ message: 'Fréquence invalide' })
   }),
   billing_period: z.enum(['weekly', 'monthly', 'yearly'], {
@@ -33,14 +33,8 @@ export function validateSendDaysCount(
   send_days: WeekDay[],
   plan_frequency: PlanFrequency
 ): boolean {
-  const frequencyMap: Record<PlanFrequency, number> = {
-    '1x': 1,
-    '2x': 2,
-    '5x': 5,
-    '7x': 7,
-  };
-
-  return send_days.length === frequencyMap[plan_frequency];
+  // Only 1x/week is supported
+  return send_days.length === 1 && plan_frequency === '1x';
 }
 
 /**
@@ -85,17 +79,10 @@ export function validateSubscriptionData(data: unknown) {
   // Validation du schéma de base
   const parsed = subscriptionFormSchema.parse(data);
 
-  // Validation supplémentaire : cohérence send_days / plan_frequency
+  // Validation supplémentaire : cohérence send_days / plan_frequency (1x/week only)
   if (!validateSendDaysCount(parsed.send_days, parsed.plan_frequency)) {
-    const frequencyMap: Record<PlanFrequency, number> = {
-      '1x': 1,
-      '2x': 2,
-      '5x': 5,
-      '7x': 7,
-    };
-    const expected = frequencyMap[parsed.plan_frequency];
     throw new Error(
-      `Veuillez sélectionner exactement ${expected} jour(s), en cohérence avec votre plan.`
+      `Veuillez sélectionner exactement 1 jour.`
     );
   }
 

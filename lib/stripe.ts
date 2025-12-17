@@ -16,22 +16,9 @@ export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
  * Les valeurs sont récupérées depuis les variables d'environnement.
  */
 export const PLAN_PRICE_MAP: PlanPriceMap = {
-  // Facturation hebdomadaire
-  'weekly_7x': process.env.STRIPE_PRICE_WEEKLY_7X!,
-  'weekly_5x': process.env.STRIPE_PRICE_WEEKLY_5X!,
-  'weekly_2x': process.env.STRIPE_PRICE_WEEKLY_2X!,
+  // Only 1x/week frequency is now supported
   'weekly_1x': process.env.STRIPE_PRICE_WEEKLY_1X!,
-
-  // Facturation mensuelle
-  'monthly_7x': process.env.STRIPE_PRICE_MONTHLY_7X!,
-  'monthly_5x': process.env.STRIPE_PRICE_MONTHLY_5X!,
-  'monthly_2x': process.env.STRIPE_PRICE_MONTHLY_2X!,
   'monthly_1x': process.env.STRIPE_PRICE_MONTHLY_1X!,
-
-  // Facturation annuelle
-  'yearly_7x': process.env.STRIPE_PRICE_YEARLY_7X!,
-  'yearly_5x': process.env.STRIPE_PRICE_YEARLY_5X!,
-  'yearly_2x': process.env.STRIPE_PRICE_YEARLY_2X!,
   'yearly_1x': process.env.STRIPE_PRICE_YEARLY_1X!,
 };
 

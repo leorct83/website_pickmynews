@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 
 // Types
-type Frequency = 1 | 2 | 5 | 7;
+type Frequency = 1;
 type BillingCycle = 'weekly' | 'monthly' | 'yearly';
 type Language = 'Français' | 'English';
 
@@ -28,18 +28,12 @@ interface PricingOption {
 }
 
 const PRICING: Record<Frequency, PricingOption> = {
-  7: { weekly: 5.99, monthly: 12.99, yearly: 129.99 },
-  5: { weekly: 4.99, monthly: 9.99, yearly: 99.99 },
-  2: { weekly: 2.99, monthly: 6.49, yearly: 59.99 },
   1: { weekly: 1.99, monthly: 4.99, yearly: 49.99 },
 };
 
 // Mapping fréquence numérique vers format API
 const FREQUENCY_TO_PLAN: Record<Frequency, string> = {
   1: '1x',
-  2: '2x',
-  5: '5x',
-  7: '7x',
 };
 
 const HOURS = Array.from({ length: 24 }, (_, i) => i);
@@ -69,8 +63,8 @@ export default function SubscriptionForm() {
     email: '',
     theme: '',
     language: 'Français',
-    frequency: 7,
-    selectedDays: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'],
+    frequency: 1,
+    selectedDays: ['Lundi'],
     selectedHour: 8,
     billingCycle: 'monthly',
     legalConsent: false,
@@ -314,27 +308,14 @@ export default function SubscriptionForm() {
                 </div>
               </div>
 
-              {/* Frequency selection */}
+              {/* Frequency info (fixed at 1x/week) */}
               <div className="mb-6">
                 <label className="block text-sm font-semibold text-slate-700 mb-2">
                   {t('frequency')}
                 </label>
-                <div className="grid grid-cols-4 gap-3">
-                  {([1, 2, 5, 7] as Frequency[]).map((freq) => (
-                    <button
-                      key={freq}
-                      type="button"
-                      onClick={() => setFormData({ ...formData, frequency: freq })}
-                      className={`py-4 px-4 rounded-xl text-center transition-all border-2 ${
-                        formData.frequency === freq
-                          ? 'border-amber-500 bg-amber-50 text-amber-700'
-                          : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300'
-                      }`}
-                    >
-                      <span className="text-2xl font-bold">{freq}</span>
-                      <span className="text-sm block">{t('perWeek')}</span>
-                    </button>
-                  ))}
+                <div className="py-4 px-4 rounded-xl text-center border-2 border-amber-500 bg-amber-50 text-amber-700">
+                  <span className="text-2xl font-bold">1</span>
+                  <span className="text-sm block">{t('perWeek')}</span>
                 </div>
               </div>
 

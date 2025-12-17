@@ -18,70 +18,18 @@ export default function PricingTable() {
   const t = useTranslations('pricing');
   const locale = useLocale();
 
-  const plans = [
-    {
-      name: t('plan1Name'),
-      newslettersPerWeek: 1,
-      description: t('plan1Desc'),
-      price: { weekly: 1.99, monthly: 4.99, annual: 49.99 },
-      features: [
-        t('plan1Feature1'),
-        t('plan1Feature2'),
-        t('plan1Feature3'),
-      ],
-      limitations: [],
-      cta: t('cta'),
-      popular: false,
-    },
-    {
-      name: t('plan2Name'),
-      newslettersPerWeek: 2,
-      description: t('plan2Desc'),
-      price: { weekly: 2.99, monthly: 6.49, annual: 59.99 },
-      features: [
-        t('plan2Feature1'),
-        t('plan2Feature2'),
-        t('plan2Feature3'),
-        t('plan2Feature4'),
-      ],
-      limitations: [],
-      cta: t('cta'),
-      popular: true,
-    },
-    {
-      name: t('plan3Name'),
-      newslettersPerWeek: 5,
-      description: t('plan3Desc'),
-      price: { weekly: 4.99, monthly: 9.99, annual: 99.99 },
-      features: [
-        t('plan3Feature1'),
-        t('plan3Feature2'),
-        t('plan3Feature3'),
-        t('plan3Feature4'),
-        t('plan3Feature5'),
-      ],
-      limitations: [],
-      cta: t('cta'),
-      popular: false,
-    },
-    {
-      name: t('plan4Name'),
-      newslettersPerWeek: 7,
-      description: t('plan4Desc'),
-      price: { weekly: 5.99, monthly: 12.99, annual: 129.99 },
-      features: [
-        t('plan4Feature1'),
-        t('plan4Feature2'),
-        t('plan4Feature3'),
-        t('plan4Feature4'),
-        t('plan4Feature5'),
-        t('plan4Feature6'),
-      ],
-      limitations: [],
-      cta: t('cta'),
-      popular: false,
-    },
-  ];
+  const plan = {
+    name: t('plan1Name'),
+    newslettersPerWeek: 1,
+    description: t('plan1Desc'),
+    price: { weekly: 1.99, monthly: 4.99, annual: 49.99 },
+    features: [
+      t('plan1Feature1'),
+      t('plan1Feature2'),
+      t('plan1Feature3'),
+    ],
+    cta: t('cta'),
+  };
 
   const billingLabels: Record<BillingCycle, string> = {
     weekly: t('perWeek'),
@@ -89,7 +37,7 @@ export default function PricingTable() {
     annual: t('perYear'),
   };
 
-  const getAnnualSavings = (plan: typeof plans[0]) => {
+  const getAnnualSavings = () => {
     const monthlyTotal = plan.price.monthly * 12;
     const annualPrice = plan.price.annual;
     const savings = Math.round((1 - annualPrice / monthlyTotal) * 100);
@@ -97,7 +45,7 @@ export default function PricingTable() {
   };
 
   // Calcul du prix par semaine selon la périodicité de facturation
-  const getPricePerWeek = (plan: typeof plans[0], cycle: BillingCycle): number => {
+  const getPricePerWeek = (cycle: BillingCycle): number => {
     switch (cycle) {
       case 'weekly':
         return plan.price.weekly;
@@ -106,12 +54,6 @@ export default function PricingTable() {
       case 'annual':
         return plan.price.annual / 52;
     }
-  };
-
-  // Calcul du prix par newsletter
-  const getPricePerNewsletter = (plan: typeof plans[0], cycle: BillingCycle): number => {
-    const pricePerWeek = getPricePerWeek(plan, cycle);
-    return pricePerWeek / plan.newslettersPerWeek;
   };
 
   return (
@@ -171,97 +113,65 @@ export default function PricingTable() {
           </div>
         </div>
 
-        {/* Pricing cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {plans.map((plan, index) => (
-            <div
-              key={index}
-              className={`relative rounded-3xl p-6 transition-all duration-500 ${
-                plan.popular
-                  ? 'bg-white scale-105 shadow-2xl shadow-amber-500/20'
-                  : 'bg-slate-800 hover:bg-slate-800/80'
-              }`}
-            >
-              {/* Popular badge */}
-              {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-semibold px-4 py-1 rounded-full whitespace-nowrap">
-                    {t('mostPopular')}
-                  </span>
-                </div>
+        {/* Single pricing card - centered */}
+        <div className="max-w-md mx-auto">
+          <div className="relative rounded-3xl p-8 bg-white shadow-2xl shadow-amber-500/20">
+            {/* Plan header */}
+            <div className="mb-6 text-center">
+              <h3 className="text-2xl font-semibold mb-2 text-slate-900">
+                {plan.name}
+              </h3>
+              <p className="text-slate-600">
+                {plan.description}
+              </p>
+            </div>
+
+            {/* Price */}
+            <div className="mb-6 text-center">
+              <div className="flex items-baseline justify-center gap-1">
+                <span className="text-5xl font-bold text-slate-900">
+                  {plan.price[billingCycle].toFixed(2).replace('.', ',')}€
+                </span>
+                <span className="text-slate-500">
+                  {billingLabels[billingCycle]}
+                </span>
+              </div>
+              {billingCycle === 'annual' && (
+                <p className="text-sm mt-1 text-emerald-600">
+                  {t('save', { percent: getAnnualSavings() })}
+                </p>
               )}
 
-              {/* Plan header */}
-              <div className="mb-6">
-                <h3 className={`text-xl font-semibold mb-2 ${
-                  plan.popular ? 'text-slate-900' : 'text-white'
-                }`}>
-                  {plan.name}
-                </h3>
-                <p className={plan.popular ? 'text-slate-600' : 'text-slate-400'}>
-                  {plan.description}
+              {/* Prix par semaine */}
+              {billingCycle !== 'weekly' && (
+                <p className="text-sm mt-2 text-slate-500">
+                  {t('approxPerWeek', { price: formatPrice(getPricePerWeek(billingCycle), locale) })}
                 </p>
-              </div>
-
-              {/* Price */}
-              <div className="mb-6">
-                <div className="flex items-baseline gap-1">
-                  <span className={`text-4xl font-bold ${
-                    plan.popular ? 'text-slate-900' : 'text-white'
-                  }`}>
-                    {plan.price[billingCycle].toFixed(2).replace('.', ',')}€
-                  </span>
-                  <span className={plan.popular ? 'text-slate-500' : 'text-slate-400'}>
-                    {billingLabels[billingCycle]}
-                  </span>
-                </div>
-                {billingCycle === 'annual' && (
-                  <p className={`text-sm mt-1 ${plan.popular ? 'text-emerald-600' : 'text-emerald-400'}`}>
-                    {t('save', { percent: getAnnualSavings(plan) })}
-                  </p>
-                )}
-
-                {/* Prix par semaine et par newsletter */}
-                <p className={`text-xs mt-2 ${plan.popular ? 'text-slate-500' : 'text-slate-400'}`}>
-                  {billingCycle !== 'weekly' && (
-                    <>{t('approxPerWeek', { price: formatPrice(getPricePerWeek(plan, billingCycle), locale) })}</>
-                  )}
-                  {' — '}
-                  <span className={plan.popular ? 'text-amber-600' : 'text-amber-400'}>
-                    {t('perNewsletter', { price: formatPrice(getPricePerNewsletter(plan, billingCycle), locale) })}
-                  </span>
-                </p>
-              </div>
-
-              {/* CTA */}
-              <a
-                href="#inscription"
-                className={`block w-full py-3 rounded-xl font-semibold text-center transition-all mb-6 ${
-                  plan.popular
-                    ? 'bg-slate-900 text-white hover:bg-slate-800'
-                    : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'
-                }`}
-              >
-                {plan.cta}
-              </a>
-
-              {/* Features */}
-              <ul className="space-y-2">
-                {plan.features.map((feature, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <svg className={`w-5 h-5 mt-0.5 flex-shrink-0 ${
-                      plan.popular ? 'text-emerald-500' : 'text-emerald-400'
-                    }`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className={`text-sm ${plan.popular ? 'text-slate-700' : 'text-slate-300'}`}>
-                      {feature}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+              )}
             </div>
-          ))}
+
+            {/* CTA */}
+            <a
+              href="#inscription"
+              className="block w-full py-4 rounded-xl font-semibold text-center transition-all mb-6 bg-slate-900 text-white hover:bg-slate-800"
+            >
+              {plan.cta}
+            </a>
+
+            {/* Features */}
+            <ul className="space-y-3">
+              {plan.features.map((feature, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <svg className="w-5 h-5 mt-0.5 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-slate-700">
+                    {feature}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Money-back guarantee */}
