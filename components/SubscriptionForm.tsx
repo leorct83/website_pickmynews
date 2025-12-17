@@ -308,24 +308,10 @@ export default function SubscriptionForm() {
                 </div>
               </div>
 
-              {/* Frequency info (fixed at 1x/week) */}
-              <div className="mb-6">
-                <label className="block text-sm font-semibold text-slate-700 mb-2">
-                  {t('frequency')}
-                </label>
-                <div className="py-4 px-4 rounded-xl text-center border-2 border-amber-500 bg-amber-50 text-amber-700">
-                  <span className="text-2xl font-bold">1</span>
-                  <span className="text-sm block">{t('perWeek')}</span>
-                </div>
-              </div>
-
               {/* Day selection */}
               <div className="mb-6">
                 <label className="block text-sm font-semibold text-slate-700 mb-2">
-                  {t('days')}
-                  <span className="text-slate-400 font-normal ml-2">
-                    {t('daysSelected', { selected: formData.selectedDays.length, total: formData.frequency })}
-                  </span>
+                  {t('daysSingular')}
                 </label>
                 <div className="grid grid-cols-7 gap-2">
                   {DAYS.map((day) => (
@@ -393,7 +379,7 @@ export default function SubscriptionForm() {
               {/* Pricing summary */}
               <div className="mb-6 p-6 bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl border border-slate-200">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-slate-600">{t('summary', { freq: formData.frequency })}</span>
+                  <span className="text-slate-600">{t('summarySimple')}</span>
                   <span className="text-slate-400 text-sm">{BILLING_LABELS[formData.billingCycle]}</span>
                 </div>
                 <div className="flex items-end justify-between">

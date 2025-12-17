@@ -1,22 +1,13 @@
 'use client';
 
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 type BillingCycle = 'weekly' | 'monthly' | 'annual';
 
-// Utilitaire pour formater les prix en euros (ex: 4,99 €)
-const formatPrice = (price: number, locale: string): string => {
-  if (locale === 'fr') {
-    return price.toFixed(2).replace('.', ',') + ' €';
-  }
-  return '€' + price.toFixed(2);
-};
-
 export default function PricingTable() {
   const t = useTranslations('pricing');
-  const locale = useLocale();
 
-  const plans: { cycle: BillingCycle; price: number; label: string; perWeek?: number; popular?: boolean; savings?: number }[] = [
+  const plans: { cycle: BillingCycle; price: number; label: string; popular?: boolean; savings?: number }[] = [
     {
       cycle: 'weekly',
       price: 1.99,
@@ -26,14 +17,12 @@ export default function PricingTable() {
       cycle: 'monthly',
       price: 4.99,
       label: t('perMonth'),
-      perWeek: (4.99 * 12) / 52,
       popular: true,
     },
     {
       cycle: 'annual',
       price: 49.99,
       label: t('perYear'),
-      perWeek: 49.99 / 52,
       savings: 17,
     },
   ];
@@ -110,11 +99,6 @@ export default function PricingTable() {
                     {plan.label}
                   </span>
                 </div>
-                {plan.perWeek && (
-                  <p className={`text-sm mt-1 ${plan.popular ? 'text-slate-500' : 'text-slate-400'}`}>
-                    {t('approxPerWeek', { price: formatPrice(plan.perWeek, locale) })}
-                  </p>
-                )}
               </div>
 
               {/* CTA */}
