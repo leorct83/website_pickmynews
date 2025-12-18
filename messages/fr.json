@@ -172,6 +172,8 @@
     "billingYearly": "Annuelle",
     "summary": "Newsletter {freq}x/semaine",
     "summarySimple": "Votre abonnement",
+    "trialOffer": "15 jours d'essai offerts",
+    "thenPrice": "puis {price} €/{period}",
     "perWeekShort": "sem",
     "perMonthShort": "mois",
     "perYearShort": "an",

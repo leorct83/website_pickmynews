@@ -382,18 +382,18 @@ export default function SubscriptionForm() {
                   <span className="text-slate-600">{t('summarySimple')}</span>
                   <span className="text-slate-400 text-sm">{BILLING_LABELS[formData.billingCycle]}</span>
                 </div>
-                <div className="flex items-end justify-between">
-                  <div>
-                    <span className="text-4xl font-bold text-slate-900">{currentPrice.toFixed(2)} €</span>
-                    <span className="text-slate-500 ml-1">
-                      /{getBillingPeriodLabel(formData.billingCycle)}
-                    </span>
+                <div className="flex flex-col gap-1">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl font-bold text-amber-600">{t('trialOffer')}</span>
                   </div>
-                  {formData.billingCycle === 'yearly' && (
-                    <span className="text-green-600 text-sm font-medium">
-                      {t('saveAmount', { amount: (PRICING[formData.frequency].monthly * 12 - PRICING[formData.frequency].yearly).toFixed(2) })}
-                    </span>
-                  )}
+                  <div className="text-slate-500">
+                    {t('thenPrice', { price: currentPrice.toFixed(2), period: getBillingPeriodLabel(formData.billingCycle) })}
+                    {formData.billingCycle === 'yearly' && (
+                      <span className="text-green-600 ml-2 font-medium">
+                        {t('saveAmount', { amount: (PRICING[formData.frequency].monthly * 12 - PRICING[formData.frequency].yearly).toFixed(2) })}
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
 

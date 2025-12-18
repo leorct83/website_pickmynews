@@ -172,6 +172,8 @@
     "billingYearly": "Yearly",
     "summary": "Newsletter {freq}x/week",
     "summarySimple": "Your subscription",
+    "trialOffer": "15-day free trial",
+    "thenPrice": "then €{price}/{period}",
     "perWeekShort": "week",
     "perMonthShort": "month",
     "perYearShort": "year",
