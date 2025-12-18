@@ -63,7 +63,9 @@ export async function createCheckoutSession(params: {
     success_url: params.successUrl,
     cancel_url: params.cancelUrl,
     allow_promotion_codes: true,
-    // Permet de récupérer le customer_email dans les webhooks
+    subscription_data: {
+      trial_period_days: 10,
+    },
   });
 
   return session;
