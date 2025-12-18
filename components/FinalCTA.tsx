@@ -45,7 +45,7 @@ export default function FinalCTA() {
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#tarifs" className="text-white/70 hover:text-white font-medium transition-colors">
+            <a href="#inscription" className="btn-primary btn-lg">
               {t('seePricing')}
             </a>
           </div>

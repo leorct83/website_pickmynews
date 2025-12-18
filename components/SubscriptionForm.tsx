@@ -454,11 +454,15 @@ export default function SubscriptionForm() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold py-6 px-8 rounded-2xl text-xl shadow-lg shadow-amber-500/30 hover:shadow-xl hover:shadow-amber-500/40 transform hover:-translate-y-0.5 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-none"
+                  className={`w-full h-14 px-8 rounded-lg font-semibold text-lg transition-all duration-200
+                    bg-amber-500 text-slate-900 hover:bg-amber-600 active:bg-amber-700
+                    focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2
+                    disabled:opacity-50 disabled:cursor-not-allowed
+                    ${isSubmitting ? 'pointer-events-none' : ''}`}
                 >
                   {isSubmitting ? (
                     <span className="flex items-center justify-center gap-3">
-                      <svg className="animate-spin w-6 h-6" viewBox="0 0 24 24">
+                      <svg className="animate-spin w-5 h-5" viewBox="0 0 24 24">
                         <circle
                           className="opacity-25"
                           cx="12"
@@ -477,10 +481,10 @@ export default function SubscriptionForm() {
                       <span>{t('submitting')}</span>
                     </span>
                   ) : (
-                    <span className="flex items-center justify-center gap-3">
+                    <span className="flex items-center justify-center gap-2">
                       <span>{t('submit')}</span>
-                      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
                     </span>
                   )}

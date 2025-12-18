@@ -104,10 +104,10 @@ export default function PricingTable() {
               {/* CTA */}
               <a
                 href="#inscription"
-                className={`block w-full py-3 rounded-xl font-semibold text-center transition-all mb-6 ${
+                className={`flex w-full justify-center h-12 px-6 rounded-lg font-semibold text-base items-center transition-all duration-200 mb-6 ${
                   plan.popular
-                    ? 'bg-slate-900 text-white hover:bg-slate-800'
-                    : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'
+                    ? 'bg-amber-500 text-slate-900 hover:bg-amber-600 active:bg-amber-700'
+                    : 'bg-slate-700 text-white hover:bg-slate-600 active:bg-slate-800'
                 }`}
               >
                 {t('cta')}

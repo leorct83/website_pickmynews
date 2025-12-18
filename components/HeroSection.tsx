@@ -34,9 +34,9 @@ export default function HeroSection() {
 
           {/* CTA */}
           <div className="fade-in-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <a href="#inscription" className="btn-primary group">
+            <a href="#inscription" className="btn-primary btn-lg">
               <span>{t('ctaPrimary')}</span>
-              <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>

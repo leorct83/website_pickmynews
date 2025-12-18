@@ -92,7 +92,7 @@ export default function Navbar() {
           {/* CTA */}
           <a
             href="#inscription"
-            className="btn-primary !py-3 !px-6 !text-base hidden sm:inline-flex"
+            className="btn-primary btn-sm hidden sm:inline-flex"
           >
             {t('cta')}
           </a>
