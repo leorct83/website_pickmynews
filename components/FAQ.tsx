@@ -9,6 +9,10 @@ export default function FAQ() {
 
   const faqs: { question: string; answer: ReactNode }[] = [
     {
+      question: t('q0'),
+      answer: t('a0'),
+    },
+    {
       question: t('q1'),
       answer: (
         <>

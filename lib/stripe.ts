@@ -64,7 +64,7 @@ export async function createCheckoutSession(params: {
     cancel_url: params.cancelUrl,
     allow_promotion_codes: true,
     subscription_data: {
-      trial_period_days: 10,
+      trial_period_days: 15,
     },
   });
 

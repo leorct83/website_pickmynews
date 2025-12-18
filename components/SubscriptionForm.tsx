@@ -486,6 +486,11 @@ export default function SubscriptionForm() {
                   )}
                 </button>
 
+                {/* Trial info */}
+                <p className="text-center text-sm text-slate-500 mt-3">
+                  {t('trialInfo')}
+                </p>
+
                 {/* Trust badges */}
                 <div className="flex items-center justify-center gap-6 text-sm text-slate-500">
                   <span className="flex items-center gap-1.5">
