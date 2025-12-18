@@ -454,7 +454,7 @@ export default function SubscriptionForm() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full h-14 px-8 rounded-lg font-semibold text-lg transition-all duration-200
+                  className={`w-full h-14 px-8 rounded-full font-semibold text-lg transition-all duration-200
                     bg-amber-500 text-slate-900 hover:bg-amber-600 active:bg-amber-700
                     focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2
                     disabled:opacity-50 disabled:cursor-not-allowed
