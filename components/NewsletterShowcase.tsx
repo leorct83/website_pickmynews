@@ -35,7 +35,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
           <tr>
             <td style="padding:28px 32px 0 32px;text-align:center;">
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#F59E0B;background-color:#FFFBEB;display:inline-block;padding:6px 14px;border-radius:20px;">
                 Newsletter du 10/12/2025
               </p>
             </td>
@@ -47,7 +47,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 24px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #4F46E5;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #F59E0B;">
                 <tr>
                   <td style="padding:20px 24px;">
                     <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">Bonjour Véronique 👋</p>
@@ -59,18 +59,28 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 12px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#EEF2FF;border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFFBEB;border-radius:10px;">
                 <tr>
                   <td style="padding:20px 24px;">
-                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#4F46E5;">📌 Au programme</p>
+                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#F59E0B;">📌 Au programme</p>
                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Exercice Chergui 2025 teste l'interopérabilité franco-marocaine</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>African Lion 2026 en phase finale de planification</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>APORA 2025 : FAR et AFRICOM coopèrent pour la sécurité sanitaire</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Exercice Chergui 2025 teste l'interopérabilité franco-marocaine</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>African Lion 2026 en phase finale de planification</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>APORA 2025 : FAR et AFRICOM coopèrent pour la sécurité sanitaire</td></tr>
                     </table>
                   </td>
                 </tr>
               </table>
+            </td>
+          </tr>
+          <!-- HERO IMAGE -->
+          <tr>
+            <td style="padding:20px 32px;">
+              <img src="/morocco-military.jpg"
+                   alt="Forces Armées Royales"
+                   width="536"
+                   height="auto"
+                   style="width:100%;max-width:536px;height:auto;display:block;border-radius:8px;border:0;outline:none;text-decoration:none;">
             </td>
           </tr>
           <!-- SEPARATOR -->
@@ -93,7 +103,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">Ce rendez-vous annuel illustre la volonté stratégique de Paris et Rabat de préserver la stabilité régionale, en scrutant particulièrement les enjeux liés à la maîtrise des environnements désertiques. L'exercice confirme une coopération militaire solide et pragmatique, clé dans un contexte international instable.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.defense.gouv.fr/terre/actualites/exercice-chergui-2025-linteroperabilite-franco-marocaine-testee-desert" style="color:#6366f1;">defense.gouv.fr</a> · <a href="https://medias24.com/2025/10/06/exercice-chergui-2025-les-armees-marocaine-et-francaise-a-lepreuve-du-desert/" style="color:#6366f1;">medias24.com</a> · <a href="https://lecollimateur.ma/195919" style="color:#6366f1;">lecollimateur.ma</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.defense.gouv.fr/terre/actualites/exercice-chergui-2025-linteroperabilite-franco-marocaine-testee-desert" style="color:#D97706;">defense.gouv.fr</a> · <a href="https://medias24.com/2025/10/06/exercice-chergui-2025-les-armees-marocaine-et-francaise-a-lepreuve-du-desert/" style="color:#D97706;">medias24.com</a> · <a href="https://lecollimateur.ma/195919" style="color:#D97706;">lecollimateur.ma</a></p>
 
 <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -105,7 +115,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">Ce partenariat stratégique consolidé s'inscrit dans une dynamique d'approfondissement de la coopération bilatérale entre les États-Unis et le Maroc. Il s'accompagne d'initiatives comme <em>Atlas Handshake</em>, focalisée sur la coopération maritime, témoignant de l'ancrage régional et international accru dans la sécurité et la stabilité de la région.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://lematin.ma/nation/reunion-de-planification-principale-de-lexercice-african-lion-2026/318105" style="color:#6366f1;">lematin.ma</a> · <a href="https://fr.le360.ma/politique/african-lion-2026-le-compte-a-rebours-est-lance_OKXI6FFXWRGG3HHR5YWUOT7FGM/" style="color:#6366f1;">le360.ma</a> · <a href="https://medias24.com/2025/12/09/atlas-handshake-le-maroc-et-les-etats-unis-renforcent-leur-cooperation-maritime-1591726/" style="color:#6366f1;">medias24.com</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://lematin.ma/nation/reunion-de-planification-principale-de-lexercice-african-lion-2026/318105" style="color:#D97706;">lematin.ma</a> · <a href="https://fr.le360.ma/politique/african-lion-2026-le-compte-a-rebours-est-lance_OKXI6FFXWRGG3HHR5YWUOT7FGM/" style="color:#D97706;">le360.ma</a> · <a href="https://medias24.com/2025/12/09/atlas-handshake-le-maroc-et-les-etats-unis-renforcent-leur-cooperation-maritime-1591726/" style="color:#D97706;">medias24.com</a></p>
 
 <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -119,18 +129,18 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">Au-delà de la santé, cet événement reflète une vision plus large portée par le roi <strong>Mohammed VI</strong> du Maroc, visant à tisser ensemble sécurité et bien-être public. En alignant discipline militaire et systèmes de santé civils, le partenariat FAR-AFRICOM établit un modèle de gestion épidémique résiliente et proactive à travers l'Afrique.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://lematin.ma/nation/les-far-accueillent-latelier-apora-2025-en-partenariat-avec-lafricom/318038" style="color:#6366f1;">Le Matin</a> · <a href="https://linformation.ma/news/politique/securite-sanitaire-les-far-accueillent-l-atelier-apora-2025-en-partenariat-avec-l-africom/61849" style="color:#6366f1;">L'Information</a> · <a href="https://www.kaweru.com/politique-societe/2025/12/09/rabat-accueille-latelier-apora-2025-pour-renforcer-la-securite-sanitaire-en-afrique/" style="color:#6366f1;">Kaweru</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://lematin.ma/nation/les-far-accueillent-latelier-apora-2025-en-partenariat-avec-lafricom/318038" style="color:#D97706;">Le Matin</a> · <a href="https://linformation.ma/news/politique/securite-sanitaire-les-far-accueillent-l-atelier-apora-2025-en-partenariat-avec-l-africom/61849" style="color:#D97706;">L'Information</a> · <a href="https://www.kaweru.com/politique-societe/2025/12/09/rabat-accueille-latelier-apora-2025-pour-renforcer-la-securite-sanitaire-en-afrique/" style="color:#D97706;">Kaweru</a></p>
 
             </td>
           </tr>
           <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);border-radius:10px;">
                 <tr>
                   <td style="padding:24px;">
                     <p style="margin:0 0 8px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.7;">Vous avez appris quelque chose ? Parlez en autour de vous 🚀</p>
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#4F46E5;font-weight:600;">— L'équipe PickMyNews</p>
+                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#F59E0B;font-weight:600;">— L'équipe PickMyNews</p>
                   </td>
                 </tr>
               </table>
@@ -162,7 +172,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
           <tr>
             <td style="padding:28px 32px 0 32px;text-align:center;">
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter du 05/12/2025</p>
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#F59E0B;background-color:#FFFBEB;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter du 05/12/2025</p>
             </td>
           </tr>
           <tr>
@@ -172,7 +182,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 24px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #4F46E5;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #F59E0B;">
                 <tr>
                   <td style="padding:20px 24px;">
                     <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">Bonjour Sophie 👋</p>
@@ -184,14 +194,14 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 12px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#EEF2FF;border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFFBEB;border-radius:10px;">
                 <tr>
                   <td style="padding:20px 24px;">
-                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#4F46E5;">📌 Au programme</p>
+                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#F59E0B;">📌 Au programme</p>
                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>HP supprime jusqu'à 6000 emplois à cause de l'IA</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Crise de la RAM : l'IA fait flamber les prix</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Anthropic lance Claude Sonnet 4.5</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>HP supprime jusqu'à 6000 emplois à cause de l'IA</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Crise de la RAM : l'IA fait flamber les prix</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Anthropic lance Claude Sonnet 4.5</td></tr>
                     </table>
                   </td>
                 </tr>
@@ -201,7 +211,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
           <!-- HERO IMAGE -->
           <tr>
             <td style="padding:20px 32px;">
-              <img src="https://images.unsplash.com/photo-1681748179531-f3a227764721?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzg2NDh8MHwxfHNlYXJjaHwxfHxBY3R1JTIwSUElMjAlM0ElMjBMZXMlMjByb3VhZ2VzJTIwaW52aXNpYmxlcyUyMGRlJTIwbGElMjByJUMzJUE5dm9sdXRpb258ZW58MHwwfHx8MTc2NDk1NTEzMXww&ixlib=rb-4.1.0&q=80&w=1080"
+              <img src="/ai-technology.jpg"
                    alt="graffiti on the side of a building reads la revolution"
                    width="536"
                    height="auto"
@@ -226,7 +236,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">Cette annonce a provoqué une chute d'environ <strong>6 %</strong> du titre HP à Wall Street, conjuguée à des prévisions financières décevantes. Le plan de HP illustre les défis à venir de l'<em>IA</em> générative dans le secteur industriel, où la suppression d'emplois techniques pourrait être compensée par la création de nouveaux métiers, mais avec une transition incertaine.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources : </strong><a href="https://www.01net.com/" style="color:#6366f1;text-decoration:underline;">01net</a> · <a href="https://www.la-croix.com/" style="color:#6366f1;text-decoration:underline;">La Croix</a> · <a href="https://www.tunisienumerique.com/" style="color:#6366f1;text-decoration:underline;">Tunisie Numérique</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources : </strong><a href="https://www.01net.com/" style="color:#D97706;text-decoration:underline;">01net</a> · <a href="https://www.la-croix.com/" style="color:#D97706;text-decoration:underline;">La Croix</a> · <a href="https://www.tunisienumerique.com/" style="color:#D97706;text-decoration:underline;">Tunisie Numérique</a></p>
 
 <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -244,7 +254,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">La pénurie de <em>mémoire vive</em> liée à l'essor de l'IA, déjà ressentie sur le marché au détail, menace désormais la chaîne entière des produits technologiques.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources : </strong><a href="https://www.franceinfo.fr/internet/intelligence-artificielle/crise-de-la-ram-pourquoi-le-prix-des-ordinateurs-smartphones-ou-consoles-risque-de-flamber-a-cause-de-l-ia_7656292.html" style="color:#6366f1;text-decoration:underline;">France Info</a> · <a href="https://www.dhnet.be/actu/new-tech/2025/12/02/une-tablette-pliable-dans-la-poche-samsung-bombe-le-torse-avec-son-galaxy-z-trifold-H24SS3KGD5CVPPVJ4EQMGKGGH4/" style="color:#6366f1;text-decoration:underline;">DHnet</a> · <a href="https://www.cowcotland.com/news/98837/maj-les-contours-de-la-hausse-des-prix-des-cartes-graphiques-amd-se-precisent-+-10-pour-8-go.html" style="color:#6366f1;text-decoration:underline;">Cowcotland</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources : </strong><a href="https://www.franceinfo.fr/internet/intelligence-artificielle/crise-de-la-ram-pourquoi-le-prix-des-ordinateurs-smartphones-ou-consoles-risque-de-flamber-a-cause-de-l-ia_7656292.html" style="color:#D97706;text-decoration:underline;">France Info</a> · <a href="https://www.dhnet.be/actu/new-tech/2025/12/02/une-tablette-pliable-dans-la-poche-samsung-bombe-le-torse-avec-son-galaxy-z-trifold-H24SS3KGD5CVPPVJ4EQMGKGGH4/" style="color:#D97706;text-decoration:underline;">DHnet</a> · <a href="https://www.cowcotland.com/news/98837/maj-les-contours-de-la-hausse-des-prix-des-cartes-graphiques-amd-se-precisent-+-10-pour-8-go.html" style="color:#D97706;text-decoration:underline;">Cowcotland</a></p>
 
 <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -258,18 +268,18 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">Cette avancée majeure maintient un prix stable de <strong>3 $ / million de tokens en entrée</strong> et <strong>15 $ en sortie</strong>. Dès à présent, Sonnet 4.5 est intégré dans des outils comme GitHub Copilot, Cursor, ou Replit, adoptés par des géants comme Apple et Meta.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources : </strong><a href="https://www.anthropic.com/news/claude-sonnet-4-5" style="color:#6366f1;text-decoration:underline;">Anthropic</a> · <a href="https://techcrunch.com/2025/09/29/anthropic-launches-claude-sonnet-4-5-its-best-ai-model-for-coding" style="color:#6366f1;text-decoration:underline;">TechCrunch</a> · <a href="https://www.adimeo.com/blog/claude-sonnet-4-5" style="color:#6366f1;text-decoration:underline;">Adimeo</a> · <a href="https://lucasgraphic.com/posts/claude-sonnet-45-tops-coding-charts-with-huge-gains" style="color:#6366f1;text-decoration:underline;">LucasGraphic</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources : </strong><a href="https://www.anthropic.com/news/claude-sonnet-4-5" style="color:#D97706;text-decoration:underline;">Anthropic</a> · <a href="https://techcrunch.com/2025/09/29/anthropic-launches-claude-sonnet-4-5-its-best-ai-model-for-coding" style="color:#D97706;text-decoration:underline;">TechCrunch</a> · <a href="https://www.adimeo.com/blog/claude-sonnet-4-5" style="color:#D97706;text-decoration:underline;">Adimeo</a> · <a href="https://lucasgraphic.com/posts/claude-sonnet-45-tops-coding-charts-with-huge-gains" style="color:#D97706;text-decoration:underline;">LucasGraphic</a></p>
 
             </td>
           </tr>
           <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);border-radius:10px;">
                 <tr>
                   <td style="padding:24px;">
                     <p style="margin:0 0 8px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.7;">Vous avez appris quelque chose ? Parlez en autour de vous 🚀</p>
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#4F46E5;font-weight:600;">— L'équipe PickMyNews</p>
+                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#F59E0B;font-weight:600;">— L'équipe PickMyNews</p>
                   </td>
                 </tr>
               </table>
@@ -301,7 +311,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
           <tr>
             <td style="padding:28px 32px 0 32px;text-align:center;">
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter du 05/12/2025</p>
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#F59E0B;background-color:#FFFBEB;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter du 05/12/2025</p>
             </td>
           </tr>
           <tr>
@@ -311,7 +321,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 24px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #4F46E5;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #F59E0B;">
                 <tr>
                   <td style="padding:20px 24px;">
                     <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">Bonjour Léopold 👋</p>
@@ -323,14 +333,14 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 12px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#EEF2FF;border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFFBEB;border-radius:10px;">
                 <tr>
                   <td style="padding:20px 24px;">
-                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#4F46E5;">📌 Au programme</p>
+                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#F59E0B;">📌 Au programme</p>
                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Flexibilité agile, levier managérial décisif</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>IA intégrée pour révolutionner le recrutement</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Bien-être et inclusion : socles de performance</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Flexibilité agile, levier managérial décisif</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>IA intégrée pour révolutionner le recrutement</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Bien-être et inclusion : socles de performance</td></tr>
                     </table>
                   </td>
                 </tr>
@@ -369,7 +379,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
               <p style="margin:0 0 12px 0;">La convergence de ces pratiques souligne une tendance forte : la flexibilité agile devient un levier décisif pour un management moderne, adaptatif et performant.</p>
 
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="http://www.agencewebgram.com/" style="color:#6366f1;text-decoration:underline;">AgenceWebGram</a></p>
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="http://www.agencewebgram.com/" style="color:#D97706;text-decoration:underline;">AgenceWebGram</a></p>
 
               <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -385,7 +395,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
               <p style="margin:0 0 12px 0;">Les directions RH doivent ainsi conjuguer technologie et accompagnement humain, assurer la transparence des algorithmes et instaurer des dispositifs de prévention pour limiter ces risques.</p>
 
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://drh.ma/etiquettes/fatna-abdouh/" style="color:#6366f1;text-decoration:underline;">DRH.ma</a> · <a href="http://www.agencewebgram.com/2025/12/" style="color:#6366f1;text-decoration:underline;">AgenceWebGram</a> · <a href="https://culture-rh.com/" style="color:#6366f1;text-decoration:underline;">Culture RH</a></p>
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://drh.ma/etiquettes/fatna-abdouh/" style="color:#D97706;text-decoration:underline;">DRH.ma</a> · <a href="http://www.agencewebgram.com/2025/12/" style="color:#D97706;text-decoration:underline;">AgenceWebGram</a> · <a href="https://culture-rh.com/" style="color:#D97706;text-decoration:underline;">Culture RH</a></p>
 
               <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -399,18 +409,18 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
               <p style="margin:0 0 12px 0;">Les indicateurs clés montrent que les organisations investissant dans le bien-être constatent une réduction de <strong>25 %</strong> du turnover et une augmentation de <strong>20 %</strong> de l'engagement des équipes.</p>
 
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.manager-go.com/ressources-humaines/" style="color:#6366f1;text-decoration:underline;">Manager GO</a> · <a href="https://www.journaldunet.com/management/" style="color:#6366f1;text-decoration:underline;">JDN Management</a></p>
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.manager-go.com/ressources-humaines/" style="color:#D97706;text-decoration:underline;">Manager GO</a> · <a href="https://www.journaldunet.com/management/" style="color:#D97706;text-decoration:underline;">JDN Management</a></p>
 
             </td>
           </tr>
           <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);border-radius:10px;">
                 <tr>
                   <td style="padding:24px;">
                     <p style="margin:0 0 8px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.7;">Vous avez appris quelque chose ? Parlez en autour de vous 🚀</p>
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#4F46E5;font-weight:600;">— L'équipe PickMyNews</p>
+                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#F59E0B;font-weight:600;">— L'équipe PickMyNews</p>
                   </td>
                 </tr>
               </table>
@@ -442,7 +452,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
           <tr>
             <td style="padding:28px 32px 0 32px;text-align:center;">
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter du 10/12/2025</p>
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#F59E0B;background-color:#FFFBEB;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter du 10/12/2025</p>
             </td>
           </tr>
           <tr>
@@ -452,7 +462,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 24px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #4F46E5;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #F59E0B;">
                 <tr>
                   <td style="padding:20px 24px;">
                     <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">Bonjour Matthieu 👋</p>
@@ -464,14 +474,14 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 12px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#EEF2FF;border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFFBEB;border-radius:10px;">
                 <tr>
                   <td style="padding:20px 24px;">
-                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#4F46E5;">📌 Au programme</p>
+                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#F59E0B;">📌 Au programme</p>
                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Croissance française entre 0,8 % et 1,1 %</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Industrie de la défense stimule l'activité</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Dynamisme des services marchands</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Croissance française entre 0,8 % et 1,1 %</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Industrie de la défense stimule l'activité</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Dynamisme des services marchands</td></tr>
                     </table>
                   </td>
                 </tr>
@@ -508,7 +518,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">Cette différence de prévisions illustre l'incertitude qui entoure la relance française. Alors que l'Insee anticipe une stabilité à moyen terme, la Banque de France remarque que la reprise pourrait se décaler et s'intensifier davantage à partir de 2026. Le climat économique reste donc suspendu à ces signaux contradictoires, entre résilience industrielle et fragilité politique.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.rexecode.fr/conjoncture-previsions/veille-documentaire/document-de-la-semaine/moroses-previsions-de-croissance-pour-la-france-en-2025-insee-bdf" style="color:#6366f1;">Rexecode</a> · <a href="https://www.lefigaro.fr/conjoncture/la-croissance-francaise-ralentit-a-0-2-du-pib-au-4e-trimestre-selon-la-banque-de-france-20251209" style="color:#6366f1;">Le Figaro</a> · <a href="https://www.insee.fr/fr/statistiques/8662489" style="color:#6366f1;">Insee</a> · <a href="https://www.banque-france.fr/fr/publications-et-statistiques/publications/projections-macroeconomiques-intermediaires-septembre-2025" style="color:#6366f1;">Banque de France</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.rexecode.fr/conjoncture-previsions/veille-documentaire/document-de-la-semaine/moroses-previsions-de-croissance-pour-la-france-en-2025-insee-bdf" style="color:#D97706;">Rexecode</a> · <a href="https://www.lefigaro.fr/conjoncture/la-croissance-francaise-ralentit-a-0-2-du-pib-au-4e-trimestre-selon-la-banque-de-france-20251209" style="color:#D97706;">Le Figaro</a> · <a href="https://www.insee.fr/fr/statistiques/8662489" style="color:#D97706;">Insee</a> · <a href="https://www.banque-france.fr/fr/publications-et-statistiques/publications/projections-macroeconomiques-intermediaires-septembre-2025" style="color:#D97706;">Banque de France</a></p>
 
 <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -522,7 +532,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">En somme, si l'industrie de la défense revigore certains pans de l'économie, elle n'empêche pas une dynamique de croissance globalement ralentie en fin d'année.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.latribune.fr/article/economie/37309748954301/lindustrie-de-la-defense-dope-lactivite-mais-la-croissance-ralentit" style="color:#6366f1;">Latribune.fr</a> · <a href="http://www.defense.gouv.fr/actualites/defense-levier-strategique-leconomie-francaise" style="color:#6366f1;">Défense.gouv.fr</a> · <a href="https://www.lefigaro.fr/conjoncture/la-croissance-francaise-ralentit-a-0-2-du-pib-au-4e-trimestre-selon-la-banque-de-france-20251209" style="color:#6366f1;">Le Figaro</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.latribune.fr/article/economie/37309748954301/lindustrie-de-la-defense-dope-lactivite-mais-la-croissance-ralentit" style="color:#D97706;">Latribune.fr</a> · <a href="http://www.defense.gouv.fr/actualites/defense-levier-strategique-leconomie-francaise" style="color:#D97706;">Défense.gouv.fr</a> · <a href="https://www.lefigaro.fr/conjoncture/la-croissance-francaise-ralentit-a-0-2-du-pib-au-4e-trimestre-selon-la-banque-de-france-20251209" style="color:#D97706;">Le Figaro</a></p>
 
 <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -534,18 +544,18 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">Cette dualité reflète une économie à la fois confrontée à des fragilités structurelles et capable de s'appuyer sur le secteur des services pour absorber une partie des pertes. Le marché du travail français navigue ainsi entre fragilité du tissu industriel et résilience du tertiaire, enjeu clé pour les politiques d'emploi dans les mois à venir.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.insee.fr/fr/statistiques/8664273" style="color:#6366f1;">Insee</a> · <a href="https://www.rexecode.fr/conjoncture-previsions/synthese-conjoncturelle-hebdo/l-emploi-salarie-recule-en-france-au-3eme-trimestre" style="color:#6366f1;">Rexecode</a> · <a href="https://dares.travail-emploi.gouv.fr/donnees/lemploi-salarie" style="color:#6366f1;">DARES</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.insee.fr/fr/statistiques/8664273" style="color:#D97706;">Insee</a> · <a href="https://www.rexecode.fr/conjoncture-previsions/synthese-conjoncturelle-hebdo/l-emploi-salarie-recule-en-france-au-3eme-trimestre" style="color:#D97706;">Rexecode</a> · <a href="https://dares.travail-emploi.gouv.fr/donnees/lemploi-salarie" style="color:#D97706;">DARES</a></p>
 
             </td>
           </tr>
           <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);border-radius:10px;">
                 <tr>
                   <td style="padding:24px;">
                     <p style="margin:0 0 8px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.7;">Vous avez appris quelque chose ? Parlez en autour de vous 🚀</p>
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#4F46E5;font-weight:600;">— L'équipe PickMyNews</p>
+                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#F59E0B;font-weight:600;">— L'équipe PickMyNews</p>
                   </td>
                 </tr>
               </table>
@@ -577,7 +587,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
           <tr>
             <td style="padding:28px 32px 0 32px;text-align:center;">
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter du 05/12/2025</p>
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#F59E0B;background-color:#FFFBEB;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter du 05/12/2025</p>
             </td>
           </tr>
           <tr>
@@ -587,7 +597,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 24px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #4F46E5;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #F59E0B;">
                 <tr>
                   <td style="padding:20px 24px;">
                     <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">Bonjour Michael 👋</p>
@@ -599,14 +609,14 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 12px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#EEF2FF;border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFFBEB;border-radius:10px;">
                 <tr>
                   <td style="padding:20px 24px;">
-                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#4F46E5;">📌 Au programme</p>
+                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#F59E0B;">📌 Au programme</p>
                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>TFT Paris Open : Duel des Maîtres</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Coupe du Monde Esport 2025</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Olympiades E-Sport : L'Arène de Cergy</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>TFT Paris Open : Duel des Maîtres</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Coupe du Monde Esport 2025</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Olympiades E-Sport : L'Arène de Cergy</td></tr>
                     </table>
                   </td>
                 </tr>
@@ -643,7 +653,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
               <p style="margin:0 0 12px 0;">Cet événement, soutenu par Riot Games et diffusé en streaming sur Twitch, confirme l'essor fulgurant de <em>l'e-sport stratégique</em>. Paris devient ainsi un site incontournable, renforçant la visibilité du <em>TFT</em> dans le circuit compétitif.</p>
 
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://eu.leagueoflegends.com/en/news/esports/tft/tft-paris-open-analysis" style="color:#6366f1;text-decoration:underline;">Riot Games</a> · <a href="https://www.twitch.tv/teamfighttactics" style="color:#6366f1;text-decoration:underline;">Twitch</a> · <a href="https://teamfighttactics.gg/news/paris-open-2025-recap" style="color:#6366f1;text-decoration:underline;">Teamfight Tactics Official</a></p>
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://eu.leagueoflegends.com/en/news/esports/tft/tft-paris-open-analysis" style="color:#D97706;text-decoration:underline;">Riot Games</a> · <a href="https://www.twitch.tv/teamfighttactics" style="color:#D97706;text-decoration:underline;">Twitch</a> · <a href="https://teamfighttactics.gg/news/paris-open-2025-recap" style="color:#D97706;text-decoration:underline;">Teamfight Tactics Official</a></p>
 
               <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -661,7 +671,7 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
               <p style="margin:0 0 12px 0;">L'événement met en lumière la compétition acharnée dans <em>12 disciplines esports</em> lors de la Coupe du Monde 2025, perpétuant son statut de tournoi mondial de référence.</p>
 
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://deadspin.com/yandex-mouz-advance-to-blast-slam-v-semifinals/" style="color:#6366f1;text-decoration:underline;">Deadspin</a></p>
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://deadspin.com/yandex-mouz-advance-to-blast-slam-v-semifinals/" style="color:#D97706;text-decoration:underline;">Deadspin</a></p>
 
               <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -677,18 +687,18 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
 
               <p style="margin:0 0 12px 0;">Avec ses formats innovants et une forte intégration communautaire, les <em>Olympiades E-Sport de Cergy</em> s'imposent comme un rendez-vous incontournable pour les passionnés d'e-sport en fin d'année 2025.</p>
 
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.lemonde.fr" style="color:#6366f1;text-decoration:underline;">Le Monde</a> · <a href="https://www.lequipe.fr" style="color:#6366f1;text-decoration:underline;">L'Équipe</a> · <a href="https://franceesports.fr" style="color:#6366f1;text-decoration:underline;">France Esports</a></p>
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources :</strong> <a href="https://www.lemonde.fr" style="color:#D97706;text-decoration:underline;">Le Monde</a> · <a href="https://www.lequipe.fr" style="color:#D97706;text-decoration:underline;">L'Équipe</a> · <a href="https://franceesports.fr" style="color:#D97706;text-decoration:underline;">France Esports</a></p>
 
             </td>
           </tr>
           <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);border-radius:10px;">
                 <tr>
                   <td style="padding:24px;">
                     <p style="margin:0 0 8px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.7;">Vous avez appris quelque chose ? Parlez en autour de vous 🚀</p>
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#4F46E5;font-weight:600;">— L'équipe PickMyNews</p>
+                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#F59E0B;font-weight:600;">— L'équipe PickMyNews</p>
                   </td>
                 </tr>
               </table>
@@ -728,7 +738,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
           <tr>
             <td style="padding:28px 32px 0 32px;text-align:center;">
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#F59E0B;background-color:#FFFBEB;display:inline-block;padding:6px 14px;border-radius:20px;">
                 Newsletter of 12/10/2025
               </p>
             </td>
@@ -740,7 +750,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 24px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #4F46E5;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #F59E0B;">
                 <tr>
                   <td style="padding:20px 24px;">
                     <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">Hello Veronique 👋</p>
@@ -752,18 +762,28 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 12px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#EEF2FF;border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFFBEB;border-radius:10px;">
                 <tr>
                   <td style="padding:20px 24px;">
-                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#4F46E5;">📌 In this issue</p>
+                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#F59E0B;">📌 In this issue</p>
                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Chergui 2025 tests Franco-Moroccan interoperability</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>African Lion 2026 in final planning phase</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>APORA 2025: FAR and AFRICOM cooperate for health security</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Chergui 2025 tests Franco-Moroccan interoperability</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>African Lion 2026 in final planning phase</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>APORA 2025: FAR and AFRICOM cooperate for health security</td></tr>
                     </table>
                   </td>
                 </tr>
               </table>
+            </td>
+          </tr>
+          <!-- HERO IMAGE -->
+          <tr>
+            <td style="padding:20px 32px;">
+              <img src="/morocco-military.jpg"
+                   alt="Royal Armed Forces"
+                   width="536"
+                   height="auto"
+                   style="width:100%;max-width:536px;height:auto;display:block;border-radius:8px;border:0;outline:none;text-decoration:none;">
             </td>
           </tr>
           <!-- SEPARATOR -->
@@ -786,7 +806,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">This annual event illustrates the strategic will of Paris and Rabat to preserve regional stability, particularly scrutinizing challenges related to mastering desert environments. The exercise confirms a solid and pragmatic military cooperation, key in an unstable international context.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.defense.gouv.fr/terre/actualites/exercice-chergui-2025-linteroperabilite-franco-marocaine-testee-desert" style="color:#6366f1;">defense.gouv.fr</a> · <a href="https://medias24.com/2025/10/06/exercice-chergui-2025-les-armees-marocaine-et-francaise-a-lepreuve-du-desert/" style="color:#6366f1;">medias24.com</a> · <a href="https://lecollimateur.ma/195919" style="color:#6366f1;">lecollimateur.ma</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.defense.gouv.fr/terre/actualites/exercice-chergui-2025-linteroperabilite-franco-marocaine-testee-desert" style="color:#D97706;">defense.gouv.fr</a> · <a href="https://medias24.com/2025/10/06/exercice-chergui-2025-les-armees-marocaine-et-francaise-a-lepreuve-du-desert/" style="color:#D97706;">medias24.com</a> · <a href="https://lecollimateur.ma/195919" style="color:#D97706;">lecollimateur.ma</a></p>
 
 <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -798,7 +818,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">This consolidated strategic partnership is part of a dynamic to deepen bilateral cooperation between the United States and Morocco. It is accompanied by initiatives like <em>Atlas Handshake</em>, focused on maritime cooperation, demonstrating increased regional and international anchoring in security and stability of the region.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://lematin.ma/nation/reunion-de-planification-principale-de-lexercice-african-lion-2026/318105" style="color:#6366f1;">lematin.ma</a> · <a href="https://fr.le360.ma/politique/african-lion-2026-le-compte-a-rebours-est-lance_OKXI6FFXWRGG3HHR5YWUOT7FGM/" style="color:#6366f1;">le360.ma</a> · <a href="https://medias24.com/2025/12/09/atlas-handshake-le-maroc-et-les-etats-unis-renforcent-leur-cooperation-maritime-1591726/" style="color:#6366f1;">medias24.com</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://lematin.ma/nation/reunion-de-planification-principale-de-lexercice-african-lion-2026/318105" style="color:#D97706;">lematin.ma</a> · <a href="https://fr.le360.ma/politique/african-lion-2026-le-compte-a-rebours-est-lance_OKXI6FFXWRGG3HHR5YWUOT7FGM/" style="color:#D97706;">le360.ma</a> · <a href="https://medias24.com/2025/12/09/atlas-handshake-le-maroc-et-les-etats-unis-renforcent-leur-cooperation-maritime-1591726/" style="color:#D97706;">medias24.com</a></p>
 
 <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -812,18 +832,18 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">Beyond health, this event reflects a broader vision carried by King <strong>Mohammed VI</strong> of Morocco, aiming to weave together security and public well-being. By aligning military discipline and civilian health systems, the FAR-AFRICOM partnership establishes a model of resilient and proactive epidemic management across Africa.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://lematin.ma/nation/les-far-accueillent-latelier-apora-2025-en-partenariat-avec-lafricom/318038" style="color:#6366f1;">Le Matin</a> · <a href="https://linformation.ma/news/politique/securite-sanitaire-les-far-accueillent-l-atelier-apora-2025-en-partenariat-avec-l-africom/61849" style="color:#6366f1;">L'Information</a> · <a href="https://www.kaweru.com/politique-societe/2025/12/09/rabat-accueille-latelier-apora-2025-pour-renforcer-la-securite-sanitaire-en-afrique/" style="color:#6366f1;">Kaweru</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://lematin.ma/nation/les-far-accueillent-latelier-apora-2025-en-partenariat-avec-lafricom/318038" style="color:#D97706;">Le Matin</a> · <a href="https://linformation.ma/news/politique/securite-sanitaire-les-far-accueillent-l-atelier-apora-2025-en-partenariat-avec-l-africom/61849" style="color:#D97706;">L'Information</a> · <a href="https://www.kaweru.com/politique-societe/2025/12/09/rabat-accueille-latelier-apora-2025-pour-renforcer-la-securite-sanitaire-en-afrique/" style="color:#D97706;">Kaweru</a></p>
 
             </td>
           </tr>
           <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);border-radius:10px;">
                 <tr>
                   <td style="padding:24px;">
                     <p style="margin:0 0 8px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.7;">Did you learn something? Share it around you 🚀</p>
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#4F46E5;font-weight:600;">— The PickMyNews Team</p>
+                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#F59E0B;font-weight:600;">— The PickMyNews Team</p>
                   </td>
                 </tr>
               </table>
@@ -855,7 +875,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
           <tr>
             <td style="padding:28px 32px 0 32px;text-align:center;">
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter of 12/05/2025</p>
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#F59E0B;background-color:#FFFBEB;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter of 12/05/2025</p>
             </td>
           </tr>
           <tr>
@@ -865,7 +885,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 24px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #4F46E5;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #F59E0B;">
                 <tr>
                   <td style="padding:20px 24px;">
                     <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">Hello Sophie 👋</p>
@@ -877,14 +897,14 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 12px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#EEF2FF;border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFFBEB;border-radius:10px;">
                 <tr>
                   <td style="padding:20px 24px;">
-                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#4F46E5;">📌 In this issue</p>
+                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#F59E0B;">📌 In this issue</p>
                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>HP to cut up to 6,000 jobs due to AI</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>RAM crisis: AI drives prices up</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Anthropic launches Claude Sonnet 4.5</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>HP to cut up to 6,000 jobs due to AI</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>RAM crisis: AI drives prices up</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Anthropic launches Claude Sonnet 4.5</td></tr>
                     </table>
                   </td>
                 </tr>
@@ -894,7 +914,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
           <!-- HERO IMAGE -->
           <tr>
             <td style="padding:20px 32px;">
-              <img src="https://images.unsplash.com/photo-1681748179531-f3a227764721?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzg2NDh8MHwxfHNlYXJjaHwxfHxBY3R1JTIwSUElMjAlM0ElMjBMZXMlMjByb3VhZ2VzJTIwaW52aXNpYmxlcyUyMGRlJTIwbGElMjByJUMzJUE5dm9sdXRpb258ZW58MHwwfHx8MTc2NDk1NTEzMXww&ixlib=rb-4.1.0&q=80&w=1080"
+              <img src="/ai-technology.jpg"
                    alt="AI Revolution"
                    width="536"
                    height="auto"
@@ -919,7 +939,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">This announcement caused a drop of about <strong>6%</strong> in HP stock on Wall Street, combined with disappointing financial forecasts. HP's plan illustrates the coming challenges of generative <em>AI</em> in the industrial sector, where the elimination of technical jobs could be offset by the creation of new roles, but with an uncertain transition.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.01net.com/" style="color:#6366f1;text-decoration:underline;">01net</a> · <a href="https://www.la-croix.com/" style="color:#6366f1;text-decoration:underline;">La Croix</a> · <a href="https://www.tunisienumerique.com/" style="color:#6366f1;text-decoration:underline;">Tunisie Numérique</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.01net.com/" style="color:#D97706;text-decoration:underline;">01net</a> · <a href="https://www.la-croix.com/" style="color:#D97706;text-decoration:underline;">La Croix</a> · <a href="https://www.tunisienumerique.com/" style="color:#D97706;text-decoration:underline;">Tunisie Numérique</a></p>
 
 <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -937,7 +957,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">The shortage of <em>RAM</em> linked to the rise of AI, already felt in the retail market, now threatens the entire chain of technological products.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.franceinfo.fr/internet/intelligence-artificielle/crise-de-la-ram-pourquoi-le-prix-des-ordinateurs-smartphones-ou-consoles-risque-de-flamber-a-cause-de-l-ia_7656292.html" style="color:#6366f1;text-decoration:underline;">France Info</a> · <a href="https://www.dhnet.be/" style="color:#6366f1;text-decoration:underline;">DHnet</a> · <a href="https://www.cowcotland.com/" style="color:#6366f1;text-decoration:underline;">Cowcotland</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.franceinfo.fr/internet/intelligence-artificielle/crise-de-la-ram-pourquoi-le-prix-des-ordinateurs-smartphones-ou-consoles-risque-de-flamber-a-cause-de-l-ia_7656292.html" style="color:#D97706;text-decoration:underline;">France Info</a> · <a href="https://www.dhnet.be/" style="color:#D97706;text-decoration:underline;">DHnet</a> · <a href="https://www.cowcotland.com/" style="color:#D97706;text-decoration:underline;">Cowcotland</a></p>
 
 <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -951,18 +971,18 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">This major advance maintains a stable price of <strong>$3/million input tokens</strong> and <strong>$15 output</strong>. As of now, Sonnet 4.5 is integrated into tools like GitHub Copilot, Cursor, or Replit, adopted by giants like Apple and Meta.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.anthropic.com/news/claude-sonnet-4-5" style="color:#6366f1;text-decoration:underline;">Anthropic</a> · <a href="https://techcrunch.com/2025/09/29/anthropic-launches-claude-sonnet-4-5-its-best-ai-model-for-coding" style="color:#6366f1;text-decoration:underline;">TechCrunch</a> · <a href="https://www.adimeo.com/blog/claude-sonnet-4-5" style="color:#6366f1;text-decoration:underline;">Adimeo</a> · <a href="https://lucasgraphic.com/posts/claude-sonnet-45-tops-coding-charts-with-huge-gains" style="color:#6366f1;text-decoration:underline;">LucasGraphic</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.anthropic.com/news/claude-sonnet-4-5" style="color:#D97706;text-decoration:underline;">Anthropic</a> · <a href="https://techcrunch.com/2025/09/29/anthropic-launches-claude-sonnet-4-5-its-best-ai-model-for-coding" style="color:#D97706;text-decoration:underline;">TechCrunch</a> · <a href="https://www.adimeo.com/blog/claude-sonnet-4-5" style="color:#D97706;text-decoration:underline;">Adimeo</a> · <a href="https://lucasgraphic.com/posts/claude-sonnet-45-tops-coding-charts-with-huge-gains" style="color:#D97706;text-decoration:underline;">LucasGraphic</a></p>
 
             </td>
           </tr>
           <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);border-radius:10px;">
                 <tr>
                   <td style="padding:24px;">
                     <p style="margin:0 0 8px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.7;">Did you learn something? Share it around you 🚀</p>
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#4F46E5;font-weight:600;">— The PickMyNews Team</p>
+                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#F59E0B;font-weight:600;">— The PickMyNews Team</p>
                   </td>
                 </tr>
               </table>
@@ -994,7 +1014,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
           <tr>
             <td style="padding:28px 32px 0 32px;text-align:center;">
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter - 12/05/2025</p>
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#F59E0B;background-color:#FFFBEB;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter - 12/05/2025</p>
             </td>
           </tr>
           <tr>
@@ -1004,7 +1024,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 24px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #4F46E5;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #F59E0B;">
                 <tr>
                   <td style="padding:20px 24px;">
                     <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">Hello Leopold 👋</p>
@@ -1016,14 +1036,14 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 12px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#EEF2FF;border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFFBEB;border-radius:10px;">
                 <tr>
                   <td style="padding:20px 24px;">
-                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#4F46E5;">📌 In this issue</p>
+                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#F59E0B;">📌 In this issue</p>
                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Agile flexibility, a decisive management lever</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>AI integrated to revolutionize recruitment</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Well-being and inclusion: foundations of performance</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Agile flexibility, a decisive management lever</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>AI integrated to revolutionize recruitment</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Well-being and inclusion: foundations of performance</td></tr>
                     </table>
                   </td>
                 </tr>
@@ -1062,7 +1082,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
               <p style="margin:0 0 12px 0;">The convergence of these practices highlights a strong trend: agile flexibility is becoming a decisive lever for modern, adaptive, and high-performing management.</p>
 
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="http://www.agencewebgram.com/" style="color:#6366f1;text-decoration:underline;">AgenceWebGram</a></p>
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="http://www.agencewebgram.com/" style="color:#D97706;text-decoration:underline;">AgenceWebGram</a></p>
 
               <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -1078,7 +1098,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
               <p style="margin:0 0 12px 0;">HR departments must therefore combine technology with human support, ensure algorithm transparency, and establish prevention measures to limit these risks.</p>
 
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://drh.ma/etiquettes/fatna-abdouh/" style="color:#6366f1;text-decoration:underline;">DRH.ma</a> · <a href="http://www.agencewebgram.com/2025/12/" style="color:#6366f1;text-decoration:underline;">AgenceWebGram</a> · <a href="https://culture-rh.com/" style="color:#6366f1;text-decoration:underline;">Culture RH</a></p>
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://drh.ma/etiquettes/fatna-abdouh/" style="color:#D97706;text-decoration:underline;">DRH.ma</a> · <a href="http://www.agencewebgram.com/2025/12/" style="color:#D97706;text-decoration:underline;">AgenceWebGram</a> · <a href="https://culture-rh.com/" style="color:#D97706;text-decoration:underline;">Culture RH</a></p>
 
               <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -1092,18 +1112,18 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
               <p style="margin:0 0 12px 0;">Key indicators show that organizations investing in well-being see a <strong>25%</strong> reduction in turnover and a <strong>20%</strong> increase in team engagement.</p>
 
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.manager-go.com/ressources-humaines/" style="color:#6366f1;text-decoration:underline;">Manager GO</a> · <a href="https://www.journaldunet.com/management/" style="color:#6366f1;text-decoration:underline;">JDN Management</a></p>
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.manager-go.com/ressources-humaines/" style="color:#D97706;text-decoration:underline;">Manager GO</a> · <a href="https://www.journaldunet.com/management/" style="color:#D97706;text-decoration:underline;">JDN Management</a></p>
 
             </td>
           </tr>
           <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);border-radius:10px;">
                 <tr>
                   <td style="padding:24px;">
                     <p style="margin:0 0 8px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.7;">Did you learn something? Share it around you 🚀</p>
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#4F46E5;font-weight:600;">— The PickMyNews Team</p>
+                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#F59E0B;font-weight:600;">— The PickMyNews Team</p>
                   </td>
                 </tr>
               </table>
@@ -1135,7 +1155,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
           <tr>
             <td style="padding:28px 32px 0 32px;text-align:center;">
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter - 12/10/2025</p>
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#F59E0B;background-color:#FFFBEB;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter - 12/10/2025</p>
             </td>
           </tr>
           <tr>
@@ -1145,7 +1165,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 24px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #4F46E5;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #F59E0B;">
                 <tr>
                   <td style="padding:20px 24px;">
                     <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">Hello Matthew 👋</p>
@@ -1157,14 +1177,14 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 12px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#EEF2FF;border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFFBEB;border-radius:10px;">
                 <tr>
                   <td style="padding:20px 24px;">
-                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#4F46E5;">📌 In this issue</p>
+                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#F59E0B;">📌 In this issue</p>
                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>French growth between 0.8% and 1.1%</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Defense industry boosts activity</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Market services dynamism</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>French growth between 0.8% and 1.1%</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Defense industry boosts activity</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Market services dynamism</td></tr>
                     </table>
                   </td>
                 </tr>
@@ -1201,7 +1221,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">This difference in forecasts illustrates the uncertainty surrounding the French recovery. While INSEE anticipates medium-term stability, Banque de France notes that the recovery could shift and intensify further from 2026 onwards. The economic climate thus remains suspended on these contradictory signals, between industrial resilience and political fragility.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.rexecode.fr/conjoncture-previsions/veille-documentaire/document-de-la-semaine/moroses-previsions-de-croissance-pour-la-france-en-2025-insee-bdf" style="color:#6366f1;">Rexecode</a> · <a href="https://www.lefigaro.fr/conjoncture/la-croissance-francaise-ralentit-a-0-2-du-pib-au-4e-trimestre-selon-la-banque-de-france-20251209" style="color:#6366f1;">Le Figaro</a> · <a href="https://www.insee.fr/fr/statistiques/8662489" style="color:#6366f1;">INSEE</a> · <a href="https://www.banque-france.fr/fr/publications-et-statistiques/publications/projections-macroeconomiques-intermediaires-septembre-2025" style="color:#6366f1;">Banque de France</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.rexecode.fr/conjoncture-previsions/veille-documentaire/document-de-la-semaine/moroses-previsions-de-croissance-pour-la-france-en-2025-insee-bdf" style="color:#D97706;">Rexecode</a> · <a href="https://www.lefigaro.fr/conjoncture/la-croissance-francaise-ralentit-a-0-2-du-pib-au-4e-trimestre-selon-la-banque-de-france-20251209" style="color:#D97706;">Le Figaro</a> · <a href="https://www.insee.fr/fr/statistiques/8662489" style="color:#D97706;">INSEE</a> · <a href="https://www.banque-france.fr/fr/publications-et-statistiques/publications/projections-macroeconomiques-intermediaires-septembre-2025" style="color:#D97706;">Banque de France</a></p>
 
 <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -1215,7 +1235,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">In short, while the defense industry revitalizes certain parts of the economy, it does not prevent an overall slowed growth dynamic at year-end.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.latribune.fr/article/economie/37309748954301/lindustrie-de-la-defense-dope-lactivite-mais-la-croissance-ralentit" style="color:#6366f1;">La Tribune</a> · <a href="http://www.defense.gouv.fr/actualites/defense-levier-strategique-leconomie-francaise" style="color:#6366f1;">Defense.gouv.fr</a> · <a href="https://www.lefigaro.fr/conjoncture/la-croissance-francaise-ralentit-a-0-2-du-pib-au-4e-trimestre-selon-la-banque-de-france-20251209" style="color:#6366f1;">Le Figaro</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.latribune.fr/article/economie/37309748954301/lindustrie-de-la-defense-dope-lactivite-mais-la-croissance-ralentit" style="color:#D97706;">La Tribune</a> · <a href="http://www.defense.gouv.fr/actualites/defense-levier-strategique-leconomie-francaise" style="color:#D97706;">Defense.gouv.fr</a> · <a href="https://www.lefigaro.fr/conjoncture/la-croissance-francaise-ralentit-a-0-2-du-pib-au-4e-trimestre-selon-la-banque-de-france-20251209" style="color:#D97706;">Le Figaro</a></p>
 
 <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -1227,18 +1247,18 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
 <p style="margin:0 0 12px 0;">This duality reflects an economy both confronted with structural weaknesses and capable of relying on the service sector to absorb part of the losses. The French job market thus navigates between industrial fabric fragility and tertiary resilience, a key challenge for employment policies in the coming months.</p>
 
-<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.insee.fr/fr/statistiques/8664273" style="color:#6366f1;">INSEE</a> · <a href="https://www.rexecode.fr/conjoncture-previsions/synthese-conjoncturelle-hebdo/l-emploi-salarie-recule-en-france-au-3eme-trimestre" style="color:#6366f1;">Rexecode</a> · <a href="https://dares.travail-emploi.gouv.fr/donnees/lemploi-salarie" style="color:#6366f1;">DARES</a></p>
+<p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.insee.fr/fr/statistiques/8664273" style="color:#D97706;">INSEE</a> · <a href="https://www.rexecode.fr/conjoncture-previsions/synthese-conjoncturelle-hebdo/l-emploi-salarie-recule-en-france-au-3eme-trimestre" style="color:#D97706;">Rexecode</a> · <a href="https://dares.travail-emploi.gouv.fr/donnees/lemploi-salarie" style="color:#D97706;">DARES</a></p>
 
             </td>
           </tr>
           <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);border-radius:10px;">
                 <tr>
                   <td style="padding:24px;">
                     <p style="margin:0 0 8px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.7;">Did you learn something? Share it around you 🚀</p>
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#4F46E5;font-weight:600;">— The PickMyNews Team</p>
+                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#F59E0B;font-weight:600;">— The PickMyNews Team</p>
                   </td>
                 </tr>
               </table>
@@ -1270,7 +1290,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#FFFFFF;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);">
           <tr>
             <td style="padding:28px 32px 0 32px;text-align:center;">
-              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#4F46E5;background-color:#EEF2FF;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter - 12/05/2025</p>
+              <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#F59E0B;background-color:#FFFBEB;display:inline-block;padding:6px 14px;border-radius:20px;">Newsletter - 12/05/2025</p>
             </td>
           </tr>
           <tr>
@@ -1280,7 +1300,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 24px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #4F46E5;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F9FAFB;border-radius:10px;border-left:3px solid #F59E0B;">
                 <tr>
                   <td style="padding:20px 24px;">
                     <p style="margin:0 0 12px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:16px;color:#1F2937;line-height:1.7;">Hello Michael 👋</p>
@@ -1292,14 +1312,14 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
           </tr>
           <tr>
             <td style="padding:0 32px 12px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#EEF2FF;border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFFBEB;border-radius:10px;">
                 <tr>
                   <td style="padding:20px 24px;">
-                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#4F46E5;">📌 In this issue</p>
+                    <p style="margin:0 0 14px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#F59E0B;">📌 In this issue</p>
                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>TFT Paris Open: Masters Duel</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>Esport World Cup 2025</td></tr>
-                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#4F46E5;font-weight:600;margin-right:10px;">→</span>E-Sport Olympics: The Cergy Arena</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>TFT Paris Open: Masters Duel</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>Esport World Cup 2025</td></tr>
+                      <tr><td style="padding:6px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#1F2937;line-height:1.6;font-weight:600;"><span style="color:#F59E0B;font-weight:600;margin-right:10px;">→</span>E-Sport Olympics: The Cergy Arena</td></tr>
                     </table>
                   </td>
                 </tr>
@@ -1336,7 +1356,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
               <p style="margin:0 0 12px 0;">This event, supported by Riot Games and streamed on Twitch, confirms the meteoric rise of <em>strategic e-sport</em>. Paris thus becomes an essential venue, strengthening <em>TFT's</em> visibility in the competitive circuit.</p>
 
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://eu.leagueoflegends.com/en/news/esports/tft/tft-paris-open-analysis" style="color:#6366f1;text-decoration:underline;">Riot Games</a> · <a href="https://www.twitch.tv/teamfighttactics" style="color:#6366f1;text-decoration:underline;">Twitch</a> · <a href="https://teamfighttactics.gg/news/paris-open-2025-recap" style="color:#6366f1;text-decoration:underline;">Teamfight Tactics Official</a></p>
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://eu.leagueoflegends.com/en/news/esports/tft/tft-paris-open-analysis" style="color:#D97706;text-decoration:underline;">Riot Games</a> · <a href="https://www.twitch.tv/teamfighttactics" style="color:#D97706;text-decoration:underline;">Twitch</a> · <a href="https://teamfighttactics.gg/news/paris-open-2025-recap" style="color:#D97706;text-decoration:underline;">Teamfight Tactics Official</a></p>
 
               <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -1354,7 +1374,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
               <p style="margin:0 0 12px 0;">The event highlights the fierce competition across <em>12 esports disciplines</em> at the 2025 World Cup, perpetuating its status as the benchmark global tournament.</p>
 
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://deadspin.com/yandex-mouz-advance-to-blast-slam-v-semifinals/" style="color:#6366f1;text-decoration:underline;">Deadspin</a></p>
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://deadspin.com/yandex-mouz-advance-to-blast-slam-v-semifinals/" style="color:#D97706;text-decoration:underline;">Deadspin</a></p>
 
               <div style="margin:28px 0;border-top:1px solid #E5E7EB;"></div>
 
@@ -1370,18 +1390,18 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
 
               <p style="margin:0 0 12px 0;">With its innovative formats and strong community integration, the <em>Cergy E-Sport Olympics</em> establish themselves as a must-attend event for e-sport enthusiasts at the end of 2025.</p>
 
-              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.lemonde.fr" style="color:#6366f1;text-decoration:underline;">Le Monde</a> · <a href="https://www.lequipe.fr" style="color:#6366f1;text-decoration:underline;">L'Équipe</a> · <a href="https://franceesports.fr" style="color:#6366f1;text-decoration:underline;">France Esports</a></p>
+              <p style="margin-top:16px;font-size:13px;color:#9ca3af;"><strong style="color:#6b7280;">Sources:</strong> <a href="https://www.lemonde.fr" style="color:#D97706;text-decoration:underline;">Le Monde</a> · <a href="https://www.lequipe.fr" style="color:#D97706;text-decoration:underline;">L'Équipe</a> · <a href="https://franceesports.fr" style="color:#D97706;text-decoration:underline;">France Esports</a></p>
 
             </td>
           </tr>
           <!-- CONCLUSION -->
           <tr>
             <td style="padding:8px 32px 28px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);border-radius:10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);border-radius:10px;">
                 <tr>
                   <td style="padding:24px;">
                     <p style="margin:0 0 8px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:15px;color:#374151;line-height:1.7;">Did you learn something? Share it around you 🚀</p>
-                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#4F46E5;font-weight:600;">— The PickMyNews Team</p>
+                    <p style="margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;font-size:14px;color:#F59E0B;font-weight:600;">— The PickMyNews Team</p>
                   </td>
                 </tr>
               </table>
