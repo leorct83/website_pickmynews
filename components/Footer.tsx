@@ -13,6 +13,7 @@ export default function Footer() {
       { label: tNav('howItWorks'), href: '#comment-ca-marche' },
       { label: tNav('pricing'), href: '#tarifs' },
       { label: tNav('faq'), href: '#faq' },
+      { label: t('manageSubscription'), href: '/manage', isRoute: true },
     ],
     company: [
       { label: t('contact'), href: 'mailto:contact@pickmynews.com' },
@@ -81,9 +82,15 @@ export default function Footer() {
             <ul className="space-y-3">
               {links.product.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-slate-400 hover:text-white transition-colors text-sm">
-                    {link.label}
-                  </a>
+                  {link.isRoute ? (
+                    <Link href={link.href} className="text-slate-400 hover:text-white transition-colors text-sm">
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a href={link.href} className="text-slate-400 hover:text-white transition-colors text-sm">
+                      {link.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

@@ -2,6 +2,7 @@
 
 import { useState, ReactNode } from 'react';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -18,9 +19,9 @@ export default function FAQ() {
         <>
           {t.rich('a1', {
             link: () => (
-              <a href="https://forms.gle/W2Kqw2PwfvF6KuFt9" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700 underline">
+              <Link href="/manage" className="text-amber-600 hover:text-amber-700 underline">
                 {t('a1Link')}
-              </a>
+              </Link>
             ),
           })}
         </>
@@ -40,9 +41,9 @@ export default function FAQ() {
         <>
           {t.rich('a4', {
             link: () => (
-              <a href="https://forms.gle/W2Kqw2PwfvF6KuFt9" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700 underline">
+              <Link href="/manage" className="text-amber-600 hover:text-amber-700 underline">
                 {t('a4Link')}
-              </a>
+              </Link>
             ),
           })}
         </>
