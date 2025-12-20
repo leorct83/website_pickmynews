@@ -126,10 +126,6 @@ export default function PricingTable() {
                 </div>
               </div>
 
-              {/* Tagline */}
-              <p className={`text-center text-sm mb-4 ${plan.popular ? 'text-amber-600 font-medium' : 'text-amber-400'}`}>
-                {t(plan.tagline)}
-              </p>
 
               {/* Features */}
               <ul className="space-y-2 mb-6 flex-grow">

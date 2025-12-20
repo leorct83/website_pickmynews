@@ -340,8 +340,8 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
           <!-- HERO IMAGE -->
           <tr>
             <td style="padding:20px 32px;">
-              <img src="https://images.unsplash.com/photo-1670160028894-a33f937c2a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzg2NDh8MHwxfHNlYXJjaHwxfHxSSCUyMDIwMjUlMjAlM0ElMjBQaWxvdGVyJTIwbCUyN2h1bWFpbiUyMCVDMyVBMCUyMGwlMjclQzMlQThyZSUyMG51bSVDMyVBOXJpcXVlfGVufDB8MHx8fDE3NjQ5NTU1NjR8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                   alt="RH et management"
+              <img src="/hr-ai-chatbot.png"
+                   alt="RH et IA"
                    width="536"
                    height="auto"
                    style="width:100%;max-width:536px;height:auto;display:block;border-radius:8px;border:0;outline:none;text-decoration:none;">
@@ -616,8 +616,8 @@ const NEWSLETTER_EXAMPLES_FR: NewsletterExample[] = [
           <!-- HERO IMAGE -->
           <tr>
             <td style="padding:20px 32px;">
-              <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c"
-                   alt="Newsletter"
+              <img src="/esport-victory.jpg"
+                   alt="E-sport"
                    width="536"
                    height="auto"
                    style="width:100%;max-width:536px;height:auto;display:block;border-radius:8px;border:0;outline:none;text-decoration:none;">
@@ -1033,8 +1033,8 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
           <!-- HERO IMAGE -->
           <tr>
             <td style="padding:20px 32px;">
-              <img src="https://images.unsplash.com/photo-1670160028894-a33f937c2a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzg2NDh8MHwxfHNlYXJjaHwxfHxSSCUyMDIwMjUlMjAlM0ElMjBQaWxvdGVyJTIwbCUyN2h1bWFpbiUyMCVDMyVBMCUyMGwlMjclQzMlQThyZSUyMG51bSVDMyVBOXJpcXVlfGVufDB8MHx8fDE3NjQ5NTU1NjR8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                   alt="HR and management"
+              <img src="/hr-ai-chatbot.png"
+                   alt="HR and AI"
                    width="536"
                    height="auto"
                    style="width:100%;max-width:536px;height:auto;display:block;border-radius:8px;border:0;outline:none;text-decoration:none;">
@@ -1309,7 +1309,7 @@ const NEWSLETTER_EXAMPLES_EN: NewsletterExample[] = [
           <!-- HERO IMAGE -->
           <tr>
             <td style="padding:20px 32px;">
-              <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c"
+              <img src="/esport-victory.jpg"
                    alt="E-sport competition"
                    width="536"
                    height="auto"
