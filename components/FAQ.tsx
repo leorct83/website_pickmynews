@@ -41,9 +41,9 @@ export default function FAQ() {
         <>
           {t.rich('a4', {
             link: (chunks) => (
-              <Link href="/manage" className="text-amber-600 hover:text-amber-700 underline">
+              <a href="https://forms.gle/W2Kqw2PwfvF6KuFt9" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700 underline">
                 {chunks}
-              </Link>
+              </a>
             ),
           })}
         </>

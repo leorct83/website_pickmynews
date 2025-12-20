@@ -154,7 +154,7 @@
     "q3": "Where do the articles come from? Are they reliable?",
     "a3": "We aggregate hundreds of quality sources: traditional media, specialized blogs, academic publications, expert newsletters... Every fact and figure is systematically verified (fact-checked). Sources are listed at the end of each article for full transparency.",
     "q4": "Can I change my preferences after signing up?",
-    "a4": "Absolutely. You can change your topic, adjust the delivery frequency, modify the delivery time, or even create multiple newsletters on different subjects. Simply access <link>your management portal</link>. If you have any trouble, our support team is here to help.",
+    "a4": "Absolutely. You can change your topic, adjust the delivery frequency, modify the delivery time, or even create multiple newsletters on different subjects. Simply complete <link>this form</link>. If you have any trouble, our support team is here to help.",
     "a4Link": "your management portal",
     "q5": "What if I need help?",
     "a5": "Our support team responds within 48 hours by email. Send an email to <email>contact@pickmynews.com</email>.",
@@ -241,6 +241,7 @@
   "success": {
     "title": "Thank you for your subscription!",
     "message": "Your payment has been confirmed. You will soon receive your first newsletter according to the preferences you chose.",
+    "trialReminder": "You will receive a reminder email 7 days before your trial period ends. You can cancel anytime via your management portal.",
     "backHome": "Back to home"
   },
   "cancel": {

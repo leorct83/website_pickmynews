@@ -154,7 +154,7 @@
     "q3": "D'où viennent les articles ? Sont-ils fiables ?",
     "a3": "Nous agrégeons des centaines de sources de qualité : médias traditionnels, blogs spécialisés, publications académiques, newsletters d'experts... Chaque fait et chiffre est systématiquement vérifié. Les sources sont listées en fin de chaque article pour une transparence totale.",
     "q4": "Puis-je modifier mes préférences après inscription ?",
-    "a4": "Absolument. Vous pouvez changer de thème, ajuster la fréquence d'envoi, modifier l'horaire de réception, ou même créer plusieurs newsletters sur des sujets différents. Accédez simplement à <link>votre espace de gestion</link>. Pour toute difficulté, notre support est là pour vous aider.",
+    "a4": "Absolument. Vous pouvez changer de thème, ajuster la fréquence d'envoi, modifier l'horaire de réception, ou même créer plusieurs newsletters sur des sujets différents. Complétez simplement <link>ce formulaire</link>. Pour toute difficulté, notre support est là pour vous aider.",
     "a4Link": "votre espace de gestion",
     "q5": "Et si j'ai besoin d'aide ?",
     "a5": "Notre équipe support répond en moins de 48h par email. Envoyez un mail à <email>contact@pickmynews.com</email>.",
@@ -241,6 +241,7 @@
   "success": {
     "title": "Merci pour votre abonnement !",
     "message": "Votre paiement a été confirmé. Vous recevrez bientôt votre première newsletter selon les préférences que vous avez choisies.",
+    "trialReminder": "Vous recevrez un email de rappel 7 jours avant la fin de votre période d'essai. Vous pourrez annuler à tout moment via votre espace de gestion.",
     "backHome": "Retour à l'accueil"
   },
   "cancel": {
