@@ -18,9 +18,9 @@ export default function FAQ() {
       answer: (
         <>
           {t.rich('a1', {
-            link: () => (
+            link: (chunks) => (
               <Link href="/manage" className="text-amber-600 hover:text-amber-700 underline">
-                {t('a1Link')}
+                {chunks}
               </Link>
             ),
           })}
@@ -40,9 +40,9 @@ export default function FAQ() {
       answer: (
         <>
           {t.rich('a4', {
-            link: () => (
+            link: (chunks) => (
               <Link href="/manage" className="text-amber-600 hover:text-amber-700 underline">
-                {t('a4Link')}
+                {chunks}
               </Link>
             ),
           })}
