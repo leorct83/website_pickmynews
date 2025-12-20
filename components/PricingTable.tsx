@@ -4,33 +4,62 @@ import { useTranslations } from 'next-intl';
 
 type BillingCycle = 'weekly' | 'monthly' | 'annual';
 
+interface PlanFeature {
+  key: string;
+}
+
+interface Plan {
+  cycle: BillingCycle;
+  price: number;
+  label: string;
+  popular?: boolean;
+  savings?: string;
+  tagline: string;
+  features: PlanFeature[];
+}
+
 export default function PricingTable() {
   const t = useTranslations('pricing');
 
-  const plans: { cycle: BillingCycle; price: number; label: string; popular?: boolean; savings?: number }[] = [
+  const plans: Plan[] = [
     {
       cycle: 'weekly',
       price: 1.99,
       label: t('perWeek'),
+      tagline: 'weeklyTagline',
+      features: [
+        { key: 'weeklyFeature1' },
+        { key: 'weeklyFeature2' },
+        { key: 'weeklyFeature3' },
+        { key: 'weeklyFeature4' },
+      ],
     },
     {
       cycle: 'monthly',
       price: 4.99,
       label: t('perMonth'),
       popular: true,
+      tagline: 'monthlyTagline',
+      features: [
+        { key: 'monthlyFeature1' },
+        { key: 'monthlyFeature2' },
+        { key: 'monthlyFeature3' },
+        { key: 'monthlyFeature4' },
+      ],
     },
     {
       cycle: 'annual',
       price: 49.99,
       label: t('perYear'),
-      savings: 17,
+      savings: '2 mois',
+      tagline: 'annualTagline',
+      features: [
+        { key: 'annualFeature1' },
+        { key: 'annualFeature2' },
+        { key: 'annualFeature3' },
+        { key: 'annualFeature4' },
+      ],
     },
-  ];
-
-  const features = [
-    t('plan1Feature1'),
-    t('plan1Feature2'),
-    t('plan1Feature3'),
   ];
 
   return (
@@ -54,11 +83,11 @@ export default function PricingTable() {
         </div>
 
         {/* 3 pricing cards side by side */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {plans.map((plan) => (
             <div
               key={plan.cycle}
-              className={`relative rounded-3xl p-6 transition-all duration-300 ${
+              className={`relative rounded-3xl p-6 transition-all duration-300 flex flex-col ${
                 plan.popular
                   ? 'bg-white scale-105 shadow-2xl shadow-amber-500/20'
                   : 'bg-slate-800 hover:bg-slate-800/80'
@@ -76,22 +105,18 @@ export default function PricingTable() {
               {/* Savings badge */}
               {plan.savings && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="bg-emerald-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
-                    -{plan.savings}%
+                  <span className="bg-emerald-500 text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">
+                    {t('savingsMonths')}
                   </span>
                 </div>
               )}
 
-              {/* Plan name */}
-              <div className="text-center mb-4 pt-2">
-                <h3 className={`text-lg font-semibold ${plan.popular ? 'text-slate-900' : 'text-white'}`}>
+              {/* Plan name & Price */}
+              <div className="text-center mb-2 pt-2">
+                <h3 className={`text-xl font-bold ${plan.popular ? 'text-slate-900' : 'text-white'}`}>
                   {t(plan.cycle)}
                 </h3>
-              </div>
-
-              {/* Price */}
-              <div className="text-center mb-6">
-                <div className="flex items-baseline justify-center gap-1">
+                <div className="flex items-baseline justify-center gap-1 mt-2">
                   <span className={`text-4xl font-bold ${plan.popular ? 'text-slate-900' : 'text-white'}`}>
                     {plan.price.toFixed(2).replace('.', ',')}€
                   </span>
@@ -101,10 +126,29 @@ export default function PricingTable() {
                 </div>
               </div>
 
+              {/* Tagline */}
+              <p className={`text-center text-sm mb-4 ${plan.popular ? 'text-amber-600 font-medium' : 'text-amber-400'}`}>
+                {t(plan.tagline)}
+              </p>
+
+              {/* Features */}
+              <ul className="space-y-2 mb-6 flex-grow">
+                {plan.features.map((feature, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <svg className={`w-5 h-5 mt-0.5 flex-shrink-0 ${plan.popular ? 'text-emerald-500' : 'text-emerald-400'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className={`text-sm ${plan.popular ? 'text-slate-700' : 'text-slate-300'}`}>
+                      {t(feature.key)}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
               {/* CTA */}
               <a
                 href="#inscription"
-                className={`flex w-full justify-center h-12 px-6 rounded-full font-semibold text-base items-center transition-all duration-200 mb-6 ${
+                className={`flex w-full justify-center h-12 px-6 rounded-full font-semibold text-base items-center transition-all duration-200 ${
                   plan.popular
                     ? 'bg-amber-500 text-slate-900 hover:bg-amber-600 active:bg-amber-700'
                     : 'bg-slate-700 text-white hover:bg-slate-600 active:bg-slate-800'
@@ -112,20 +156,6 @@ export default function PricingTable() {
               >
                 {t('cta')}
               </a>
-
-              {/* Features */}
-              <ul className="space-y-2">
-                {features.map((feature, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <svg className={`w-5 h-5 mt-0.5 flex-shrink-0 ${plan.popular ? 'text-emerald-500' : 'text-emerald-400'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className={`text-sm ${plan.popular ? 'text-slate-700' : 'text-slate-300'}`}>
-                      {feature}
-                    </span>
-                  </li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>
