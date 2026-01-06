@@ -84,16 +84,8 @@ created_at | name | email | theme | plan_frequency | billing_period | send_days 
 
 #### a) Créer les produits et prices
 
-Vous devez créer **12 produits/prices** dans Stripe, correspondant aux combinaisons :
+Vous devez créer **les produits/prices** dans Stripe, correspondant aux combinaisons :
 
-**Grille tarifaire :**
-
-| Fréquence | Hebdomadaire | Mensuel | Annuel |
-|-----------|--------------|---------|--------|
-| 7x/semaine | 5,99 € | 12,99 € | 129,99 € |
-| 5x/semaine | 4,99 € | 9,99 € | 99,99 € |
-| 2x/semaine | 2,99 € | 6,49 € | 59,99 € |
-| 1x/semaine | 1,99 € | 4,99 € | 49,99 € |
 
 **Étapes dans Stripe Dashboard :**
 
