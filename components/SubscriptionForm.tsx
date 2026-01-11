@@ -28,7 +28,7 @@ interface PricingOption {
 }
 
 const PRICING: Record<Frequency, PricingOption> = {
-  1: { weekly: 1.99, monthly: 4.99, yearly: 49.99 },
+  1: { weekly: 0.69, monthly: 1.99, yearly: 19.99 },
 };
 
 // Mapping fréquence numérique vers format API
