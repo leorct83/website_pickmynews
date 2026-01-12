@@ -111,7 +111,7 @@ export async function createCheckoutSession(params: {
     allow_promotion_codes: true,
     // Trial uniquement pour les nouveaux utilisateurs
     subscription_data: alreadyHadTrial ? {} : {
-      trial_period_days: 15,
+      trial_period_days: 21,
     },
   });
 
