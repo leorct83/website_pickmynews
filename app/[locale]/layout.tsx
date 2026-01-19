@@ -13,14 +13,16 @@ const dmSans = DM_Sans({
   weight: ['400', '500', '600', '700'],
   variable: '--font-body',
   display: 'swap',
+  preload: true,
 })
 
 const dmSerifDisplay = DM_Serif_Display({
   subsets: ['latin'],
   weight: ['400'],
-  style: ['normal', 'italic'],
+  style: ['normal'],
   variable: '--font-display',
   display: 'swap',
+  preload: true,
 })
 
 type Props = {
@@ -74,6 +76,13 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} className={`scroll-smooth ${dmSans.variable} ${dmSerifDisplay.variable}`}>
+      <head>
+        {/* Preconnect pour améliorer les performances */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* DNS prefetch pour les services tiers */}
+        <link rel="dns-prefetch" href="https://js.stripe.com" />
+      </head>
       <body className="antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}

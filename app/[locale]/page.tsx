@@ -1,14 +1,29 @@
+import dynamic from 'next/dynamic';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import PainPoints from '@/components/PainPoints';
 import HowItWorks from '@/components/HowItWorks';
 import Benefits from '@/components/Benefits';
-import NewsletterShowcase from '@/components/NewsletterShowcase';
-import PricingTable from '@/components/PricingTable';
-import FAQ from '@/components/FAQ';
-import SubscriptionForm from '@/components/SubscriptionForm';
-import FinalCTA from '@/components/FinalCTA';
-import Footer from '@/components/Footer';
+
+// Lazy load des composants below-the-fold pour améliorer le LCP
+const NewsletterShowcase = dynamic(() => import('@/components/NewsletterShowcase'), {
+  loading: () => <div className="py-24 bg-white" />,
+});
+const PricingTable = dynamic(() => import('@/components/PricingTable'), {
+  loading: () => <div className="py-24 bg-slate-900" />,
+});
+const FAQ = dynamic(() => import('@/components/FAQ'), {
+  loading: () => <div className="py-24 bg-white" />,
+});
+const SubscriptionForm = dynamic(() => import('@/components/SubscriptionForm'), {
+  loading: () => <div className="py-24 bg-white" />,
+});
+const FinalCTA = dynamic(() => import('@/components/FinalCTA'), {
+  loading: () => <div className="py-24 bg-slate-900" />,
+});
+const Footer = dynamic(() => import('@/components/Footer'), {
+  loading: () => <div className="py-12 bg-slate-900" />,
+});
 
 export default function HomePage() {
   return (
