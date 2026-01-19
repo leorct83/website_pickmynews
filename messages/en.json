@@ -246,9 +246,9 @@
   },
   "trialSuccess": {
     "title": "You're all set!",
-    "message": "Your personalized newsletter is being created. You'll receive your first edition soon.",
+    "message": "Your personalized newsletter has been created. You'll receive your first edition on the day and time you selected.",
     "nextStepsTitle": "What's next?",
-    "nextStep1": "Check your inbox (and spam folder, just in case)",
+    "nextStep1": "Check your inbox on the scheduled day (and spam folder, just in case)",
     "nextStep2": "Receive your first newsletters for free",
     "nextStep3": "If you like it, you can subscribe to keep receiving them",
     "backHome": "Back to home"

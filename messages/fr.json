@@ -246,9 +246,9 @@
   },
   "trialSuccess": {
     "title": "C'est parti !",
-    "message": "Votre newsletter personnalisée est en cours de création. Vous allez bientôt recevoir votre première édition.",
+    "message": "Votre newsletter personnalisée a bien été créée. Vous recevrez votre première édition au jour et à l'heure que vous avez choisis.",
     "nextStepsTitle": "Et maintenant ?",
-    "nextStep1": "Vérifiez votre boîte mail (et vos spams, au cas où)",
+    "nextStep1": "Surveillez votre boîte mail au jour prévu (et vos spams, au cas où)",
     "nextStep2": "Recevez vos premières newsletters gratuitement",
     "nextStep3": "Si vous aimez, vous pourrez vous abonner pour continuer",
     "backHome": "Retour à l'accueil"
