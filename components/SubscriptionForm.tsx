@@ -6,7 +6,6 @@ import { Link } from '@/i18n/navigation';
 
 // Types
 type Frequency = 1;
-type BillingCycle = 'weekly' | 'monthly' | 'yearly';
 type Language = 'Français' | 'English';
 
 interface FormData {
@@ -17,24 +16,8 @@ interface FormData {
   frequency: Frequency;
   selectedDays: string[];
   selectedHour: number;
-  billingCycle: BillingCycle;
   legalConsent: boolean;
 }
-
-interface PricingOption {
-  weekly: number;
-  monthly: number;
-  yearly: number;
-}
-
-const PRICING: Record<Frequency, PricingOption> = {
-  1: { weekly: 0.69, monthly: 1.99, yearly: 19.99 },
-};
-
-// Mapping fréquence numérique vers format API
-const FREQUENCY_TO_PLAN: Record<Frequency, string> = {
-  1: '1x',
-};
 
 const HOURS = Array.from({ length: 24 }, (_, i) => i);
 
@@ -52,12 +35,6 @@ export default function SubscriptionForm() {
     { key: 'Dimanche', label: t('daySun') },
   ];
 
-  const BILLING_LABELS: Record<BillingCycle, string> = {
-    weekly: t('billingWeekly'),
-    monthly: t('billingMonthly'),
-    yearly: t('billingYearly'),
-  };
-
   const [formData, setFormData] = useState<FormData>({
     firstName: '',
     email: '',
@@ -66,7 +43,6 @@ export default function SubscriptionForm() {
     frequency: 1,
     selectedDays: ['Lundi'],
     selectedHour: 8,
-    billingCycle: 'monthly',
     legalConsent: false,
   });
 
@@ -143,7 +119,7 @@ export default function SubscriptionForm() {
     try {
       const sendHour = formData.selectedHour.toString().padStart(2, '0') + ':00';
 
-      const response = await fetch('/api/create-checkout-session', {
+      const response = await fetch('/api/create-free-trial', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -153,8 +129,6 @@ export default function SubscriptionForm() {
           email: formData.email,
           theme: formData.theme,
           language: formData.language,
-          plan_frequency: FREQUENCY_TO_PLAN[formData.frequency],
-          billing_period: formData.billingCycle,
           send_days: formData.selectedDays,
           send_hour: sendHour,
           legal_consent: formData.legalConsent,
@@ -185,23 +159,15 @@ export default function SubscriptionForm() {
 
       if (data?.url) {
         window.location.href = data.url;
+      } else if (data?.success) {
+        window.location.href = '/trial-success';
       } else {
-        throw new Error(t('errorPaymentUrl'));
+        throw new Error(t('errorServer'));
       }
     } catch (err) {
-      console.error('Erreur checkout:', err);
+      console.error('Erreur inscription:', err);
       setError(err instanceof Error ? err.message : t('errorServer'));
       setIsSubmitting(false);
-    }
-  };
-
-  const currentPrice = PRICING[formData.frequency][formData.billingCycle];
-
-  const getBillingPeriodLabel = (cycle: BillingCycle) => {
-    switch (cycle) {
-      case 'weekly': return t('perWeekShort');
-      case 'monthly': return t('perMonthShort');
-      case 'yearly': return t('perYearShort');
     }
   };
 
@@ -350,49 +316,17 @@ export default function SubscriptionForm() {
                 </select>
               </div>
 
-              {/* Billing cycle selection */}
-              <div className="mb-6">
-                <label className="block text-sm font-semibold text-slate-700 mb-2">{t('paymentMode')}</label>
-                <div className="grid grid-cols-3 gap-3">
-                  {(['weekly', 'monthly', 'yearly'] as BillingCycle[]).map((cycle) => (
-                    <button
-                      key={cycle}
-                      type="button"
-                      onClick={() => setFormData({ ...formData, billingCycle: cycle })}
-                      className={`py-3 px-4 rounded-xl text-center transition-all border-2 relative ${
-                        formData.billingCycle === cycle
-                          ? 'border-amber-500 bg-amber-50 text-amber-700'
-                          : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300'
-                      }`}
-                    >
-                      {cycle === 'yearly' && (
-                        <span className="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-2 py-0.5 rounded-full">
-                          -17%
-                        </span>
-                      )}
-                      <span className="text-sm font-medium">{BILLING_LABELS[cycle]}</span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Pricing summary */}
-              <div className="mb-6 p-6 bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl border border-slate-200">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-slate-600">{t('summarySimple')}</span>
-                  <span className="text-slate-400 text-sm">{BILLING_LABELS[formData.billingCycle]}</span>
-                </div>
-                <div className="flex flex-col gap-1">
-                  <div className="flex items-center gap-2">
-                    <span className="text-2xl font-bold text-amber-600">{t('trialOffer')}</span>
+              {/* Free trial summary */}
+              <div className="mb-6 p-6 bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl border border-emerald-200">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
                   </div>
-                  <div className="text-slate-500">
-                    {t('thenPrice', { price: currentPrice.toFixed(2), period: getBillingPeriodLabel(formData.billingCycle) })}
-                    {formData.billingCycle === 'yearly' && (
-                      <span className="text-green-600 ml-2 font-medium">
-                        {t('saveAmount', { amount: (PRICING[formData.frequency].monthly * 12 - PRICING[formData.frequency].yearly).toFixed(2) })}
-                      </span>
-                    )}
+                  <div>
+                    <span className="text-lg font-bold text-emerald-700">{t('trustGuarantee')}</span>
+                    <p className="text-sm text-emerald-600">{t('trialInfo')}</p>
                   </div>
                 </div>
               </div>

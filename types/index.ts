@@ -4,7 +4,7 @@
 
 export type PlanFrequency = '1x';
 export type BillingPeriod = 'weekly' | 'monthly' | 'yearly';
-export type SubscriptionStatus = 'pending' | 'active' | 'canceled' | 'past_due';
+export type SubscriptionStatus = 'pending' | 'active' | 'canceled' | 'past_due' | 'trial';
 export type NewsletterLanguage = 'Français' | 'English';
 
 // Jours de la semaine en français (comme stockés dans Google Sheets)
