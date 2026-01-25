@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection';
 import PainPoints from '@/components/PainPoints';
 import HowItWorks from '@/components/HowItWorks';
 import Benefits from '@/components/Benefits';
+import ProductHuntBanner from '@/components/ProductHuntBanner';
 
 // Lazy load des composants below-the-fold pour améliorer le LCP
 const NewsletterShowcase = dynamic(() => import('@/components/NewsletterShowcase'), {
@@ -62,6 +63,9 @@ export default function HomePage() {
 
       {/* Footer */}
       <Footer />
+
+      {/* Product Hunt Banner */}
+      <ProductHuntBanner />
     </>
   );
 }
