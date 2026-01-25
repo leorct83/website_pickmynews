@@ -30,11 +30,11 @@ export default function ProductHuntBanner() {
         isDismissed ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
       }`}
     >
-      <div className="relative bg-white rounded-xl shadow-lg border border-slate-200 p-5 max-w-[500px]">
+      <div className="relative">
         {/* Close button */}
         <button
           onClick={handleDismiss}
-          className="absolute top-3 right-3 text-slate-400 hover:text-slate-600 transition-colors p-1"
+          className="absolute -top-2 -right-2 bg-white rounded-full shadow-md text-slate-400 hover:text-slate-600 transition-colors p-1 z-10"
           aria-label="Fermer"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -42,33 +42,19 @@ export default function ProductHuntBanner() {
           </svg>
         </button>
 
-        {/* Content */}
-        <div className="flex items-center gap-3 mb-3">
-          {/* Logo */}
-          <img
-            alt="PickMyNews"
-            src="https://ph-files.imgix.net/fd5a3f21-3740-40ac-bad3-7b288bc82f27.png?auto=format&fit=crop&w=80&h=80"
-            className="w-16 h-16 rounded-lg object-cover flex-shrink-0"
-          />
-          <div className="flex-1 min-w-0">
-            <h3 className="text-lg font-semibold text-slate-900 truncate">PickMyNews</h3>
-            <p className="text-sm text-slate-500 line-clamp-2">
-              Get the very specific news you&apos;re interested in
-            </p>
-          </div>
-        </div>
-
-        {/* CTA Button */}
+        {/* Product Hunt Badge */}
         <a
-          href="https://www.producthunt.com/products/pickmynews?embed=true&utm_source=embed&utm_medium=post_embed"
+          href="https://www.producthunt.com/products/pickmynews?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-pickmynews"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 mt-3 px-4 py-2 bg-[#FF6154] text-white rounded-lg text-sm font-semibold hover:bg-[#e5574b] transition-colors"
         >
-          Check it out on Product Hunt
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1068029&theme=light&t=1769373977129"
+            alt="PickMyNews - Get the very specific news you're interested in | Product Hunt"
+            width="250"
+            height="54"
+            className="hover:opacity-90 transition-opacity"
+          />
         </a>
       </div>
     </div>
