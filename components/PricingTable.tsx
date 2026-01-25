@@ -24,7 +24,7 @@ export default function PricingTable() {
   const plans: Plan[] = [
     {
       cycle: 'weekly',
-      price: 0.69,
+      price: 1.99,
       label: t('perWeek'),
       tagline: 'weeklyTagline',
       features: [
@@ -36,7 +36,7 @@ export default function PricingTable() {
     },
     {
       cycle: 'monthly',
-      price: 1.99,
+      price: 4.99,
       label: t('perMonth'),
       popular: true,
       tagline: 'monthlyTagline',
@@ -49,7 +49,7 @@ export default function PricingTable() {
     },
     {
       cycle: 'annual',
-      price: 19.99,
+      price: 49.99,
       label: t('perYear'),
       savings: '2 mois',
       tagline: 'annualTagline',
