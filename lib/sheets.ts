@@ -2,6 +2,16 @@ import { google } from 'googleapis';
 import type { SheetSubscriberRow, SubscriptionStatus } from '@/types';
 
 /**
+ * Formate une date au format M/D/YYYY (ex: 2/21/2026)
+ */
+function formatDateForSheet(date: Date = new Date()): string {
+  const month = date.getMonth() + 1; // getMonth() retourne 0-11
+  const day = date.getDate();
+  const year = date.getFullYear();
+  return `${month}/${day}/${year}`;
+}
+
+/**
  * Initialise et renvoie un client Google Sheets authentifié via service account
  */
 export function getSheetsClient() {
@@ -146,7 +156,7 @@ export async function appendOrUpdateSubscriberRow(
   // Recherche d'une ligne existante avec cet email
   const existingRowIndex = await findRowIndexByEmail(data.email);
 
-  const now = new Date().toISOString();
+  const now = formatDateForSheet();
 
   if (existingRowIndex === -1) {
     // Pas de ligne existante : on ajoute une nouvelle ligne
@@ -224,7 +234,7 @@ export async function updateSubscriberByEmail(
   const updatedRow: SheetSubscriberRow = {
     ...existingRow,
     ...updates,
-    last_event_at: new Date().toISOString(),
+    last_event_at: formatDateForSheet(),
   };
 
   // Met à jour la ligne
@@ -269,7 +279,7 @@ export async function updateSubscriberByStripeCustomerId(
   const updatedRow: SheetSubscriberRow = {
     ...existingRow,
     ...updates,
-    last_event_at: new Date().toISOString(),
+    last_event_at: formatDateForSheet(),
   };
 
   await sheets.spreadsheets.values.update({
