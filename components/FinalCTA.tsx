@@ -46,9 +46,6 @@ export default function FinalCTA() {
             <a href="https://calendly.com/leopolddelarochere" target="_blank" rel="noopener noreferrer" className="btn-primary btn-lg">
               {t('ctaPrimary')}
             </a>
-            <a href="mailto:contact@pickmynews.com" className="btn-ghost !text-white/80 hover:!text-white">
-              {t('ctaSecondary')}
-            </a>
           </div>
 
           <p className="text-sm text-slate-400 mt-4">

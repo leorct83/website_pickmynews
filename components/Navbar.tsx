@@ -51,7 +51,7 @@ export default function Navbar() {
           <a href="#how-it-works" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
             {t('howItWorks')}
           </a>
-          <a href="#contact" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
+          <a href="mailto:contact@pickmynews.com" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
             {t('contact')}
           </a>
         </div>
