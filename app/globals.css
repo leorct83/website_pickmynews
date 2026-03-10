@@ -186,6 +186,21 @@
   .highlight {
     background: linear-gradient(180deg, transparent 60%, rgba(245, 158, 11, 0.3) 60%);
   }
+
+  /* Infinite scroll animation for logo banner */
+  .logo-scroll {
+    display: flex;
+    animation: logoScroll 20s linear infinite;
+  }
+
+  @keyframes logoScroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 @layer utilities {

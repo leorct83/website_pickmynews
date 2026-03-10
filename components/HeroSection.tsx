@@ -34,16 +34,16 @@ export default function HeroSection() {
 
           {/* CTA */}
           <div className="fade-in-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <a href="#inscription" className="btn-primary btn-lg">
+            <a href="https://calendly.com/leopolddelarochere" target="_blank" rel="noopener noreferrer" className="btn-primary btn-lg">
               <span>{t('ctaPrimary')}</span>
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-            <a href="#comment-ca-marche" className="btn-ghost">
+            <a href="mailto:contact@pickmynews.com" className="btn-ghost">
               <span>{t('ctaSecondary')}</span>
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
           </div>

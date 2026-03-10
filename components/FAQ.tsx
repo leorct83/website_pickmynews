@@ -2,7 +2,6 @@
 
 import { useState, ReactNode } from 'react';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -15,17 +14,7 @@ export default function FAQ() {
     },
     {
       question: t('q1'),
-      answer: (
-        <>
-          {t.rich('a1', {
-            link: (chunks) => (
-              <Link href="/manage" className="text-amber-600 hover:text-amber-700 underline">
-                {chunks}
-              </Link>
-            ),
-          })}
-        </>
-      ),
+      answer: t('a1'),
     },
     {
       question: t('q2'),
@@ -33,27 +22,9 @@ export default function FAQ() {
     },
     {
       question: t('q3'),
-      answer: t('a3'),
-    },
-    {
-      question: t('q4'),
       answer: (
         <>
-          {t.rich('a4', {
-            link: (chunks) => (
-              <a href="https://forms.gle/W2Kqw2PwfvF6KuFt9" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700 underline">
-                {chunks}
-              </a>
-            ),
-          })}
-        </>
-      ),
-    },
-    {
-      question: t('q5'),
-      answer: (
-        <>
-          {t.rich('a5', {
+          {t.rich('a3', {
             email: () => (
               <a href="mailto:contact@pickmynews.com" className="text-amber-600 hover:text-amber-700 underline">
                 contact@pickmynews.com
@@ -64,8 +35,8 @@ export default function FAQ() {
       ),
     },
     {
-      question: t('q6'),
-      answer: t('a6'),
+      question: t('q4'),
+      answer: t('a4'),
     },
   ];
 

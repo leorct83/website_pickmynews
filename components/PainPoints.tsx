@@ -12,10 +12,8 @@ export default function PainPoints() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      stat: t('stat1'),
-      description: t('stat1Desc'),
-      sourceName: t('stat1Source'),
-      sourceLink: 'https://pressgazette.co.uk/media-audience-and-business-data/news-avoidance-at-record-levels-as-four-in-ten-worn-out-by-news/',
+      title: t('card1Title'),
+      description: t('card1Desc'),
     },
     {
       icon: (
@@ -23,10 +21,8 @@ export default function PainPoints() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
       ),
-      stat: t('stat2'),
-      description: t('stat2Desc'),
-      sourceName: t('stat2Source'),
-      sourceLink: 'https://studyfinds.org/information-overload-workplace/',
+      title: t('card2Title'),
+      description: t('card2Desc'),
     },
     {
       icon: (
@@ -34,10 +30,17 @@ export default function PainPoints() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
         </svg>
       ),
-      stat: t('stat3'),
-      description: t('stat3Desc'),
-      sourceName: t('stat3Source'),
-      sourceLink: 'https://electroiq.com/stats/social-media-mental-health-statistics/',
+      title: t('card3Title'),
+      description: t('card3Desc'),
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      title: t('card4Title'),
+      description: t('card4Desc'),
     },
   ];
 
@@ -75,22 +78,11 @@ export default function PainPoints() {
                 {point.icon}
               </div>
               <div className="mb-4">
-                <span className="text-5xl font-bold text-white">{point.stat}</span>
+                <span className="text-xl font-bold text-white">{point.title}</span>
               </div>
-              <p className="text-slate-400 leading-relaxed mb-3">
+              <p className="text-slate-400 leading-relaxed">
                 {point.description}
               </p>
-              <a
-                href={point.sourceLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-xs text-slate-500 hover:text-amber-400 transition-colors"
-              >
-                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                </svg>
-                {point.sourceName}
-              </a>
             </div>
           ))}
         </div>

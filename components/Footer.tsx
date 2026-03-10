@@ -10,10 +10,8 @@ export default function Footer() {
 
   const links = {
     product: [
-      { label: tNav('howItWorks'), href: '#comment-ca-marche' },
-      { label: tNav('pricing'), href: '#tarifs' },
-      { label: tNav('faq'), href: '#faq' },
-      { label: t('manageSubscription'), href: '/manage', isRoute: true },
+      { label: tNav('features'), href: '#features' },
+      { label: tNav('howItWorks'), href: '#how-it-works' },
     ],
     company: [
       { label: t('contact'), href: 'mailto:contact@pickmynews.com' },
@@ -82,15 +80,9 @@ export default function Footer() {
             <ul className="space-y-3">
               {links.product.map((link) => (
                 <li key={link.label}>
-                  {link.isRoute ? (
-                    <Link href={link.href} className="text-slate-400 hover:text-white transition-colors text-sm">
-                      {link.label}
-                    </Link>
-                  ) : (
-                    <a href={link.href} className="text-slate-400 hover:text-white transition-colors text-sm">
-                      {link.label}
-                    </a>
-                  )}
+                  <a href={link.href} className="text-slate-400 hover:text-white transition-colors text-sm">
+                    {link.label}
+                  </a>
                 </li>
               ))}
             </ul>

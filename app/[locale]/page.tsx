@@ -4,18 +4,10 @@ import HeroSection from '@/components/HeroSection';
 import PainPoints from '@/components/PainPoints';
 import HowItWorks from '@/components/HowItWorks';
 import Benefits from '@/components/Benefits';
+import Testimonials from '@/components/Testimonials';
 
 // Lazy load des composants below-the-fold pour améliorer le LCP
-const NewsletterShowcase = dynamic(() => import('@/components/NewsletterShowcase'), {
-  loading: () => <div className="py-24 bg-white" />,
-});
-const PricingTable = dynamic(() => import('@/components/PricingTable'), {
-  loading: () => <div className="py-24 bg-slate-900" />,
-});
 const FAQ = dynamic(() => import('@/components/FAQ'), {
-  loading: () => <div className="py-24 bg-white" />,
-});
-const SubscriptionForm = dynamic(() => import('@/components/SubscriptionForm'), {
   loading: () => <div className="py-24 bg-white" />,
 });
 const FinalCTA = dynamic(() => import('@/components/FinalCTA'), {
@@ -44,19 +36,13 @@ export default function HomePage() {
         {/* 4. Avantages - Pourquoi nous */}
         <Benefits />
 
-        {/* 5. Exemples de newsletters */}
-        <NewsletterShowcase />
+        {/* 5. Témoignages - Preuve sociale */}
+        <Testimonials />
 
-        {/* 6. Tarifs - Offres claires */}
-        <PricingTable />
-
-        {/* 7. FAQ - Lever les objections */}
+        {/* 6. FAQ - Lever les objections */}
         <FAQ />
 
-        {/* 8. Formulaire d'inscription */}
-        <SubscriptionForm />
-
-        {/* 9. CTA Final - Dernière conversion */}
+        {/* 6. CTA Final - Dernière conversion */}
         <FinalCTA />
       </main>
 

@@ -45,17 +45,14 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#comment-ca-marche" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
+          <a href="#features" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
+            {t('features')}
+          </a>
+          <a href="#how-it-works" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
             {t('howItWorks')}
           </a>
-          <a href="#avantages" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
-            {t('benefits')}
-          </a>
-          <a href="#tarifs" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
-            {t('pricing')}
-          </a>
-          <a href="#faq" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
-            {t('faq')}
+          <a href="#contact" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
+            {t('contact')}
           </a>
         </div>
 
@@ -91,7 +88,9 @@ export default function Navbar() {
 
           {/* CTA */}
           <a
-            href="#inscription"
+            href="https://calendly.com/leopolddelarochere"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary btn-sm hidden sm:inline-flex"
           >
             {t('cta')}

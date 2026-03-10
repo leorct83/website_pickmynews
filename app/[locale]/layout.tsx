@@ -81,7 +81,6 @@ export default async function LocaleLayout({ children, params }: Props) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* DNS prefetch pour les services tiers */}
-        <link rel="dns-prefetch" href="https://js.stripe.com" />
       </head>
       <body className="antialiased">
         <NextIntlClientProvider messages={messages}>

@@ -34,9 +34,7 @@ export default function FinalCTA() {
 
           {/* Headline */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl text-white mb-6 text-balance">
-            {t.rich('title', {
-              highlight: (chunks) => <span className="text-amber-400">{chunks}</span>,
-            })}
+            {t('title')}
           </h2>
 
           <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
@@ -45,10 +43,17 @@ export default function FinalCTA() {
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#inscription" className="btn-primary btn-lg">
-              {t('seePricing')}
+            <a href="https://calendly.com/leopolddelarochere" target="_blank" rel="noopener noreferrer" className="btn-primary btn-lg">
+              {t('ctaPrimary')}
+            </a>
+            <a href="mailto:contact@pickmynews.com" className="btn-ghost !text-white/80 hover:!text-white">
+              {t('ctaSecondary')}
             </a>
           </div>
+
+          <p className="text-sm text-slate-400 mt-4">
+            {t('ctaSubtext')}
+          </p>
 
           {/* Trust elements */}
           <div className="mt-12 pt-12 border-t border-white/10">
