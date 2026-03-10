@@ -43,9 +43,9 @@ export default function FinalCTA() {
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="https://calendly.com/leopolddelarochere" target="_blank" rel="noopener noreferrer" className="btn-primary btn-lg">
+            <button onClick={() => (window as any).Calendly?.initPopupWidget({url: 'https://calendly.com/leopolddelarochere/pickmynews-demo'})} className="btn-primary btn-lg">
               {t('ctaPrimary')}
-            </a>
+            </button>
           </div>
 
           <p className="text-sm text-slate-400 mt-4">

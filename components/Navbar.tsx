@@ -87,14 +87,12 @@ export default function Navbar() {
           </div>
 
           {/* CTA */}
-          <a
-            href="https://calendly.com/leopolddelarochere"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => (window as any).Calendly?.initPopupWidget({url: 'https://calendly.com/leopolddelarochere/pickmynews-demo'})}
             className="btn-primary btn-sm hidden sm:inline-flex"
           >
             {t('cta')}
-          </a>
+          </button>
         </div>
       </div>
     </nav>

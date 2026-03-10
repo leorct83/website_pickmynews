@@ -80,7 +80,9 @@ export default async function LocaleLayout({ children, params }: Props) {
         {/* Preconnect pour améliorer les performances */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* DNS prefetch pour les services tiers */}
+        {/* Calendly popup widget */}
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+        <script src="https://assets.calendly.com/assets/external/widget.js" async />
       </head>
       <body className="antialiased">
         <NextIntlClientProvider messages={messages}>
