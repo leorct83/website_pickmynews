@@ -23,7 +23,10 @@
     "lastNamePlaceholder": "Votre nom",
     "positionPlaceholder": "Ex : Partner, Analyste...",
     "messagePlaceholder": "Votre message...",
-    "close": "Fermer"
+    "close": "Fermer",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès !",
+    "error": "Erreur lors de l'envoi. Veuillez réessayer."
   },
   "hero": {
     "headline": "L'essentiel de l'actualité,",

@@ -23,7 +23,10 @@
     "lastNamePlaceholder": "Your last name",
     "positionPlaceholder": "E.g.: Partner, Analyst...",
     "messagePlaceholder": "Your message...",
-    "close": "Close"
+    "close": "Close",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Failed to send. Please try again."
   },
   "hero": {
     "headline": "Essential news,",
