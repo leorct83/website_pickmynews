@@ -10,6 +10,21 @@
     "contact": "Contact",
     "cta": "Book a demo"
   },
+  "contactForm": {
+    "title": "Contact us",
+    "fundName": "Fund name",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "position": "Position",
+    "message": "Message",
+    "send": "Send",
+    "fundNamePlaceholder": "E.g.: Serena Capital",
+    "firstNamePlaceholder": "Your first name",
+    "lastNamePlaceholder": "Your last name",
+    "positionPlaceholder": "E.g.: Partner, Analyst...",
+    "messagePlaceholder": "Your message...",
+    "close": "Close"
+  },
   "hero": {
     "headline": "VC & PE news,",
     "headlineSuffix": "personalized for your fund.",
