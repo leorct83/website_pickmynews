@@ -75,13 +75,12 @@ export default function HowItWorks() {
               <iframe
                 src="/newsletter-example.html"
                 title="Newsletter example"
-                className="w-full h-[550px] border-0"
-                scrolling="no"
+                className="w-full h-[550px] border-0 overflow-y-auto"
               />
             </div>
 
             {/* Fade overlay at bottom */}
-            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#F1F5F9] to-transparent rounded-b-3xl" />
+            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#F1F5F9] to-transparent rounded-b-3xl pointer-events-none" />
           </div>
         </div>
       </div>
