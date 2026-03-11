@@ -44,19 +44,6 @@ export default function FAQ() {
     <section id="faq" className="py-24 px-4 bg-stone-50 scroll-mt-nav">
       <div className="section-container">
         <div className="max-w-3xl mx-auto">
-          {/* Section header */}
-          <div className="text-center mb-16">
-            <p className="text-amber-600 font-semibold uppercase tracking-wider text-sm mb-4">
-              {t('badge')}
-            </p>
-            <h2 className="text-4xl md:text-5xl text-slate-900 mb-6 text-balance">
-              {t('title')}
-            </h2>
-            <p className="text-xl text-slate-600">
-              {t('subtitle')}
-            </p>
-          </div>
-
           {/* FAQ accordion */}
           <div className="space-y-4">
             {faqs.map((faq, index) => (
