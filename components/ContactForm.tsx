@@ -13,7 +13,7 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
   const [form, setForm] = useState({
     fundName: '',
     firstName: '',
-    lastName: '',
+    email: '',
     position: '',
     message: '',
   });
@@ -33,7 +33,7 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
       if (!res.ok) throw new Error();
 
       setStatus('success');
-      setForm({ fundName: '', firstName: '', lastName: '', position: '', message: '' });
+      setForm({ fundName: '', firstName: '', email: '', position: '', message: '' });
       setTimeout(() => {
         setStatus('idle');
         onClose();
@@ -75,22 +75,20 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label htmlFor="contact-fundName" className="block text-sm font-medium text-slate-700 mb-1">
-                {t('fundName')}
-              </label>
-              <input
-                id="contact-fundName"
-                type="text"
-                required
-                placeholder={t('fundNamePlaceholder')}
-                value={form.fundName}
-                onChange={(e) => setForm({ ...form, fundName: e.target.value })}
-                className="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400 text-slate-800"
-              />
-            </div>
-
             <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label htmlFor="contact-fundName" className="block text-sm font-medium text-slate-700 mb-1">
+                  {t('fundName')}
+                </label>
+                <input
+                  id="contact-fundName"
+                  type="text"
+                  placeholder={t('fundNamePlaceholder')}
+                  value={form.fundName}
+                  onChange={(e) => setForm({ ...form, fundName: e.target.value })}
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400 text-slate-800"
+                />
+              </div>
               <div>
                 <label htmlFor="contact-firstName" className="block text-sm font-medium text-slate-700 mb-1">
                   {t('firstName')}
@@ -98,47 +96,47 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
                 <input
                   id="contact-firstName"
                   type="text"
-                  required
                   placeholder={t('firstNamePlaceholder')}
                   value={form.firstName}
                   onChange={(e) => setForm({ ...form, firstName: e.target.value })}
                   className="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400 text-slate-800"
                 />
               </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
               <div>
-                <label htmlFor="contact-lastName" className="block text-sm font-medium text-slate-700 mb-1">
-                  {t('lastName')}
+                <label htmlFor="contact-email" className="block text-sm font-medium text-slate-700 mb-1">
+                  {t('email')} *
                 </label>
                 <input
-                  id="contact-lastName"
-                  type="text"
+                  id="contact-email"
+                  type="email"
                   required
-                  placeholder={t('lastNamePlaceholder')}
-                  value={form.lastName}
-                  onChange={(e) => setForm({ ...form, lastName: e.target.value })}
+                  placeholder={t('emailPlaceholder')}
+                  value={form.email}
+                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400 text-slate-800"
+                />
+              </div>
+              <div>
+                <label htmlFor="contact-position" className="block text-sm font-medium text-slate-700 mb-1">
+                  {t('position')}
+                </label>
+                <input
+                  id="contact-position"
+                  type="text"
+                  placeholder={t('positionPlaceholder')}
+                  value={form.position}
+                  onChange={(e) => setForm({ ...form, position: e.target.value })}
                   className="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400 text-slate-800"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="contact-position" className="block text-sm font-medium text-slate-700 mb-1">
-                {t('position')}
-              </label>
-              <input
-                id="contact-position"
-                type="text"
-                required
-                placeholder={t('positionPlaceholder')}
-                value={form.position}
-                onChange={(e) => setForm({ ...form, position: e.target.value })}
-                className="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400 text-slate-800"
-              />
-            </div>
-
-            <div>
               <label htmlFor="contact-message" className="block text-sm font-medium text-slate-700 mb-1">
-                {t('message')}
+                {t('message')} *
               </label>
               <textarea
                 id="contact-message"

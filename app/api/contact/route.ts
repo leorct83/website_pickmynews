@@ -2,10 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(request: NextRequest) {
   try {
-    const { fundName, firstName, lastName, position, message } = await request.json();
+    const { fundName, firstName, email, position, message } = await request.json();
 
-    if (!fundName || !firstName || !lastName || !position || !message) {
-      return NextResponse.json({ error: 'All fields are required' }, { status: 400 });
+    if (!email || !message) {
+      return NextResponse.json({ error: 'Email and message are required' }, { status: 400 });
     }
 
     const response = await fetch('https://api.mailjet.com/v3.1/send', {
@@ -29,13 +29,18 @@ export async function POST(request: NextRequest) {
                 Name: 'PickMyNews',
               },
             ],
-            Subject: `Contact - ${fundName} - ${firstName} ${lastName}`,
-            TextPart: `Nom du fonds : ${fundName}\nPrénom : ${firstName}\nNom : ${lastName}\nPoste : ${position}\n\nMessage :\n${message}`,
+            ReplyTo: {
+              Email: email,
+              Name: firstName || email,
+            },
+            Subject: `Contact${fundName ? ` - ${fundName}` : ''}${firstName ? ` - ${firstName}` : ''}`,
+            TextPart: `${fundName ? `Fonds : ${fundName}\n` : ''}${firstName ? `Prénom : ${firstName}\n` : ''}Email : ${email}\n${position ? `Poste : ${position}\n` : ''}\nMessage :\n${message}`,
             HTMLPart: `
               <h3>Nouveau message de contact</h3>
-              <p><strong>Fonds :</strong> ${fundName}</p>
-              <p><strong>Contact :</strong> ${firstName} ${lastName}</p>
-              <p><strong>Poste :</strong> ${position}</p>
+              ${fundName ? `<p><strong>Fonds :</strong> ${fundName}</p>` : ''}
+              ${firstName ? `<p><strong>Prénom :</strong> ${firstName}</p>` : ''}
+              <p><strong>Email :</strong> ${email}</p>
+              ${position ? `<p><strong>Poste :</strong> ${position}</p>` : ''}
               <hr/>
               <p><strong>Message :</strong></p>
               <p>${message.replace(/\n/g, '<br/>')}</p>
