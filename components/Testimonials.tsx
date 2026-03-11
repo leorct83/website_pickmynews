@@ -18,7 +18,7 @@ export default function Testimonials() {
         {/* Client logos */}
         <div className="flex items-center justify-center gap-16 flex-wrap">
           <img
-            src="/logos/serena.svg"
+            src="/logos/serena.png"
             alt="Serena"
             className="h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
           />
