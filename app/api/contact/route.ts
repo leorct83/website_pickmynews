@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
         Messages: [
           {
             From: {
-              Email: 'contact@pickmynews.com',
+              Email: 'leopolddelarochere@gmail.com',
               Name: 'PickMyNews Contact',
             },
             To: [
