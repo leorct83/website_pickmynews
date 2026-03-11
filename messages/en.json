@@ -36,7 +36,8 @@
     "ctaSecondary": "Contact us →",
     "trustSatisfied": "Built specifically for VC & PE funds",
     "trustCancel": "Deployed in 48h",
-    "trustFactCheck": "Verified sources"
+    "trustFactCheck": "Verified sources",
+    "trustedBy": "Trusted by"
   },
   "painPoints": {
     "badge": "THE PROBLEM",
@@ -93,8 +94,7 @@
     "benefit6Desc": "Choose the day and time that suits your team."
   },
   "testimonials": {
-    "badge": "TRUSTED BY",
-    "title": "Adopted by the most demanding funds"
+    "badge": "TRUSTED BY"
   },
   "faq": {
     "badge": "Frequently asked questions",

@@ -4,7 +4,6 @@ import HeroSection from '@/components/HeroSection';
 import PainPoints from '@/components/PainPoints';
 import HowItWorks from '@/components/HowItWorks';
 import Benefits from '@/components/Benefits';
-import Testimonials from '@/components/Testimonials';
 
 // Lazy load des composants below-the-fold pour améliorer le LCP
 const FAQ = dynamic(() => import('@/components/FAQ'), {
@@ -36,10 +35,7 @@ export default function HomePage() {
         {/* 4. Avantages - Pourquoi nous */}
         <Benefits />
 
-        {/* 5. Témoignages - Preuve sociale */}
-        <Testimonials />
-
-        {/* 6. FAQ - Lever les objections */}
+        {/* 5. FAQ - Lever les objections */}
         <FAQ />
 
         {/* 6. CTA Final - Dernière conversion */}

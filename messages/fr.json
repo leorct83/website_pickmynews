@@ -36,7 +36,8 @@
     "ctaSecondary": "Nous contacter →",
     "trustSatisfied": "Conçu spécifiquement pour des fonds VC & PE",
     "trustCancel": "Déploiement en 48h",
-    "trustFactCheck": "Sources vérifiées"
+    "trustFactCheck": "Sources vérifiées",
+    "trustedBy": "Ils nous font confiance"
   },
   "painPoints": {
     "badge": "LE PROBLÈME",
@@ -93,8 +94,7 @@
     "benefit6Desc": "Choisissez le jour et l'heure qui convient à votre équipe."
   },
   "testimonials": {
-    "badge": "ILS NOUS FONT CONFIANCE",
-    "title": "Adopté par les fonds les plus exigeants"
+    "badge": "ILS NOUS FONT CONFIANCE"
   },
   "faq": {
     "badge": "Questions fréquentes",

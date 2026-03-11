@@ -36,7 +36,7 @@ export default function HowItWorks() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Left: Steps */}
           <div className="space-y-10">
             {steps.map((step) => (
@@ -70,16 +70,16 @@ export default function HowItWorks() {
           </div>
 
           {/* Right: Real newsletter example */}
-          <div className="space-y-4">
+          <div className="bg-[#F1F5F9] rounded-3xl p-5 shadow-lg border border-slate-200 max-h-[700px] overflow-hidden">
             {/* Fund context card */}
-            <div className="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+            <div className="bg-white rounded-xl p-4 mb-3">
               <p className="text-xs font-semibold text-amber-600 uppercase tracking-wider mb-3">{t('exampleLabel')}</p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <p className="text-xs font-medium text-slate-500 mb-1.5">{t('exampleThesis')}</p>
                   <div className="flex flex-wrap gap-1.5">
                     {['Applied AI', 'SaaS / Enterprise', 'Climate Tech', 'FinTech', 'Impact Tech'].map((tag) => (
-                      <span key={tag} className="text-[10px] font-medium bg-white text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">
+                      <span key={tag} className="text-[10px] font-medium bg-slate-50 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">
                         {tag}
                       </span>
                     ))}
@@ -89,7 +89,7 @@ export default function HowItWorks() {
                   <p className="text-xs font-medium text-slate-500 mb-1.5">{t('examplePortfolio')}</p>
                   <div className="flex flex-wrap gap-1.5">
                     {['Probabl', 'pyannoteAI', 'Pelico', 'Clevergy', 'Goodvest', 'Fipto'].map((company) => (
-                      <span key={company} className="text-[10px] font-medium bg-white text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">
+                      <span key={company} className="text-[10px] font-medium bg-slate-50 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">
                         {company}
                       </span>
                     ))}
@@ -99,14 +99,12 @@ export default function HowItWorks() {
             </div>
 
             {/* Newsletter iframe */}
-            <div className="bg-[#F1F5F9] rounded-3xl p-5 shadow-lg border border-slate-200 max-h-[600px] overflow-hidden">
-              <div className="bg-white rounded-xl overflow-hidden">
-                <iframe
-                  src="/newsletter-example.html"
-                  title="Newsletter example"
-                  className="w-full h-[550px] border-0 overflow-y-auto"
-                />
-              </div>
+            <div className="bg-white rounded-xl overflow-hidden">
+              <iframe
+                src="/newsletter-example.html"
+                title="Newsletter example"
+                className="w-full h-[550px] border-0 overflow-y-auto"
+              />
             </div>
           </div>
         </div>
