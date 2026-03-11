@@ -70,7 +70,7 @@ export default function HowItWorks() {
           </div>
 
           {/* Right: Real newsletter example */}
-          <div className="bg-[#F1F5F9] rounded-3xl p-5 shadow-lg border border-slate-200 max-h-[600px] overflow-hidden relative">
+          <div className="bg-[#F1F5F9] rounded-3xl p-5 shadow-lg border border-slate-200 max-h-[600px] overflow-hidden">
             <div className="bg-white rounded-xl overflow-hidden">
               <iframe
                 src="/newsletter-example.html"
@@ -78,9 +78,6 @@ export default function HowItWorks() {
                 className="w-full h-[550px] border-0 overflow-y-auto"
               />
             </div>
-
-            {/* Fade overlay at bottom */}
-            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#F1F5F9] to-transparent rounded-b-3xl pointer-events-none" />
           </div>
         </div>
       </div>

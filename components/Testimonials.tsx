@@ -13,6 +13,9 @@ export default function Testimonials() {
           <p className="text-amber-600 font-semibold uppercase tracking-wider text-sm mb-4">
             {t('badge')}
           </p>
+          <h2 className="text-4xl md:text-5xl text-slate-900 mb-6 text-balance">
+            {t('title')}
+          </h2>
         </div>
 
         {/* Client logos */}
@@ -20,7 +23,7 @@ export default function Testimonials() {
           <img
             src="/logos/serena.png"
             alt="Serena"
-            className="h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
+            className="h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
           />
         </div>
       </div>
