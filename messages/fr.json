@@ -70,7 +70,10 @@
     "step3Title": "Recevez votre briefing",
     "step3Desc": "Chaque semaine, recevez un CR concis et personnalisé.",
     "step3Delivered": "Livré à 8h00",
-    "cta": "Réserver une démo"
+    "cta": "Réserver une démo",
+    "exampleLabel": "Paramètres de cet exemple",
+    "exampleThesis": "Thèse d'investissement",
+    "examplePortfolio": "Portfolio"
   },
   "benefits": {
     "badge": "LA SOLUTION",

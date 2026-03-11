@@ -70,7 +70,10 @@
     "step3Title": "Receive your briefing",
     "step3Desc": "Every week, receive a concise and personalized report.",
     "step3Delivered": "Delivered at 8:00 AM",
-    "cta": "Book a demo"
+    "cta": "Book a demo",
+    "exampleLabel": "Example settings",
+    "exampleThesis": "Investment thesis",
+    "examplePortfolio": "Portfolio"
   },
   "benefits": {
     "badge": "THE SOLUTION",
