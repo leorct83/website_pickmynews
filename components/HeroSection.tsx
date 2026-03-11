@@ -27,9 +27,11 @@ export default function HeroSection() {
           </h1>
 
           {/* Subheadline */}
-          <h2 className="fade-in-up delay-200 text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            {t('subheadline')}
-          </h2>
+          {t('subheadline') && (
+            <h2 className="fade-in-up delay-200 text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+              {t('subheadline')}
+            </h2>
+          )}
 
 
           {/* CTA */}

@@ -11,12 +11,12 @@
     "cta": "Book a demo"
   },
   "hero": {
-    "headline": "Essential news,",
+    "headline": "VC & PE news,",
     "headlineSuffix": "personalized for your fund.",
-    "subheadline": "PickMyNews aggregates hundreds of sources to deliver a unique, concise, noise-free newsletter. Every morning, in 5 minutes.",
+    "subheadline": "",
     "ctaPrimary": "Book a demo",
     "ctaSecondary": "Contact us →",
-    "trustSatisfied": "Used by investment funds",
+    "trustSatisfied": "Built specifically for VC & PE funds",
     "trustCancel": "Deployed in 48h",
     "trustFactCheck": "Verified sources"
   },

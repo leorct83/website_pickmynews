@@ -11,12 +11,12 @@
     "cta": "Réserver une démo"
   },
   "hero": {
-    "headline": "L'essentiel de l'actualité,",
-    "headlineSuffix": "personnalisé pour votre fonds.",
-    "subheadline": "PickMyNews agrège des centaines de sources pour vous livrer une newsletter unique, concise et sans bruit. Chaque semaine, en 5 minutes.",
+    "headline": "L'actualité VC & PE,",
+    "headlineSuffix": "personnalisée pour votre fonds.",
+    "subheadline": "",
     "ctaPrimary": "Réserver une démo",
     "ctaSecondary": "Nous contacter →",
-    "trustSatisfied": "Utilisé par des fonds d'investissement",
+    "trustSatisfied": "Conçu spécifiquement pour des fonds VC & PE",
     "trustCancel": "Déploiement en 48h",
     "trustFactCheck": "Sources vérifiées"
   },
