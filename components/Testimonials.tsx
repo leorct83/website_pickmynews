@@ -8,8 +8,15 @@ export default function Testimonials() {
   return (
     <section className="py-24 px-4 bg-white overflow-hidden">
       <div className="section-container">
-        {/* Single logo centered */}
-        <div className="flex items-center justify-center">
+        {/* Section header */}
+        <div className="text-center mb-16">
+          <p className="text-amber-600 font-semibold uppercase tracking-wider text-sm mb-4">
+            {t('badge')}
+          </p>
+        </div>
+
+        {/* Client logos */}
+        <div className="flex items-center justify-center gap-16 flex-wrap">
           <img
             src="/logos/serena.svg"
             alt="Serena"
