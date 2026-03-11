@@ -29,8 +29,8 @@
     "error": "Failed to send. Please try again."
   },
   "hero": {
-    "headline": "Essential news,",
-    "headlineSuffix": "personalized for your investment fund.",
+    "headline": "The essential news",
+    "headlineSuffix": "for your investment fund.",
     "subheadline": "",
     "ctaPrimary": "Book a demo",
     "ctaSecondary": "Contact us →",
@@ -74,7 +74,7 @@
   },
   "benefits": {
     "badge": "THE SOLUTION",
-    "title": "One newsletter. All the information that matters.",
+    "title": "All the information that matters.",
     "subtitle": "PickMyNews aggregates, filters, and summarizes news from hundreds of sources to send you only what's relevant to your fund.",
     "benefit1Title": "Personalized",
     "benefit1Desc": "Each newsletter is configured around your thesis, sectors, and geography.",
@@ -87,7 +87,7 @@
     "benefit5Title": "Impartial",
     "benefit5Desc": "No editorial line. Facts, verified and sourced, without opinion filters.",
     "benefit6Title": "Weekly",
-    "benefit6Desc": "A fixed appointment, on the day and time that suits your team."
+    "benefit6Desc": "Choose the day and time that suits your team."
   },
   "testimonials": {
     "badge": "TRUSTED BY",

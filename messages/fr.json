@@ -29,8 +29,8 @@
     "error": "Erreur lors de l'envoi. Veuillez réessayer."
   },
   "hero": {
-    "headline": "L'essentiel de l'actualité,",
-    "headlineSuffix": "personnalisé pour votre fonds d'investissement.",
+    "headline": "Les news essentielles",
+    "headlineSuffix": "pour votre fonds d'investissement.",
     "subheadline": "",
     "ctaPrimary": "Réserver une démo",
     "ctaSecondary": "Nous contacter →",
@@ -74,7 +74,7 @@
   },
   "benefits": {
     "badge": "LA SOLUTION",
-    "title": "Une seule newsletter. Toute l'information qui compte.",
+    "title": "Toute l'information qui compte.",
     "subtitle": "PickMyNews agrège, filtre et synthétise l'actualité depuis des centaines de sources pour ne vous envoyer que ce qui est pertinent pour votre fonds.",
     "benefit1Title": "Personnalisée",
     "benefit1Desc": "Chaque newsletter est configurée autour de votre thèse, vos secteurs et votre géographie.",
@@ -87,7 +87,7 @@
     "benefit5Title": "Impartiale",
     "benefit5Desc": "Pas de ligne éditoriale. Les faits, vérifiés et sourcés, sans filtre d'opinion.",
     "benefit6Title": "Hebdomadaire",
-    "benefit6Desc": "Un rendez-vous fixe, au jour et à l'heure qui conviennent à votre équipe."
+    "benefit6Desc": "Choisissez le jour et l'heure qui conviennent à votre équipe."
   },
   "testimonials": {
     "badge": "ILS NOUS FONT CONFIANCE",
