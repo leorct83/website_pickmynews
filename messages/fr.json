@@ -98,15 +98,13 @@
     "title": "Vos questions",
     "subtitle": "Les réponses aux interrogations les plus courantes de nos prospects.",
     "q0": "Comment fonctionne l'onboarding ?",
-    "a0": "Après votre prise de rendez-vous, nous organisons un appel de 15 minutes pour comprendre votre thèse d'investissement, vos secteurs cibles et vos préférences. Nous configurons ensuite votre newsletter et vous envoyons une première édition de test sous 48h.",
-    "q1": "Combien de newsletters peut-on recevoir par semaine ?",
-    "a1": "Une newsletter par semaine, envoyée au jour et à l'heure de votre choix. Chaque membre de l'équipe peut avoir sa propre configuration.",
-    "q2": "D'où viennent les articles ? Sont-ils fiables ?",
-    "a2": "Nous agrégeons des centaines de sources de qualité : médias spécialisés (TechCrunch, Les Echos, Financial Times...), blogs d'experts, publications académiques, newsletters sectorielles. Chaque fait est systématiquement vérifié. Les sources sont listées pour une transparence totale.",
-    "q3": "Comment contacter l'équipe PickMyNews ?",
-    "a3": "Notre équipe est disponible par email à <email>contact@pickmynews.com</email> et répond sous 24h.",
-    "q4": "Que se passe-t-il si une information est inexacte ?",
-    "a4": "Nous nous engageons sur la qualité : si vous trouvez un chiffre ou une donnée factuellement incorrecte dans votre newsletter, nous corrigeons immédiatement et ajustons nos processus de vérification. C'est notre garantie qualité."
+    "a0": "Après votre prise de rendez-vous, nous organisons un appel de 15 minutes pour comprendre votre thèse d'investissement, vos secteurs cibles et vos préférences.",
+    "q1": "D'où viennent les articles ? Sont-ils fiables ?",
+    "a1": "Nous agrégeons des centaines de sources de qualité : médias spécialisés, blogs d'experts, publications académiques, newsletters sectorielles. Chaque fait est systématiquement vérifié. Les sources sont listées pour une transparence totale.",
+    "q2": "Comment contacter l'équipe PickMyNews ?",
+    "a2": "Notre équipe est disponible par email à <email>contact@pickmynews.com</email> et répond sous 48h.",
+    "q3": "Que se passe-t-il si une information est inexacte ?",
+    "a3": "Nous nous engageons sur la qualité : si vous trouvez un chiffre ou une donnée factuellement incorrecte dans votre newsletter, nous corrigeons immédiatement et ajustons nos processus de vérification. C'est notre garantie qualité."
   },
   "finalCta": {
     "badge": "Prêt à démarrer ?",
@@ -119,7 +117,7 @@
     "trustGuarantee": "Déploiement en 48h"
   },
   "footer": {
-    "tagline": "Veille stratégique pour fonds d'investissement. Une newsletter personnalisée, sans bruit ni distraction.",
+    "tagline": "",
     "product": "Produit",
     "company": "Entreprise",
     "legal": "Légal",

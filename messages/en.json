@@ -98,15 +98,13 @@
     "title": "Your questions",
     "subtitle": "Answers to the most common questions from our prospects.",
     "q0": "How does onboarding work?",
-    "a0": "After booking a call, we organize a 15-minute meeting to understand your investment thesis, target sectors, and preferences. We then configure your newsletter and send a first test edition within 48 hours.",
-    "q1": "How many newsletters can we receive per week?",
-    "a1": "One newsletter per week, sent on the day and time of your choice. Each team member can have their own configuration.",
-    "q2": "Where do the articles come from? Are they reliable?",
-    "a2": "We aggregate hundreds of quality sources: specialized media (TechCrunch, Les Echos, Financial Times...), expert blogs, academic publications, sector newsletters. Every fact is systematically verified. Sources are listed for full transparency.",
-    "q3": "How do I contact the PickMyNews team?",
-    "a3": "Our team is available by email at <email>contact@pickmynews.com</email> and responds within 24 hours.",
-    "q4": "What happens if information is inaccurate?",
-    "a4": "We stand by our quality: if you find a factually incorrect figure or data in your newsletter, we correct it immediately and adjust our verification processes. That's our quality guarantee."
+    "a0": "After booking a call, we organize a 15-minute meeting to understand your investment thesis, target sectors, and preferences.",
+    "q1": "Where do the articles come from? Are they reliable?",
+    "a1": "We aggregate hundreds of quality sources: specialized media, expert blogs, academic publications, sector newsletters. Every fact is systematically verified. Sources are listed for full transparency.",
+    "q2": "How do I contact the PickMyNews team?",
+    "a2": "Our team is available by email at <email>contact@pickmynews.com</email> and responds within 48 hours.",
+    "q3": "What happens if information is inaccurate?",
+    "a3": "We stand by our quality: if you find a factually incorrect figure or data in your newsletter, we correct it immediately and adjust our verification processes. That's our quality guarantee."
   },
   "finalCta": {
     "badge": "Ready to start?",
@@ -119,7 +117,7 @@
     "trustGuarantee": "Deployed in 48h"
   },
   "footer": {
-    "tagline": "Strategic intelligence for investment funds. A personalized newsletter, without noise or distraction.",
+    "tagline": "",
     "product": "Product",
     "company": "Company",
     "legal": "Legal",

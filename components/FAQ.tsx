@@ -18,13 +18,9 @@ export default function FAQ() {
     },
     {
       question: t('q2'),
-      answer: t('a2'),
-    },
-    {
-      question: t('q3'),
       answer: (
         <>
-          {t.rich('a3', {
+          {t.rich('a2', {
             email: () => (
               <a href="mailto:contact@pickmynews.com" className="text-amber-600 hover:text-amber-700 underline">
                 contact@pickmynews.com
@@ -35,8 +31,8 @@ export default function FAQ() {
       ),
     },
     {
-      question: t('q4'),
-      answer: t('a4'),
+      question: t('q3'),
+      answer: t('a3'),
     },
   ];
 
