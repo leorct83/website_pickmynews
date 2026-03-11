@@ -4,6 +4,19 @@ import { formatSendDaysForSheet, formatLanguageForSheet } from '@/lib/validation
 import { emailExists, appendOrUpdateSubscriberRow } from '@/lib/sheets';
 
 /**
+ * Calcule la date de fin d'essai gratuit (aujourd'hui + 28 jours)
+ * Retourne au format M/D/YYYY
+ */
+function calculateEndOfFreeTrial(): string {
+  const endDate = new Date();
+  endDate.setDate(endDate.getDate() + 28);
+  const month = endDate.getMonth() + 1;
+  const day = endDate.getDate();
+  const year = endDate.getFullYear();
+  return `${month}/${day}/${year}`;
+}
+
+/**
  * Schéma de validation simplifié pour l'essai gratuit (sans billing)
  */
 const freeTrialSchema = z.object({
@@ -58,6 +71,7 @@ export async function POST(request: NextRequest) {
       stripe_customer_id: '', // Pas de Stripe pour l'essai gratuit
       stripe_subscription_id: '',
       status: 'trial',
+      end_of_free_trial: calculateEndOfFreeTrial(), // Date de fin = aujourd'hui + 28 jours
     });
 
     // Redirection vers la page de succès de l'essai gratuit

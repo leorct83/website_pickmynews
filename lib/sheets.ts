@@ -36,7 +36,7 @@ export function getSheetsClient() {
 }
 
 /**
- * Colonnes du Google Sheet dans l'ordre exact
+ * Colonnes du Google Sheet dans l'ordre exact (A-N)
  */
 const SHEET_COLUMNS = [
   'created_at',
@@ -52,6 +52,7 @@ const SHEET_COLUMNS = [
   'stripe_subscription_id',
   'status',
   'last_event_at',
+  'end_of_free_trial',
 ] as const;
 
 /**
@@ -72,6 +73,7 @@ function rowToValues(row: SheetSubscriberRow): string[] {
     row.stripe_subscription_id,
     row.status,
     row.last_event_at,
+    row.end_of_free_trial,
   ];
 }
 
@@ -93,6 +95,7 @@ function valuesToRow(values: string[]): SheetSubscriberRow {
     stripe_subscription_id: values[10] || '',
     status: (values[11] || 'pending') as SubscriptionStatus,
     last_event_at: values[12] || '',
+    end_of_free_trial: values[13] || '',
   };
 }
 
@@ -105,7 +108,7 @@ async function getAllRows(): Promise<SheetSubscriberRow[]> {
 
   const response = await sheets.spreadsheets.values.get({
     spreadsheetId,
-    range: 'Sheet1!A2:M', // A partir de la ligne 2 (après le header), 13 colonnes A-M
+    range: 'Sheet1!A2:N', // A partir de la ligne 2 (après le header), 14 colonnes A-N
   });
 
   const rows = response.data.values || [];
@@ -174,11 +177,12 @@ export async function appendOrUpdateSubscriberRow(
       stripe_subscription_id: data.stripe_subscription_id || '',
       status: data.status || 'pending',
       last_event_at: now,
+      end_of_free_trial: data.end_of_free_trial || '',
     };
 
     await sheets.spreadsheets.values.append({
       spreadsheetId,
-      range: 'Sheet1!A:M',
+      range: 'Sheet1!A:N',
       valueInputOption: 'RAW',
       requestBody: {
         values: [rowToValues(newRow)],
@@ -200,7 +204,7 @@ export async function appendOrUpdateSubscriberRow(
 
     await sheets.spreadsheets.values.update({
       spreadsheetId,
-      range: `Sheet1!A${existingRowIndex}:M${existingRowIndex}`,
+      range: `Sheet1!A${existingRowIndex}:N${existingRowIndex}`,
       valueInputOption: 'RAW',
       requestBody: {
         values: [rowToValues(updatedRow)],
@@ -240,7 +244,7 @@ export async function updateSubscriberByEmail(
   // Met à jour la ligne
   await sheets.spreadsheets.values.update({
     spreadsheetId,
-    range: `Sheet1!A${rowIndex}:M${rowIndex}`,
+    range: `Sheet1!A${rowIndex}:N${rowIndex}`,
     valueInputOption: 'RAW',
     requestBody: {
       values: [rowToValues(updatedRow)],
@@ -284,7 +288,7 @@ export async function updateSubscriberByStripeCustomerId(
 
   await sheets.spreadsheets.values.update({
     spreadsheetId,
-    range: `Sheet1!A${rowIndex}:M${rowIndex}`,
+    range: `Sheet1!A${rowIndex}:N${rowIndex}`,
     valueInputOption: 'RAW',
     requestBody: {
       values: [rowToValues(updatedRow)],
@@ -303,7 +307,7 @@ export async function initializeSheetHeaders(): Promise<void> {
   // Vérifie si le header existe déjà
   const response = await sheets.spreadsheets.values.get({
     spreadsheetId,
-    range: 'Sheet1!A1:M1',
+    range: 'Sheet1!A1:N1',
   });
 
   if (response.data.values && response.data.values.length > 0) {
@@ -314,7 +318,7 @@ export async function initializeSheetHeaders(): Promise<void> {
   // Crée les en-têtes
   await sheets.spreadsheets.values.update({
     spreadsheetId,
-    range: 'Sheet1!A1:M1',
+    range: 'Sheet1!A1:N1',
     valueInputOption: 'RAW',
     requestBody: {
       values: [SHEET_COLUMNS as unknown as string[]],

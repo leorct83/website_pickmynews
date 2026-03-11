@@ -4,7 +4,7 @@
 
 export type PlanFrequency = '1x';
 export type BillingPeriod = 'weekly' | 'monthly' | 'yearly';
-export type SubscriptionStatus = 'pending' | 'active' | 'canceled' | 'past_due' | 'trial';
+export type SubscriptionStatus = 'pending' | 'active' | 'canceled' | 'past_due' | 'trial' | 'send_subscription_email';
 export type NewsletterLanguage = 'Français' | 'English';
 
 // Jours de la semaine en français (comme stockés dans Google Sheets)
@@ -29,7 +29,7 @@ export interface SubscriptionFormData {
  * Ordre des colonnes à respecter strictement
  */
 export interface SheetSubscriberRow {
-  created_at: string;           // ISO string
+  created_at: string;           // Format M/D/YYYY
   name: string;
   email: string;
   theme: string;
@@ -41,7 +41,8 @@ export interface SheetSubscriberRow {
   stripe_customer_id: string;
   stripe_subscription_id: string;
   status: SubscriptionStatus;
-  last_event_at: string;        // ISO string
+  last_event_at: string;        // Format M/D/YYYY
+  end_of_free_trial: string;    // Format M/D/YYYY - Date de fin du trial (created_at + 28 jours)
 }
 
 /**
