@@ -22,17 +22,17 @@
   },
   "painPoints": {
     "badge": "THE PROBLEM",
-    "title": "Too much information. Not enough signal.",
-    "subtitle": "Most content is redundant or irrelevant.",
+    "title": "Too much noise, not enough signal.",
+    "subtitle": "",
     "card1Title": "Too many newsletters",
     "card1Desc": "Your inbox overflows with content you don't have time to read.",
-    "card2Title": "Too much noise",
+    "card2Title": "Redundant or irrelevant content",
     "card2Desc": "Most articles don't relate to your thesis or portfolio.",
     "card3Title": "Missed information",
     "card3Desc": "Important signals slip through the cracks.",
     "card4Title": "Wasted time",
     "card4Desc": "Hours spent monitoring instead of decision-making.",
-    "transition": "What if your team took back control?",
+    "transition": "",
     "discoverSolution": "Discover the solution"
   },
   "howItWorks": {

@@ -53,9 +53,11 @@ export default function PainPoints() {
           <h2 className="text-4xl md:text-5xl text-white mb-6 text-balance">
             {t('title')}
           </h2>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            {t('subtitle')}
-          </p>
+          {t('subtitle') && (
+            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+              {t('subtitle')}
+            </p>
+          )}
         </div>
 
         {/* Pain points grid */}
@@ -80,9 +82,11 @@ export default function PainPoints() {
 
         {/* Transition vers la solution */}
         <div className="text-center mt-16">
-          <p className="text-xl text-slate-300 mb-6">
-            {t('transition')}
-          </p>
+          {t('transition') && (
+            <p className="text-xl text-slate-300 mb-6">
+              {t('transition')}
+            </p>
+          )}
           <a href="#comment-ca-marche" className="btn-ghost !text-amber-400 hover:!text-amber-300">
             <span>{t('discoverSolution')}</span>
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

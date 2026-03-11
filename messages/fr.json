@@ -22,17 +22,17 @@
   },
   "painPoints": {
     "badge": "LE PROBLÈME",
-    "title": "Trop d'informations. Pas assez de signal.",
-    "subtitle": "La plupart du contenu est redondant ou hors sujet.",
+    "title": "Trop de bruit, pas assez de signal.",
+    "subtitle": "",
     "card1Title": "Trop de newsletters",
     "card1Desc": "Votre boîte de réception déborde de contenus que vous n'avez pas le temps de lire.",
-    "card2Title": "Beaucoup de bruit",
+    "card2Title": "Contenu redondant ou hors sujet",
     "card2Desc": "La majorité des articles ne concerne ni votre thèse ni votre portefeuille.",
     "card3Title": "Informations manquées",
     "card3Desc": "Les signaux importants passent entre les mailles du filet.",
     "card4Title": "Temps perdu",
     "card4Desc": "Des heures consacrées à la veille au lieu de la prise de décision.",
-    "transition": "Et si votre équipe reprenait le contrôle ?",
+    "transition": "",
     "discoverSolution": "Découvrir la solution"
   },
   "howItWorks": {
