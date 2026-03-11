@@ -23,7 +23,7 @@ export default function Testimonials() {
           <img
             src="/logos/serena.png"
             alt="Serena"
-            className="h-28 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
+            className="h-20 md:h-24 w-auto object-contain grayscale hover:grayscale-0 opacity-80 hover:opacity-100 transition-all duration-300"
           />
         </div>
       </div>
