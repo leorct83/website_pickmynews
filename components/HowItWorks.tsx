@@ -26,6 +26,16 @@ export default function HowItWorks() {
   return (
     <section id="comment-ca-marche" className="py-24 px-4 bg-white scroll-mt-nav">
       <div className="section-container">
+        {/* Section header */}
+        <div className="text-center mb-20">
+          <p className="text-amber-600 font-semibold uppercase tracking-wider text-sm mb-4">
+            {t('badge')}
+          </p>
+          <h2 className="text-4xl md:text-5xl text-slate-900 mb-6 text-balance">
+            {t('title')}
+          </h2>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left: Steps */}
           <div className="space-y-10">
@@ -59,71 +69,98 @@ export default function HowItWorks() {
             </div>
           </div>
 
-          {/* Right: Newsletter mockup */}
-          <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-3xl p-8 shadow-lg border border-slate-200">
-            {/* Email header */}
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-amber-500 rounded-xl flex items-center justify-center">
-                <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
+          {/* Right: Realistic newsletter mockup */}
+          <div className="bg-[#F1F5F9] rounded-3xl p-5 shadow-lg border border-slate-200 max-h-[600px] overflow-hidden relative">
+            <div className="bg-white rounded-xl overflow-hidden">
+              {/* Newsletter header */}
+              <div className="bg-[#0F172A] px-5 py-4">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-white font-bold text-sm">VC Weekly Digest for Serena</p>
+                    <p className="text-white/40 text-[10px] mt-0.5">Mar 11, 2026</p>
+                  </div>
+                  <img src="/logos/serena.png" alt="Serena" className="h-8 w-auto brightness-0 invert opacity-80" />
+                </div>
               </div>
-              <div>
-                <div className="font-semibold text-slate-900 text-sm">PickMyNews Weekly</div>
-                <div className="text-xs text-slate-500">{t('step3Delivered')}</div>
+
+              {/* Newsletter body */}
+              <div className="px-5 py-4 space-y-4">
+                {/* Section: Fundraising */}
+                <div className="bg-[#1E293B] px-4 py-2.5 rounded-md">
+                  <span className="text-white text-[10px] font-extrabold tracking-widest">💰  FUNDRAISING</span>
+                </div>
+
+                {/* Sub-section badge */}
+                <div className="bg-[#EEF2FF] px-3 py-1.5 rounded-md border-l-[3px] border-[#6B9AED]">
+                  <span className="text-[#6B9AED] text-[9px] font-extrabold tracking-wider uppercase">Early Stage</span>
+                </div>
+
+                {/* Deal cards */}
+                <div className="space-y-2">
+                  <div className="bg-[#FAFAFE] rounded-lg border border-slate-100 p-3">
+                    <div className="flex justify-between items-center">
+                      <span className="text-[11px] font-bold text-slate-900">Rebar</span>
+                      <span className="text-[10px] font-bold text-[#8B5CF6]">$14M Series A</span>
+                    </div>
+                    <div className="flex gap-1.5 mt-1.5">
+                      <span className="text-[8px] px-1.5 py-0.5 bg-[#EDE9FE] text-[#8B5CF6] rounded font-bold uppercase">Proptech</span>
+                      <span className="text-[8px] text-slate-400">🇺🇸 US</span>
+                    </div>
+                    <p className="text-[9px] text-slate-500 mt-1 leading-relaxed">Built an AI operating system to help commercial HVAC suppliers generate quotes faster.</p>
+                  </div>
+
+                  <div className="bg-[#FAFAFE] rounded-lg border border-slate-100 p-3">
+                    <div className="flex justify-between items-center">
+                      <span className="text-[11px] font-bold text-slate-900">Vertical Compute</span>
+                      <span className="text-[10px] font-bold text-[#8B5CF6]">€37M Seed</span>
+                    </div>
+                    <div className="flex gap-1.5 mt-1.5">
+                      <span className="text-[8px] px-1.5 py-0.5 bg-[#EDE9FE] text-[#8B5CF6] rounded font-bold uppercase">Semiconductors</span>
+                      <span className="text-[8px] text-slate-400">🇧🇪 BE</span>
+                    </div>
+                    <p className="text-[9px] text-slate-500 mt-1 leading-relaxed">Develops 3D &quot;skyscraper&quot; memory architecture to tackle the &quot;memory wall&quot; for AI chips.</p>
+                  </div>
+                </div>
+
+                {/* Growth rounds badge */}
+                <div className="bg-[#FFFBEB] px-3 py-1.5 rounded-md border-l-[3px] border-[#D97706]">
+                  <span className="text-[#D97706] text-[9px] font-extrabold tracking-wider uppercase">Growth Rounds</span>
+                </div>
+
+                <div className="space-y-2">
+                  <div className="bg-[#FFFDF7] rounded-lg border border-[#FEF3C7] p-3">
+                    <div className="flex justify-between items-center">
+                      <span className="text-[11px] font-bold text-slate-900">DeepIP</span>
+                      <span className="text-[10px] font-bold text-[#D97706]">€23M Series B</span>
+                    </div>
+                    <div className="flex gap-1.5 mt-1.5">
+                      <span className="text-[8px] px-1.5 py-0.5 bg-[#FEF3C7] text-[#D97706] rounded font-bold uppercase">AI & LegalTech</span>
+                      <span className="text-[8px] text-slate-400">🇫🇷 FR</span>
+                    </div>
+                    <p className="text-[9px] text-slate-500 mt-1 leading-relaxed">Develops AI software to automate the patent lifecycle for IP professionals.</p>
+                  </div>
+                </div>
+
+                {/* News section */}
+                <div className="bg-[#1E293B] px-4 py-2.5 rounded-md">
+                  <span className="text-white text-[10px] font-extrabold tracking-widest">📰  NEWS OF THE WEEK</span>
+                </div>
+
+                <div className="space-y-2">
+                  <div className="border-l-[3px] border-[#0EA5E9] bg-[#F8FAFC] rounded-r-md p-2.5">
+                    <p className="text-[11px] font-bold text-slate-900 leading-snug">Gleamer acquired by RadNet for €200M+</p>
+                    <p className="text-[9px] text-slate-500 mt-1">The French AI radiology platform had reached €30M ARR.</p>
+                  </div>
+                  <div className="border-l-[3px] border-[#7C6DD8] bg-[#F8FAFC] rounded-r-md p-2.5">
+                    <p className="text-[11px] font-bold text-slate-900 leading-snug">ChatGPT weekly active users grow to 900M</p>
+                    <p className="text-[9px] text-slate-500 mt-1">2.7x larger than Gemini on web traffic.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Newsletter articles */}
-            <div className="space-y-4">
-              {/* Article 1 */}
-              <div className="bg-white rounded-xl p-4 shadow-sm border border-slate-100">
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0" />
-                  <div className="flex-1">
-                    <div className="h-3 bg-slate-800 rounded w-4/5 mb-2" />
-                    <div className="h-2 bg-slate-200 rounded w-full mb-1" />
-                    <div className="h-2 bg-slate-200 rounded w-3/4" />
-                    <div className="flex gap-2 mt-3">
-                      <span className="text-[10px] px-2 py-0.5 bg-amber-50 text-amber-700 rounded-full font-medium">SaaS B2B</span>
-                      <span className="text-[10px] px-2 py-0.5 bg-blue-50 text-blue-700 rounded-full font-medium">Series A</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Article 2 */}
-              <div className="bg-white rounded-xl p-4 shadow-sm border border-slate-100">
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0" />
-                  <div className="flex-1">
-                    <div className="h-3 bg-slate-800 rounded w-3/5 mb-2" />
-                    <div className="h-2 bg-slate-200 rounded w-full mb-1" />
-                    <div className="h-2 bg-slate-200 rounded w-2/3" />
-                    <div className="flex gap-2 mt-3">
-                      <span className="text-[10px] px-2 py-0.5 bg-emerald-50 text-emerald-700 rounded-full font-medium">FinTech</span>
-                      <span className="text-[10px] px-2 py-0.5 bg-purple-50 text-purple-700 rounded-full font-medium">Europe</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Article 3 */}
-              <div className="bg-white rounded-xl p-4 shadow-sm border border-slate-100">
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0" />
-                  <div className="flex-1">
-                    <div className="h-3 bg-slate-800 rounded w-2/3 mb-2" />
-                    <div className="h-2 bg-slate-200 rounded w-full mb-1" />
-                    <div className="h-2 bg-slate-200 rounded w-4/5" />
-                    <div className="flex gap-2 mt-3">
-                      <span className="text-[10px] px-2 py-0.5 bg-rose-50 text-rose-700 rounded-full font-medium">DeepTech</span>
-                      <span className="text-[10px] px-2 py-0.5 bg-amber-50 text-amber-700 rounded-full font-medium">Seed</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/* Fade overlay at bottom */}
+            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#F1F5F9] to-transparent rounded-b-3xl" />
           </div>
         </div>
       </div>
