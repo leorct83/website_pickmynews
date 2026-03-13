@@ -64,12 +64,12 @@ export default function Navbar() {
           </div>
 
           {/* Language Switcher + CTA + Hamburger */}
-          <div className="flex items-center gap-3">
-            {/* Language Switcher */}
-            <div className="flex items-center gap-1 bg-slate-100 rounded-full p-1">
+          <div className="flex items-center gap-2 sm:gap-3">
+            {/* Language Switcher — hidden on mobile, shown in hamburger menu instead */}
+            <div className="hidden sm:flex items-center gap-1 bg-slate-100 rounded-full p-1">
               <button
                 onClick={() => switchLocale('fr')}
-                className={`px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium transition-all flex items-center gap-1 sm:gap-1.5 ${
+                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all flex items-center gap-1.5 ${
                   locale === 'fr'
                     ? 'bg-white text-slate-900 shadow-sm'
                     : 'text-slate-500 hover:text-slate-700'
@@ -77,11 +77,11 @@ export default function Navbar() {
                 title="Français"
               >
                 <img src="https://flagcdn.com/w20/fr.png" alt="FR" className="w-4 h-3 object-cover rounded-sm" />
-                <span className="hidden sm:inline">FR</span>
+                <span>FR</span>
               </button>
               <button
                 onClick={() => switchLocale('en')}
-                className={`px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium transition-all flex items-center gap-1 sm:gap-1.5 ${
+                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all flex items-center gap-1.5 ${
                   locale === 'en'
                     ? 'bg-white text-slate-900 shadow-sm'
                     : 'text-slate-500 hover:text-slate-700'
@@ -89,14 +89,14 @@ export default function Navbar() {
                 title="English"
               >
                 <img src="https://flagcdn.com/w20/us.png" alt="EN" className="w-4 h-3 object-cover rounded-sm" />
-                <span className="hidden sm:inline">US</span>
+                <span>US</span>
               </button>
             </div>
 
             {/* CTA - visible on all sizes */}
             <button
               onClick={() => (window as any).Calendly?.initPopupWidget({url: 'https://calendly.com/leopolddelarochere/pickmynews-demo'})}
-              className="btn-primary btn-sm"
+              className="btn-primary btn-sm text-xs sm:text-sm"
             >
               {t('cta')}
             </button>
@@ -144,6 +144,34 @@ export default function Navbar() {
               >
                 {t('contact')}
               </button>
+
+              {/* Language switcher — mobile only (hidden on sm+) */}
+              <div className="sm:hidden px-6 py-3 border-t border-slate-100">
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => { switchLocale('fr'); setMobileMenuOpen(false); }}
+                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                      locale === 'fr'
+                        ? 'bg-slate-100 text-slate-900'
+                        : 'text-slate-500 hover:text-slate-700'
+                    }`}
+                  >
+                    <img src="https://flagcdn.com/w20/fr.png" alt="FR" className="w-4 h-3 object-cover rounded-sm" />
+                    FR
+                  </button>
+                  <button
+                    onClick={() => { switchLocale('en'); setMobileMenuOpen(false); }}
+                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                      locale === 'en'
+                        ? 'bg-slate-100 text-slate-900'
+                        : 'text-slate-500 hover:text-slate-700'
+                    }`}
+                  >
+                    <img src="https://flagcdn.com/w20/us.png" alt="EN" className="w-4 h-3 object-cover rounded-sm" />
+                    EN
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         )}
