@@ -70,11 +70,11 @@ export default function HowItWorks() {
           </div>
 
           {/* Right: Real newsletter example */}
-          <div className="bg-[#F1F5F9] rounded-3xl p-5 shadow-lg border border-slate-200 max-h-[700px] overflow-hidden">
+          <div className="bg-[#F1F5F9] rounded-2xl sm:rounded-3xl p-3 sm:p-5 shadow-lg border border-slate-200 max-h-[500px] sm:max-h-[700px] overflow-hidden">
             {/* Fund context card */}
-            <div className="bg-white rounded-xl p-4 mb-3">
-              <p className="text-xs font-semibold text-amber-600 uppercase tracking-wider mb-3">{t('exampleLabel')}</p>
-              <div className="grid grid-cols-2 gap-4">
+            <div className="bg-white rounded-xl p-3 sm:p-4 mb-3">
+              <p className="text-[10px] sm:text-xs font-semibold text-amber-600 uppercase tracking-wider mb-2 sm:mb-3">{t('exampleLabel')}</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 <div>
                   <p className="text-xs font-medium text-slate-500 mb-1.5">{t('exampleThesis')}</p>
                   <div className="flex flex-wrap gap-1.5">
@@ -103,7 +103,7 @@ export default function HowItWorks() {
               <iframe
                 src="/newsletter-example.html"
                 title="Newsletter example"
-                className="w-full h-[550px] border-0 overflow-y-auto"
+                className="w-full h-[350px] sm:h-[550px] border-0 overflow-y-auto"
               />
             </div>
           </div>

@@ -22,7 +22,7 @@ export default function HeroSection() {
         <div className="max-w-4xl mx-auto text-center">
 
           {/* Headline */}
-          <h1 className="fade-in-up delay-100 text-5xl md:text-6xl lg:text-7xl text-slate-900 mb-6 text-balance">
+          <h1 className="fade-in-up delay-100 text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-slate-900 mb-6 text-balance">
             <span className="text-amber-600">{t('headline')}</span> {t('headlineSuffix')}
           </h1>
 
@@ -67,10 +67,10 @@ export default function HeroSection() {
           </div>
 
           {/* Trusted by */}
-          <div className="fade-in-up delay-500 flex items-center justify-center gap-8 mt-14">
-            <span className="text-base font-bold text-amber-600 uppercase tracking-wider">{t('trustedBy')}</span>
-            <div className="w-px h-10 bg-slate-300" />
-            <img src="/logos/serena.png" alt="Serena" className="h-20 w-auto object-contain" />
+          <div className="fade-in-up delay-500 flex items-center justify-center gap-4 sm:gap-8 mt-10 sm:mt-14">
+            <span className="text-xs sm:text-base font-bold text-amber-600 uppercase tracking-wider">{t('trustedBy')}</span>
+            <div className="w-px h-8 sm:h-10 bg-slate-300" />
+            <img src="/logos/serena.png" alt="Serena" className="h-12 sm:h-20 w-auto object-contain" />
           </div>
         </div>
 

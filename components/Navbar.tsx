@@ -9,6 +9,7 @@ import ContactForm from './ContactForm';
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [contactOpen, setContactOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations('navbar');
   const locale = useLocale();
   const pathname = usePathname();
@@ -62,13 +63,13 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Language Switcher + CTA */}
-          <div className="flex items-center gap-4">
+          {/* Language Switcher + CTA + Hamburger */}
+          <div className="flex items-center gap-3">
             {/* Language Switcher */}
             <div className="flex items-center gap-1 bg-slate-100 rounded-full p-1">
               <button
                 onClick={() => switchLocale('fr')}
-                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all flex items-center gap-1.5 ${
+                className={`px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium transition-all flex items-center gap-1 sm:gap-1.5 ${
                   locale === 'fr'
                     ? 'bg-white text-slate-900 shadow-sm'
                     : 'text-slate-500 hover:text-slate-700'
@@ -76,11 +77,11 @@ export default function Navbar() {
                 title="Français"
               >
                 <img src="https://flagcdn.com/w20/fr.png" alt="FR" className="w-4 h-3 object-cover rounded-sm" />
-                <span>FR</span>
+                <span className="hidden sm:inline">FR</span>
               </button>
               <button
                 onClick={() => switchLocale('en')}
-                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all flex items-center gap-1.5 ${
+                className={`px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium transition-all flex items-center gap-1 sm:gap-1.5 ${
                   locale === 'en'
                     ? 'bg-white text-slate-900 shadow-sm'
                     : 'text-slate-500 hover:text-slate-700'
@@ -88,19 +89,64 @@ export default function Navbar() {
                 title="English"
               >
                 <img src="https://flagcdn.com/w20/us.png" alt="EN" className="w-4 h-3 object-cover rounded-sm" />
-                <span>US</span>
+                <span className="hidden sm:inline">US</span>
               </button>
             </div>
 
-            {/* CTA */}
+            {/* CTA - visible on all sizes */}
             <button
               onClick={() => (window as any).Calendly?.initPopupWidget({url: 'https://calendly.com/leopolddelarochere/pickmynews-demo'})}
-              className="btn-primary btn-sm hidden sm:inline-flex"
+              className="btn-primary btn-sm"
             >
               {t('cta')}
             </button>
+
+            {/* Hamburger - mobile only */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-slate-100 transition-colors"
+              aria-label="Menu"
+            >
+              {mobileMenuOpen ? (
+                <svg className="w-5 h-5 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-5 h-5 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
           </div>
         </div>
+
+        {/* Mobile menu dropdown */}
+        {mobileMenuOpen && (
+          <div className="md:hidden mt-2 mx-4 bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden">
+            <div className="flex flex-col py-2">
+              <a
+                href="#avantages"
+                onClick={() => setMobileMenuOpen(false)}
+                className="px-6 py-3 text-slate-700 hover:bg-slate-50 font-medium transition-colors"
+              >
+                {t('features')}
+              </a>
+              <a
+                href="#comment-ca-marche"
+                onClick={() => setMobileMenuOpen(false)}
+                className="px-6 py-3 text-slate-700 hover:bg-slate-50 font-medium transition-colors"
+              >
+                {t('howItWorks')}
+              </a>
+              <button
+                onClick={() => { setContactOpen(true); setMobileMenuOpen(false); }}
+                className="px-6 py-3 text-left text-slate-700 hover:bg-slate-50 font-medium transition-colors"
+              >
+                {t('contact')}
+              </button>
+            </div>
+          </div>
+        )}
       </nav>
 
       <ContactForm isOpen={contactOpen} onClose={() => setContactOpen(false)} />
