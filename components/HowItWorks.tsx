@@ -24,19 +24,19 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="comment-ca-marche" className="py-24 px-4 bg-white scroll-mt-nav">
+    <section id="comment-ca-marche" className="py-12 md:py-24 px-4 bg-white scroll-mt-nav">
       <div className="section-container">
         {/* Section header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-10 md:mb-20">
           <p className="text-amber-600 font-semibold uppercase tracking-wider text-sm mb-4">
             {t('badge')}
           </p>
-          <h2 className="text-4xl md:text-5xl text-slate-900 mb-6 text-balance">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl text-slate-900 mb-6 text-balance">
             {t('title')}
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
           {/* Left: Steps */}
           <div className="space-y-10">
             {steps.map((step) => (

@@ -33,14 +33,14 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-24 px-4 bg-stone-50 scroll-mt-nav">
+    <section id="faq" className="py-12 md:py-24 px-4 bg-stone-50 scroll-mt-nav">
       <div className="section-container">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <p className="text-amber-600 font-semibold uppercase tracking-wider text-sm mb-4">
               {t('badge')}
             </p>
-            <h2 className="text-4xl md:text-5xl text-slate-900 mb-6 text-balance">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl text-slate-900 mb-6 text-balance">
               {t('title')}
             </h2>
           </div>
@@ -53,9 +53,9 @@ export default function FAQ() {
               >
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full px-8 py-6 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors"
+                  className="w-full px-5 py-4 sm:px-8 sm:py-6 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors"
                 >
-                  <span className="font-semibold text-lg text-slate-900">
+                  <span className="font-semibold text-base sm:text-lg text-slate-900">
                     {faq.question}
                   </span>
                   <span className={`w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0 transition-transform ${
@@ -70,7 +70,7 @@ export default function FAQ() {
                 <div className={`overflow-hidden transition-all duration-300 ${
                   openIndex === index ? 'max-h-96' : 'max-h-0'
                 }`}>
-                  <div className="px-8 pb-6 text-slate-600 leading-relaxed">
+                  <div className="px-5 pb-4 sm:px-8 sm:pb-6 text-slate-600 leading-relaxed text-sm sm:text-base">
                     {faq.answer}
                   </div>
                 </div>

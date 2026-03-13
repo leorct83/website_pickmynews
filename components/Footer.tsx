@@ -29,16 +29,16 @@ export default function Footer() {
 
   return (
     <footer className="bg-slate-900 text-white">
-      <div className="section-container py-16">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+      <div className="section-container py-10 md:py-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-10 md:mb-12">
           {/* Brand column */}
-          <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-4 group">
+          <div className="col-span-2 md:col-span-1">
+            <Link href="/" className="flex items-center gap-2 sm:gap-3 mb-4 group">
 
               {/* Logo */}
               <div
                 className="
-                  w-20 h-20
+                  w-12 h-12 sm:w-20 sm:h-20
                   flex items-center justify-center
                   transform transition-transform
                   group-hover:rotate-6
@@ -47,12 +47,12 @@ export default function Footer() {
                 <img
                   src="/logo.svg"
                   alt="Logo"
-                  className="w-14 h-14 object-contain"
+                  className="w-10 h-10 sm:w-14 sm:h-14 object-contain"
                 />
               </div>
 
               {/* Brand name */}
-              <span className="text-2xl font-semibold">
+              <span className="text-xl sm:text-2xl font-semibold">
                 Pick<span className="text-amber-500">My</span>News
               </span>
             </Link>

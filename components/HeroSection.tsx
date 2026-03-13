@@ -28,7 +28,7 @@ export default function HeroSection() {
 
           {/* Subheadline */}
           {t('subheadline') && (
-            <h2 className="fade-in-up delay-200 text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+            <h2 className="fade-in-up delay-200 text-lg sm:text-xl md:text-2xl text-slate-600 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed">
               {t('subheadline')}
             </h2>
           )}
@@ -36,7 +36,7 @@ export default function HeroSection() {
 
           {/* CTA */}
           <div className="fade-in-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <button onClick={() => (window as any).Calendly?.initPopupWidget({url: 'https://calendly.com/leopolddelarochere/pickmynews-demo'})} className="btn-primary btn-lg">
+            <button onClick={() => (window as any).Calendly?.initPopupWidget({url: 'https://calendly.com/leopolddelarochere/pickmynews-demo'})} className="btn-primary btn-lg w-full sm:w-auto">
               <span>{t('ctaPrimary')}</span>
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -45,7 +45,7 @@ export default function HeroSection() {
           </div>
 
           {/* Trust signals */}
-          <div className="fade-in-up delay-400 flex flex-wrap items-center justify-center gap-6 text-sm text-slate-500">
+          <div className="fade-in-up delay-400 flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-slate-500">
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />

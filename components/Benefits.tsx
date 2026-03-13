@@ -69,20 +69,20 @@ export default function Benefits() {
   ];
 
   return (
-    <section id="avantages" className="py-24 px-4 bg-stone-50 scroll-mt-nav relative overflow-hidden">
+    <section id="avantages" className="py-12 md:py-24 px-4 bg-stone-50 scroll-mt-nav relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-bl from-amber-100/50 to-transparent rounded-bl-full" />
 
       <div className="section-container relative z-10">
         {/* Section header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <p className="text-amber-600 font-semibold uppercase tracking-wider text-sm mb-4">
             {t('badge')}
           </p>
-          <h2 className="text-4xl md:text-5xl text-slate-900 mb-6 text-balance">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl text-slate-900 mb-6 text-balance">
             {t('title')}
           </h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
             {t('subtitle')}
           </p>
         </div>
@@ -92,7 +92,7 @@ export default function Benefits() {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-slate-100"
+              className="group bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-slate-100"
             >
               {/* Icon */}
               <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${benefit.color} flex items-center justify-center text-white mb-6 transform transition-transform group-hover:scale-110 group-hover:rotate-3`}>

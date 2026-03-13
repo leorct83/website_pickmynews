@@ -52,7 +52,7 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
 
       {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg p-8">
+      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg p-5 sm:p-8 max-h-[90vh] overflow-y-auto">
         {/* Close button */}
         <button
           onClick={onClose}
@@ -75,7 +75,7 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="contact-fundName" className="block text-sm font-medium text-slate-700 mb-1">
                   {t('fundName')}
@@ -104,7 +104,7 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="contact-email" className="block text-sm font-medium text-slate-700 mb-1">
                   {t('email')} *

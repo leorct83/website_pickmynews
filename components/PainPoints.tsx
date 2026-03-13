@@ -36,7 +36,7 @@ export default function PainPoints() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-slate-900 text-white relative overflow-hidden">
+    <section className="py-12 md:py-20 px-4 bg-slate-900 text-white relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -46,26 +46,26 @@ export default function PainPoints() {
 
       <div className="section-container relative z-10">
         {/* Section header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <p className="text-amber-400 font-semibold uppercase tracking-wider text-sm mb-4">
             {t('badge')}
           </p>
-          <h2 className="text-4xl md:text-5xl text-white mb-6 text-balance">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl text-white mb-6 text-balance">
             {t('title')}
           </h2>
           {t('subtitle') && (
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto">
               {t('subtitle')}
             </p>
           )}
         </div>
 
         {/* Pain points grid */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
           {painPoints.map((point, index) => (
             <div
               key={index}
-              className="text-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-amber-500/50 transition-colors duration-300"
+              className="text-center p-6 md:p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-amber-500/50 transition-colors duration-300"
             >
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-amber-500/20 text-amber-400 mb-6">
                 {point.icon}
@@ -81,9 +81,9 @@ export default function PainPoints() {
         </div>
 
         {/* Transition vers la solution */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-10 md:mt-16">
           {t('transition') && (
-            <p className="text-xl text-slate-300 mb-6">
+            <p className="text-lg sm:text-xl text-slate-300 mb-6">
               {t('transition')}
             </p>
           )}

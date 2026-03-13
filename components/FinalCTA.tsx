@@ -6,7 +6,7 @@ export default function FinalCTA() {
   const t = useTranslations('finalCta');
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+    <section className="py-12 md:py-24 px-4 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-amber-500/10 rounded-full blur-3xl" />
@@ -33,17 +33,17 @@ export default function FinalCTA() {
           </div>
 
           {/* Headline */}
-          <h2 className="text-4xl md:text-5xl lg:text-6xl text-white mb-6 text-balance">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-6 text-balance">
             {t('title')}
           </h2>
 
-          <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-slate-300 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed">
             {t('subtitle')}
           </p>
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button onClick={() => (window as any).Calendly?.initPopupWidget({url: 'https://calendly.com/leopolddelarochere/pickmynews-demo'})} className="btn-primary btn-lg">
+            <button onClick={() => (window as any).Calendly?.initPopupWidget({url: 'https://calendly.com/leopolddelarochere/pickmynews-demo'})} className="btn-primary btn-lg w-full sm:w-auto">
               {t('ctaPrimary')}
             </button>
           </div>
