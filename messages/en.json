@@ -10,6 +10,11 @@
     "contact": "Contact",
     "cta": "Book a demo"
   },
+  "calendlyModal": {
+    "title": "Book a demo",
+    "subtitle": "Pick a time that works for you with one of our team members.",
+    "close": "Close"
+  },
   "contactForm": {
     "title": "Contact us",
     "fundName": "Fund name",

@@ -58,7 +58,7 @@ export default function HowItWorks() {
             {/* CTA */}
             <div>
               <button
-                onClick={() => (window as any).Calendly?.initPopupWidget({url: 'https://calendly.com/leopolddelarochere/pickmynews-demo'})}
+                onClick={() => window.dispatchEvent(new Event('open-calendly'))}
                 className="btn-primary btn-lg"
               >
                 <span>{t('cta')}</span>

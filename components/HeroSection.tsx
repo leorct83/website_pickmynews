@@ -36,7 +36,7 @@ export default function HeroSection() {
 
           {/* CTA */}
           <div className="fade-in-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <button onClick={() => (window as any).Calendly?.initPopupWidget({url: 'https://calendly.com/leopolddelarochere/pickmynews-demo'})} className="btn-primary btn-lg w-full sm:w-auto">
+            <button onClick={() => window.dispatchEvent(new Event('open-calendly'))} className="btn-primary btn-lg w-full sm:w-auto">
               <span>{t('ctaPrimary')}</span>
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

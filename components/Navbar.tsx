@@ -5,10 +5,12 @@ import { useTranslations } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import { useLocale } from 'next-intl';
 import ContactForm from './ContactForm';
+import CalendlyModal from './CalendlyModal';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [contactOpen, setContactOpen] = useState(false);
+  const [calendlyOpen, setCalendlyOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations('navbar');
   const locale = useLocale();
@@ -19,8 +21,13 @@ export default function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
+    const handleOpenCalendly = () => setCalendlyOpen(true);
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('open-calendly', handleOpenCalendly);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('open-calendly', handleOpenCalendly);
+    };
   }, []);
 
   const switchLocale = (newLocale: 'fr' | 'en') => {
@@ -95,7 +102,7 @@ export default function Navbar() {
 
             {/* CTA - visible on all sizes */}
             <button
-              onClick={() => (window as any).Calendly?.initPopupWidget({url: 'https://calendly.com/leopolddelarochere/pickmynews-demo'})}
+              onClick={() => setCalendlyOpen(true)}
               className="btn-primary btn-sm text-xs sm:text-sm"
             >
               {t('cta')}
@@ -178,6 +185,7 @@ export default function Navbar() {
       </nav>
 
       <ContactForm isOpen={contactOpen} onClose={() => setContactOpen(false)} />
+      <CalendlyModal isOpen={calendlyOpen} onClose={() => setCalendlyOpen(false)} />
     </>
   );
 }

@@ -10,6 +10,11 @@
     "contact": "Contact",
     "cta": "Réserver une démo"
   },
+  "calendlyModal": {
+    "title": "Réserver une démo",
+    "subtitle": "Choisissez le créneau qui vous convient avec l'un de nos interlocuteurs.",
+    "close": "Fermer"
+  },
   "contactForm": {
     "title": "Contactez-nous",
     "fundName": "Nom du fonds",
