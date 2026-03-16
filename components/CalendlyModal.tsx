@@ -38,23 +38,23 @@ export default function CalendlyModal({ isOpen, onClose }: CalendlyModalProps) {
 
         {/* Calendly embeds */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-px bg-slate-100 overflow-y-auto max-h-[calc(90vh-100px)]">
-          {/* Leopold */}
-          <div className="bg-white flex flex-col">
-            <div className="flex-1 min-h-[500px]">
-              <iframe
-                src="https://calendly.com/leopolddelarochere/pickmynews-demo"
-                title="Leopold - PickMyNews Demo"
-                className="w-full h-full min-h-[500px] border-0"
-              />
-            </div>
-          </div>
-
           {/* Thibaud */}
           <div className="bg-white flex flex-col">
             <div className="flex-1 min-h-[500px]">
               <iframe
                 src="https://calendly.com/thibaud-serena/new-meeting"
                 title="Thibaud - Meeting"
+                className="w-full h-full min-h-[500px] border-0"
+              />
+            </div>
+          </div>
+
+          {/* Leopold */}
+          <div className="bg-white flex flex-col">
+            <div className="flex-1 min-h-[500px]">
+              <iframe
+                src="https://calendly.com/leopolddelarochere/pickmynews-demo"
+                title="Leopold - PickMyNews Demo"
                 className="w-full h-full min-h-[500px] border-0"
               />
             </div>
